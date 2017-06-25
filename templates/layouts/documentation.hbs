@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body{{#slug}} class="{{.}}"{{/slug}}>
+    {{!-- Docs master nav --}}
+    {{> nav-main }}
+
+    {{> documentation-header }}
+
+    {{!-- Content --}}
+    <div class="container docs-container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="sidebar hidden-print" role="complementary">
+            {{> sidenav }}
+          </div>
+        </div>
+        <div class="col-md-9" role="main">
+          <div class="panel docs-content">
+            {{> body }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Footer --}}
+    {{> footer }}
+
+    {{!-- JavaScript and analytics only. --}}
+    {{> javascripts }}
+  </body>
+</html>

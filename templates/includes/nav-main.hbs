@@ -1,0 +1,64 @@
+<header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="{{rel '.'}}/#" class="navbar-brand" alt="AsteroidOS">
+        <img src="{{assets}}/img/logo.png" height="50" width="50">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        {{#is slug 'about'}}
+        <li class="active">
+          <span>About</span>
+        </li>
+        {{else}}
+        <li>
+          <a href="{{rel 'about'}}/">About</a>
+        </li>
+        {{/is}}
+        {{#is slug 'install'}}
+        <li class="active">
+          <span>Install</span>
+        </li>
+        {{else}}
+        <li>
+          <a href="{{rel 'install'}}/">Install</a>
+        </li>
+        {{/is}}
+        {{#is slug 'documentation'}}
+        <li class="active">
+          <span>Documentation</span>
+        </li>
+        {{else}}
+        <li>
+          <a href="{{rel 'wiki/documentation'}}/">Documentation</a>
+        </li>
+        {{/is}}
+        {{#is slug 'community'}}
+        <li class="active">
+          <span>Get Involved</span>
+        </li>
+        {{else}}
+        <li>
+          <a href="{{rel 'community'}}/">Get Involved</a>
+        </li>
+        {{/is}}
+        {{#is slug 'contact'}}
+        <li class="active">
+          <span>Contact</span>
+        </li>
+        {{else}}
+        <li>
+          <a href="{{rel 'contact'}}/">Contact</a>
+        </li>
+        {{/is}}
+      </ul>
+    </nav>
+  </div>
+</header>

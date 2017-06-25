@@ -1,0 +1,15 @@
+# live site
+_gh_pages
+_asteroidos.org
+
+# node.js
+node_modules
+npm-debug.log
+
+# local dev
+tmp
+temp
+vendor
+TODO.md
+*.sublime-*
+.idea

@@ -1,0 +1,51 @@
+---
+title: SSH
+layout: documentation
+---
+
+<p>By default, you can get a remote shell on you smartwatch with the Android Debug Bridge tool and the “adb shell” command. However this shell suffers from a many limitations and you might prefer to get a standard SSH connection. To do so you need to setup a TCP connection with your watch. The procedure is different if you want to do it over USB or Wi-Fi (if your watch supports Wi-Fi)</p>
+<div class="page-header">
+  <h1 id="sshoverusb">SSH over USB</h1>
+</div>
+<p>To use SSH over USB’s gadget mode you need to tell Connman to setup a manual IP for your watch. First of all, you need to get your usb’s UID thanks to the “get-services” tool which is available in the “connman-tests” package under /usr/lib/connman/test/. The first line of this command’s output should contain something like “gadget_<em>UID</em>_usb”, note this UID and replace it when needed in the commands below.</p>
+<p>Create a /var/lib/connman/gadget_<em>UID</em>_usb/ directory and in that directory create a “settings” file containing:</p>
+<pre><code>[gadget_*UID*_usb]
+Favorite=true
+IPv4.method=manual
+IPv4.netmask_prefixlen=24
+IPv4.local_address=192.168.0.133
+IPv4.gateway=192.168.0.1
+AutoConnect=true
+Name=Wired
+IPv6.method=off
+IPv6.privacy=disabled
+</code></pre>
+<p>Now from your computer, setup your usb interface with the 192.168.0.1 IP and then you’ll be able to connect to your watch with:</p>
+<pre><code>ssh ceres@192.168.0.133
+</code></pre>
+<p>/!\ This UID and the gadget’s mac address both seem to be re-generated at every boot so this config isn’t persistent. We should try to find a solution.</p>
+<div class="page-header">
+  <h1 id="sshoverwifi">SSH over Wi-Fi</h1>
+</div>
+<p>Dropbear is already running on the watch so we just need an IP address configured to connect.</p>
+<p>Ensure wireless drivers are enabled for the watch.</p>
+<p>Build your <code>asteroid-image</code> with iproute2 and wpa-supplicant. In <code>meta-{watch}-hybris/conf/machine/{watch}.conf</code> add <code>iproute2</code> and <code>wpa-supplicant</code> to <code>IMAGE_INSTALL</code>:</p>
+<pre><code>IMAGE_INSTALL += "android-tools android-system msm-fb-refresher brcm-patchram-plus iproute2 wpa-supplicant"
+</code></pre>
+<p>Once your image is installed on the watch, open up an <code>adb shell</code>:</p>
+<pre><code># mkdir /etc/wpa_supplicant
+# cp /etc/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
+# systemctl enable --now wpa_supplicant@wlan0
+# wpa_cli
+&gt; scan
+&gt; scan_results
+&gt; add_network
+&gt; set_network X ssid "MYSSID"
+&gt; set_network X psk "MYPSK"
+&gt; enable_network X
+&gt; select_network X
+&gt; save_config
+# ip a show dev wlan0
+</code></pre>
+<p>The watch should automatically get an IPv6 address from your network or you can set a static IPv4. You can disconnect from adb and connect via SSH.</p>
+<p>By default, there is no <code>root</code> or <code>ceres</code> password, and no firewall rules.</p>

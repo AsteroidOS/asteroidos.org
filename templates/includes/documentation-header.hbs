@@ -1,0 +1,11 @@
+{{!-- Header --}}
+<div class="docs-header" id="content">
+  <div class="container">
+    <h1>
+    {{#is slug 'documentation'}}
+    {{else}}
+      <a href="{{rel 'wiki/documentation'}}">Documentation</a> &#x3009; 
+    {{/is}}
+    {{ title }}</h1>{{> popover-source-link . }}
+  </div>
+</div>

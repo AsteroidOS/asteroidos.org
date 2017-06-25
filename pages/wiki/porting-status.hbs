@@ -1,0 +1,200 @@
+---
+title: Porting Status
+layout: documentation
+---
+
+<p>This page aims at gathering info about the currently supported platforms and porting efforts.</p>
+<div class="page-header">
+  <h1 id="androidwear">Android Wear</h1>
+</div>
+<p>The Android Wear smartwatches are the most widespread and easy to support. The source code of their kernels is usually easily available and the drivers can be supported with libhybris. Those watches are the current priority of AsteroidOS.</p>
+<p><strong>Supported watches:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Brand</th>
+<th>Model</th>
+<th>Codename</th>
+<th>Maintainer</th>
+<th>Display</th>
+<th>Touch</th>
+<th>Audio</th>
+<th>Bluetooth</th>
+<th>Sensors</th>
+<th>Haptics</th>
+<th>USB</th>
+<th>WLAN</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Asus</td>
+<td>ZenWatch</td>
+<td>anthias</td>
+<td>locusf</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>Sluggish UI</td>
+</tr>
+<tr>
+<td>Asus</td>
+<td>ZenWatch 2</td>
+<td>sparrow/wren</td>
+<td>Lrs121/dlandau</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Asus</td>
+<td>ZenWatch 3</td>
+<td>swift</td>
+<td>anYc</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>LG</td>
+<td>G Watch</td>
+<td>dory</td>
+<td>kido</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>Best support</td>
+</tr>
+<tr>
+<td>LG</td>
+<td>G Watch R</td>
+<td>lenok</td>
+<td>atx</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LG</td>
+<td>G Watch Urbane</td>
+<td>bass</td>
+<td>TheAppleMan</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Samsung</td>
+<td>Gear Live</td>
+<td>sprat</td>
+<td>kido/nobody</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Sony</td>
+<td>SmartWatch 3</td>
+<td>tetra</td>
+<td>kido</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Huawei</td>
+<td>Watch</td>
+<td>sturgeon</td>
+<td>bencord0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Just boots</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Possible ports not supported yet:</strong></p>
+<ul>
+<li>Casio Smart Outdoor Watch</li>
+<li>Huawei Watch 2</li>
+<li>LG Watch Urbane 2nd Edition</li>
+<li>Moto 360 (1st generation)</li>
+<li>Nixon Mission</li>
+<li>New Balance RunIQ Watch</li>
+<li>Samsung Gear S</li>
+<li>Tag Heuer Connected</li>
+</ul>
+<p><strong>Impossible ports because of lack of pinouts:</strong></p>
+<ul>
+<li>Fossil Q Founder</li>
+<li>Fossil Q Marshal</li>
+<li>Fossil Q Wander</li>
+<li>LG Watch Sport</li>
+<li>LG Watch Style</li>
+<li>Michael Kors Access</li>
+<li>Moto 360 (2nd generation)</li>
+<li>Moto 360 Sport</li>
+<li>Movado Connect</li>
+<li>Polar M600</li>
+</ul>
+<div class="page-header">
+  <h1 id="tizensw">Tizen Smartwatches</h1>
+</div>
+<p>The Samsung Gear S2, S2 Classic and S3 might be supported by AsteroidOS in the future but they will require more work than the other watches. Someone already got interested in the S2 port but gave up because he couldn’t find the kernel’s defconfig.</p>
+<div class="page-header">
+  <h1 id="othersw">Other Smartwatches</h1>
+</div>
+<p>There are many Android (non-Wear) smartwatches available for a lower price. (e.g: the Omate *, Sony SW, Intex iRist, zWatch etc…) It might be more difficult to get access to the kernel’s or android tree of those devices but libhybris could also make running AsteroidOS on top of them possible.</p>
+<p>Other low-end smartwatches using cheap Mediatek SoCs aren’t able to run a Linux kernel and can’t be supported by AsteroidOS</p>

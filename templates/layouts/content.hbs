@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body{{#slug}} class="{{.}}"{{/slug}}>
+    {{!-- Docs master nav --}}
+    {{> nav-main }}
+
+    {{#is slug 'index'}}
+    {{else}}
+      {{#is slug 'about'}}
+      {{else}}
+        {{> pages-header }}
+      {{/is}}
+    {{/is}}
+
+    {{!-- Content --}}
+    <div class="container docs-container">
+      {{> body }}
+    </div>
+
+    {{!-- Footer --}}
+    {{> footer }}
+
+    {{!-- JavaScript and analytics only. --}}
+    {{> javascripts }}
+  </body>
+</html>

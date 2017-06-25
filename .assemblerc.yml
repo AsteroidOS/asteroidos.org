@@ -1,0 +1,77 @@
+# =============================================
+# ASSEMBLE CONFIG
+# =============================================
+
+# Dest config
+root:             _asteroidos.org
+dest:             <%= site.root %>
+
+# =============================================
+# SOURCE CONFIG
+# =============================================
+
+# Assets > fonts, icons, images etc.
+assets:           assets
+images:           <%= site.assets %>/images
+fonts:            <%= site.assets %>/fonts
+
+# Styles
+styles:           styles
+
+# Scripts
+scripts:          scripts
+
+# Pages
+pages:            pages
+
+# =============================================
+# TEMPLATES
+# =============================================
+
+# Base directory for templates
+templates:        templates
+
+# Partials
+includes:         <%= site.templates %>/includes
+snippets:         <%= site.templates %>/snippets
+
+# Layouts
+layouts:          <%= site.templates %>/layouts
+layoutext:        .hbs
+layout:           content
+
+# =============================================
+# EXTENSIONS
+# =============================================
+
+helpers:          <%= site.templates %>/_helpers
+plugins:
+  # npm
+  - assemble-contrib-permalinks
+
+  # local
+  - <%= site.templates %>/_plugins/navigation.js
+  - <%= site.templates %>/_plugins/holder-404-avoid.js
+
+
+# =============================================
+# SITE METADATA
+# =============================================
+
+# Site metadata
+brand:             asteroidos.org
+title:             AsteroidOS
+lead:              AsteroidOS - An open-source operating system for smartwatches.
+description: >
+  AsteroidOS is an open-source operating system for smartwatches.
+
+# URLs
+homepage:          http://asteroidos.org
+
+# =============================================
+# SEO/SEM
+# =============================================
+
+analytics:
+  google:          false
+  google_site_id:  false

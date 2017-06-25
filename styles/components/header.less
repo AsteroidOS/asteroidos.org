@@ -1,0 +1,84 @@
+//
+// Subhead
+// --------------------------------------------------
+
+.index-header,
+.index-home {
+  color: @navbar-inverse-link-color;
+  background-color: @navbar-inverse-bg;
+  display: flex;
+  min-height: calc(~"100vh - 150px");
+  align-items: center;
+}
+
+/* Page headers */
+.index-header {
+  padding: 30px 15px 50px; /* side padding builds on .container 15px, so 30px */
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,.15);
+}
+.index-header h1 {
+  color: #666;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+.index-header p {
+  font-weight: 300;
+  line-height: 1.5;
+}
+.index-header .container {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .index-header {
+    font-size: 21px;
+  }
+  .index-header h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+.docs-header,
+.docs-home {
+  color: @navbar-inverse-link-color;
+  background-color: @navbar-inverse-bg;
+}
+
+/* Page headers */
+.docs-header {
+  padding: 30px 15px 50px; /* side padding builds on .container 15px, so 30px */
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,.15);
+}
+.docs-header h1 {
+  color: #666;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+.docs-header p {
+  font-weight: 300;
+  line-height: 1.5;
+}
+.docs-header .container {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .docs-header {
+    font-size: 21px;
+    text-align: left;
+  }
+  .docs-header h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .docs-header h1,
+  .docs-header p {
+    margin-right: 380px;
+  }
+}

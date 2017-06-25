@@ -1,0 +1,36 @@
+---
+title: Building AsteroidOS
+layout: documentation
+---
+
+<p>If you decide to compile AsteroidOS from source be aware that it’s a simple process but the first build might take you a lot of time. Report any problem to the <a href="https://github.com/AsteroidOS/asteroid/issues">issues tracker</a>:</p>
+
+<video class="" id="" width="100%" height="100%" controls="" loop="" autoplay=""><source src="https://asteroidos.org/wp-content/uploads/2016/09/asteroid.mp4" type="video/mp4">
+		           <source src="" type="video/mp4">
+				   <source src="" type="video/mp4"></video>
+
+<div class="page-header">
+  <h1 id="downloading">Downloading</h1>
+</div>
+<p>Start by cloning the main repository using the following command:</p>
+<pre><code>git clone https://github.com/AsteroidOS/asteroid.git
+cd asteroid/
+</code></pre>
+<p>This repository only contains a shell script that populates <em>src/</em> with OpenEmbedded and the appropriate layers. Then, it setups the environment for a bitbake build. This command will setup a build for <em>dory</em>, the LG G Watch, but you can also build an image for <em>bass</em>, the LG G Watch Urbane, <em>sparrow</em>, the Asus Zenwatch 2 and <em>tetra the Sony Smartwatch 3.</em></p>
+<pre><code>. ./prepare-build.sh dory    # Be careful that this script must be sourced and not only ran.
+</code></pre>
+<p>Now that the environment is correctly setup, you should be in the build directory. You can now ‘bake’ your asteroid system. Make sure you have the following build dependencies:</p>
+<pre><code>git build-essential diffstat gawk chrpath texinfo
+</code></pre>
+
+<div class="page-header">
+  <h1 id="building">Building</h1>
+</div>
+<p>And then you can run:</p>
+<pre><code>bitbake asteroid-image
+</code></pre>
+
+<div class="page-header">
+  <h1 id="installing">Installing</h1>
+</div>
+<p>After a while, the generated image should be available in <em>build/tmp-glibc/deploy/images/dory/</em>.</p> Install AsteroidOS using your usual device's instructions.

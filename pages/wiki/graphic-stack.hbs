@@ -1,0 +1,12 @@
+---
+title: Graphic Stack
+layout: documentation
+---
+
+<p>The AsteroidOS’s graphic stack is pretty similar to the one present in SailfishOS or WebOS-Ports. This page is a quick summary of what’s involved in showing an app.</p>
+<p>User apps, like asteroid-settings, are small software developed using QML and qml-asteroid. Behind the hood, Qt5 uses the QtWayland “QPA” module API for client windows to show up on screen. A communication is established via the “wayland-egl” protocol with the Wayland compositor. This means that user apps don’t necessarily have to be developed with Qt as long as the library supports the Wayland protocol.</p>
+<p>The Wayland compositor which by default is asteroid-launcher (and could be replaced by GlacierUI for example) is based on Lipstick from the Nemomobile project which allows us to quickly design an interface with QML and qml-asteroid. Behind the hood, two different modules are used: once again QtWayland but this time the compositor API is used which allows us to handle the wayland-egl communication with the client. The QPA module used by asteroid-launcher is qt5-qpa-hwcomposer which uses the libhardware.so glibc binding provided by libhybris in /usr/lib.</p>
+<p>This libhardware.so is only a front-end to the android’s libhardware.so provided in /system/lib/ and imported from an Android Wear installation. The android’s libhardware.so can not be directly used by qt5-qpa-hwcomposer because there is a libc incompatibility, android libraries are linked against bionic instead of glibc so a compatibility layer is needed: that’s the job of libhybris. Finally this bionic libhardware.so load some proprietary binary blobs which are able to communicate with the GPU and to show something on-screen.</p>
+<p>Libhybris is used to re-use Android drivers from AsteroidOS, SailfishOS, NemoMobile, WebOS-Ports or Ubuntu Touch. It’s clearly a hack and not a perfect solution as it relies on some proprietary binary blobs but it’s often the only way to get reliable hardware acceleration on Android devices and it works really well. It’s worth noticing that Ubuntu Touch uses Mir instead of Wayland which is used by all the other projects, including AsteroidOS.</p>
+<img src="{{assets}}/img/graphic-stack.jpg" style="width:100%"/>
+</div>
