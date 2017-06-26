@@ -73,5 +73,4 @@ homepage:          http://asteroidos.org
 # =============================================
 
 analytics:
-  google:          false
-  google_site_id:  false
+  google_site_id:  UA-69428821-1
