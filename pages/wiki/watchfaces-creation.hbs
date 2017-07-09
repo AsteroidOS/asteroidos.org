@@ -31,8 +31,8 @@ layout: documentation
   <h1 id="testingwfwatch">Testing on the watch</h1>
 </div>
 <div>
-<p>Make sure to replace all instances of <code>new Date()</code> with <code>wallClock.time</code> and remove the background <code>Image</code> statement. Then, simply push it to the watch: <code>adb push xxx-my-watchface.qml /usr/share/asteroid-launcher/watchfaces/</code>. You can then go to watchfaces in the AsteroidOS settings. If you also pushed an <code>xxx-my-watchface.jpg</code> file, this will be used as preview. Otherwise, you will have to tap a white square to activate it.</p>
+<p>Make sure to replace all instances of <code>new Date()</code> with <code>wallClock.time</code> and remove the background <code>Image</code> statement. Then, simply push it to the watch: <code>scp xxx-my-watchface.qml root@192.168.2.15:/usr/share/asteroid-launcher/watchfaces/</code>. You can then go to watchfaces in the AsteroidOS settings. If you also pushed an <code>xxx-my-watchface.jpg</code> file, this will be used as preview. Otherwise, you will have to tap a white square to activate it.</p>
 </div>
 <div>
-<p>If you want to update the watchface, you have to push the new version to the device. Do note that AsteroidOS may cache the watchface. The easiest way to fix this is to “restart” the device by running the following command: <code>adb shell systemctl restart user@1000</code>.</p>
+<p>If you want to update the watchface, you have to push the new version to the device. Do note that AsteroidOS may cache the watchface. The easiest way to fix this is to “restart” the device by running the following command: <code>ssh -t root@192.168.2.15 "systemctl restart user@1000"</code>.</p>
 </div>
