@@ -51,8 +51,17 @@
       background-color: @navbar-inverse-border;
       border-color: @navbar-inverse-border;
     }
-  }
-  
+  } 
 }
 
+.wf-loading {
+    .navbar-nav > li > a,
+    .navbar-nav > li > span {
+      opacity: 0;
+  }
+}
 
+.ie.wf-loading .navbar-nav > li > a,
+.ie.wf-loading .navbar-nav > li > span {
+  visibility: hidden;
+}
