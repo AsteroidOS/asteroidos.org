@@ -37,17 +37,24 @@
            Go back to the settings menu and then to the Developer options page. Finally, enable ADB Debugging.
           <li>Enter the following commands in a terminal with your watch connected:</li>
           <pre><code class="bash">adb reboot bootloader<br>fastboot oem unlock</code></pre>
-          <li>Follow the instructions on your watch's screen</li>
+          <li>Follow the instructions on your watch's screen. Please note it may void your warranty.</li>
         </ol> 
       <br><br><b>3. Flash and boot AsteroidOS</b><br>
-        You can now decide if you want to replace Android Wear definitively or try AsteroidOS as a "dual-boot".
+        
+
+        <div class="callout callout-warning">
+          <h4>Choose your installation type</h4>
+          <p>You can now decide if you want to replace Android Wear definitively or try AsteroidOS as a <i>dual-boot</i>. The "real installation" provides the best experience but it is advised to make a backup of your data first. The "temporary installation" is a good way to try AsteroidOS if you don't plan to use it daily.</p>
+        </div>
+
         <ol>
-          <li>Real installation</li>
+          <b><li>Real installation</li></b>
           While in bootloader mode, flash the userdata and boot partitions with:
           <pre><code class="bash">fastboot flash userdata /home/user/Downloads/asteroid-image-{{deviceName}}.ext4
 fastboot flash boot /home/user/Downloads/zImage-dtb-{{deviceName}}.fastboot
 fastboot continue</code></pre>
-          <li>Tempoarary installation</li>
+
+          <b><li>Temporary installation</li></b>
           Reboot to Android Wear, re-enable developer mode and adb debugging and push AsteroidOS to the internal sdcard with:
           <pre><code class="bash">adb push -p /home/user/Downloads/asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
 
