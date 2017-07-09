@@ -3,27 +3,13 @@ title: SSH
 layout: documentation
 ---
 
-<p>By default, you can get a remote shell on you smartwatch with the Android Debug Bridge tool and the “adb shell” command. However this shell suffers from a many limitations and you might prefer to get a standard SSH connection. To do so you need to setup a TCP connection with your watch. The procedure is different if you want to do it over USB or Wi-Fi (if your watch supports Wi-Fi)</p>
+<p>By default, you can get a remote shell on you smartwatch with SSH over RNDIS. On some smartwatches, it is also possible to use SSH with Wi-Fi.</p>
 <div class="page-header">
   <h1 id="sshoverusb">SSH over USB</h1>
 </div>
-<p>To use SSH over USB’s gadget mode you need to tell Connman to setup a manual IP for your watch. First of all, you need to get your usb’s UID thanks to the “get-services” tool which is available in the “connman-tests” package under /usr/lib/connman/test/. The first line of this command’s output should contain something like “gadget_<em>UID</em>_usb”, note this UID and replace it when needed in the commands below.</p>
-<p>Create a /var/lib/connman/gadget_<em>UID</em>_usb/ directory and in that directory create a “settings” file containing:</p>
-<pre><code>[gadget_*UID*_usb]
-Favorite=true
-IPv4.method=manual
-IPv4.netmask_prefixlen=24
-IPv4.local_address=192.168.0.133
-IPv4.gateway=192.168.0.1
-AutoConnect=true
-Name=Wired
-IPv6.method=off
-IPv6.privacy=disabled
-</code></pre>
-<p>Now from your computer, setup your usb interface with the 192.168.0.1 IP and then you’ll be able to connect to your watch with:</p>
+<p>By default, USB Moded set up udhcpd so that your watch gets the 192.168.2.15 IP address on its rndis interface. You can then connect to your watch from your computer with the following command:</p>
 <pre><code>ssh ceres@192.168.0.133
 </code></pre>
-<p>/!\ This UID and the gadget’s mac address both seem to be re-generated at every boot so this config isn’t persistent. We should try to find a solution.</p>
 <div class="page-header">
   <h1 id="sshoverwifi">SSH over Wi-Fi</h1>
 </div>
