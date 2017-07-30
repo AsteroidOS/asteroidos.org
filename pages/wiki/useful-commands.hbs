@@ -1,0 +1,69 @@
+---
+title: Useful commands
+layout: documentation
+---
+
+<p>AsteroidOS comes with several command line tools that are very handy to control a watch from SSH or a script. This page tries to document the basic features of those commands, don't hesitate to use their --help options if you want to learn more.</p>
+
+<div class="page-header">
+  <h1 id="notifications">Notifications</h1>
+</div>
+<p>AsteroidOS complies to the <a href="https://people.gnome.org/~mccann/docs/notification-spec/notification-spec-latest.html">freedesktop.org notifications specification</a>, which means you can use standard Linux desktop tools such as libnotify to show notifications in asteroid-launcher. However, lipstick already comes with a useful command named <code>notificationtool</code> that allows to create/update/close/list notifications from the CLI.</p>
+
+<pre><code>notificationtool -o add \
+        --icon=ios-happy \
+        --application="Super App" \
+        --urgency=3 \
+        --hint="x-nemo-preview-body Incredible preview title" \
+        --hint="x-nemo-preview-body Exceptional preview content" \
+        --hint="x-nemo-feedback information_strong" \
+        "Great Title" \
+        "Amazing content"
+# Creates a new notification with various parameters
+</code></pre>
+
+<div class="page-header">
+  <h1 id="screenshots">Screenshots</h1>
+</div>
+<p>The AsteroidOS Wayland compositor is named asteroid-launcher, it is based on lipstick which offers a DBus API to take screenshots. This DBus interface can be used from the command line with dbus-send but a tool named screenshottool makes the usage of this command easier.</p>
+
+<pre><code>screenshottool /home/ceres/screenshot.jpg 3 # Saves a screenshot in $HOME after 3 seconds</pre></code>
+
+<div class="page-header">
+  <h1 id="alarms">Alarms</h1>
+</div>
+<p>Managing the time is very important on a smartwatch. Systemd provides basic timer capabilities but the timed daemon goes further and is much more capable. This daemon also comes with a tool named <code>timedclient-qt5</code> that can help you run commands on special events.</p>
+
+<pre><code>timedclient-qt5 -a'whenDue;runCommand=/home/ceres/test.sh@ceres' \
+        -r'hour=12;minute=15;everyDayOfWeek;everyDayOfMonth;everyMonth' \
+        -e'APPLICATION=Test;TITLE=Test'
+# Executes the /home/ceres/test.sh script every day at 12:15</pre></code>
+
+<div class="page-header">
+  <h1 id="usb">USB</h1>
+</div>
+<p>In AsteroidOS, the USB mode is handled by a daemon named usb_moded. This daemon offers a DBus interface that is exposed to the GUI by asteroid-launcher and asteroid-settings. However, usb_moded also comes with a command named <code>usb_moded_util</code> to control this DBus interface from the command line.</p>
+
+<pre><code>usb_moded_util -m # Returns a list of supported modes
+usb_moded_util -q # Shows the currently used USB mode
+usb_moded_util -s adb_mode # Set USB to the ADB mode</code></pre>
+
+<div class="page-header">
+  <h1 id="screen">Screen</h1>
+</div>
+<p>A daemon named MCE is in charge of handling various screen related behaviors. For example, MCE handles the device locking, the tap to unlock, the current brightness, fading and dimming and others.... It can be controlled thanks to a CLI tool named <code>mcetool</code></p>
+
+<pre><code>mcetool # Displays the current state of various variables
+mcetool -D on # Enables "demo mode": screen stays on
+mcetool -M disabled # Disables the tap to unlock functionality
+</pre></code>
+
+<div class="page-header">
+  <h1 id="restart">Restart</h1>
+</div>
+<p>Systemd is the init system used by AsteroidOS. It is controlled by a command named <code>systemctl</code>. This command can be used to restart the user session or the entire system into different mode.</p>
+
+<pre><code>systemctl restart user@1000 # Restarts the ceres session (including the entier UI)
+reboot # Simply reboot your watch
+systemctl --force reboot bootloader # Restarts the watch in bootloader mode
+systemctl --force reboot recovery # Restarts the watch in recovery mode</pre></code>
