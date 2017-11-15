@@ -34,7 +34,7 @@ layout: documentation
 <pre><code># . /machine.conf
 # mkdir /sdcard /rfs
 # mount /dev/$sdcard_partition /sdcard
-# mount -o loop /sdcard/media/0/linux/rootfs.ext2 /rfs
+# mount -o loop /sdcard/media/0/asteroidos.ext4 /rfs
 </code></pre>
 <p>You can then disable the <code>/var/volatile</code> tmpfs mount and enable systemd journal logging (/var/log is a symlink to /var/volatile/log):</p>
 <pre><code># sed -i '/volatile/d' /rfs/etc/fstab
