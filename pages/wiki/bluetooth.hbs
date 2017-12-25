@@ -19,7 +19,7 @@ layout: documentation
 </div>
 <p>In order to use BT PAN on AsteroidOS, you first need to modify the default image. Start by adding the following packages to the <i>IMAGE_INSTALL</i> variable of <i>asteroid/src/meta-asteroid/classes/asteroid-image.bbclass</i>:</p>
 <pre><code>bluez5-testtools bluez5-noinst-tools python-dbus connman-client</code></pre>
-<p>You also need to modify the bluez5’s main configuration in <i>asteroid/src/src/meta-asteroid/recipes-connectivity/bluez5/bluez5/main.conf</i> to</p>
+<p>You also need to modify the bluez5’s main configuration in <i>asteroid/src/meta-asteroid/recipes-connectivity/bluez5/bluez5/main.conf</i> to</p>
 <pre><code>[General]
 #ControllerMode = le
 DiscoverableTimeout = 180</code></pre>
