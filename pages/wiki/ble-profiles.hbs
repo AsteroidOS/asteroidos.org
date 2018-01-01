@@ -7,6 +7,11 @@ layout: documentation
 
 <p><a href="https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt#services-and-characteristics">Basic knowledge of BLE</a> is useful to understand this page. In this page, the <i>server parts</i> refer to the side of the protocol implemented by <a href="https://github.com/AsteroidOS/asteroid-btsyncd">asteroid-btsyncd</a> on the watch. The <i>client parts</i> refer to what's implemented by external apps such as <a href="https://github.com/AsteroidOS/AsteroidOSSync/">AsteroidOSSync</a>.</p>
 
+<div class="page-header">
+  <h1 id="advertisement">Advertisement</h1>
+</div>
+
+<p>Clients can distinguish an AsteroidOS watch from another BLE device by diving into advertisement payloads. AsteroidOS advertises the following service UUID: <b>00000000-0000-0000-0000-00a57e401d05</b>. This information can be filtered when scanning surrounding devices.</p>
 
 <div class="page-header">
   <h1 id="batteryprofile">Battery Profile</h1>
