@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body{{#slug}} class="{{.}}"{{/slug}}>
+    {{!-- Docs master nav --}}
+    {{> nav-main }}
+
+    {{> install-header }}
+
+    {{!-- Content --}}
+    <div class="container docs-container">
+      <h1>Hardware Support</h1>
+      <p>Before installing AsteroidOS to your watch, make sure you are aware of the capabilities and limitations of AsteroidOS on the {{title}}. The following table should summarize the current support of this watch:</p>
+      {{> body }}
+      <h1>Preparation</h1>
+      <div class="install-preparation-box">
+          <img src="{{assets}}/img/{{deviceName}}.jpg" class="install-preparation-img"><br>
+      </div>
+      <div class="install-preparation-box">
+        <h3>Download a nightly build</h3>
+        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/asteroid-image-{{deviceName}}.ext4" role="button">asteroid-image-{{deviceName}}.ext4</a>
+        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/zImage-dtb-{{deviceName}}.fastboot" role="button">zImage-dtb-{{deviceName}}.fastboot</a>
+        <h3>Install Fastboot & Adb</h3>
+        <pre><code class="bash">sudo apt install android-tools-adb android-tools-fastboot android-tools-fsutils</code></pre>
+        <p><i>Note: previous command may differ depending on your OS</i></p>
+      </div>
+
+      <h1>Instructions</h1>
+      <b>1. Download</b> the installation files and tools above
+      <br><br><b>2. Unlock</b> your bootloader
+        <ol>
+          <li>Installing AsteroidOS requires an unlocked bootloader and entering the bootloader requires ADB in Android Wear. Enable ADB with the following steps:</li>
+          <img src="{{assets}}/img/install-1.jpg" class="install-centered-img"/>
+           Open the settings app, go to the About page and tap the Build number 7 times until Developer options become enabled.
+           
+          <img src="{{assets}}/img/install-2.jpg" class="install-centered-img"/>
+           Go back to the settings menu and then to the Developer options page. Finally, enable ADB Debugging.
+          <li>Enter the following commands in a terminal with your watch connected:</li>
+          <pre><code class="bash">adb reboot bootloader<br>fastboot oem unlock</code></pre>
+          <li>Follow the instructions on your watch's screen. Please note it may void your warranty.</li>
+        </ol> 
+      <br><br><b>3. Flash and boot AsteroidOS</b><br>
+        
+
+        <div class="callout callout-warning">
+          <h4>Choose your installation type</h4>
+          <p>You can now decide if you want to replace Android Wear definitively or try AsteroidOS as a <i>dual-boot</i>. The "real installation" provides the best experience but it is advised to make a backup of your data first. The "temporary installation" is a good way to try AsteroidOS if you don't plan to use it daily.</p>
+        </div>
+
+        <ol>
+          <b><li>Real installation</li></b>
+          While in bootloader mode, flash the userdata and boot partitions with:
+          <pre><code class="bash">ext2simg /home/user/Downloads/asteroid-image-{{deviceName}}.ext4 /home/user/Downloads/asteroid-image-{{deviceName}}.ext4.simg
+fastboot flash userdata /home/user/Downloads/asteroid-image-{{deviceName}}.ext4.simg
+fastboot flash boot /home/user/Downloads/zImage-dtb-{{deviceName}}.fastboot
+fastboot continue</code></pre>
+
+          <b><li>Temporary installation</li></b>
+          Reboot to Android Wear, re-enable developer mode and adb debugging and push AsteroidOS to the internal sdcard with:
+          <pre><code class="bash">adb push -p /home/user/Downloads/asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+
+          Everytime you want to reboot AsteroidOS from Android Wear, run:
+          <pre><code>adb reboot bootloader
+fastboot boot /home/user/Downloads/zImage-dtb-{{deviceName}}.fastboot</code></pre>
+          </ol>
+        
+      <br><br><b>4. Enjoy your new OS!</b>
+    </div>
+
+    {{!-- Footer --}}
+    {{> footer }}
+
+    {{!-- JavaScript and analytics only. --}}
+    {{> javascripts }}
+  </body>
+</html>
