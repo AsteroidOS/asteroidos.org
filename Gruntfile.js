@@ -27,7 +27,7 @@ module.exports = function(grunt) {
     assemble: {
       options: {
         flatten: true,
-        production: false,
+        production: true,
         assets: '<%= site.dest %>/public',
 
         // Metadata
@@ -54,31 +54,27 @@ module.exports = function(grunt) {
 
           // highlight.js options
           prefix: 'lang-'
-        }
+        },
+
+        collections: [{
+          name: 'post',
+          sortby: 'posted',
+          sortorder: 'descending'
+        }]
       },
       site: {
-        options: {
-          permalinks: {preset: 'pretty'},
-          partials: ['pages/**/*.md']
-        },
-        src: '<%= site.pages %>/*.hbs',
-        dest: '<%= site.dest %>/'
-      },
-      wiki: {
-        options: {
-          permalinks: {preset: 'pretty'},
-          partials: ['pages/**/*.md']
-        },
-        src: '<%= site.pages %>/wiki/*.hbs',
-        dest: '<%= site.dest %>/wiki/'
-      },
-      install: {
-        options: {
-          permalinks: {preset: 'pretty'},
-          partials: ['pages/**/*.md']
-        },
-        src: '<%= site.pages %>/install/*.hbs',
-        dest: '<%= site.dest %>/install/'
+        options: { permalinks: {preset: 'pretty'} },
+        files: [{
+          cwd: '<%= site.pages %>/',
+          dest: '<%= site.dest %>/',
+          expand: true,
+          src: ['**/*.hbs', '!main/**/*.hbs']
+        }, {
+          cwd: '<%= site.pages %>/main/',
+          dest: '<%= site.dest %>/',
+          expand: true,
+          src: '**/*.hbs'
+        }]
       }
     },
 
@@ -155,14 +151,6 @@ module.exports = function(grunt) {
         files: ['<%= site.pages %>/**/*.hbs'],
         tasks: ['assemble:site']
       },
-      wiki: {
-        files: ['<%= site.pages %>/**/**/*.hbs'],
-        tasks: ['assemble:wiki']
-      },
-      install: {
-        files: ['<%= site.pages %>/**/**/*.hbs'],
-        tasks: ['assemble:install']
-      },
       templates: {
         files: ['<%= site.templates %>/**/*.hbs'],
         tasks: ['assemble:site']
@@ -191,8 +179,6 @@ module.exports = function(grunt) {
     'copy',
     'less:site',
     'assemble:site',
-    'assemble:wiki',
-    'assemble:install',
     'connect',
     'watch'
   ]);
@@ -202,8 +188,6 @@ module.exports = function(grunt) {
     'jshint',
     'copy',
     'less:site',
-    'assemble:site',
-    'assemble:wiki',
-    'assemble:install'
+    'assemble:site'
   ]);
 };
