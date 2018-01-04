@@ -51,14 +51,5 @@
     "strip-indent": "^1.0.0",
     "template": "^0.2.1",
     "verbalize": "^0.1.2"
-  },
-  "keywords": [
-    "handlebars-helper-datetime",
-    "handlebars-helper-feed",
-    "handlebars-helper-slugify",
-    "less css",
-    "less",
-    "less.js",
-    "lesscss"
-  ]
+  }
 }
