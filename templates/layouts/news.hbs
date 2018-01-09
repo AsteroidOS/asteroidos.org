@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body{{#slug}} class="{{.}}"{{/slug}}>
+    {{!-- Docs master nav --}}
+    {{> nav-main }}
+
+    {{> news-header }}
+
+    {{!-- Content --}}
+    <div class="container docs-container news-content">
+      <div class="news-banner">
+        <img src="/public/img/news-thumbnails/{{ thumbnails }}.jpg" width="100%" />
+        <br><br><br>
+      </div>
+      
+      {{> body }}
+
+      <hr>
+      <div style="float: right; color: #888">Written by {{ author }} on the {{formatDate posted "%d/%m/%Y"}}</div>
+    </div>
+
+    {{!-- Footer --}}
+    {{> footer }}
+
+    {{!-- JavaScript and analytics only. --}}
+    {{> javascripts }}
+  </body>
+</html>

@@ -130,7 +130,18 @@ h6, .h6 { font-size: @font-size-h6; }
   border-bottom: 1px solid @page-header-border-color;
 }
 
+// News Title
+// -------------------------
 
+.news-title {
+  padding-bottom: ((@line-height-computed / 2) - 1);
+  margin: (@line-height-computed * 2) 0 @line-height-computed;
+  border-bottom: 1px solid @page-header-border-color;
+  color: darken(@brand-primary, 20%);
+  &:hover {
+    color: darken(@brand-primary, 30%);
+  }
+}
 
 // Lists
 // --------------------------------------------------

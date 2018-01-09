@@ -22,6 +22,15 @@
           <a href="{{rel 'about'}}/">About</a>
         </li>
         {{/is}}
+        {{#is slug 'news'}}
+        <li class="active">
+          <span>News</span>
+        </li>
+        {{else}}
+        <li>
+          <a href="{{rel 'news'}}/">News</a>
+        </li>
+        {{/is}}
         {{#is slug 'install'}}
         <li class="active">
           <span>Install</span>

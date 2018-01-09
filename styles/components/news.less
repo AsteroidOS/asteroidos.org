@@ -1,0 +1,83 @@
+//
+// News preview on the Newspage
+// --------------------------------------------------
+
+.news-row {
+  display: table;
+
+  background: #fff;
+  background-color: #fff;
+
+  border: none;
+  border-radius: 4px;
+
+  .box-shadow(0 2px 4px rgba(0,0,0,.2));
+
+  padding: 0 30px 0 0;
+  margin-bottom: 40px;
+}
+
+.news-text {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 40px;
+  min-width: 100%;
+}
+
+.news-text p {
+  margin: 0 0 50px;
+}
+
+.news-text a:hover, a:visited, a:link, a:active
+{
+  text-decoration: none;
+}
+
+.news-date {
+  float: right;
+  position: relative;
+  top: -30px;
+}
+
+.news-img {
+  text-align: center;
+  vertical-align: middle;
+  margin: 20px 0;
+  float: right;
+
+  @media (max-width: @screen-md) {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+.news-content {
+  background: #fff;
+  background-color: #fff;
+  padding: 60px;
+
+  border: none;
+  border-radius: 4px;
+
+  .box-shadow(0 2px 4px rgba(0,0,0,.2));
+}
+
+.news-content p {
+    text-indent: 40px;
+}
+
+@media (max-width: 767px) {
+  .news-content {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .news-banner {
+    visibility: hidden;
+    height: 0px;
+  }
+}
+
+
