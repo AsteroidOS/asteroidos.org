@@ -10,6 +10,9 @@ layout: documentation
 <p>By default, USB Moded set up udhcpd so that your watch gets the 192.168.2.15 IP address on its rndis interface. You can then connect to your watch from your computer with the following command:</p>
 <pre><code>ssh ceres@192.168.2.15
 </code></pre>
+<p>If your computer does not automatically get an IP address for its rndis interface, you might need to run this first:</p>
+<pre><code>sudo dhclient -v enp0s20f0u8
+</code></pre>
 <div class="page-header">
   <h1 id="sshoverwifi">SSH over Wi-Fi</h1>
 </div>
