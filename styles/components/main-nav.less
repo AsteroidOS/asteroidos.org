@@ -15,7 +15,10 @@
 
   // increase specificity to override Bootstrap styles
   .container .navbar-brand {
-    margin: 27px 0 0;
+    margin: 12px 0 0;
+    @media (min-width: @grid-float-breakpoint) {
+      margin: 27px 0 0;
+    }
     padding: 0;
 
     // to resize image, only the width and margin of
