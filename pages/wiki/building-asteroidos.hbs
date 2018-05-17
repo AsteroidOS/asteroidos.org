@@ -10,16 +10,17 @@ layout: documentation
 <div class="page-header">
   <h1 id="downloading">Downloading</h1>
 </div>
-<p>Start by cloning the main repository using the following command:</p>
+<p>Start by installing the prerequisites:</p>
+<pre><code>git build-essential cpio diffstat gawk chrpath texinfo python2.7 </code></pre>
+
+<p>Clone the main repository using the following command:</p>
 <pre><code>git clone https://github.com/AsteroidOS/asteroid.git
 cd asteroid/
 </code></pre>
 <p>This repository only contains a shell script that populates <em>src/</em> with OpenEmbedded and the appropriate Asteroid layers. Then, it setups the environment for a bitbake build. The following command will setup a build for <em>dory</em> (the LG G Watch) but you can also build an image for other watches by using the corresponding codename.</em></p>
 <pre><code>. ./prepare-build.sh dory # Be careful that this script must be sourced and not only ran
 </code></pre>
-<p>If the environment has been correctly setup, you should now be in the <i>build</i> subdirectory. Make sure you have the following build dependencies before starting a build:</p>
-<pre><code>git build-essential cpio diffstat gawk chrpath texinfo</code></pre>
-
+<p>If the environment has been correctly setup, you should now be in the <i>build</i> subdirectory.</p>
 <div class="page-header">
   <h1 id="building">Building</h1>
 </div>
