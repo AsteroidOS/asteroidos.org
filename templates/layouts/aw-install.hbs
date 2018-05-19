@@ -16,56 +16,82 @@
       {{> body }}
       <h1>Preparation</h1>
       <div class="install-preparation-box">
-          <img src="{{assets}}/img/{{deviceName}}.jpg" class="install-preparation-img"><br>
-      </div>
-      <div class="install-preparation-box">
         <h3>Download AsteroidOS 1.0</h3>
+        Store the files in your "Downloads" folder so the later commands work<br><br>
         <a class="btn btn-primary" href="https://release.asteroidos.org/1.0/{{deviceName}}/asteroid-image-{{deviceName}}.ext4" role="button">asteroid-image-{{deviceName}}.ext4</a>
         <a class="btn btn-primary" href="https://release.asteroidos.org/1.0/{{deviceName}}/zImage-dtb-{{deviceName}}.fastboot" role="button">zImage-dtb-{{deviceName}}.fastboot</a>
-        <h3>Install Fastboot & Adb</h3>
+        <br><br><img src="{{assets}}/img/{{deviceName}}.jpg" class="install-preparation-img"><br>
+      </div>
+      <div class="install-preparation-box">
+        <h3>Install ADB & Fastboot</h3>
+        <b>On Linux systems</b> with apt package manager
+        <br><br>
         <pre><code class="bash">sudo apt install android-tools-adb android-tools-fastboot</code></pre>
-        <p><i>Note: previous command may differ depending on your OS</i></p>
+        <br>
+        <b>On Windows systems</b> install this ADB driver <a href="https://adb.clockworkmod.com/">from clockworkmod</a>
+        <br><br>
+        <a class="btn btn-primary" href="http://download.clockworkmod.com/test/UniversalAdbDriverSetup.msi" role="button">UniversalAdbDriverSetup.msi</a>
+        <br><br>
+        Download this zip file containing ADB & Fastboot from Android SDK
+        <br><br>
+        <a class="btn btn-primary" href="https://release.asteroidos.org/tools/adb_1_0_39+fastboot+ext2simg.zip" role="button">adb-1_0_39+fastboot+ext2simg.zip</a>
+        <br><br>
+        Extract the content to a folder of your liking.<br>
+        Navigate to that folder using Windows commandline (cmd.exe).
+        <br><br>
       </div>
 
       <h1>Instructions</h1>
-      <b>1. Download</b> the installation files and tools above
-      <br><br><b>2. Unlock</b> your bootloader
-        <ol>
-          <li>Installing AsteroidOS requires an unlocked bootloader and entering the bootloader requires ADB in Android Wear. Enable ADB with the following steps:</li>
+      <h3>1. Unlock your bootloader</h3>
+      Installing AsteroidOS requires an unlocked bootloader and entering the bootloader requires ADB in Wear OS.
+      <br>Enable ADB on your watch with the following steps:
+        <ol>         
           <img src="{{assets}}/img/install-1.jpg" class="install-centered-img"/>
-           Open the settings app, go to the About page and tap the Build number 7 times until Developer options become enabled.
-           
-          <img src="{{assets}}/img/install-2.jpg" class="install-centered-img"/>
-           Go back to the settings menu and then to the Developer options page. Finally, enable ADB Debugging.
-          <li>Enter the following commands in a terminal with your watch connected:</li>
-          <pre><code class="bash">adb reboot bootloader<br>fastboot oem unlock</code></pre>
-          <li>Follow the instructions on your watch's screen. Please note it may void your warranty.</li>
-        </ol> 
-      <br><br><b>3. Flash and boot AsteroidOS</b><br>
-        
+          <li>Open the settings app and go to the "About" page.</li>
+          <li>Tap the Build number 7 times until Developer options become enabled.</li>
 
+          <img src="{{assets}}/img/install-2.jpg" class="install-centered-img"/>
+          <li>Go back to the settings menu and then to the "Developer options" page.</li>
+          <li>Enable ADB debugging.</li>
+        </ol>
+      <br><b>Finally, to unlock the bootloader</b> enter the following commands in a terminal with your watch connected:</li>
+      <br><pre><code class="bash">adb reboot bootloader<br>fastboot oem unlock</code></pre>
+      Follow the instructions on your watch's screen. <b>Please note it may void your warranty.</b>
+      <br><br>
+      <h3>2. Flash and boot AsteroidOS</h3>
         <div class="callout callout-warning">
           <h4>Choose your installation type</h4>
-          <p>You can now decide if you want to replace Android Wear definitively or try AsteroidOS as a <i>dual-boot</i>. The "real installation" provides the best experience but it is advised to make a backup of your data first. The "temporary installation" is a good way to try AsteroidOS if you don't plan to use it daily.</p>
+          <p>You can now decide if you want to replace Wear OS definitively or try AsteroidOS as a <i>dual-boot</i>. The "real installation" provides the best experience but it is advised to make a backup of your data first. The "temporary installation" is a good way to try AsteroidOS if you don't plan to use it daily.</p>
         </div>
 
         <ol>
-          <b><li>Real installation</li></b>
-          While in bootloader mode, flash the userdata and boot partitions with:
-          <pre><code class="bash">fastboot flash userdata /home/user/Downloads/asteroid-image-{{deviceName}}.ext4
-fastboot flash boot /home/user/Downloads/zImage-dtb-{{deviceName}}.fastboot
+          <b><li type="a">Real installation</li></b>
+          While your watch is in bootloader mode, flash the userdata and boot partitions using Linux:
+          <pre><code class="bash">fastboot flash userdata ~/Downloads/asteroid-image-{{deviceName}}.ext4
+fastboot flash boot ~/Downloads/zImage-dtb-{{deviceName}}.fastboot
 fastboot continue</code></pre>
 
-          <b><li>Temporary installation</li></b>
-          Reboot to Android Wear, re-enable developer mode and adb debugging and push AsteroidOS to the internal sdcard with:
-          <pre><code class="bash">adb push -p /home/user/Downloads/asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+          or using Windows:
+          <pre><code class="bash">fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4
+fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot
+fastboot continue</code></pre>
 
-          Everytime you want to reboot AsteroidOS from Android Wear, run:
-          <pre><code>adb reboot bootloader
-fastboot boot /home/user/Downloads/zImage-dtb-{{deviceName}}.fastboot</code></pre>
+          <b><li type="a">Temporary installation</li></b>
+          Reboot to Wear OS, re-enable developer mode and ADB debugging.
+          <br>Push AsteroidOS to the internal sdcard using Linux:
+          <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+
+          or using Windows:
+          <pre><code class="bash">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+
+          Everytime you want to reboot AsteroidOS from Wear OS, run:
+          <pre><code>adb reboot bootloader</code></pre>
+          Then, if you are using Linux:
+          <pre><code>fastboot boot ~/Downloads/zImage-dtb-{{deviceName}}.fastboot</code></pre>
+          or on Windows:
+          <pre><code>fastboot boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot</code></pre>
           </ol>
-        
-        <br><br><b>4. Enjoy your new OS!</b><br><br><br>
+        <br><h3>3. Enjoy your new OS!</h3><br><br><br>
     </div>
 
     {{!-- Footer --}}
