@@ -101,7 +101,7 @@ module.exports = function navigationPlugin(params, callback) {
 
     var anchorTemplate = [
         '<span class="anchor-target" id="<%= id %>"></span>',
-        '<a href="#<%= id %>" name="<%= id %>" class="anchor icon ion-link"></a>',
+        '<a href="#<%= id %>" name="<%= id %>" class="anchor icon ion-md-link"></a>',
     ].join('\n');
 
 
