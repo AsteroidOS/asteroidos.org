@@ -93,7 +93,21 @@ fastboot continue</code></pre>
           or on Windows:
           <pre><code>fastboot boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot</code></pre>
           </ol>
-        <br><h3>3. Enjoy your new OS!</h3><br><br><br>
+        <br><h3>3. Enjoy your new OS!</h3><br><br>
+        <h1>Troubleshooting & FAQ</h1><br>
+        <ul>
+          <li><b>Fastboot displays "invalid sparse file format at header magic" message when start flashing</b>
+          <br>This is not a fatal error but expected behaviour. Keep calm and wait for the ~5 minute flash process to finish. Fastboot simply informed you that the partitions it is now flashing where not downloaded in a "sparse" format.</li>
+          <br>
+          <li><b>Flash fails with fastboot crashing or hanging at "invalid sparse file format at header magi" (missing the "c" in magic)</b>
+          <br>This error often but strictly happend in our testing when using an old fastboot (& ADB below 1.0.39) on Windows systems. If you already had fastboot installed and skipped downloading our <a href="https://release.asteroidos.org/tools/adb_1_0_39+fastboot+ext2simg.zip">supplied zip file</a>, please do so now.<br>
+          Either overwrite your current ADB & fastboot by extracting the zip into its folder. Or extract to a new folder instead (e.g. automatically to ...\adb_1_0_39+fastboot+ext2simg\) and change directory to that new folder.</li>
+          <br>
+          <li><b>Flash fails or stops during the ~5 minutes process</b>
+          <br>Smartwatches are prown to loose proper connection to their cradle over time due to sweat corroding the watch pins. Especially on dory (LG G Watch) this is a regular problem.<br>
+          Cleaning the pins with alcohol or even carefully sanding them (e.g. with a nailfile) can provide a reliable connection again.</li>
+          <br>
+        </ul><br><br>
     </div>
 
     {{!-- Footer --}}
