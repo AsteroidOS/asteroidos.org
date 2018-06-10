@@ -26,7 +26,7 @@
         <h3>Install ADB & Fastboot</h3>
         <b>On Linux systems</b> with apt package manager
         <br><br>
-        <pre><code class="bash">sudo apt install android-tools-adb android-tools-fastboot</code></pre>
+        <pre><code class="bash">sudo apt install android-tools-adb android-tools-fastboot{{#if useSimg}} android-tools-fsutil{{/if}}</code></pre>
         <br>
         <b>On Windows systems</b> install this ADB driver <a href="https://adb.clockworkmod.com/">from clockworkmod</a>
         <br><br>
@@ -47,31 +47,31 @@
 
       <ol>
         {{#is enterFastbootVia 'swipe'}}
-          <li type="a">Turn your watch off.</li>
-          <li type="a">Turn your watch on.</li>
-          <li type="a">As soon as the {{manufacturer}} logo appears swipe from the top left to the bottom right of the screen.</li>
+          <li>Turn your watch off.</li>
+          <li>Turn your watch on.</li>
+          <li>As soon as the {{manufacturer}} logo appears swipe from the top left to the bottom right of the screen.</li>
         {{else}} {{#is enterFastbootVia 'holdUntilLogo'}}
           {{!-- Currently the only watch which uses this is the Sony Smartwatch 3 --}}
-          <li type="a">Turn your watch off.</li>
-          <li type="a">Press and hold the power button until your watch says "Insert USB"</li>
-          <li type="a">Double press the button to get into the boot options</li>
-          <li type="a">Double press to select fastboot</li>
+          <li>Turn your watch off.</li>
+          <li>Press and hold the power button until your watch says "Insert USB"</li>
+          <li>Double press the button to get into the boot options</li>
+          <li>Double press to select fastboot</li>
         {{else}} {{#is enterFastbootVia 'pressUpperAndMiddle'}}
           {{!-- Currently the only watch which uses this is the ZenWatch 3 --}}
-          <li type="a">Turn your watch off.</li>
-          <li type="a">Turn your watch on by pressing the top and middle buttons</li>
+          <li>Turn your watch off.</li>
+          <li>Turn your watch on by pressing the top and middle buttons</li>
         {{else}}
           {{!-- ADB fallback --}}
           <img src="{{assets}}/img/install-1.jpg" class="install-centered-img"/>
-          <li type="a">Open the settings app and go to the "About" page.</li>
-          <li type="a">Tap the Build number 7 times until Developer options become enabled.</li>
+          <li>Open the settings app and go to the "About" page.</li>
+          <li>Tap the Build number 7 times until Developer options become enabled.</li>
 
           <img src="{{assets}}/img/install-2.jpg" class="install-centered-img"/>
-          <li type="a">Go back to the settings menu and then to the "Developer options" page.</li>
-          <li type="a">Enable ADB debugging.</li>
+          <li>Go back to the settings menu and then to the "Developer options" page.</li>
+          <li>Enable ADB debugging.</li>
         {{/is}}{{/is}}{{/is}}
       
-        <li type="a">Finally, to unlock the bootloader enter the following commands in a terminal with your watch connected:
+        <li>Finally, to unlock the bootloader enter the following commands in a terminal with your watch connected:
         <br><pre><code class="bash">{{#is enterFastbootVia 'adb'}}adb reboot bootloader
 {{/is}}fastboot oem unlock</code></pre>
         Follow the instructions on your watch's screen. <b>Please note it may void your warranty.</b></li>
@@ -85,17 +85,17 @@
         <ol>
           <b><li type="a">Real installation</li></b>
           While your watch is in bootloader mode, flash the userdata and boot partitions using Linux:
-          <pre><code class="bash">{{#is deviceName 'tetra'}}ext2simg ~/Downloads/asteroid-image-{{deviceName}}.ext4 ~/Downloads/asteroid-image-{{deviceName}}.ext4.simg
+          <pre><code class="bash">{{#if useSimg}}ext2simg ~/Downloads/asteroid-image-{{deviceName}}.ext4 ~/Downloads/asteroid-image-{{deviceName}}.ext4.simg
 fastboot flash userdata ~/Downloads/asteroid-image-{{deviceName}}.ext4.simg
 {{else}}fastboot flash userdata ~/Downloads/asteroid-image-{{deviceName}}.ext4
-{{/is}}fastboot flash boot ~/Downloads/zImage-dtb-{{deviceName}}.fastboot
+{{/if}}fastboot flash boot ~/Downloads/zImage-dtb-{{deviceName}}.fastboot
 fastboot continue</code></pre>
 
           or using Windows:
-          <pre><code class="bash">{{#is deviceName 'tetra'}}ext2simg %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4 %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4.simg
+          <pre><code class="bash">{{#if useSimg}}ext2simg %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4 %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4.simg
 fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4.simg
 {{else}}fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4
-{{/is}}fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot
+{{/if}}fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot
 fastboot continue</code></pre>
 
           <b><li type="a">Temporary installation</li></b>
