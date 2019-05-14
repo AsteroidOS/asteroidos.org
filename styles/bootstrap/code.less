@@ -34,13 +34,14 @@ pre {
   background-color: @pre-bg;
   border: 1px solid @pre-border-color;
   border-radius: @border-radius-base;
+  overflow-x: auto; // Allow horizontal scrolling
 
   // Account for some code outputs that place code tags in pre tags
   code {
     padding: 0;
     font-size: inherit;
     color: inherit;
-    white-space: pre-wrap;
+    white-space: pre; // Don't wrap text
     background-color: transparent;
     border-radius: 0;
   }
