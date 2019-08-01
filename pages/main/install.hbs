@@ -19,6 +19,16 @@ slug: install
 <a href="{{rel '/install/dory'}}"><div class="install-box">
   <img src="{{assets}}/img/dory.jpg" width="100%"><br>
   <b>LG G Watch</b><br>(dory)<br>
+  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i></span></i>
+</div></a>
+<a href="{{rel '/install/harmony'}}"><div class="install-box">
+  <img src="{{assets}}/img/harmony.jpg" width="100%"><br>
+  <b>MTK6580 watches</b><br>(harmony)<br>
+  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
+<a href="{{rel '/install/inharmony'}}"><div class="install-box">
+  <img src="{{assets}}/img/inharmony.jpg" width="100%"><br>
+  <b>MTK6580 watches</b><br>(inharmony)<br>
   <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/lenok'}}"><div class="install-box">
@@ -26,14 +36,14 @@ slug: install
   <b>LG G Watch R</b><br>(lenok)<br>
   <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i></span></i>
 </div></a>
+<a href="{{rel '/install/mooneye'}}"><div class="install-box">
+  <img src="{{assets}}/img/mooneye.jpg" width="100%"><br>
+  <b>Ticwatch E & S</b><br>(mooneye)<br>
+  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i></span></i>
+</div></a>
 <a href="{{rel '/install/sparrow'}}"><div class="install-box">
   <img src="{{assets}}/img/sparrow.jpg" width="100%"><br>
   <b>Asus Zenwatch 2</b><br>(sparrow)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/wren'}}"><div class="install-box">
-  <img src="{{assets}}/img/wren.jpg" width="100%"><br>
-  <b>Asus Zenwatch 2</b><br>(wren)<br>
   <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/swift'}}"><div class="install-box">
@@ -46,6 +56,11 @@ slug: install
   <b>Sony Smartwatch 3</b><br>(tetra)<br>
   <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
+<a href="{{rel '/install/wren'}}"><div class="install-box">
+  <img src="{{assets}}/img/wren.jpg" width="100%"><br>
+  <b>Asus Zenwatch 2</b><br>(wren)<br>
+  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i></span></i>
+</div></a>
 
 <div class="page-header">
   <h1>FAQ</h1>
@@ -53,12 +68,12 @@ slug: install
 
 <div class="callout">
     <h4>Will I be able to go back to the previous operating system after installing AsteroidOS on my watch?</h4>
-    <p>When installing AsteroidOS, you can choose between replacing your previous OS or keeping a "dual-boot". If you decide to replace your previous OS, it is advised to make a backup of your <b>userdata</b> and <b>boot</b> partitions before flashing AsteroidOS, you will then be able to re-flash the previous OS later.</p>
+    <p>On most watches, when installing AsteroidOS, you can choose between replacing your previous OS or keeping a "dual-boot". If you decide to replace your previous OS, it is advised to make a backup of your <b>userdata</b> and <b>boot</b> partitions before flashing AsteroidOS, you will then be able to re-flash the previous OS later.</p>
 </div>
 
 <div class="callout">
     <h4>Where can I find a phone synchronization app?</h4>
-    <p>A synchronization client for Android phones named "AsteroidOSSync" is already <a href="https://f-droid.org/packages/org.asteroidos.sync/">available to download on F-Droid</a>.</p>
+    <p>A synchronization client for Android phones named "AsteroidOSSync" is <a href="https://f-droid.org/packages/org.asteroidos.sync/">available for you to download on F-Droid</a>.</p>
 </div>
 
 <div class="callout">
@@ -74,4 +89,24 @@ slug: install
 <div class="callout">
     <h4>I do not want to flash a prebuilt image on my watch, can I compile AsteroidOS myself?</h4>
     <p>Take a look at the <a href="{{rel 'wiki/building-asteroidos'}}">Building AsteroidOS</a> page of the documentation for detailed instructions on how to compile AsteroidOS yourself.</p>
+</div>
+
+<div class="callout">
+    <h4>My fastboot command displays "invalid sparse file format at header magic" when start flashing</h4>
+    <p>This is not a fatal error and can safely be ignored.</p>
+</div>
+
+<div class="callout">
+    <h4>My fastboot command crashes or hangs at "invalid sparse file format at header magi" (with a missing "c" in magic)</h4>
+    <p>This error happens when using old fastboot and ADB commands on Windows systems. If you already had those commands installed and skipped downloading our <a href="https://release.asteroidos.org/tools/adb_1_0_39+fastboot+ext2simg.zip">supplied zip file</a>, please install those commands instead.</p>
+</div>
+
+<div class="callout">
+    <h4>My flashing commands fail or stop during the ~5 minutes process</h4>
+    <p>Smartwatches are prone to loose proper connection to their cradle over time due to sweat corroding the watch pins. Especially on dory (LG G Watch) this is a regular problem. Cleaning the pins with alcohol or even carefully sanding them (e.g. with a nailfile) can provide a reliable connection again.</p>
+</div>
+
+<div class="callout">
+    <h4>My Asus Zenwatch 2 flashed successfully but does not boot</h4>
+    <p>You may have missed that there are two versions of the Asus Zenwatch 2, codenamed Sparrow and Wren. Their images are not interchangeable. Make sure you are using the right files.</p>
 </div>

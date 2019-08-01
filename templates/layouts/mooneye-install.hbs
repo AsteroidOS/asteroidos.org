@@ -48,35 +48,24 @@
       <br>Enable ADB on your watch with the following steps:
         <ol>
           <img src="{{assets}}/img/install-1.jpg" class="install-centered-img"/>
-          <li>Open the settings app and go to the <b>System</b> and then <b>About</b> page.</li>
-          <li>Tap the <b>Build number</b> 7 times until Developer options become available.</li>
+          <li>Open the settings app and go to the "About" page.</li>
+          <li>Tap the Build number 7 times until Developer options become enabled.</li>
 
           <img src="{{assets}}/img/install-2.jpg" class="install-centered-img"/>
-          <li>Go back to the settings menu and then to the <b>Developer options</b> page.</li>
-          <li>Enable <b>ADB debugging</b>.</li>
+          <li>Go back to the settings menu and then to the "Developer options" page.</li>
+          <li>Enable ADB debugging.</li>
         </ol>
       <br><b>Finally, to unlock the bootloader</b> enter the following commands in a terminal with your watch connected:</li>
       <br><pre><code class="bash">adb reboot bootloader<br>fastboot oem unlock</code></pre>
       Follow the instructions on your watch's screen. <b>Please note it may void your warranty.</b>
       <br><br>
       <h3>2. Flash and boot AsteroidOS</h3>
-        <div class="callout callout-warning">
-          <h4>Choose your installation type</h4>
-          <p>You can now decide if you want to replace Wear OS definitively or try AsteroidOS as a <i>dual-boot</i>. The "real installation" provides the best experience but it is advised to make a backup of your data first. The "temporary installation" is a good way to try AsteroidOS if you don't plan to use it daily.</p>
+        <div class="callout callout-error">
+          <h4>Only temporary installation supported</h4>
+          <p>On most watches, you can decide if you want to replace Wear OS definitively or try AsteroidOS as a <i>dual-boot</i>. On the {{title}} the real installation is not supported and you can only try AsteroidOS as a dual-boot using the temporary installation method.</p>
         </div>
 
         <ol>
-          <b><li type="a">Real installation</li></b>
-          While your watch is in bootloader mode, flash the userdata and boot partitions using Linux:
-          <pre><code class="bash">fastboot flash userdata ~/Downloads/asteroid-image-{{deviceName}}.ext4
-fastboot flash boot ~/Downloads/zImage-dtb-{{deviceName}}.fastboot
-fastboot continue</code></pre>
-
-          or using Windows:
-          <pre><code class="bash">fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4
-fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot
-fastboot continue</code></pre>
-
           <b><li type="a">Temporary installation</li></b>
           Reboot to Wear OS, re-enable developer mode and ADB debugging.
           <br>Push AsteroidOS to the internal sdcard using Linux:
