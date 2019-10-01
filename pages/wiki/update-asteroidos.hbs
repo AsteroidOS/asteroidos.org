@@ -3,21 +3,21 @@ title: Update AsteroidOS
 layout: documentation
 ---
 
-<p>AsteroidOS currently doesn't offer any nice OTA experience. The main limitation being the connectivity of watches. AsteroidOS watches don't have direct access to the Internet which is very limitating when it comes to upgrades. This page tries to document how to upgrade Asteroid.</p>
+<p>As currently no AsteroidOS watches have direct access to the Internet, no OTA upgrades are offered. This page documents upgrading AsteroidOS.</p>
 
 <div class="page-header">
   <h1 id="reflash">Reflash AsteroidOS</h1>
 </div>
 
-<p>The easiest way, as of today, is just to reflash the entire OS following the usual <a href="https://asteroidos.org/install/">installation instructions</a>.</p>
+<p>The easiest way is to reflash the entire OS following the usual <a href="https://asteroidos.org/install/">installation instructions</a>.</p>
 
 <div class="page-header">
   <h1 id="opkg-usb">OPKG over USB</h1>
 </div>
 
-<p>If you don't want to lose your personal data and would prefer upgrading Asteroid without reflashing it you can use asteroid's package manager: opkg. However, your watch most likely lacks Internet connectivity so you'll need to connect your watch to the Internet somehow. The following instructions describe how to share your computer's connectivity with your watch.</p>
+<p>If you don't want to lose your personal data, and prefer upgrading Asteroid without reflashing it, you can share your Internet connection from a PC to the watch and use AsteroidOS' package manager: opkg</p>
 
-<p>Configure a NAT <b>on your computer</b> (note: replace eth0 with the name of the interface that connects your computer to the Internet) with:</p>
+<p>Configure a NAT <b>on your computer</b> (Note: Replace eth0 with the name of the interface that connects your computer to the Internet) with:</p>
 <pre><code>echo 1 > /proc/sys/net/ipv4/ip_forward
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE</code></pre>
 
@@ -26,7 +26,7 @@ iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE</code></pre>
 <pre><code>route add default gw 192.168.2.1
 echo "nameserver 8.8.8.8" >> /etc/resolv.conf</code></pre>
 
-<p>You can now upgrade your distribution with opkg using the standard commands:</p>
+<p>Then upgrade your AsteroidOS with opkg, using the standard commands:</p>
 
 <pre><code>opkg update
 opkg upgrade</code></pre>
