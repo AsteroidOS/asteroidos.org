@@ -46,7 +46,7 @@ qtcreator
 <ul>
 <li>In the Compilers tab add the following GCC (C++): <em>/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-g++</em> and GCC (C): <em>/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc</em></li>
 <li>In the Qt Versions tab add the following qmake: <em>/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/qt5/qmake</em></li>
-<li>In the Kits tab add a kit with the previously defined device, Qt5 version and compilers, set the sysroot to <em>/usr/local/oecore-x86_64/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/</em> and let the other variables empty.</li>
+<li>In the Kits tab add a kit with the previously defined device, Qt5 version and compilers, set the sysroot to <em>/usr/local/oecore-x86_64/sysroots/armv7vet2hf-neon-oe-linux-gnueabi/</em> and let the other variables empty.</li>
 </ul>
 <div class="page-header">
   <h1 id="firstapp">First app</h1>
@@ -55,7 +55,7 @@ qtcreator
 <pre><code>git clone https://github.com/AsteroidOS/asteroid-stopwatch
 cd asteroid-stopwatch/
 ./i18n/generate-desktop.sh . asteroid-stopwatch.desktop
-source /usr/local/oecore-x86_64/environment-setup-armv7vehf-neon-oe-linux-gnueabi
+source /usr/local/oecore-x86_64/environment-setup-armv7vet2hf-neon-oe-linux-gnueabi
 qtcreator asteroid-stopwatch.pro
 </code></pre>
 <p>Try to build and deploy the app. If it wasn’t already installed, a new icon should have already appeared on asteroid-launcher.</p>
