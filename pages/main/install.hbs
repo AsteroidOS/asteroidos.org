@@ -67,8 +67,8 @@ slug: install
 </div>
 
 <div class="callout">
-    <h4>Will I be able to go back to the previous operating system after installing AsteroidOS on my watch?</h4>
-    <p>On most watches, when installing AsteroidOS, you can choose between replacing your previous OS or keeping a "dual-boot". If you decide to replace your previous OS, it is advised to make a backup of your <b>userdata</b> and <b>boot</b> partitions before flashing AsteroidOS, you will then be able to re-flash the previous OS later.</p>
+    <h4>Will I be able to revert to the previous operating system after installing AsteroidOS on my watch?</h4>
+    <p>When installing AsteroidOS on most watches, you may choose to replace your previous OS entirely or install it alongside the existing OS, called a "dual-boot". If you decide to replace your previous OS, it is advised that you make a backup of your <b>userdata</b> and <b>boot</b> partitions before flashing AsteroidOS. You will then be able to re-flash the previous OS later.</p>
 </div>
 
 <div class="callout">
@@ -77,36 +77,36 @@ slug: install
 </div>
 
 <div class="callout">
-    <h4>What features will and won't be working on my watch with AsteroidOS?</h4>
-    <p>The available features depend on the watch you want to use AsteroidOS on. Take a look at the table in your device's installation page for detailed information on your current model's support.</p>
+    <h4>What features will and won't work on my watch with AsteroidOS?</h4>
+    <p>The available AsteroidOS features depend on the watch you want to use. Review the table in your device's installation page for detailed support information.</p>
 </div>
 
 <div class="callout">
-    <h4>My watch is not listed on this page, what can I do?</h4>
-    <p>You should refer to the <a href="{{rel 'wiki/porting-status'}}">Porting Status</a> page of the documentation and check if a port of AsteroidOS to your watch is possible or in progress. If you are interested in porting AsteroidOS yourself to a new watch, please take a look at the <a href="{{rel 'wiki/porting-guide'}}">Porting Guide</a> page and get in touch with us via IRC.</p>
+    <h4>My watch is not listed on this page. What can I do?</h4>
+    <p>You should refer to the <a href="{{rel 'wiki/porting-status'}}">Porting Status</a> page of the documentation and check if a port of AsteroidOS to your watch is possible or in progress. If you are interested in porting AsteroidOS yourself to a new watch, please read the <a href="{{rel 'wiki/porting-guide'}}">Porting Guide</a> page and contact us via IRC.</p>
 </div>
 
 <div class="callout">
-    <h4>I do not want to flash a prebuilt image on my watch, can I compile AsteroidOS myself?</h4>
-    <p>Take a look at the <a href="{{rel 'wiki/building-asteroidos'}}">Building AsteroidOS</a> page of the documentation for detailed instructions on how to compile AsteroidOS yourself.</p>
+    <h4>I do not want to flash a prebuilt image on my watch. Can I compile AsteroidOS myself?</h4>
+    <p>Review the <a href="{{rel 'wiki/building-asteroidos'}}">Building AsteroidOS</a> page for detailed instructions on how to compile AsteroidOS yourself.</p>
 </div>
 
 <div class="callout">
-    <h4>My fastboot command displays "invalid sparse file format at header magic" when start flashing</h4>
+    <h4>My fastboot command displays "invalid sparse file format at header magic" when starting to flash the device</h4>
     <p>This is not a fatal error and can safely be ignored.</p>
 </div>
 
 <div class="callout">
     <h4>My fastboot command crashes or hangs at "invalid sparse file format at header magi" (with a missing "c" in magic)</h4>
-    <p>This error happens when using old fastboot and ADB commands on Windows systems. If you already had those commands installed and skipped downloading our <a href="https://release.asteroidos.org/tools/adb_1_0_39+fastboot+ext2simg.zip">supplied zip file</a>, please install those commands instead.</p>
+    <p>This error occurs when using deprecated fastboot and ADB commands on Windows systems. If you already had those commands installed and skipped downloading our <a href="https://release.asteroidos.org/tools/adb_1_0_39+fastboot+ext2simg.zip">supplied zip file</a>, please install those commands instead.</p>
 </div>
 
 <div class="callout">
-    <h4>My flashing commands fail or stop during the ~5 minutes process</h4>
-    <p>Smartwatches are prone to loose proper connection to their cradle over time due to sweat corroding the watch pins. Especially on dory (LG G Watch) this is a regular problem. Cleaning the pins with alcohol or even carefully sanding them (e.g. with a nailfile) can provide a reliable connection again.</p>
+    <h4>Commands fail or stop during the ~5 minute flashing process</h4>
+    <p>Smartwatches are prone to lose a proper connection to their cradle over time due to sweat corroding the watch pins. This is a particularly a regular problem with dory (LG G Watch). Cleaning the pins with isopropyl alcohol or even carefully sanding them (e.g. with a nailfile) can restore a reliable connection.</p>
 </div>
 
 <div class="callout">
     <h4>My Asus Zenwatch 2 flashed successfully but does not boot</h4>
-    <p>You may have missed that there are two versions of the Asus Zenwatch 2, codenamed Sparrow and Wren. Their images are not interchangeable. Make sure you are using the right files.</p>
+    <p>There are two versions of the Asus Zenwatch 2, codenamed Sparrow and Wren. Their images are not interchangeable. Please ensure you are using the right files.</p>
 </div>
