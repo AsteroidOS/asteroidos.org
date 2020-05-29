@@ -77,7 +77,9 @@ layout: documentation
   <h1 id="sensors">Sensors</h1>
 </div>
 <p>In AsteroidOS, sensors can be used by developers through the QtSensors API that uses the sensorfw backend. Sensorfwd is a sensor daemon that can use libhybris to interface with the Android’s Sensors HAL.</p>
-<p>In order to use sensors on Asteroid, you need to make sure libhybris recognizes your sensors by running the test_sensors command.&nbsp;For more information on how to debug an&nbsp;issue, check the Troubleshooting paragraph of this page.</p>
+<p>In order to use sensors on AsteroidOS, you need to make sure libhybris recognizes your sensors by running the test_sensors command.&nbsp;For some platforms it is required to start a sensor daemon.&nbsp;This can usually be found in Wear OS's init scripts.&nbsp;A likely output of test_sensor for a platform needing a sensor daemon is:</p>
+<p>sensors_open() failed: Operation not permitted</p>
+<p>For more information on how to debug an&nbsp;issue, check the Troubleshooting paragraph of this page.</p>
 <div class="page-header">
   <h1 id="haptics">Haptics</h1>
 </div>
