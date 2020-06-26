@@ -53,14 +53,14 @@ layout: documentation
 <div class="page-header">
   <h1 id="display">Display</h1>
 </div>
-<p>As soon as you’ll get access to a shell on AsteroidOS, you may&nbsp;find yourself without asteroid-launcher running. Checking the system logs with “journalctl –no-pager” or “systemctl –no-pager” usually shows a segfault from the lipstick process. This is to be expected on your first run and there is nothing to worry about. In order to reproduce the bug, you can start lipstick manually with:</p>
-<p>XDG_RUNTIME_DIR=/run/user/1000 EGL_PLATFORM=hwcomposer lipstick –platform hwcomposer</p>
+<p>As soon as you’ll get access to a shell on AsteroidOS, you may&nbsp;find yourself without asteroid-launcher running. Checking the system logs with “journalctl –no-pager” or “systemctl –no-pager” usually shows a segfault from the asteroid-launcher process. This is to be expected on your first run and there is nothing to worry about. In order to reproduce the bug, you can start asteroid-launcher manually with:</p>
+<p>EGL_PLATFORM=hwcomposer QT_QPA_PLATFORM=hwcomposer asteroid-launcher</p>
 <p>asteroid-launcher uses lipstick which uses the hwcomposer QPA which uses libhybris which uses the Android graphic HAL to display things on screen. You may need to adapt&nbsp;the Android graphic HAL to answer the needs of hybris. (usually a matter of starting the right android boot services, having the right files placed in the right directories, having the right system.prop options etc…)</p>
 <p>For more information on the Graphic Stack you may want to refer to <a href="{{rel 'wiki/graphic-stack'}}">the associated documentation page</a>. For more information on how to debug an&nbsp;issue, check the Troubleshooting paragraph of this page.</p>
 <div class="page-header">
   <h1 id="touch">Touch</h1>
 </div>
-<p>Once you’ll get asteroid-launcher displaying things on screen, you may have no touch feedback from the UI. If that is the case, you’ll need to modify the lipstick’s start command to use a different evdevtouch file. For example, tetra uses <a href="https://github.com/AsteroidOS/meta-tetra-hybris/tree/master/recipes-asteroid/asteroid-launcher">this bbappend</a> to use /dev/input/event1 instead of the default event0.</p>
+<p>Once you’ll get asteroid-launcher displaying things on screen, you may have no touch feedback from the UI. If that is the case, you’ll need to modify the asteroid-launcher start command to use a different evdevtouch file. For example, tetra uses <a href="https://github.com/AsteroidOS/meta-tetra-hybris/tree/master/recipes-asteroid/asteroid-launcher">this bbappend</a> to use /dev/input/event1 instead of the default event0.</p>
 <div class="page-header">
   <h1 id="audio">Audio</h1>
 </div>
@@ -77,6 +77,7 @@ layout: documentation
   <h1 id="sensors">Sensors</h1>
 </div>
 <p>In AsteroidOS, sensors can be used by developers through the QtSensors API that uses the sensorfw backend. Sensorfwd is a sensor daemon that can use libhybris to interface with the Android’s Sensors HAL.</p>
+<p>Most watches have a dedicated microcontroller that interfaces with sensors. This means that a daemon or kernel module (or something else) is responsible to upload and interface with the microcontroller from AsteroidOS.</p>
 <p>In order to use sensors on AsteroidOS, you need to make sure libhybris recognizes your sensors by running the test_sensors command.&nbsp;For some platforms it is required to start a sensor daemon.&nbsp;This can usually be found in Wear OS's init scripts.&nbsp;A likely output of test_sensor for a platform needing a sensor daemon is:</p>
 <p>sensors_open() failed: Operation not permitted</p>
 <p>For more information on how to debug an&nbsp;issue, check the Troubleshooting paragraph of this page.</p>
@@ -94,7 +95,8 @@ layout: documentation
   <h1 id="troubleshooting">Troubleshooting</h1>
 </div>
 <p>While porting AsteroidOS to your watch, you will most likely meet all kind of problems. In order to debug what’s going wrong with your setup you should install debug tools such as strace and gdb and the required debug sybols to your generated rootfs. For example, you can temporarily append the “strace gdb asteroid-launcher-dbg” packages to the <a href="https://github.com/AsteroidOS/meta-asteroid/blob/master/classes/asteroid-image.bbclass#L9">asteroid-image class</a>.</p>
-<p>Once you come up with more information about your bug with strace and gdb, your first reflex should be to <a href="https://log.asteroidos.org/search">search&nbsp;the asteroid’s IRC logs</a> for similar issues. The SailfishOS porters community is another great place to search for information, you may also want to try your chance at <a href="https://www.google.com/search?q=site%3Amerproject.org+irc+QCOM_BSP">searching the merproject’s IRC logs</a>.</p>
+<p>Other logical places to look for information that may help you solve the problems are: “dmesg”, “journalctl --no-pager” and “/system/bin/logcat”.</p>
+<p>Once you come up with more information about your bug, your first reflex should be to <a href="https://log.asteroidos.org/search">search&nbsp;the asteroid’s IRC logs</a> for similar issues. The SailfishOS porters community is another great place to search for information, you may also want to try your chance at <a href="https://www.google.com/search?q=site%3Amerproject.org+irc+QCOM_BSP">searching the merproject’s IRC logs</a>. Lastly you can also look through the <a href="https://github.com/search?q=org%3AAsteroidOS+mdss_mdp_overlay_pipe_setup&type=Issues">GitHub issues</a> for more information by other porters.</p>
 <p>If you still couldn’t find a solution to your problem in the logs, don’t hesitate to ask questions on&nbsp;the #asteroid IRC channel. There should be&nbsp;several porters able to help you.</p>
 <div class="page-header">
   <h1 id="upstreamyourwork">Upstream your work</h1>
