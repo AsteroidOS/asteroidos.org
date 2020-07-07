@@ -53,6 +53,6 @@
     "verbalize": "^0.1.2"
   },
   "dependencies": {
-    "npm": "^6.13.4"
+    "npm": "^6.14.6"
   }
 }
