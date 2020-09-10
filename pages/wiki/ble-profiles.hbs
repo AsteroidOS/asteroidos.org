@@ -27,7 +27,7 @@ layout: documentation
   <h1 id="mediaprofile">Media Profile</h1>
 </div>
 
-<p>Apps on an asteroid watch can control client's media plaback capabilities (for example with the asteroid-music) using the Media profile. This profile is custom and functions as below:</p>
+<p>Apps on an asteroid watch can control client's media playback capabilities (for example with the asteroid-music) using the Media profile. This profile is custom and functions as below:</p>
 
 <h3>Media Service (UUID: 00007071-0000-0000-0000-00A57E401D05)</h3>
 <p><b>Title Characteristic (UUID: 00007001-0000-0000-0000-00A57E401D05)</b></p>
@@ -45,7 +45,10 @@ layout: documentation
     <li><b>0x1</b>: <i>Next</i> (the client is expected to change media and update the writable characteristics)</li>
     <li><b>0x2</b>: <i>Play</i> (the client is expected to play the current media and update the playing characteristics according to the new state)</li>
     <li><b>0x3</b>: <i>Pause</i> (the client is expected to pause the current media and update the playing characteristics according to the new state)</li>
+    <li><b>0x4</b>: <i>Volume</i> (the client is expected to change the volume to a supplied target volume and then update the Volume characteristic)</li>
 </ul>
+<p><b>Volume Characteristic (UUID: 00007006-0000-0000-0000-00A57E401D05)</b></p>
+<p>This characteristic can be written by the client to set the volume of the current media session. Supported value range is 0-100.</p>
 
 <div class="page-header">
   <h1 id="notificationprofile">Notification Profile</h1>
