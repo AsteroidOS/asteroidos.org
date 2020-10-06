@@ -3,30 +3,29 @@ title: Update AsteroidOS
 layout: documentation
 ---
 
-<p>As currently no AsteroidOS watches have direct access to the Internet, no OTA upgrades are offered. This page documents upgrading AsteroidOS.</p>
+As currently no AsteroidOS watches have direct access to the Internet, no OTA upgrades are offered. This page documents upgrading AsteroidOS.
 
-<div class="page-header">
-  <h1 id="reflash">Reflash AsteroidOS</h1>
-</div>
 
-<p>The easiest way is to reflash the entire OS following the usual <a href="https://asteroidos.org/install/">installation instructions</a>.</p>
+#Reflash AsteroidOS
+*****
 
-<div class="page-header">
-  <h1 id="opkg-usb">OPKG over USB</h1>
-</div>
+The easiest way is to reflash the entire OS following the usual [installation instructions](https://asteroidos.org/install/).
 
-<p>If you don't want to lose your personal data, and prefer upgrading Asteroid without reflashing it, you can share your Internet connection from a PC to the watch and use AsteroidOS' package manager: opkg</p>
+#OPKG over USB
+*****
 
-<p>Configure a NAT <b>on your computer</b> (Note: Replace eth0 with the name of the interface that connects your computer to the Internet) with:</p>
-<pre><code>echo 1 > /proc/sys/net/ipv4/ip_forward
-iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE</code></pre>
+If you don't want to lose your personal data, and prefer upgrading Asteroid without reflashing it, you can share your Internet connection from a PC to the watch and use AsteroidOS' package manager: opkg
 
-<p>Configure a default gateway and DNS <b>on the watch</b> with the following commands ran via <a href="https://asteroidos.org/wiki/ssh/">SSH</a>:</p>
+Configure a NAT **on your computer** (Note: Replace eth0 with the name of the interface that connects your computer to the Internet) with:
+  echo 1 > /proc/sys/net/ipv4/ip_forward
+  iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 
-<pre><code>route add default gw 192.168.2.1
-echo "nameserver 8.8.8.8" >> /etc/resolv.conf</code></pre>
+Configure a default gateway and DNS **on the watch** with the following commands ran via [SSH](https://asteroidos.org/wiki/ssh/):
 
-<p>Then upgrade your AsteroidOS with opkg, using the standard commands:</p>
+  route add default gw 192.168.2.1
+  echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 
-<pre><code>opkg update
-opkg upgrade</code></pre>
+Then upgrade your AsteroidOS with opkg, using the standard commands:
+
+  opkg update
+  opkg upgrade
