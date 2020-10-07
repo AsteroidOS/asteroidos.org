@@ -2,84 +2,88 @@
 title: Porting Status
 layout: documentation
 ---
+This page aims at gathering info about the currently supported platforms and porting efforts.
 
-<p>This page aims at gathering info about the currently supported platforms and porting efforts.</p>
-<div class="page-header">
-  <h1 id="androidwear">Wear OS Smartwatches</h1>
-</div>
-<p>The Wear OS smartwatches are the most widespread and easy to support. The source code of their kernels is usually easily available and the drivers can be supported with libhybris. Those watches are the current priority of AsteroidOS.</p>
-<p><strong>Supported watches:</strong></p>
-<ul>
-<li>Asus Zenwatch <i>(maintained by locusf)</i></li>
-<li>Asus Zenwatch 2 <i>(maintained by Lrs121 & dlandau)</i></li>
-<li>Asus Zenwatch 3 <i>(maintained by anYc)</i></li>
-<li>Huawei Watch <i>(maintained by MagneFire)</i></li>
-<li>LG G Watch <i>(maintained by kido)</i></li>
-<li>LG G Watch R <i>(maintained by atx)</i></li>
-<li>LG G Watch Urbane <i>(maintained by TheAppleMan & kido)</i></li>
-<li>Moto 360 (2nd generation) <i>(maintained by MagneFire)</i></li>
-<li>Samsung Gear Live <i>(maintained by kido) support currently broken</i></li>
-<li>Sony Smartwatch 3 <i>(maintained by kido)</i></li>
-<li>Ticwatch E & S <i>(maintained by kido)</i></li>
-</ul>
+# WearOS Smartwatches
+---
 
-<p><strong>Possible ports not supported yet:</strong></p>
-<ul>
-<li>Casio Smart Outdoor Watch</li>
-<li>Diesel Full Guard (pinouts are on the inside)</li>
-<li>Elephone Ele Watch</li>
-<li>Emporio Armani Connected (pinouts are on the inside)</li>
-<li>Fossil Q Explorist (pinouts are on the inside)</li>
-<li>Guess Connect</li>
-<li>Huawei Watch 2</li>
-<li>Hugo BOSS BOSS Touch</li>
-<li>LG Watch Urbane 2nd Edition</li>
-<li>Michael Kors Access Grayson (pinouts are on the inside)</li>
-<li>Misfit Vapor</li>
-<li>Montblanc Summit</li>
-<li>Moto 360 (1st generation)</li>
-<li>Moto 360 Sport</li>
-<li>Nixon Mission</li>
-<li>New Balance RunIQ Watch</li>
-<li>Samsung Gear S</li>
-<li>Tag Heuer Connected</li>
-<li>Tag Heuer Connected Modular 45</li>
-<li>Tommy Hilfiger 24/7 You</li>
-<li>Verizon Wear 24</li>
-<li>ZTE Quartz</li>
-</ul>
-<p><strong>Impossible ports because of lack of pinouts:</strong></p>
-<ul>
-<li>Fossil Q Control</li>
-<li>Fossil Q Founder</li>
-<li>Fossil Q Marshal</li>
-<li>Fossil Q Venture</li>
-<li>Fossil Q Wander</li>
-<li>Gc Connect</li>
-<li>LG Watch Sport</li>
-<li>LG Watch Style</li>
-<li>Louis Vuitton Tambour</li>
-<li>Michael Kors Access</li>
-<li>Michael Kors Access Mesdames</li>
-<li>Michael Kors Dylan</li>
-<li>Michael Kors Sofie</li>
-<li>Movado Connect</li>
-<li>Polar M600</li>
-<li>Skagen Falster</li>
-</ul>
-<p><strong>Impossible ports due to unmet hardware dependencies:</strong></p>
-<ul>
-<li>Huawei Watch GT</li>
-<li>Huawei Watch GT 2</li>
-<li>PineTime</li>
-<li>Umidigi Uwatch GT</li>
-</ul>
-<div class="page-header">
-  <h1 id="tizensw">Tizen Smartwatches</h1>
-</div>
-<p>The Samsung Gear S2, S2 Classic and S3 might be supported by AsteroidOS in the future but they will require more work than the other watches. Someone already got interested in the S2 port but gave up because he couldn’t find the kernel’s defconfig.</p>
-<div class="page-header">
-  <h1 id="othersw">Other Smartwatches</h1>
-</div>
-<p>There are many Android (non-Wear) smartwatches available for a lower price. (e.g: the Omate *, Sony SW, Intex iRist, zWatch etc…) It might be more difficult to get access to the kernel’s or android tree of those devices but libhybris could also make running AsteroidOS on top of them possible. This is typically the case of the MTK6580 watches.</p>
-<p>Other low-end smartwatches using cheap Mediatek SoCs aren’t able to run a Linux kernel and can’t be supported by AsteroidOS.</p>
+The WearOS smartwatches are the most widespread and easy to support. The source code of their kernels is usually easily available and the drivers can be supported with [libhybris](https://github.com/libhybris/libhybris). Those watches are the current priority of AsteroidOS.
+
+&nbsp;
+#### Supported watches:
+- Asus Zenwatch *(maintained by locusf)*
+- Asus Zenwatch 2 *(maintained by Lrs121 & dlandau)*
+- Asus Zenwatch 3 *(maintained by anYc)*
+- Huawei Watch *(maintained by MagneFire)*
+- LG G Watch *(maintained by kido)*
+- LG G Watch R *(maintained by atx)*
+- LG G Watch Urbane *(maintained by TheAppleMan & kido)*
+- Moto 360 (2nd generation) *(maintained by MagneFire)*
+- Samsung Gear Live *(maintained by kido) support currently broken*
+- Sony Smartwatch 3 *(maintained by kido)*
+- Ticwatch E & S *(maintained by kido)*
+
+&nbsp;
+#### Possible ports not supported yet:
+
+- Casio Smart Outdoor Watch
+- Diesel Full Guard (pinouts are on the inside)
+- Elephone Ele Watch
+- Emporio Armani Connected (pinouts are on the inside)
+- Fossil Q Explorist (pinouts are on the inside)
+- Guess Connect
+- Huawei Watch 2
+- Hugo BOSS BOSS Touch
+- LG Watch Urbane 2nd Edition
+- Michael Kors Access Grayson (pinouts are on the inside)
+- Misfit Vapor
+- Montblanc Summit
+- Moto 360 (1st generation)
+- Moto 360 Sport
+- Nixon Mission
+- New Balance RunIQ Watch
+- Samsung Gear S
+- Tag Heuer Connected
+- Tag Heuer Connected Modular 45
+- Tommy Hilfiger 24/7 You
+- Verizon Wear 24
+- ZTE Quartz
+
+&nbsp;
+#### Impossible ports because of lack of pinouts:
+- Fossil Q Control
+- Fossil Q Founder
+- Fossil Q Marshal
+- Fossil Q Venture
+- Fossil Q Wander
+- Gc Connect
+- LG Watch Sport
+- LG Watch Style
+- Louis Vuitton Tambour
+- Michael Kors Access
+- Michael Kors Access Mesdames
+- Michael Kors Dylan
+- Michael Kors Sofie
+- Movado Connect
+- Polar M600
+- Skagen Falster
+
+&nbsp;
+#### Impossible ports due to unmet hardware dependencies:
+
+- Huawei Watch GT
+- Huawei Watch GT 2
+- PineTime
+- Umidigi Uwatch GT
+
+# Tizen Smartwatches
+---
+
+The Samsung Gear S2, S2 Classic and S3 might be supported by AsteroidOS in the future but they will require more work than the other watches. Someone already got interested in the S2 port but gave up because he couldn’t find the kernel’s defconfig.
+
+# Other Smartwatches
+---
+
+There are many Android (non-Wear) smartwatches available for a lower price. (e.g: the Omate *, Sony SW, Intex iRist, zWatch etc…) It might be more difficult to get access to the kernel’s or android tree of those devices but libhybris could also make running AsteroidOS on top of them possible. This is typically the case of the MTK6580 watches.
+
+Other low-end smartwatches using cheap Mediatek SoCs aren’t able to run a Linux kernel and can’t be supported by AsteroidOS.
