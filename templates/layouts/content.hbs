@@ -17,7 +17,9 @@
 
     {{!-- Content --}}
     <div class="container docs-container">
-      {{> body }}
+      {{#markdown}}
+        {{> body }}
+      {{/markdown}}
     </div>
 
     {{!-- Footer --}}
