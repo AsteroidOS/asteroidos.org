@@ -21,19 +21,14 @@ layout: documentation
 <p>Build your <code>asteroid-image</code> with iproute2 and wpa-supplicant. In <code>meta-{watch}-hybris/conf/machine/{watch}.conf</code> add <code>iproute2</code> and <code>wpa-supplicant</code> to <code>IMAGE_INSTALL</code>:</p>
 <pre><code>IMAGE_INSTALL += "android-tools android-system msm-fb-refresher brcm-patchram-plus iproute2 wpa-supplicant connman-client"</code></pre>
 <p>Once your image is installed on the watch, open up an <code>adb shell</code> or <code>ssh root@192.168.2.15</code>:</p>
-<pre><code># mkdir /etc/wpa_supplicant
-# cp /etc/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
-# systemctl enable --now wpa_supplicant@wlan0
-# wpa_cli
-&gt; scan
-&gt; scan_results
-&gt; add_network
-&gt; set_network X ssid "MYSSID"
-&gt; set_network X psk "MYPSK"
-&gt; enable_network X
-&gt; select_network X
-&gt; save_config
+<pre><code># connmanctl
+connmanctl&gt; scan wifi
+connmanctl&gt; services
+connmanctl&gt; agent on
+connmanctl&gt; connect wifi_<code for your ssid>
+connmanctl&gt; quit
 # ip a show dev wlan0
 </code></pre>
+<p>some more <a href="https://wiki.archlinux.org/index.php/ConnMan#Connecting_to_a_protected_access_point">details</a> on ArchWiki</p>
 <p>The watch should automatically get an IPv6 address from your network or you can set a static IPv4. You can disconnect from adb and connect via SSH.</p>
 <p>By default, there is no <code>root</code> or <code>ceres</code> password, and no firewall rules.</p>
