@@ -19,6 +19,7 @@ The easiest way is to reflash the entire OS following the usual [installation in
 If you don't want to lose your personal data, and prefer upgrading Asteroid without reflashing it, you can share your Internet connection from a PC to the watch and use AsteroidOS' package manager: opkg
 
 Configure a NAT **on your computer** (Note: Replace eth0 with the name of the interface that connects your computer to the Internet) with:
+
     echo 1 > /proc/sys/net/ipv4/ip_forward
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 
