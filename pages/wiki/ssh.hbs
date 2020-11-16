@@ -19,8 +19,7 @@ layout: documentation
 <p>Dropbear is already running on the watch so we just need an IP address configured to connect.</p>
 <p>Ensure wireless drivers are enabled for the watch.</p>
 <p>Build your <code>asteroid-image</code> with iproute2 and wpa-supplicant. In <code>meta-{watch}-hybris/conf/machine/{watch}.conf</code> add <code>iproute2</code> and <code>wpa-supplicant</code> to <code>IMAGE_INSTALL</code>:</p>
-<pre><code>IMAGE_INSTALL += "android-tools android-system msm-fb-refresher brcm-patchram-plus iproute2 wpa-supplicant"
-</code></pre>
+<pre><code>IMAGE_INSTALL += "android-tools android-system msm-fb-refresher brcm-patchram-plus iproute2 wpa-supplicant connman-client"</code></pre>
 <p>Once your image is installed on the watch, open up an <code>adb shell</code>:</p>
 <pre><code># mkdir /etc/wpa_supplicant
 # cp /etc/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
