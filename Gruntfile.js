@@ -68,12 +68,12 @@ module.exports = function(grunt) {
           cwd: '<%= site.pages %>/',
           dest: '<%= site.dest %>/',
           expand: true,
-          src: ['**/*.hbs', '!main/**/*.hbs']
+          src: ['**/*.{hbs,md}', '!main/**/*.{hbs,md}']
         }, {
           cwd: '<%= site.pages %>/main/',
           dest: '<%= site.dest %>/',
           expand: true,
-          src: '**/*.hbs'
+          src: '**/*.{hbs,md}'
         }]
       }
     },
