@@ -106,7 +106,7 @@ sudo docker rm -f asteroidos-toolchain
 Create a Docker container called *asteroidos-toolchain* from the Docker image which we also called *asteroidos-toolchain* and build AsteroidOS for *dory* (the LG G Watch) within the container:
 
 ```
-sudo docker rm -f asteroidos-toolchain ; sudo docker run --name asteroidos-toolchain -it -v /etc/passwd:/etc/passwd -u `id -u`:`id -g` -v "$HOME/.gitconfig:/$HOME/.gitconfig" -v "$(pwd):/asteroid" asteroidos-toolchain bash -c "source ./prepare-build.sh dory && bitbake asteroid-image"
+sudo docker rm -f asteroidos-toolchain ; sudo docker run --name asteroidos-toolchain -it -v /etc/passwd:/etc/passwd -u "$(id -u):$(id -g)" -v "$HOME/.gitconfig:/$HOME/.gitconfig" -v "$(pwd):/asteroid" asteroidos-toolchain bash -c "source ./prepare-build.sh dory && bitbake asteroid-image"
 ```
 
 
@@ -121,7 +121,7 @@ Explanation of the above docker rm ... ; docker run ...* command:
 ```
 # sudo docker rm -f asteroidos-toolchain  Removes the Docker container called "asteroidos-toolchain" in case it already exists
 # -it                                     Attaches the terminal to the container so that we can see the output. Otherwise it would run blindly in the background.
-# -u `id -u`:`id -g`                      Ensures that the current user id and group id from the host is used on files inside the container to avoid permission issues.
+# -u "$(id -u):$(id -g)"                      Ensures that the current user id and group id from the host is used on files inside the container to avoid permission issues.
 # -v /etc/passwd:/etc/passwd              Ensures that the user ids and groups from the host are also available in the Docker container. (Otherwise the -u and -g would be useless.)
 # /etc/passwd                             Contains the user names and their ids.
 # "$HOME/.gitconfig:/$HOME/.gitconfig"    Shares your user's git config with the container.
