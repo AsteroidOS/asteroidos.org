@@ -12,7 +12,13 @@ As currently no AsteroidOS watches have direct access to the Internet, no OTA up
 
 The easiest way is to reflash the entire OS following the usual [installation instructions](https://asteroidos.org/install/).
 
-To get into fastboot, go to Settings -> USB and select "ADB Mode". Connect your watch to your computer and run the following command: `adb shell reboot -f bootloader` (`adb reboot bootloader` will not work on AsteroidOS).
+You will first have to reboot into fastboot, which is slightly different under AsteroidOS than it is under Android Wear.
+
+First, go to Settings -> USB and make sure your device is in either `Developer Mode` or `ADB Mode` and connect it to your computer.
+
+If your watch is in Developer Mode, run the following command on your computer: ` ssh root@192.168.2.15 'reboot -f bootloader'`.
+
+If your watch is in ADB Mode, run the following command on your computer: `adb shell reboot -f bootloader`.
 
 # OPKG over USB
 
