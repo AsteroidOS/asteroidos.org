@@ -64,10 +64,11 @@ Now that you are in QtCreator go to ‘_Tools-&gt;Options-&gt;Devices_‘
 - Choose Password authentication and leave the password field empty.
 
 
-Under the '_Build &amp; Run_'
+Under the '_Kits_'
 
 - In the Compilers tab add the following GCC (C++): _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-g++_ and GCC (C): _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc_
-- In the Qt Versions tab add the following qmake: _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/qt5/qmake_
+- In the Debuggers tab add the following gdb: _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gdb_
+- In the Qt Versions tab add the following qmake: _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/qmake_
 - In the Kits tab add a kit with the previously defined device, Qt5 version and compilers, set the sysroot to _/usr/local/oecore-x86_64/sysroots/armv7vet2hf-neon-oe-linux-gnueabi/_ and let the other variables empty.
 
 # First app
