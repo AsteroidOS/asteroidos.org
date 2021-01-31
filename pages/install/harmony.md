@@ -14,6 +14,8 @@ layout: mtk-install
   <div class="support-col">USB<div class="support-col-good"></div></div>
   <div class="support-col">Camera<div class="support-col-good"></div></div>
   <div class="support-col">Heart Rate<div class="support-col-bad"></div></div>
+  <div class="support-col">Tilt-to-Wake<div class="support-col-bad"></div></div>
+  <div class="support-col">Always-on-Display<div class="support-col-bad"></div></div>
 </div>
 
 <div class="callout callout-info">
