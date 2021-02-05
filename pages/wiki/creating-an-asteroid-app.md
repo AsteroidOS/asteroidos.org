@@ -60,7 +60,7 @@ Now that you are in QtCreator go to ‘_Tools-&gt;Options-&gt;Devices_‘
 - Add a new Generic Linux Device.
 - Name it "AsteroidOS Watch".
 - Choose 192.168.2.15 as IP address.
-- Use root as user.
+- Use ceres as user.
 - Choose Password authentication and leave the password field empty.
 
 
