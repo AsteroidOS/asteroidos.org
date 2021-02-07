@@ -55,7 +55,7 @@ qtcreator
 
 This can be done automatically by prepending "source /usr/local/oecore-x86_64/environment-setup-armv7vet2hf-neon-oe-linux-gnueabi" before #!/bin/sh in _/usr/bin/qtcreator.sh_
 
-Now that you are in QtCreator go to ‘_Tools-&gt;Options-&gt;Devices_‘
+Now that you are in QtCreator go to ‘_Tools &#8594; Options &#8594; Devices_‘
 
 - Add a new Generic Linux Device.
 - Name it "AsteroidOS Watch".
@@ -69,25 +69,70 @@ Under the '_Kits_'
 - In the Compilers tab add the following GCC (C++): _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-g++_ and GCC (C): _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc_
 - In the Debuggers tab add the following gdb: _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gdb_
 - In the Qt Versions tab add the following qmake: _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/qmake_
-- In the Kits tab add a kit with the previously defined device, Qt5 version and compilers, set the sysroot to _/usr/local/oecore-x86_64/sysroots/armv7vet2hf-neon-oe-linux-gnueabi/_ and let the other variables empty.
+- In the Kits tab add a kit with the name "AsteroidOS Kit" with the previously defined device, Qt5 version and compilers, set the sysroot to _/usr/local/oecore-x86_64/sysroots/armv7vet2hf-neon-oe-linux-gnueabi/_ and let the other variables empty.
 
 # First app
 
 ---
 
-[Asteroid-Stopwatch](https://github.com/AsteroidOS/asteroid-stopwatch) can act as a cool QML demo app to make your first steps into AsteroidOS development easier. You can clone it, build it, install it and then modify it to follow your needs:
+[Asteroid-HelloWorld](https://github.com/AsteroidOS/asteroid-helloworld) can act as a cool QML demo app to make your first steps into AsteroidOS development easier. You can clone it, build it, install it and then modify it to follow your needs:
 
 ```
-git clone https://github.com/AsteroidOS/asteroid-stopwatch
-cd asteroid-stopwatch/
-./i18n/generate-desktop.sh . asteroid-stopwatch.desktop
+mkdir ~/asteroid-development
+cd ~/asteroid-development
+git clone https://github.com/AsteroidOS/asteroid-helloworld
+cd asteroid-helloworld/
 source /usr/local/oecore-x86_64/environment-setup-armv7vet2hf-neon-oe-linux-gnueabi
-qtcreator asteroid-stopwatch.pro
+qtcreator asteroid-helloworld.pro
 ```
 
-Try to build and deploy the app. If it wasn’t already installed, a new icon should have already appeared on asteroid-launcher.
+Usually QtCreator starts (with unconfigured projects) with Projects highlighted in the left sidebar. You are forced to select your Kit your configured. Select ONLY your AsteroidOS Kit. Then hit Configure Project. 
+Try to build the app (without deployment - the deployment will fail at this state)
 
-You can start by modifying occurrences of “asteroid-stopwatch” to your app’s name. Then you can change the *.desktop file which describes the icon on the apps launcher. Then modify main.qml to describe your UI. To get started with QML development you can read the [official tutorial](http://doc.qt.io/qt-5/qml-tutorial.html).
+Open a new terminal.
+
+```
+cd ~/asteroid-development
+ls
+```
+
+If you hit build lately, you should see a directory listed by `ls` like:
+
+```
+build-asteroid-helloworld-AsteroidOS_Kit-Debug
+```
+
+In this directory binarys are built.
+
+Go back to QTCreator. Go under Projects in the left sidebar. 
+Projects &#8594; Build & Run &#8594; AsteroidOS Kit &#8594; Run
+
+Configure parameters:
+
+- Files to deploy
+  - Checkmark Override deployment data from build system
+    - Click Add
+    - Local File Path: ~/asteroid-development/build-asteroid-helloworld-AsteroidOS_Kit-Debug/asteroid-helloworld
+    - Remote directory /home/ceres/apps/
+
+  - Run
+    - Alternate executeable on device:
+       - Check Use this command instead
+       - Enter: /home/ceres/apps/asteroid-helloworld
+    - Working directory
+       - /home/ceres/apps
+
+  - Environment
+    - Click details
+    - Add the following environment variables
+       - EGL_PLATFORM = wayland
+       - QT_QPA_PLATFORM = wayland
+       - QT_WAYLAND_DISABLE_WINDOWDECORATION = 1
+
+
+Now just hit build and then start in the left sidebars bottom. Enjoy your hello world application!
+
+Note: When you restart your application, it will be stopped and restarted with the new binarys automagically.
 
 # Tips and tricks
 
