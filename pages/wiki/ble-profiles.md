@@ -131,7 +131,7 @@ layout: documentation
 
 <p>A client can fill weather information buffers on the watch using the Weather Profile. Those information can typically be used by asteroid-weather or asteroid-launcher's Today page to show current info.</p>
 
-<h3>Media Service (UUID: 00008071-0000-0000-0000-00A57E401D05)</h3>
+<h3>Weather Service (UUID: 00008071-0000-0000-0000-00A57E401D05)</h3>
 <p><b>Weather City Characteristic (UUID: 00008001-0000-0000-0000-00A57E401D05)</b></p>
 <p>This characteristic can be written by the client to set the name of the city whose weather information are attached to. Values should be UTF-8 strings.</p>
 <p><b>Weather IDs Characteristic (UUID: 00008002-0000-0000-0000-00A57E401D05)</b></p>
