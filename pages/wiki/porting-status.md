@@ -15,6 +15,7 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - Asus Zenwatch 2 *(maintained by Lrs121 & dlandau)*
 - Asus Zenwatch 3 *(maintained by anYc)*
 - Huawei Watch *(maintained by MagneFire)*
+- Huawei Watch 2 *(maintained by MagneFire, flocke, fosspill, FlorentBrianFoxcorner, jrt and the community)*
 - LG G Watch *(maintained by kido)*
 - LG G Watch R *(maintained by atx)*
 - LG G Watch Urbane *(maintained by TheAppleMan & kido)*
@@ -32,7 +33,6 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - Emporio Armani Connected (pinouts are on the inside)
 - Fossil Q Explorist (pinouts are on the inside)
 - Guess Connect
-- Huawei Watch 2
 - Hugo BOSS BOSS Touch
 - LG Watch Urbane 2nd Edition
 - Michael Kors Access Grayson (pinouts are on the inside)
