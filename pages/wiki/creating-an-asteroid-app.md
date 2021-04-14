@@ -27,13 +27,13 @@ bitbake meta-toolchain-qt5
 
 ---
 
-If you downloaded a prebuilt SDK, run the downloaded script. If you followed the previous steps, this will have generated the same installation script in _tmp-glibc/deploy/sdk/_, you can run it as follows:
+If you downloaded a prebuilt SDK, run the downloaded script. If you followed the previous steps, this will have generated the same installation script in `tmp-glibc/deploy/sdk/`, you can run it as follows:
 
 ```
 ./tmp-glibc/deploy/sdk/oecore-x86_64-armv7vet2hf-neon-toolchain-nodistro.0.sh
 ```
 
-This script will install the cross-compiler and ARM libraries in _/usr/local/oecore-x86_64_ by default, along with a script that needs to be sourced before every build. If you want to build a simple project via the terminal, this can be done like that:
+This script will install the cross-compiler and ARM libraries in `/usr/local/oecore-x86_64` by default, along with a script that needs to be sourced before every build. If you want to build a simple project via the terminal, this can be done like that:
 
 ```
 source /usr/local/oecore-x86_64/environment-setup-armv7vet2hf-neon-oe-linux-gnueabi
@@ -53,7 +53,7 @@ source /usr/local/oecore-x86_64/environment-setup-armv7vet2hf-neon-oe-linux-gnue
 qtcreator
 ```
 
-This can be done automatically by prepending "source /usr/local/oecore-x86_64/environment-setup-armv7vet2hf-neon-oe-linux-gnueabi" before #!/bin/sh in _/usr/bin/qtcreator.sh_
+This can be done automatically by prepending `source /usr/local/oecore-x86_64/environment-setup-armv7vet2hf-neon-oe-linux-gnueabi` before `#!/bin/sh` in `/usr/bin/qtcreator.sh`
 
 Now that you are in QtCreator go to ‘_Tools-&gt;Options-&gt;Devices_‘
 
@@ -66,10 +66,10 @@ Now that you are in QtCreator go to ‘_Tools-&gt;Options-&gt;Devices_‘
 
 Under the '_Kits_'
 
-- In the Compilers tab add the following GCC (C++): _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-g++_ and GCC (C): _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc_
-- In the Debuggers tab add the following gdb: _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gdb_
-- In the Qt Versions tab add the following qmake: _/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/qmake_
-- In the Kits tab add a kit with the previously defined device, Qt5 version and compilers, set the sysroot to _/usr/local/oecore-x86_64/sysroots/armv7vet2hf-neon-oe-linux-gnueabi/_ and let the other variables empty.
+- In the Compilers tab add the following GCC (C++): `/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-g++` and GCC (C): `/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc`
+- In the Debuggers tab add the following gdb: `/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gdb`
+- In the Qt Versions tab add the following qmake: `/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/qmake`
+- In the Kits tab add a kit with the previously defined device, Qt5 version and compilers, set the sysroot to `/usr/local/oecore-x86_64/sysroots/armv7vet2hf-neon-oe-linux-gnueabi/` and let the other variables empty.
 
 # First app
 
