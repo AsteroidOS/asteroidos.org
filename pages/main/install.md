@@ -59,7 +59,7 @@ If you have questions regarding the installation process, please check out the *
 </div></a>
 <a href="{{rel '/install/sawfish'}}"><div class="install-box">
   <img src="{{assets}}/img/sawfish.png" width="100%"><br>
-  <b>Huawei Watch 2</b><br>(sawfish)<br>
+  <b>Huawei Watch 2</b><br>(sawfish/sawshark)<br>
   <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/mooneye'}}"><div class="install-box">
