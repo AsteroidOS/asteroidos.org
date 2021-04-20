@@ -10,72 +10,72 @@ If you have questions regarding the installation process, please check out the *
 <a href="{{rel 'install/bass'}}"><div class="install-box">
   <img src="{{assets}}/img/bass.png" width="100%"><br>
   <b>LG G Watch Urbane</b><br>(bass)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"><i class="icon ion-md-star"><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"><i class="icon ion-md-star"><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/sturgeon'}}"><div class="install-box">
   <img src="{{assets}}/img/sturgeon.png" width="100%"><br>
   <b>Huawei Watch</b><br>(sturgeon)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"><i class="icon ion-md-star"><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"><i class="icon ion-md-star"><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/lenok'}}"><div class="install-box">
   <img src="{{assets}}/img/lenok.png" width="100%"><br>
   <b>LG G Watch R</b><br>(lenok)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/smelt'}}"><div class="install-box">
   <img src="{{assets}}/img/smelt.png" width="100%"><br>
   <b>Moto 360 2015</b><br>(smelt)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/sparrow'}}"><div class="install-box">
   <img src="{{assets}}/img/sparrow.png" width="100%"><br>
   <b>Asus Zenwatch 2</b><br>(sparrow)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/wren'}}"><div class="install-box">
   <img src="{{assets}}/img/wren.png" width="100%"><br>
   <b>Asus Zenwatch 2</b><br>(wren)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel 'install/anthias'}}"><div class="install-box">
   <img src="{{assets}}/img/anthias.png" width="100%"><br>
   <b>Asus Zenwatch 1</b><br>(anthias)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/dory'}}"><div class="install-box">
   <img src="{{assets}}/img/dory.png" width="100%"><br>
   <b>LG G Watch</b><br>(dory)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/harmony'}}"><div class="install-box">
   <img src="{{assets}}/img/harmony.png" width="100%"><br>
   <b>MTK6580 watches</b><br>(harmony)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/inharmony'}}"><div class="install-box">
   <img src="{{assets}}/img/inharmony.png" width="100%"><br>
   <b>MTK6580 watches</b><br>(inharmony)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/sawfish'}}"><div class="install-box">
   <img src="{{assets}}/img/sawfish.png" width="100%"><br>
   <b>Huawei Watch 2</b><br>(sawfish/sawshark)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/mooneye'}}"><div class="install-box">
   <img src="{{assets}}/img/mooneye.png" width="100%"><br>
   <b>Ticwatch E & S</b><br>(mooneye)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/swift'}}"><div class="install-box">
   <img src="{{assets}}/img/swift.png" width="100%"><br>
   <b>Asus Zenwatch 3</b><br>(swift)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/tetra'}}"><div class="install-box">
   <img src="{{assets}}/img/tetra.png" width="100%"><br>
   <b>Sony Smartwatch 3</b><br>(tetra)<br>
-  <i>Support: <span style="color:#111;"><i class="icon ion-md-star"></i></span><span style="color:#CCC"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 
 <div class="page-header">
