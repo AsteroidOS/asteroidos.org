@@ -39,7 +39,7 @@ slug: community
 </div></div></div>
 <div class="community-box-ratio"><div class="community-box"><div class="community-centered-text">
   <b>Others:</b><br><br>
-  Enthusiasts can join the community on <a href="/contact/">IRC</a>, <a href="https://twitter.com/AsteroidOS">Twitter</a> and <a href="https://github.com/AsteroidOS/">GitHub</a> or even at various events such as Meetups, QtCon, FOSDEM, workshops and others...
+  Enthusiasts can join the community on <a href="/contact/">Matrix</a>, <a href="https://twitter.com/AsteroidOS">Twitter</a> and <a href="https://github.com/AsteroidOS/">GitHub</a> or even at various events such as Meetups, QtCon, FOSDEM, workshops and others...
 </div></div></div>
 <div class="community-box-ratio"><div class="community-box-img">
   <img src="{{assets}}/img/iwantyou.jpg" width="100%"/>
