@@ -15,9 +15,9 @@ The network is currently in hostile-takeover by a commercial entity and a huge n
 
 <p>The core team of AsteroidOS decided to move to <a href="https://en.wikipedia.org/wiki/Matrix_(protocol)">Matrix</a>, a federated and modern communication protocol.</p>
 
-<p></b>We will be available under: <a href="https://app.element.io/#/room/!IhWLkfcitdpMucYIJB:matrix.org">#Asteroid:matrix.org</a>.</b></p>
+<p></b>We will be available under: <a href="https://matrix.to/#/#Asteroid:matrix.org">#Asteroid:matrix.org</a>.</b></p>
 
-<p>To join us visit the chat <a href="https://app.element.io/#/room/!IhWLkfcitdpMucYIJB:matrix.org">here</a> and click on "Sign Up" on the bottom right of the page.</p>
+<p>To join us visit the chat <a href="https://matrix.to/#/#Asteroid:matrix.org">here</a>.</p>
 
 <img class="community-header-img" style="width: 50%; height: auto;" src="/public/img/news-img/element-login.png" />
 
