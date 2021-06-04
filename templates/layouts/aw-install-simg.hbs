@@ -20,6 +20,7 @@
         <h3>Download AsteroidOS nightly builds</h3>
         Store the files in your "Downloads" folder so the later commands work<br><br>
         <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/asteroid-image-{{deviceName}}.ext4" role="button">asteroid-image-{{deviceName}}.ext4</a>
+        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/asteroid-image-{{deviceName}}.simg" role="button">asteroid-image-{{deviceName}}.simg</a>
         <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/zImage-dtb-{{deviceName}}.fastboot" role="button">zImage-dtb-{{deviceName}}.fastboot</a>
         <br><br><img src="{{assets}}/img/{{deviceName}}.png" class="install-preparation-img"><br>
       </div>
@@ -68,14 +69,12 @@
         <ol>
           <b><li type="a">Real installation</li></b>
           While your watch is in bootloader mode, flash the userdata and boot partitions using Linux:
-          <pre><code class="bash">ext2simg ~/Downloads/asteroid-image-{{deviceName}}.ext4 ~/Downloads/asteroid-image-{{deviceName}}.ext4.simg
-fastboot flash userdata ~/Downloads/asteroid-image-{{deviceName}}.ext4.simg
+          <pre><code class="bash">fastboot flash userdata ~/Downloads/asteroid-image-{{deviceName}}.simg
 fastboot flash boot ~/Downloads/zImage-dtb-{{deviceName}}.fastboot
 fastboot continue</code></pre>
 
           or using Windows:
-          <pre><code class="bash">ext2simg %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4 %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4.simg
-fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4.simg
+          <pre><code class="bash">fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.simg
 fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot
 fastboot continue</code></pre>
 
