@@ -7,13 +7,26 @@ layout: documentation
   <h1 id="watchfaceinstallation">Watchface Installation</h1>
 </div>
 <div>
-  <p>Some watchfaces (e.g. <a href="https://github.com/AsteroidOS/unofficial-watchfaces">the unofficial-watchface
-      collection</a>) bring their own installation script.
-    If you wish to install a watchface that has no installation script or is not provided as a package you can install
+  <h4>Scripted method</h4>
+  <p>Watchfaces listed in the <a href="https://github.com/AsteroidOS/unofficial-watchfaces">unofficial-watchface
+      collection</a> bring their own installation script.</p>
+  <div>
+    <p>To use the script you will need to clone the unofficial-watchfaces repo.
+      <pre><code>git clone https://github.com/AsteroidOS/unofficial-watchfaces</code></pre>
+      Change into the new directory.
+      <pre><code>cd unofficial-watchfaces</code></pre>
+      Execute the script with no flag to use SSH connection and SCP commands.
+      <pre><code>./deploy.sh</code></pre>
+      Or use ADB connection and commands with the -a flag.
+      <pre><code>./deploy.sh -a</code></pre></p>
+  </div>
+  <br/>
+  <h4>Manual method</h4>   
+  <p>If you wish to install a watchface that has no installation script or is not provided as a package you may install
     it manually using the following instructions.</p>
   <div>
-    <p>Installing a watchface only requires pushing the .qml file and the required assets (e.g.
-      fonts, images, etc.) in the <code>/usr/share/asteroid-launcher/watchfaces/</code> directory on your watch.</p>
+    <p>Installing a watchface requires pushing the .qml file and the required assets (e.g.
+      fonts, images, etc.) into the <code>/usr/share/asteroid-launcher/watchfaces/</code> directory on your watch.</p>
     <pre><code>scp watchface-name.qml root@192.168.2.15:/usr/share/asteroid-launcher/watchfaces/</code></pre>
     <p>If the watchface has additional dependencies on assets you can push them the same way.</p>
     <pre><code>scp image.png root@192.168.2.15:/usr/share/asteroid-launcher/watchfaces/</code></pre>
@@ -24,7 +37,7 @@ layout: documentation
 <div class="page-header">
   <h1 id="wallpaperinstallation">Wallpaper Installation</h1>
 </div>
-<p>If you wish to install a wallpaper that has no installation script or is not provided as a package you can install
+<p>In case you wish to install a wallpaper that has no installation script or is not provided as a package you can install
   it manually using the following instructions.</p>
 <pre><code>scp wallpapername.png root@192.168.2.15:/usr/share/asteroid-launcher/wallpapers/</code></pre>
 
@@ -56,7 +69,7 @@ layout: documentation
   <h1 id="troubleshooting">Troubleshooting</h1>
 </div>
 <div>
-  <h4>Using scp results in a <code>REMOTE HOST IDENTIFICATION HAS CHANGED!</code> warning</h4>
+  <h4>Using SCP/SSH results in a <code>REMOTE HOST IDENTIFICATION HAS CHANGED!</code> warning</h4>
   <p>
     This means that there is already a different device known with the same IP adress. This happens if you reinstall
     AsteroidOS or you use multiple watches. The warning can be resolved by removing the record of the IP adress from the
@@ -64,7 +77,7 @@ layout: documentation
     <pre><code>ssh-keygen -R 192.168.2.15</code></pre>
   </p>
   <br />
-  <h4>Mssing dependencies detected during package install</h4>
+  <h4>Missing dependencies detected during package install</h4>
   <p>
     The package you are trying to install may depend on other packages and their versions. You can install the
     dependencies first, add the <code>--force-depends</code> flag to your install command or decide to not install the
