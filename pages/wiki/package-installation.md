@@ -20,6 +20,7 @@ layout: documentation
       Or use ADB connection and commands with the -a flag.
       <pre><code>./deploy.sh -a</code></pre></p>
   </div>
+  <br/>
   <h4>Manual method</h4>   
   <p>If you wish to install a watchface that has no installation script or is not provided as a package you may install
     it manually using the following instructions.</p>
