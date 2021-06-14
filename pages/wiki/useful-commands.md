@@ -76,7 +76,7 @@ mcetool -M disabled # Disables the tap to unlock functionality
 
 ---
 
-Systemd is the init system used by AsteroidOS. It is controlled by a command named `systemctl`. This command can be used to restart the user session or the entire system into different mode.
+Systemd is the init system used by AsteroidOS. It is controlled by a command named `systemctl`. This command can be used to restart the user session or the entire system into a different mode.
 
 ```
 systemctl restart user@1000 # Restarts the ceres session (including the entire UI)
@@ -84,3 +84,15 @@ reboot # Simply reboot your watch
 systemctl --force reboot bootloader # Restarts the watch in bootloader mode
 systemctl --force reboot recovery # Restarts the watch in recovery mode
 ```
+
+# Time zone, date & time
+
+---
+
+Although we offer [synchronization clients](https://asteroidos.org/wiki/synchronization-clients/) for different platforms, it might still be useful to set the time zone or synchronise the date and time using standard Linux tools. The Linux folder `/usr/share/zoneinfo/` contains the naming scheme for your local time zone in `<continent>/<zone>` format.
+
+```
+ssh root@192.168.2.15 "timedatectl set-timezone <continent>/<zone>" # e.g. Europe/Berlin
+ssh root@192.168.2.15 "date -s @`(date -u +"%s" )`"
+```
+
