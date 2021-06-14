@@ -85,11 +85,11 @@ systemctl --force reboot bootloader # Restarts the watch in bootloader mode
 systemctl --force reboot recovery # Restarts the watch in recovery mode
 ```
 
-# Timezone, date & time
+# Time zone, date & time
 
 ---
 
-Although we offer [synchronization clients](https://asteroidos.org/wiki/synchronization-clients/) for different platforms, it might still be useful to set the time zone or synchronise the date and time using standard Linux tools. The Linux folder `/usr/share/zoneinfo/` contains the nameing scheme for your local time zone in <continent>/<zone> format.
+Although we offer [synchronization clients](https://asteroidos.org/wiki/synchronization-clients/) for different platforms, it might still be useful to set the time zone or synchronise the date and time using standard Linux tools. The Linux folder `/usr/share/zoneinfo/` contains the naming scheme for your local time zone in `<continent>/<zone>` format.
 
 ```
 ssh root@192.168.2.15 "timedatectl set-timezone <continent>/<zone>" # e.g. Europe/Berlin
