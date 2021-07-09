@@ -105,8 +105,9 @@ sudo docker rm -f asteroidos-toolchain
 
 Create a Docker container called *asteroidos-toolchain* from the Docker image which we also called *asteroidos-toolchain* and build AsteroidOS for *dory* (the LG G Watch) within the container:
 
+**Run this as a non root user**:
 ```
-sudo docker rm -f asteroidos-toolchain ; sudo docker run --name asteroidos-toolchain -it -v /etc/passwd:/etc/passwd -u "$(id -u):$(id -g)" -v "$HOME/.gitconfig:/$HOME/.gitconfig" -v "$(pwd):/asteroid" asteroidos-toolchain bash -c "source ./prepare-build.sh dory && bitbake asteroid-image"
+sudo docker rm -f asteroidos-toolchain ; sudo docker run --name asteroidos-toolchain -it -v /etc/passwd:/etc/passwd:ro -u "$(id -u):$(id -g)" -v "$HOME/.gitconfig:/$HOME/.gitconfig:ro" -v "$(pwd):/asteroid" asteroidos-toolchain bash -c "source ./prepare-build.sh dory && bitbake asteroid-image"
 ```
 
 
