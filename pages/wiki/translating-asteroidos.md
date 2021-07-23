@@ -11,4 +11,4 @@ layout: documentation
 <div class="page-header">
   <h1 id="addingts">Adding a new language</h1>
 </div>
-<p>If the language you want to translate to is not supported yet, please <a href="irc://irc.freenode.net/asteroid">join #asteroid on Freenode</a> to tell us which language you’d like to see supported and we’ll set it up for you.</p>
+<p>If the language you want to translate to is not supported yet, please <a href="irc://https://web.libera.chat/#asteroid">join #asteroid on Libera.chat</a> to tell us which language you’d like to see supported and we’ll set it up for you.</p>
