@@ -19,7 +19,7 @@ notificationtool -o add \
         --urgency=3 \
         --hint="x-nemo-preview-summary Incredible preview title" \
         --hint="x-nemo-preview-body Exceptional preview content" \
-        --hint="x-nemo-feedback information_strong" \
+        --hint="x-nemo-feedback notif_strong" \
         "Great Title" \
         "Amazing content"
 ```
