@@ -52,8 +52,8 @@ This script will install the cross-compiler and ARM libraries in `/usr/local/oec
 
 ```
 source /usr/local/oecore-x86_64/environment-setup-armv7vehf-neon-oe-linux-gnueabi
-qmake
-make
+cmake -B build
+cmake --build build
 ```
 
 
@@ -75,34 +75,55 @@ Now that you are in QtCreator go to ‘_Tools-&gt;Options-&gt;Devices_‘
 - Add a new Generic Linux Device.
 - Name it "AsteroidOS Watch".
 - Choose 192.168.2.15 as IP address.
-- Use ceres as user.
+- Use root as user.
 - Choose Password authentication and leave the password field empty.
 
 
-Under the '_Kits_'
-
-- In the Compilers tab add the following GCC (C++): `/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-g++` and GCC (C): `/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc`
-- In the Debuggers tab add the following gdb: `/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gdb`
-- In the Qt Versions tab add the following qmake: `/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/qmake`
-- In the Kits tab add a kit with the previously defined device, Qt5 version and compilers, set the sysroot to `/usr/local/oecore-x86_64/sysroots/armv7vehf-neon-oe-linux-gnueabi/` and let the other variables empty.
+Under the '_Kits_' add a kit with the previously defined device:
+- Set `Device type` to `Generic Linux Device`.
+- Set the `Device` to `AsteroidOS Watch`.
+- Set the sysroot to `/usr/local/oecore-x86_64/sysroots/armv7vehf-neon-oe-linux-gnueabi/`.
+- In the CMake generator change the `Generator` to `Unix Makefiles`.
+- Change `C` compiler to `<No compiler>`.
+- Change `C++` compiler to `<No compiler>`.
+- Change `Qt version` to `None`.
+- Change `CMake Tool` to `System CMake at /usr/local/oecore-x86_64/usr/bin/cmake`
+- Clear the `CMake Configuration` fields.
 
 # First app
 
 ---
 
-[Asteroid-Stopwatch](https://github.com/AsteroidOS/asteroid-stopwatch) can act as a cool QML demo app to make your first steps into AsteroidOS development easier. You can clone it, build it, install it and then modify it to follow your needs:
+[Asteroid-helloworld](https://github.com/AsteroidOS/asteroid-helloworld) can act as a cool QML demo app to make your first steps into AsteroidOS development easier. You can clone it, build it, install it and then modify it to follow your needs:
 
 ```
-git clone https://github.com/AsteroidOS/asteroid-stopwatch
-cd asteroid-stopwatch/
-./i18n/generate-desktop.sh . asteroid-stopwatch.desktop
+git clone https://github.com/AsteroidOS/asteroid-helloworld
+cd asteroid-helloworld/
 source /usr/local/oecore-x86_64/environment-setup-armv7vehf-neon-oe-linux-gnueabi
-qtcreator asteroid-stopwatch.pro
+qtcreator CMakeLists.txt
 ```
 
 Try to build and deploy the app. If it wasn’t already installed, a new icon should have already appeared on asteroid-launcher.
 
-You can start by modifying occurrences of “asteroid-stopwatch” to your app’s name. Then you can change the *.desktop file which describes the icon on the apps launcher. Then modify main.qml to describe your UI. To get started with QML development you can read the [official tutorial](http://doc.qt.io/qt-5/qml-tutorial.html).
+You can start by modifying occurrences of “asteroid-helloworld” to your app’s name. Then you can change the *.desktop file which describes the icon on the apps launcher. Then modify main.qml to describe your UI. To get started with QML development you can read the [official tutorial](http://doc.qt.io/qt-5/qml-tutorial.html).
+
+# Deploy an app from QtCreator
+
+Open the project as described in the previous sections.
+
+- Click on the `Projects` button on the left sidebar.
+- Under the `Build & Run` section click on the `Run` configuration. This opens all run settings.
+- Scroll down to the `Run` settings.
+
+Change the following '_Run_' settings:
+- Set the `Run configuration` to `Custom Executable (on AsteroidOS Watch)`.
+- Set the `Remote executable` to `invoker`. Add the `--single-instance --type=qtcomponents-qt5 /usr/local/bin/asteroid-helloworld` command line arguments.
+
+Change the following '_Environment_' variables:
+- Add `XDG_RUNTIME_DIR` and set its value to `/run/user/1000`. So that the invoker works under the root user.
+- (Optional) Add `QT_WAYLAND_DISABLE_WINDOWDECORATION` with value `1`. To make the app full screen and hide the titlebar.
+
+Your app should now be able to run from the application when you click the start button in the bottom left sidebar.
 
 # Tips and tricks
 
@@ -113,7 +134,6 @@ If you want to start your app from the command line, open a shell with [SSH]({{r
 ```
 invoker --type=qtcomponents-qt5 /usr/bin/asteroid-stopwatch
 ```
-**TODO:** Document the integration of this invoker command as a run step in the Qt Creator configuration.
 
 If you want to disable screen locking for easier development you can enable the demo mode of mce as root with:
 
