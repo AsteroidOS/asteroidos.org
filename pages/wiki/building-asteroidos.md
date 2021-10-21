@@ -10,11 +10,11 @@ If you decide to compile AsteroidOS from source be aware that it’s a simple pr
 # General information
 ---
 
-You might want to build AsteroidOS in Docker because you'll get a clean build environment that works no matter what kinds of package repositories or package versions you have installed or how outdated your Linux distribution is or which Linux distribution you're using in the first place.
+You might want to build AsteroidOS in a *container engine* such as [Docker](https://www.docker.com/) or [podman](https://podman.io/) because you'll get a clean build environment that works no matter what kinds of package repositories or package versions you have installed or how outdated your Linux distribution is or which Linux distribution you're using in the first place.
 
-Another advantage of Docker is that it *should* also work on Windows and OS X. (However, this has not been tested yet!)
+Another advantage of Docker specifically is that it *should* also work on Windows and OS X. (However, this has not been tested yet!)
 
-Using Docker also allows you to easily roll back. Consider the following: If you were to simply delete the repository and uninstall the `prerequisites` you will potentially remove packages that you had installed before and might actually still need.
+Using containers also allows you to easily roll back.  Without a container, if you decided to delete the AsteroidOS repository and unistall the prerequisite software packages from your computer, you will potentially remove packages that you had installed before and might actually still need.  With a container, simply deleting the container image has no other effect on the host computer.
 
 # Clone the repository
 ---
@@ -32,13 +32,13 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
-Before you continue to *Build without Docker* or *Build with Docker*, make sure you're in the asteroid directory:
+Before you continue to *Build without containers* or *Build with containers*, make sure you're in the asteroid directory:
 
 ```
 cd asteroid/
 ```
 
-# Build without Docker
+# Build without containers
 ---
 
 ## Downloading
@@ -69,6 +69,8 @@ bitbake asteroid-image
 ```
 *Note:* Bitbake is a powerful tool that can also build single packages (e.g: bitbake strace) or [the SDK]({{rel 'wiki/building-asteroidos'}}) for example. Refer to its documentation for more details.
 
+If this step was successful, you can proceed to the *Installing* section below.
+
 ## Updating the Sources
 ---
 
@@ -79,63 +81,88 @@ source ./prepare-build.sh update
 ```
 
 
-# Build with Docker
+# Build with containers
 ---
 
-These instructions have been tested on Ubuntu 19.04, but should also be applicable to Debian Sid (at least at the time of writing). For other distributions the dependencies may have different names and you may have to install additional ones.
+These instructions have been tested on Ubuntu 19.04 (with Docker) and Fedora 34 (with podman), but should also be applicable to Debian Sid (at least at the time of writing). For other distributions the dependencies may have different names and you may have to install additional ones.
+
+From a user's point of view, Docker and podman are quite similar and accept almost all of the exact same commands, but there are some difference.  The most significant differences for building Asteroid are that podman does not use a daemon and can be run "rootless" (that is, as a non-root user).  This makes some things a bit easier, but either can be used.
 
 
 ## Setup
 ---
 
-Build a Docker image called *asteroidos-toolchain* from the given Dockerfile:
-
-```
-sudo docker build --tag asteroidos-toolchain .
-```
-
-Remove the Docker container called *asteroidos-toolchain* in case it already exists:
+Remove the Docker container called *asteroidos-toolchain* if it already exists:
 
 ```
 sudo docker rm -f asteroidos-toolchain
 ```
+or
+```
+podman rm -f asteroidos-toolchain
+```
 
-## Usage example
+
+Build a container image called *asteroidos-toolchain* from the given Dockerfile:
+
+```
+sudo docker build --tag asteroidos-toolchain .
+```
+or
+```
+podman build --tag asteroidos-toolchain .
+```
+
+## Building the software
 ---
 
-Create a Docker container called *asteroidos-toolchain* from the Docker image which we also called *asteroidos-toolchain* and build AsteroidOS for *dory* (the LG G Watch) within the container:
+Now that the container with the toolchain software has been created, we can use this to build AsteroidOS.  All of the tools are contained and run within the container, but we use a *shared volume*, essentially some drive space that both the host computer and the container can read and write, for actually creating the AsteroidOS image files.
+
+In this example, we will build AsteroidOS for *dory* (the LG G Watch).  To build for a different watch than the LG G Watch, use its corresponding codename instead of *dory* when executing the *docker run ...* command.  You can find the codenames for the supported watched on the [Install page]({{rel 'install'}}).
+
+Assuming that you have carefully followed the instructions so far and are in the `asteroid` directory, you can now build the sofware.
 
 **Run this as a non root user**:
-```
-sudo docker rm -f asteroidos-toolchain ; sudo docker run --name asteroidos-toolchain -it -v /etc/passwd:/etc/passwd:ro -u "$(id -u):$(id -g)" -v "$HOME/.gitconfig:/$HOME/.gitconfig:ro" -v "$(pwd):/asteroid" asteroidos-toolchain bash -c "source ./prepare-build.sh dory && bitbake asteroid-image"
-```
-
-
-Note: The files created during the build simply go to the current directory (which should be *asteroid*), more specifically, the output goes to the subdirectories *asteroid/src* and *asteroid/build*.
-
-To build for a different watch than the LG G Watch, use its corresponding codename instead of *dory* when executing the *docker run ...* command.
-
-You can find the codenames for the supported watched on the [Install page]({{rel 'install'}}).
-
-Explanation of the above docker rm ... ; docker run ...* command:
 
 ```
-# sudo docker rm -f asteroidos-toolchain  Removes the Docker container called "asteroidos-toolchain" in case it already exists
-# -it                                     Attaches the terminal to the container so that we can see the output. Otherwise it would run blindly in the background.
-# -u "$(id -u):$(id -g)"                      Ensures that the current user id and group id from the host is used on files inside the container to avoid permission issues.
-# -v /etc/passwd:/etc/passwd              Ensures that the user ids and groups from the host are also available in the Docker container. (Otherwise the -u and -g would be useless.)
-# /etc/passwd                             Contains the user names and their ids.
-# "$HOME/.gitconfig:/$HOME/.gitconfig"    Shares your user's git config with the container.
-# -v "$(pwd):/asteroid"                   Is used to mount the current directory (which is your asteroid git repo clone) into the container.
-
-# bash -c "source ./prepare-build.sh dory && bitbake asteroid-image"   This is the command to be executed inside of the container.
-                                                                       "dory" being the codename of your watch.
+sudo docker run --rm -it -v /etc/passwd:/etc/passwd:ro -u "$(id -u):$(id -g)" \
+  -v "$HOME/.gitconfig:/$HOME/.gitconfig:ro" -v "$(pwd):/asteroid" asteroidos-toolchain \
+  bash -c "source ./prepare-build.sh dory && bitbake asteroid-image"
+```
+or
+```
+podman run --rm -it -v  "$(pwd)":/asteroid:z --userns keep-id asteroidos-toolchain \
+  bash -c "source ./prepare-build.sh dory && bitbake asteroid-image"
 ```
 
+The files created during the build are placed in the current directory; more specifically, the source files are placed in a `src` subdirectory and build artefacts, including the final binary images are placed in the `build` subdirectory.
+
+Here is a detailed explanation of the Docker command above:
+
+ - `sudo docker run` Runs a container image
+ - `--rm` Cleans up after the command is run by removing temporary container storage
+ - `-it`  Attaches the terminal to the container so that we can see the output. Otherwise it would run blindly in the background.
+ - `-u "$(id -u):$(id -g)"` Ensures that the current user id and group id from the host is used on files inside the container to avoid permission issues.
+ - `-v /etc/passwd:/etc/passwd`  Ensures that the user ids and groups from the host are also available in the Docker container. (Otherwise the -u and -g would be useless.)
+ - `/etc/passwd` Contains the user names and their ids.
+ - `"$HOME/.gitconfig:/$HOME/.gitconfig"` Share your user's git config with the container.
+ - `-v "$(pwd):/asteroid"` Mount the current directory (which is your asteroid git repo clone) into the container.
+ - `bash -c "source ./prepare-build.sh dory && bitbake asteroid-image"`  This is the command to be executed inside of the container with "dory" being the codename of your watch.
+
+Here is a detailed explanation of the podman version of the command above:
+
+ - `podman run` Runs a container image
+ - `--rm` Cleans up after the command is run by removing temporary container storage
+ - `-it` Attaches the terminal to the container so that we can see the output. Otherwise it would run blindly in the background.
+ - `-v "$(pwd)":/asteroid:z` Mount the current directory (which is your asteroid git repo clone) into the container. The ":z" tells SELinux, if it's running, to allow multiple containers to share this mount.
+ - `--userns keep-id` Run as the current user inside the container
+ - `bash -c "source ./prepare-build.sh dory && bitbake asteroid-image"`  This is the command to be executed inside of the container with "dory" being the codename of your watch.
+
+If this step was successful, you can proceed to *Installing* below.
 
 # Installing
 ---
 
-After a while, the generated image should be available in *build/tmp-glibc/deploy/images/dory/*. (No matter if you built with or without Docker.)
+After a while, whether you build with or without containers, the generated image should be available in *build/tmp-glibc/deploy/images/dory/* (for "dory" -- for other watches, the image files are in the corresponding code word directory.)
 
 Install AsteroidOS using your usual device's instructions, which you can find on the [Install page]({{rel 'install'}}).
