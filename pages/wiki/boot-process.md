@@ -27,7 +27,7 @@ layout: documentation
   <h1 id="troubleshooting">Troubleshooting the boot process</h1>
 </div>
 <p>The default initramfs has a section to enable adbd on the watch before booting into the rootfs. You can enable it by appending <code>debug-ramdisk</code> to the boot kernel’s parameters for example with <i>fastboot -c</i>. When you boot the watch, you will be able to access a command line on the ramdisk with <code>adb shell</code>.</p>
-<p>For example, the bass watch <a href="https://github.com/AsteroidOS/meta-bass-hybris/blob/master/recipes-core%2Finitrdscripts%2Finitramfs-boot-android%2Finit.sh#L50">initscript</a> and <a href="https://github.com/AsteroidOS/meta-bass-hybris/blob/master/recipes-kernel%2Flinux%2Flinux-bass%2Fimg_info#L10">kernel configuration line</a>.</p>
+<p>Here is an example <a href="https://github.com/AsteroidOS/meta-asteroid/blob/b0dd1970844206a34bbba4477691ec7940bebcf7/recipes-core/initrdscripts/initramfs-scripts-android/init.sh#L42">initscript</a> and the <a href="https://github.com/AsteroidOS/meta-bass-hybris/blob/master/recipes-kernel%2Flinux%2Flinux-bass%2Fimg_info#L10">kernel configuration line</a> of bass.</p>
 <h3>Troubleshooting systemd</h3>
 <p>If you see the AsteroidOS logo (even for a split second), the watch is able to boot into the rootfs and launch systemd.</p>
 <p>Logs are normally stored in a tmpfs filesystem which is lost whenever the watch is rebooted. To disable the tmpfs mount, first mount the sdcard card containing the rootfs, and then the rootfs:</p>
