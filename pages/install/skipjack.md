@@ -1,7 +1,7 @@
 ---
 title: Ticwatch C2+
 deviceName: skipjack
-layout: skipjack-install
+layout: aw-install
 ---
 
 <div class="support-row">
