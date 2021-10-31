@@ -67,15 +67,15 @@ If you have questions regarding the installation process, please check out the *
   <b>Ticwatch E & S</b><br>(mooneye)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
+<a href="{{rel '/install/skipjack'}}"><div class="install-box">
+  <img src="{{assets}}/img/skipjack.png" width="100%"><br>
+  <b>TicWatch C2+</b><br>(skipjack)<br>
+ <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span>
+</div></a>
 <a href="{{rel '/install/swift'}}"><div class="install-box">
   <img src="{{assets}}/img/swift.png" width="100%"><br>
   <b>Asus Zenwatch 3</b><br>(swift)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/skipjack'}}"><div class="install-box">
-  <img src="{{assets}}/img/skipjack.png" width="100%"><br>
-  <b>TicWatch C2+</b><br>(skipjack)<br>
- <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/tetra'}}"><div class="install-box">
   <img src="{{assets}}/img/tetra.png" width="100%"><br>
