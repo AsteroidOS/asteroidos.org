@@ -67,6 +67,11 @@ If you have questions regarding the installation process, please check out the *
   <b>Ticwatch E & S</b><br>(mooneye)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
+<a href="{{rel '/install/ray'}}"><div class="install-box">
+  <img src="{{assets}}/img/ray.png" width="100%"><br>
+  <b>Skagen Falster 2</b><br>(ray)<br>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
 <a href="{{rel '/install/swift'}}"><div class="install-box">
   <img src="{{assets}}/img/swift.png" width="100%"><br>
   <b>Asus Zenwatch 3</b><br>(swift)<br>
