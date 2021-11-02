@@ -23,5 +23,5 @@ layout: aw-install
     <p>You will need access to the pads of the watch, this can be achieved by removing plastic outer ring. This is fairly straightforward as the ring can be easily lifted by putting a fingernail underneath the small lip.</p>
     <p>Then you can either solder to the appropriate pads or 3D print a dock.</p>
     <p>See <a href="https://forum.xda-developers.com/showpost.php?p=76733989">https://forum.xda-developers.com/showpost.php?p=76733989</a> on which pad corresponds to which USB pin.</p>
-    <p>See <a href="https://www.thingiverse.com/thing:4366014">https://www.thingiverse.com/thing:4366014</a> on a 3D prinable dock that can be used to interface with the watch (Also needs pogo pins).</p>
+    <p>A 3D printable dock that can be used to interface with the watch, but requires pogo pins, is available to download here: <a href="https://www.thingiverse.com/thing:4366014">https://www.thingiverse.com/thing:4366014</a>.</p>
 </div>
