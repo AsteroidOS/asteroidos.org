@@ -14,6 +14,7 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - Asus Zenwatch *(maintained by locusf)*
 - Asus Zenwatch 2 *(maintained by Lrs121 & dlandau)*
 - Asus Zenwatch 3 *(maintained by anYc)*
+- Fossil Gen 4 *(maintained by dodoradio & MagneFire)*
 - Huawei Watch *(maintained by MagneFire)*
 - Huawei Watch 2 *(maintained by MagneFire, flocke, fosspill, FlorentBrianFoxcorner, jrt and the community)*
 - LG G Watch *(maintained by kido)*
