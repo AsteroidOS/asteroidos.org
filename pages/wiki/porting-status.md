@@ -24,6 +24,7 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - Samsung Gear Live *(maintained by kido) support currently broken*
 - Sony Smartwatch 3 *(maintained by kido)*
 - Ticwatch E & S *(maintained by kido)*
+- Ticwatch C2+ *(maintained by R0NAM1)*
 
 &nbsp;
 #### Possible ports not supported yet:
