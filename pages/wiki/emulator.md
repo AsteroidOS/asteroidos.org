@@ -26,7 +26,7 @@ Unfortunately, most Linux distributions (such as Debian) still do not provide QE
 Once you have a correct version of QEMU, a rootfs and a kernel, you can start AsteroidOS in an emulator using:
 
 ```bash
-qemu-system-i386 -enable-kvm -kernel bzImage-qemux86.bin \
+qemu-system-x86-64 -enable-kvm -kernel bzImage-qemux86.bin \
 -device virtio-vga,virgl=on \
 -net nic -net user,hostfwd=tcp::2222-:22 \
 -drive format=raw,file=asteroid-image-qemux86.ext4 \
@@ -41,4 +41,39 @@ The previous command sets up a port forwarding so that you can connect to the em
 
 ```
 ssh -p 2222 ceres@localhost
+```
+
+# Troubleshooting
+Here are some common problems and their solutions.
+
+## `qemu-system-x86: -device virtio-vga,virgl=on: Property 'virtio-vga.virgl' not found`
+Newer versions of QEMU use `-device virtio-vga-gl` instead of `-device virtio-vga,virgl=on`, so if you get this message, use the newer form.
+
+## Video corruption using NVIDIA drivers
+There have been reported problems on machines using proprietary NVIDIA drivers.  One symptom is a black screen instead of the AsteroidOS screen which may or may not also show messages like these:
+
+```
+gl_version 46 - core profile enabled
+GLSL feature level 460
+failed to complete framebuffer 0x8cd7 asteroid-launch
+```
+Other symptoms include video artifacts (smearing, double screens) and crashing, usually with a message `Segmentation fault (core dumped)`.  If you're experiencing these and are using a proprietary NVIDIA driver, using `gtk` instead of `sdl` may work better.  An example command line:
+
+```
+qemu-system-i386 -enable-kvm -kernel bzImage-qemux86.bin \
+  -device virtio-vga-gl \
+  -net nic -net user,hostfwd=tcp::2222-:22 \
+  -drive file=asteroid-image-qemux86.ext4,format=raw \
+  -m 512 \
+  -display gtk,gl=on \
+  -cpu qemu64,+ssse3,+sse4.1,+sse4.2 \
+  -usb -device usb-tablet -device usb-mouse \
+  --append "verbose root=/dev/sda rw mem=512M video=800x800"
+  ```
+
+## Watch seems to lock up after a few seconds
+  It's possible that the display is no longer updating but that the watch is actually still running.  To make sure that the emulator continues to update the screen you can enter [demo mode](useful-commands/#screen) to keep the screen on.  If you have followed this guide and the watch is listening on port 2222, this command will turn on demo mode.
+
+```
+ssh -t -p2222 root@localhost mcetool -D on
 ```
