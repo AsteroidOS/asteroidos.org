@@ -62,6 +62,11 @@ If you have questions regarding the installation process, please check out the *
   <b>Huawei Watch 2</b><br>(sawfish/sawshark)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
+<a href="{{rel '/install/skipjack'}}"><div class="install-box">
+  <img src="{{assets}}/img/skipjack.png" width="100%"><br>
+  <b>TicWatch C2+</b><br>(skipjack)<br>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
 <a href="{{rel '/install/firefish'}}"><div class="install-box">
   <img src="{{assets}}/img/firefish.png" width="100%"><br>
   <b>Fossil Gen 4</b><br>(firefish)<br>
@@ -71,11 +76,6 @@ If you have questions regarding the installation process, please check out the *
   <img src="{{assets}}/img/mooneye.png" width="100%"><br>
   <b>Ticwatch E & S</b><br>(mooneye)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/skipjack'}}"><div class="install-box">
-  <img src="{{assets}}/img/skipjack.png" width="100%"><br>
-  <b>TicWatch C2+</b><br>(skipjack)<br>
- <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span>
 </div></a>
 <a href="{{rel '/install/ray'}}"><div class="install-box">
   <img src="{{assets}}/img/ray.png" width="100%"><br>

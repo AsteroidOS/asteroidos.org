@@ -12,9 +12,8 @@ layout: aw-install
   <div class="support-col">GPS<div class="support-col-bad"></div></div>
   <div class="support-col">NFC<div class="support-col-bad"></div></div>
   <div class="support-col">WLAN<div class="support-col-bad"></div></div>
-  <div class="support-col">Heart Rate<div class="support-col-bad"></div></div>
-  <div class="support-col">Tilt-to-Wake<div class="support-col-bad"></div></div>
-  <div class="support-col">Compass<div class="support-col-bad"></div></div>
+  <div class="support-col">Heart Rate<div class="support-col-good"></div></div>
+  <div class="support-col">Tilt-to-Wake<div class="support-col-good"></div></div>
   <div class="support-col">Haptics<div class="support-col-good"></div></div>
   <div class="support-col">USB<div class="support-col-good"></div></div>
 </div>
