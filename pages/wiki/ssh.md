@@ -22,6 +22,7 @@ layout: documentation
 <pre><code>IMAGE_INSTALL += "android-tools android-system msm-fb-refresher brcm-patchram-plus iproute2 wpa-supplicant connman-client"</code></pre>
 <p>Once your image is installed on the watch, open up an <code>adb shell</code> or <code>ssh root@192.168.2.15</code>:</p>
 <pre><code># connmanctl
+connmanctl&gt; enable wifi
 connmanctl&gt; scan wifi
 connmanctl&gt; services
 connmanctl&gt; agent on
