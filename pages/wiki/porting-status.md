@@ -26,6 +26,7 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - Sony Smartwatch 3 *(maintained by kido)*
 - Ticwatch E & S *(maintained by kido)*
 - Ticwatch C2+ *(maintained by R0NAM1)*
+- Ticwatch Pro *(maintained by C9Glax, LecrisUT & MagneFire)*
 
 &nbsp;
 #### Possible ports not supported yet:

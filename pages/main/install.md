@@ -42,6 +42,11 @@ If you have questions regarding the installation process, please check out the *
   <b>Asus Zenwatch 1</b><br>(anthias)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
+<a href="{{rel '/install/catfish'}}"><div class="install-box">
+  <img src="{{assets}}/img/catfish.png" width="100%"><br>
+  <b>TicWatch Pro</b><br>(catfish)<br>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
 <a href="{{rel '/install/dory'}}"><div class="install-box">
   <img src="{{assets}}/img/dory.png" width="100%"><br>
   <b>LG G Watch</b><br>(dory)<br>
