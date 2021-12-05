@@ -10,7 +10,7 @@ This page aims at gathering info about the currently supported platforms and por
 The WearOS smartwatches are the most widespread and easy to support. The source code of their kernels is usually easily available and the drivers can be supported with [libhybris](https://github.com/libhybris/libhybris). Those watches are the current priority of AsteroidOS.
 
 &nbsp;
-#### Supported watches:
+#### Supported watches and other ports:
 - Asus Zenwatch *(maintained by locusf)*
 - Asus Zenwatch 2 *(maintained by Lrs121 & dlandau)*
 - Asus Zenwatch 3 *(maintained by anYc)*
@@ -22,8 +22,8 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - LG G Watch Urbane *(maintained by TheAppleMan & kido)*
 - Moto 360 (2nd generation) *(maintained by MagneFire)*
 - Skagen Falster 2 *(maintained by MagneFire)*
-- Samsung Gear Live *(maintained by kido) support currently broken*
-- Sony Smartwatch 3 *(maintained by kido)*
+- Samsung Gear Live *(unmaintained)*
+- Sony Smartwatch 3 *(unmaintained)*
 - Ticwatch E & S *(maintained by kido)*
 - Ticwatch C2+ *(maintained by R0NAM1)*
 - Ticwatch Pro *(maintained by C9Glax, LecrisUT & MagneFire)*

@@ -92,11 +92,6 @@ If you have questions regarding the installation process, please check out the *
   <b>Asus Zenwatch 3</b><br>(swift)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
-<a href="{{rel '/install/tetra'}}"><div class="install-box">
-  <img src="{{assets}}/img/tetra.png" width="100%"><br>
-  <b>Sony Smartwatch 3</b><br>(tetra)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
 
 <div class="page-header">
   <h1>FAQ</h1>
