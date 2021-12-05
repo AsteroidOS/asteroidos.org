@@ -47,6 +47,11 @@ If you have questions regarding the installation process, please check out the *
   <b>LG G Watch</b><br>(dory)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
+<a href="{{rel '/install/firefish'}}"><div class="install-box">
+  <img src="{{assets}}/img/firefish.png" width="100%"><br>
+  <b>Fossil Gen 4</b><br>(firefish)<br>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
 <a href="{{rel '/install/harmony'}}"><div class="install-box">
   <img src="{{assets}}/img/harmony.png" width="100%"><br>
   <b>MTK6580 watches</b><br>(harmony)<br>
@@ -55,6 +60,11 @@ If you have questions regarding the installation process, please check out the *
 <a href="{{rel '/install/inharmony'}}"><div class="install-box">
   <img src="{{assets}}/img/inharmony.png" width="100%"><br>
   <b>MTK6580 watches</b><br>(inharmony)<br>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
+<a href="{{rel '/install/ray'}}"><div class="install-box">
+  <img src="{{assets}}/img/ray.png" width="100%"><br>
+  <b>Skagen Falster 2</b><br>(ray)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/sawfish'}}"><div class="install-box">
@@ -67,19 +77,9 @@ If you have questions regarding the installation process, please check out the *
   <b>TicWatch C2+</b><br>(skipjack)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
-<a href="{{rel '/install/firefish'}}"><div class="install-box">
-  <img src="{{assets}}/img/firefish.png" width="100%"><br>
-  <b>Fossil Gen 4</b><br>(firefish)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
 <a href="{{rel '/install/mooneye'}}"><div class="install-box">
   <img src="{{assets}}/img/mooneye.png" width="100%"><br>
   <b>Ticwatch E & S</b><br>(mooneye)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/ray'}}"><div class="install-box">
-  <img src="{{assets}}/img/ray.png" width="100%"><br>
-  <b>Skagen Falster 2</b><br>(ray)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/swift'}}"><div class="install-box">
