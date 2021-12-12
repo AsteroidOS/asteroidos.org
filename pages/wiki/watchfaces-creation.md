@@ -3,36 +3,78 @@ title: Watchfaces Creation
 layout: documentation
 ---
 
-<p>Watchface creation is fairly simple, requiring only QML knowledge. This guide will walk you through the steps.</p>
+<p>Watchface creation is fairly simple. The provided scripts make it possible to create your first watchface even without any programming skills by redesigning existing svg parts only. Changing code requires some QML knowledge. Even if you are not familiar with QML yet, prior knowledge of any scripting language should be sufficiant to learn quickly from the already existing examples provided by the community.<br>Those community examples are collected in the <a href="https://github.com/AsteroidOS/unofficial-watchfaces">unofficial-watchfaces repo</a>. This guide will walk you through the steps of how to get started.</p>
 <div class="page-header">
   <h1 id="preparingwfcrea">Preparing watchface creation</h1>
 </div>
 <div>
-<p>First, clone the <a href="https://github.com/AsteroidOS/asteroid-launcher">https://github.com/AsteroidOS/asteroid-launcher</a> repository as it contains all watchfaces. Then, navigate to the <code>watchfaces</code> directory. In here, copy <code>000-default-digital.qml</code> to a new file to use as a base for watchface creation.</p>
+  <p>To begin watchface creation starting from a community example, browse the <a href="https://github.com/AsteroidOS/unofficial-watchfaces">unofficial-watchfaces repo</a> for an existing watchface with features you like to have in your new watchface. Take note of its name and proceed with setting up our humble watchface creation tools.</p>
+  <p>Open a terminal and clone the unofficial-watchfaces repo to a new subfolder from your current location as it contains all community made watchfaces.</p>
+  <p><code>git clone https://github.com/AsteroidOS/unofficial-watchfaces</code></p>
+  <p>Change directory into unofficial-watchfaces folder. <code>cd unofficial-watchfaces/</code></p>
+  <p>You will find the watchface testing script in this directory. It was created to simulate watchface behaviour on your local machine using qmlscene. Qmlscene is provided by the <code>qt-creator</code> package.</p>
+  <p>Executing the script <code>./test-in-qmlscene.sh</code> lists all community watchfaces. Enter a number to start simulating the assigned watchface in qmlscene. A detailed description of the scripts features can be found further down on this page.</p>
+</div>
+<div>
+  <p>The <code>./cloner.sh</code> script takes care of copying and renaming all files, folders and references to those, into a name of your liking. E.g.:</p>
+  <p><code>./cloner.sh analog-nort analog-my-watch-face</code></p>
+  <p>Your renamed copy will appear in the list of watchfaces when starting <code>./test-in-qmlscene.sh</code> again.</p>
+  <p>The <code>cloner.sh</code> expects two inputs. The first watchface must exist, your choosen name must not already exist. Please avoid special characters and spaces in the name. We tend to roughly categorize <code>analog-</code> and <code>digital-</code> watchfaces by these prefixes.</p>
+  <p>In this example, analog-nort is choosen as a good example to begin with. It is purely based on rotating svg images located in <code>analog-my-watch-face/usr/share/asteroid-launcher/watchface-img/</code>. You can have your first custom results by just editing the corresponding hour, minute and second images in e.g. Inkscape.</p>
+  <p>The actual qml code for your watchface is always located in <code>analog-my-watch-face/usr/share/asteroid-launcher/watchfaces/analog-my-watch-face.qml</code>.
 </div>
 <div class="page-header">
-  <h1 id="testingwflocal">Testing your watchface locally</h1>
+  <h1 id="guidlines">Design and file structure guidelines</h1>
 </div>
 <div>
-<p>To test your watchface locally, I personally open the qml file using qmlscene: <code>qmlscene xxx-my-watchface.qml</code>. Of course, other QML previewing tools should work too.</p>
-</div>
-<div>
-<p>To be able to test properly, replace all references to <code>wallClock.time</code> with <code>new Date()</code>, place an image in the same directory named <code>background.jpg</code> and put the following code just below the first Item statement:</p>
-<pre lang=""><code>  Image {
-      source: "background.jpg"
-      width: 160
-      height: 160
-  }</code></pre>
-</div>
-<div>
-<p>The above code allows you to see what the watchface would look like on an actual device, as qmlscene by default uses a pure white background.</p>
+  <p>All images used in your watchface should reside in <code>my-watch-face/usr/share/asteroid-launcher/watchface-img/</code> which is then referenced in the code by <code>../watchface-img/imagename.suffix</code> relative to the .qml file location. Putting images anywhere else can cause empty spaces in the Watchface Settings page.</p>
+  <p>Names of images and assets should include the watchface name as prefix to the name to avoid conflict with assets from other watchfaces. E.g.: <code>my-watch-face-imagename.svg</code></p>
+  <p>Font files are to be placed in <code>my-watch-face/usr/share/fonts/</code>. They will be copied and installed to the watch by using the <code>./deploy.sh</code> script described further below on this page. Please mind to strictly use fonts issued under open licenses that allow embedded redistribution (OFL/SIL, Apache, BSD, CC-BY, etc.) in case you plan to publish your watchface to the unofficial-watchfaces repo or aim for inclusion into the stock asteroid-launcher.
+  <p>If you plan to use the AsteroidOS logo in your design, please use the provided <code>../watchface-img/asteroid-logo.svg</code>. Any alterations to the logo file should be saved under new filename <code>my-watch-face-asteroid-logo.svg</code> to avoid conflict with other watchfaces that use the plain unaltered logo.</p>
+  <p>Using a background that completely hides the user selected wallpaper is not advised. Please ensure that your design is legible when paired with the stock wallpapers.</p>
 </div>
 <div class="page-header">
   <h1 id="testingwfwatch">Testing on the watch</h1>
 </div>
 <div>
-<p>Make sure to replace all instances of <code>new Date()</code> with <code>wallClock.time</code> and remove the background <code>Image</code> statement. Then, simply push it to the watch: <code>scp xxx-my-watchface.qml root@192.168.2.15:/usr/share/asteroid-launcher/watchfaces/</code>. You can then go to watchfaces in the AsteroidOS settings. If you also pushed an <code>xxx-my-watchface.jpg</code> file, this will be used as preview. Otherwise, you will have to tap a white square to activate it.</p>
+  <p>Use the <code>./deploy.sh</code> script to copy your watchface creation to the watch using either SCP or ADB commands.</p>
+  <p>Connect your AsteroidOS Watch, configured to either ADB Mode (ADB transfer) or Developer Mode (SCP transfer) in Settings -> USB.</p>
+  <p>Start <code>./deploy.sh</code> to use SCP commands or <code>./deploy.sh -a</code> for ADB commands.</p>
+  <p>You can also use <code>./deploy.sh --help</code> to get a list of available options.</p>
+  <p>Select your watchface by entering the alphabetically assigned number to deploy it to the watch.</p>
+  <p>You can then restart the ceres session on the watch with pressing 'y' to install new fonts you provided and show your watchface on the watch.</p>
+  <p>Note that restarting the ceres session might break things like Always On Mode or the battery display for the remaining uptime. Reboot the watch in that case.</p>
+</div>
+<div class="page-header">
+  <h1 id="scriptfeatures">Features of the local test script</h1>
 </div>
 <div>
-<p>If you want to update the watchface, you have to push the new version to the device. Do note that AsteroidOS may cache the watchface. The easiest way to fix this is to “restart” the device by running the following command: <code>ssh -t root@192.168.2.15 "systemctl restart user@1000"</code>.</p>
+  <p>After starting the script with <code>./test-in-qmlscene.sh</code> and selecting a watchface, options within the started GUI allow you to use following features:</p>
+  <p> - &#9711; checkbox toggling round or square screen display.</p>
+  <p> - &#9789; checkbox to activate AmbientMode with a black background.</p>
+  <p> - 320px checkbox to scale down the viewport to 320px from 640px to test scaling behaviour.</p>
+  <p> - &#10226; button that triggers reload of the qml code to see changes saved to the qml watchface file during qmlscene runtime</p>  
+  <p> - Screenshot button that saves a jpg, named correctly for use as <code>.thumbnail</code> to publish to unofficial-watchfaces repo.</p>
+  <p> - 12h checkbox to switch between 24H and 12H time format by toggling <code>use12H.value</code>.</p>
+  <p> - Set Time checkbox sets a custom time by manipulating the activated tumblers by either dragging them or using the mouse wheel above them.</p>
+  <p> - <code>featureSlider</code> to emulate input for features not available on your local system, like the battery display.</p>
+</div>
+<div>
+  <p>While developing watchfaces with these features, it can be handy to temporarily write the code a little differently to allow it to run under qmlscene. The <code>featureSlider</code> is a simple slider that, by default, is not tied to anything, but is free to be used temporarily while developing.  So for temporary test code, one could use something like this:</p>
+  <pre lang=""><code>  Item {
+        id: batteryChargePercentage
+        property var value: (featureSlider.value * 100).toFixed(0)
+    }</code></pre>
+  <p>The slider then acts as a controller to see how the watchface reacts to the different values.  Note that the slider gives a real value from 0.0 to 1.0, so to simulate the integer 0 to 100 that the real battery provides on the watch, we scale and convert to a fixed value in the code above.</p>  
+  <p>In this instance, the final version that actually runs on the watch looked like this:</p>
+  <pre lang=""><code>import org.freedesktop.contextkit 1.0
+import org.asteroid.controls 1.0
+import org.asteroid.utils 1.0</code></pre>
+  <p>These imports exist in AsteroidOS, but not in the tester, so to run the actual code on the watch we need to add them.  The actual code for the battery looked like this:</p>
+  <pre lang=""><code>  ContextProperty {
+        id: batteryChargePercentage
+        key: "Battery.ChargePercentage"
+        value: "100"
+        Component.onCompleted: batteryChargePercentage.subscribe()
+    }</code></pre>
 </div>
