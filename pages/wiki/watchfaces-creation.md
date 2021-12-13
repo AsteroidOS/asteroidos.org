@@ -56,14 +56,18 @@ layout: documentation
 </div>
 <div>
   <p>After starting the script with <code>./test-in-qmlscene.sh</code> and selecting a watchface, options within the started GUI allow you to use following features:</p>
-  <p> - &#9711; checkbox toggles round or square screen display.</p>
-  <p> - &#9789; checkbox activates AmbientMode with a black background.</p>
-  <p> - 320px checkbox scales down the viewport to 320px from 640px to test scaling behaviour.</p>
-  <p> - &#10226; button triggers reload of the QML code to see changes saved to the QML watchface file during <code>qmlscene</code> runtime.</p>  
-  <p> - Screenshot button saves a JPG, named correctly for use as <code>.thumbnail</code> to publish to unofficial-watchfaces repo.</p>
-  <p> - 12h checkbox switches between 24H and 12H time format by toggling <code>use12H.value</code>.</p>
-  <p> - Set Time checkbox, to set a custom time by manipulating the activated tumblers by either dragging them or using the mouse wheel above them.</p>
-  <p> - <code>featureSlider</code> to emulate input for features not available on your local system, like the battery display or temperatur data gathered by the weather app.</p>
+  <p>
+    <ul> 
+      <li>&#9711; checkbox toggles round or square screen display.</li>
+      <li>&#9789; checkbox activates AmbientMode with a black background.</li>
+      <li>320px checkbox scales down the viewport to 320px from 640px to test scaling behaviour.</li>
+      <li>&#10226; button triggers reload of the QML code to see changes saved to the QML watchface file during <code>qmlscene</code> runtime.</li>
+      <li>Screenshot button saves a JPG, named correctly for use as <code>.thumbnail</code> to publish to unofficial-watchfaces repo.</li>
+      <li>12h checkbox switches between 24H and 12H time format by toggling <code>use12H.value</code>.</li>
+      <li>Set Time checkbox, to set a custom time by manipulating the activated tumblers by either dragging them or using the mouse wheel above them.</li>
+      <li><code>featureSlider</code> to emulate input for features not available on your local system, like the battery display or temperatur data gathered by the weather app.</li>
+    </ul>
+  </p>
 </div>
 <div>
   <p>While developing watchfaces with features not available in the local testing environment, it can be handy to temporarily write the code a little differently to allow it to run under qmlscene. The <code>featureSlider</code> is a simple slider that, by default, is not tied to anything, but is free to be used temporarily while developing.  So for temporary test code, one could use something like this:</p>
