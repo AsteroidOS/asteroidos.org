@@ -3,7 +3,7 @@ title: Useful commands
 layout: documentation
 ---
 
-AsteroidOS comes with several command line tools that are very handy to control a watch from SSH or a script. This page tries to document the basic features of those commands, don't hesitate to use their --help options if you want to learn more.
+AsteroidOS comes with several command line tools that are very handy to control a watch from SSH or a script. This page tries to document the basic features of those commands, don't hesitate to use their --help options if you want to learn more.<br>Input commands and gestures to enter the fastboot bootloader on your watch manually, are listed in the last section of this page. 
 
 # Notifications
 
@@ -95,4 +95,30 @@ Although we offer [synchronization clients](https://asteroidos.org/wiki/synchron
 ssh root@192.168.2.15 "timedatectl set-timezone <continent>/<zone>" # e.g. Europe/Berlin
 ssh root@192.168.2.15 "date -s @`(date -u +"%s" )`"
 ```
+
+# Boot to fastboot bootloader menu
+
+---
+
+In case you can not boot to the fastboot bootloader menu using `adb reboot bootloader`, try the manual method for your watch specified here. These methods come in very handy in case your watch does neither boot AsteroidOS, nor WearOS successfully in its current state.
+
+&nbsp;
+#### Anthias, Bass, Dory, Lenok, Mooneye, Sparrow, Swift, Wren
+During first seconds of the boot process, swipe diagonally across the screen. Starting from the top/left outer edge of the screen to the bottom/right.
+
+&nbsp;
+#### Catfish, Skipjack
+Power down the watch. Keep holding both buttons during the boot process until the fastboot menu appears.
+
+&nbsp;
+#### Firefish
+After the watch stops vibrating on startup, immediately touch the top/left & bottom/right of the screen and press the middle button while the manufacturer logo is shown.
+
+&nbsp;
+#### Sawfish, Sawshark, Sturgeon
+Press and hold the power button when the manufacturer bootlogo appears, until the vibration finishes. Release the button and press it again quickly. The time window for this method is really short and several attempts might be needed. Some users report that spamming power button presses already during the vibration helps.
+
+&nbsp;
+#### Smelt
+Keep holding the power button during the boot process and release it quickly after the third vibration.
 
