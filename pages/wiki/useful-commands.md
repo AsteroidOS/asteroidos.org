@@ -3,7 +3,9 @@ title: Useful commands
 layout: documentation
 ---
 
-AsteroidOS comes with several command line tools that are very handy to control a watch from SSH or a script. This page tries to document the basic features of those commands, don't hesitate to use their --help options if you want to learn more.<br>Input commands and gestures to enter the fastboot bootloader on your watch manually, are listed in the last section of this page. 
+AsteroidOS comes with several command line tools that are very handy to control a watch from SSH or a script. This page tries to document the basic features of those commands, don't hesitate to use their --help options if you want to learn more.
+
+Input commands and gestures to enter the fastboot bootloader on your watch manually, are listed in the last section of this page. 
 
 # Notifications
 
@@ -89,7 +91,9 @@ systemctl --force reboot recovery # Restarts the watch in recovery mode
 
 ---
 
-Although we offer [synchronization clients](https://asteroidos.org/wiki/synchronization-clients/) for different platforms, it might still be useful to set the time zone or synchronise the date and time using standard Linux tools. The Linux folder `/usr/share/zoneinfo/` contains the naming scheme for your local time zone in `<continent>/<zone>` format.<br><b>Please Note</b> that setting a time zone will break time sync with the forementioned client apps.
+Although we offer [synchronization clients](https://asteroidos.org/wiki/synchronization-clients/) for different platforms, it might still be useful to set the time zone or synchronise the date and time using standard Linux tools. The Linux folder `/usr/share/zoneinfo/` contains the naming scheme for your local time zone in `<continent>/<zone>` format.
+
+<b>Please Note</b> that setting a time zone will break time sync with the forementioned client apps.
 
 ```
 ssh root@192.168.2.15 "timedatectl set-timezone <continent>/<zone>" # e.g. Europe/Berlin
