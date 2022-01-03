@@ -5,6 +5,8 @@ layout: documentation
 
 AsteroidOS comes with several command line tools that are very handy to control a watch from SSH or a script. This page tries to document the basic features of those commands, don't hesitate to use their --help options if you want to learn more.
 
+Commands and gestures to enter the fastboot (bootloader) mode are listed at the bottom of this page.. 
+
 # Notifications
 
 ---
@@ -91,8 +93,35 @@ systemctl --force reboot recovery # Restarts the watch in recovery mode
 
 Although we offer [synchronization clients](https://asteroidos.org/wiki/synchronization-clients/) for different platforms, it might still be useful to set the time zone or synchronise the date and time using standard Linux tools. The Linux folder `/usr/share/zoneinfo/` contains the naming scheme for your local time zone in `<continent>/<zone>` format.
 
+<b>Please Note</b> that setting a time zone will break time sync with the forementioned client apps.
+
 ```
 ssh root@192.168.2.15 "timedatectl set-timezone <continent>/<zone>" # e.g. Europe/Berlin
 ssh root@192.168.2.15 "date -s @`(date -u +"%s" )`"
 ```
 
+# Boot to fastboot (bootloader) menu
+
+---
+
+In case you can not boot to the fastboot menu using `adb reboot bootloader`, try the manual method for your watch specified below. These methods come in very handy in case your watch does neither boot AsteroidOS, nor WearOS successfully in its current state.
+
+&nbsp;
+#### Anthias, Bass, Dory, Lenok, Mooneye, Sparrow, Swift, Wren
+During the first seconds of the boot process, swipe diagonally across the screen. Starting from the top/left outer edge of the screen to the bottom/right.
+
+&nbsp;
+#### Catfish, Skipjack
+Power down the watch. Keep holding both buttons during the boot process until the fastboot menu appears.
+
+&nbsp;
+#### Firefish
+After the watch stops vibrating on startup, immediately touch the top/left & bottom/right of the screen and press the middle button while the manufacturer logo displays.
+
+&nbsp;
+#### Sawfish, Sawshark, Sturgeon
+Press and hold the power button when the manufacturer bootlogo appears, until the vibration finishes. Release the button and press it again quickly. The time frame for this method is short and might need several attempts. Some users report that spamming power button presses already during the vibration helps.
+
+&nbsp;
+#### Smelt
+Keep holding the power button during the boot process and release it quickly after the third vibration.
