@@ -100,11 +100,11 @@ ssh root@192.168.2.15 "timedatectl set-timezone <continent>/<zone>" # e.g. Europ
 ssh root@192.168.2.15 "date -s @`(date -u +"%s" )`"
 ```
 
-# Boot to fastboot bootloader menu
+# Boot to fastboot (bootloader) menu
 
 ---
 
-In case you can not boot to fastboot menu using `adb reboot bootloader`, try the manual method for your watch specified below. These methods come in very handy in case your watch does neither boot AsteroidOS, nor WearOS successfully in its current state.
+In case you can not boot to the fastboot menu using `adb reboot bootloader`, try the manual method for your watch specified below. These methods come in very handy in case your watch does neither boot AsteroidOS, nor WearOS successfully in its current state.
 
 &nbsp;
 #### Anthias, Bass, Dory, Lenok, Mooneye, Sparrow, Swift, Wren
