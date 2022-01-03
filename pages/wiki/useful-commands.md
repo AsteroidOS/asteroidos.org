@@ -5,7 +5,7 @@ layout: documentation
 
 AsteroidOS comes with several command line tools that are very handy to control a watch from SSH or a script. This page tries to document the basic features of those commands, don't hesitate to use their --help options if you want to learn more.
 
-Commands and gestures to enter the fastboot (bootloader) mode are listed at the bottom of this page.. 
+Commands and gestures to enter the fastboot (bootloader) mode are listed at the bottom of this page.
 
 # Notifications
 
