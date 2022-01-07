@@ -16,7 +16,7 @@ The app creation process of AsteroidOS needs a Software Development Kit generate
 
 Alternatively you can also build the toolchain from source. If you’ve already got an OpenEmbedded build directory via the [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}) page, cd to that directory. Else, create one with:
 
-## Without Docker
+## Build without containers
 
 ```
 git clone https://github.com/AsteroidOS/asteroid
@@ -30,12 +30,18 @@ source ./prepare-build.sh dory
 bitbake meta-toolchain-qt5
 ```
 
-## Docker
+## Build with containers
 
-Assuming you already prepared a docker build environment like in: [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}).
+Assuming you already prepared a docker or podman build environment like in: [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}).
 
 ```
 sudo docker rm -f asteroidos-toolchain ; sudo docker run --name asteroidos-toolchain -it -v /etc/passwd:/etc/passwd:ro -u "$(id -u):$(id -g)" -v "$HOME/.gitconfig:/$HOME/.gitconfig:ro" -v "$(pwd):/asteroid" asteroidos-toolchain bash -c "source ./prepare-build.sh dory && bitbake meta-toolchain-qt5"
+```
+
+or
+
+```
+podman run --rm -it -v  "$(pwd)":/asteroid:z --userns keep-id asteroidos-toolchain bash -c "source ./prepare-build.sh dory && bitbake meta-toolchain-qt5"
 ```
 
 # Install the SDK
