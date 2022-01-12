@@ -36,7 +36,7 @@ layout: documentation
   <p>Font files are to be placed in <code>my-watch-face/usr/share/fonts/</code>. They will be copied and installed to the watch by using the <code>./deploy.sh</code> script described further below on this page.<br>Please mind to strictly use fonts issued under open licenses that allow embedded redistribution (OFL/SIL, Apache, BSD, CC-BY, etc.) in case you plan to publish your watchface to the unofficial-watchfaces repo or aim for inclusion into the AsteroidOS stock images.
   <p>If you plan to use the AsteroidOS logo in your design, please use the provided <code>../watchface-img/asteroid-logo.svg</code>. Any alterations to the logo file should be saved under new filename <code>my-watch-face-asteroid-logo.svg</code> to avoid conflict with other watchfaces that use the plain unaltered logo.</p>
   <p>Using a background that completely hides the user selected wallpaper is not advised. Please ensure that your design is legible when paired with the stock wallpapers.</p>
-  <p>When pull requesting your work to the <a href="https://github.com/AsteroidOS/unofficial-watchfaces">unofficial-watchfaces repo</a>, edit the <code>README.md</code>. Add your watchface to the alphabetically sorted list and provide license information to the fonts and licensed assets/images you use and thus distribute in your watchface.</a>
+  <p>When pull requesting your work to the <a href="https://github.com/AsteroidOS/unofficial-watchfaces">unofficial-watchfaces repo</a>, edit the <code>README.md</code>. Add your watchface to the alphabetically sorted list and provide license information to the fonts and licensed assets/images you use and thus distribute in your watchface. A more detailed guide how to commit your work can be found further down on this page.</a>
   <p>Do not ever forget to brag all over the internet with your cool new watchface and <a href="https://twitter.com/AsteroidOS">tag us</a> so we can show your work to the broader community!<p> 
 </div>
 <div class="page-header">
@@ -62,7 +62,8 @@ layout: documentation
       <li>&#9789; checkbox activates AmbientMode with a black background.</li>
       <li>320px checkbox scales down the viewport to 320px from 640px to test scaling behaviour.</li>
       <li>&#10226; button triggers reload of the QML code to see changes saved to the QML watchface file during <code>qmlscene</code> runtime.</li>
-      <li>Screenshot button saves a JPG, named correctly for use as <code>.thumbnail</code> to publish to unofficial-watchfaces repo.</li>
+      <li>Screenshot button saves a 640px PNG. Great for creating mockups during design process. Or just to support your bragging effort visually.</li>
+      <li>Generate previews button exports transparent png snapshots. Those are converted to WEBP <code>.thumbnails</code> and <code>.watchfacespreviews</code> to publish to the unofficial-watchfaces repo.</li>     
       <li>12h checkbox switches between 24H and 12H time format by toggling <code>use12H.value</code>.</li>
       <li>Set Time checkbox, to set a custom time by manipulating the activated tumblers by either dragging them or using the mouse wheel above them.</li>
       <li><code>featureSlider</code> to emulate input for features not available on your local system, like the battery display or temperatur data gathered by the weather app.</li>
@@ -76,6 +77,19 @@ layout: documentation
         property var value: (featureSlider.value * 100).toFixed(0)
     }</code></pre>
   <p>The UI slider then acts as a controller to see how the watchface reacts to the different values. Note that the slider gives a real value from 0.0 to 1.0. To simulate the integer 0 to 100 provided by the real battery on the watch, we scale and convert to a fixed value in the code above.</p>  
+</div>
+<div class="page-header">
+  <h1 id="how-to-share">Share your watchface</h1>
+</div>
+<div>
+  <p>Pull requesting your finished watchface to the unofficial-watchfaces repo is always very welcome! Following this short guide will ensure consitency with existing community watchfaces and speed up the review process.</p>
+  <p>Edit the <code>README.md</code> and sort your watchface entry into the list alphabetically. The required thumbnails can be conveniently created by using the <code>./test-in-qmlscene.sh</code> script. </p>
+  <p>Square thumbnails are taken on the iconic flatmesh background. This helps to easily compare the watchfaces visually on the same background when scrolling through the list. Flastmesh is downloaded on start of the script if you have not placed a custom <code>background.jpg</code> to top level already.</p>
+  <p>Round thumbnails are ment to present watchfaces on a background the developer found to be most suitable. Save this custom background as <code>background-round.jpg</code> and the script will use it when generating the previews.</p>
+  <p>Pressing the <code>Generate previews</code> button saves and correctly names three high quality PNG images. Those can either be found at top level during runtime of qmlscene, in case you like to process them manually. Or you can use the images that get automatically created and copied to the correct folders by the script as soon as you close the qmlscene window.</p>
+  <p>320x320px in WEBP format at 85% compression is used for the web previews. The <code>.watchfacespreviews</code> are generated in various screen sizes to fit the watchface gallery in settings for all supported screen sizes. The format we use here is PNG at 70% compression level. Since WEBP files, though much smaller in filesize, take up to 300% longer to decompress. Which would be noticable in loading times on the watch according to our testing.</p>
+  <p>Please mind to give licensing information for all licensed material used in your watchface, at the bottom section of the <code>README.md</code>. Only works issued under an open license that allows embedded redistribution (OFL/SIL, Apache, BSD, CC-BY, etc.), are suitable to be merged into our repositories.</p>
+  <p>Thank you for contributing your work and sharing it with the community!</p>
 </div>
 <div>
   <p>
