@@ -63,7 +63,7 @@ layout: documentation
       <li>320px checkbox scales down the viewport to 320px from 640px to test scaling behaviour.</li>
       <li>&#10226; button triggers reload of the QML code to see changes saved to the QML watchface file during <code>qmlscene</code> runtime.</li>
       <li>Screenshot button saves a 640px PNG. Great for creating mockups during design process. Or just to support your bragging effort visually.</li>
-      <li>Generate previews button exports transparent png snapshots. Those are converted to WEBP <code>.thumbnails/</code> and <code>watchfaces-previews/</code> to publish to the unofficial-watchfaces repo.</li>     
+      <li>Generate previews button exports transparent PNG snapshots. Those are converted to WEBP <code>.thumbnails/</code> and <code>watchfaces-previews/</code> to publish to the unofficial-watchfaces repo.</li>     
       <li>12h checkbox switches between 24H and 12H time format by toggling <code>use12H.value</code>.</li>
       <li>Set Time checkbox, to set a custom time by manipulating the activated tumblers by either dragging them or using the mouse wheel above them.</li>
       <li><code>featureSlider</code> to emulate input for features not available on your local system, like the battery display or temperatur data gathered by the weather app.</li>
@@ -82,7 +82,7 @@ layout: documentation
   <h1 id="how-to-share">Share your watchface</h1>
 </div>
 <div>
-  <p>Pull requesting your finished watchface to the unofficial-watchfaces repo is always very welcome! Following this short guide will ensure consitency with existing community watchfaces and speed up the review process.</p>
+  <p>Pull requesting your finished watchface to the <a href="https://github.com/AsteroidOS/unofficial-watchfaces">unofficial-watchfaces repo</a> is always very welcome! Follow this guide to ensure consitency with existing community watchfaces and a quick review process.</p>
   <p>Edit the <code>README.md</code> and sort your watchface entry into the list alphabetically. The required thumbnails can be conveniently created by using the <code>./test-in-qmlscene.sh</code> script. </p>
   <p>Square thumbnails are taken on the iconic flatmesh background. This helps to easily compare the watchfaces visually on the same background when scrolling through the list. Flatmesh is downloaded on start of the script if you have not placed a custom <code>background.jpg</code> to top level already.</p>
   <p>Round thumbnails are ment to present watchfaces on a background the developer found to be most suitable. Save this custom background as <code>background-round.jpg</code> and the script will use it when generating the previews.</p>
@@ -92,13 +92,13 @@ layout: documentation
   <p>Wrapping up, your pull request should have the following files included:
     <ul> 
       <li><code>my-watch-face/usr/share/asteroid-launcher/my-watch-face.qml</code></li>
-      <li><code>my-watch-face/usr/share/fonts/</code> For font files not already [contained in AsteroidOS stock](https://github.com/AsteroidOS/asteroid-fonts).</li>
-      <li><code>my-watch-face/usr/share/asteroid-launcher/watchfaces-img/my-watch-face-imagename.jpg</code> All the images used in your watchface belong into this folder.</li>
-      <li><code>my-watch-face/usr/share/asteroid-launcher/wallpapers/my-watch-face-wallpapername.jpg</code> Put a 480x480 JPG file you possibly like to include as custom wallpaper here.</li>      
-      <li><code>.thumbnails/my-watch-face.webp</code> Square thumbnail in WEBP format taken on Flatmesh wallpaper.</li>
-      <li><code>.thumbnails/my-watch-face-round.webp</code> Round thumbnail in WEBP format with transparent circle cut out.</li>
-      <li><code>watchfaces-preview/<resolution>/my-watch-face.png</code></li> Transparent PNG preview files.
-      <li><code>README.md</code></li> Extended with your watchface entry and licensing information when required.
+      <li><code>my-watch-face/usr/share/fonts/</code><br>For font files not already <a href="https://github.com/AsteroidOS/asteroid-fonts">contained in AsteroidOS stock</a>.</li>
+      <li><code>my-watch-face/usr/share/asteroid-launcher/watchfaces-img/my-watch-face-imagename.*</code><br>All the images used in your watchface belong into this folder.</li>
+      <li><code>my-watch-face/usr/share/asteroid-launcher/wallpapers/my-watch-face-wallpapername.jpg</code><br>Put a 480x480 JPG file you possibly like to include as custom wallpaper here.</li>      
+      <li><code>.thumbnails/my-watch-face.webp</code><br>Square thumbnail in WEBP format taken on Flatmesh wallpaper.</li>
+      <li><code>.thumbnails/my-watch-face-round.webp</code><br>Round thumbnail in WEBP format with transparent circle cut out.</li>
+      <li><code>watchfaces-preview/<resolution>/my-watch-face.png</code><br>Transparent PNG preview files.</li>
+      <li><code>README.md</code><br>Extended with your watchface entry and licensing information when required.</li>
   </ul>
   </p>
   <p>Thank you for contributing your work and sharing it with the community!</p>
