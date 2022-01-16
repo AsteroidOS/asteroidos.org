@@ -91,13 +91,13 @@ layout: documentation
   <p>Please mind to give licensing information for all licensed material used in your watchface, at the bottom section of the <code>README.md</code>. Only works issued under an open license that allows embedded redistribution (OFL/SIL, Apache, BSD, CC-BY, etc.), are suitable to be merged into our repositories.</p>
   <p>Wrapping up, your pull request should have the following files included:
     <ul> 
-      <li><code>my-watch-face/usr/share/asteroid-launcher/my-watch-face.qml</code></li>
+      <li><code>my-watch-face/usr/share/asteroid-launcher/watchfaces/my-watch-face.qml</code></li>
       <li><code>my-watch-face/usr/share/fonts/</code><br>For font files not already <a href="https://github.com/AsteroidOS/asteroid-fonts">contained in AsteroidOS stock</a>.</li>
       <li><code>my-watch-face/usr/share/asteroid-launcher/watchfaces-img/my-watch-face-imagename.*</code><br>All the images used in your watchface belong into this folder.</li>
-      <li><code>my-watch-face/usr/share/asteroid-launcher/wallpapers/my-watch-face-wallpapername.jpg</code><br>Put a 480x480 JPG file you possibly like to include as custom wallpaper here.</li>      
+      <li><code>my-watch-face/usr/share/asteroid-launcher/watchfaces-preview/.../my-watch-face.png</code><br>Transparent PNG preview files in folders named by resolution.</li>            
+      <li><code>my-watch-face/usr/share/asteroid-launcher/wallpapers/my-watch-face-wallpapername.jpg</code><br>Put a 480x480 JPG file you possibly like to include as custom wallpaper here.</li>
       <li><code>.thumbnails/my-watch-face.webp</code><br>Square thumbnail in WEBP format taken on Flatmesh wallpaper.</li>
       <li><code>.thumbnails/my-watch-face-round.webp</code><br>Round thumbnail in WEBP format with transparent circle cut out.</li>
-      <li><code>watchfaces-preview/<resolution>/my-watch-face.png</code><br>Transparent PNG preview files.</li>
       <li><code>README.md</code><br>Extended with your watchface entry and licensing information when required.</li>
   </ul>
   </p>
