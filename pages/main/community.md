@@ -29,13 +29,8 @@ slug: community
 </div></div></div>
 <div class="community-box-ratio"><div class="community-box"><div class="community-centered-text">
   <b>Donating:</b><br><br>
-  Donations are exclusively used to buy unsupported smartwatches or cover basic costs such as the server.
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" />
-    <input name="hosted_button_id" type="hidden" value="W7VU2KBGJCWE2" />
-    <input title="PayPal - The safer, easier way to pay online!" alt="Donate" name="submit" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" type="image" />
-    <img src="https://www.paypal.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" />
-  </form>
-  <script id='fbh2aim'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//button.flattr.com/view/?fid=o6o0nq&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbh2aim');</script>
+  Donations are used to buy unsupported smartwatches and to cover basic expenses (e.g. server cost).
+  <a href="https://opencollective.com/asteroidos#support"><img src="{{assets}}/img/sponsors.svg" width="50%"/></a>
 </div></div></div>
 <div class="community-box-ratio"><div class="community-box"><div class="community-centered-text">
   <b>Others:</b><br><br>
