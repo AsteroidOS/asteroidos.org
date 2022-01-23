@@ -84,11 +84,10 @@ layout: documentation
 <div>
   <p>Pull requesting your finished watchface to the <a href="https://github.com/AsteroidOS/unofficial-watchfaces">unofficial-watchfaces repo</a> is always very welcome! Follow this guide to ensure consitency with existing community watchfaces and a quick review process.</p>
   <p>Edit the <code>README.md</code> and sort your watchface entry into the list alphabetically. The required thumbnails can be conveniently created by using the <code>./test-in-qmlscene.sh</code> script. </p>
+  <p>Please mind to give licensing information for all licensed material used in your watchface, at the bottom section of the <code>README.md</code>. Only works issued under an open license that allows embedded redistribution (OFL/SIL, Apache, BSD, CC-BY, etc.), are suitable to be merged into our repositories.</p> 
   <p>Square thumbnails are taken on the iconic flatmesh background. This helps to easily compare the watchfaces visually on the same background when scrolling through the list. Flatmesh is downloaded on start of the script if you have not placed a custom <code>background.jpg</code> to top level already.</p>
-  <p>Round thumbnails are ment to present watchfaces on a background the developer found to be most suitable. Save this custom background as <code>background-round.jpg</code> and the script will use it when generating the previews.</p>
+  <p>Round thumbnails are meant to present watchfaces on a background the developer found to be most suitable. Save this custom background as <code>background-round.jpg</code> and the script will use it when generating the previews.</p>
   <p>Pressing the <code>Generate previews</code> button saves and correctly names three high quality PNG images. Those can either be found at top level during runtime of qmlscene, in case you like to process them manually. Or you can use the images that get automatically created and copied to the correct folders by the script as soon as you close the qmlscene window.</p>
-  <p>320x320px in WEBP format at 85% compression is used for the web previews. The <code>watchfaces-preview</code> images are generated in various screen sizes to fit the watchface gallery in settings for all supported screen sizes. The format we use here is PNG at 70% compression level. Since WEBP files, though much smaller in filesize, take up to 300% longer to decompress. Which would be noticable in loading times on the watch according to our testing.</p>
-  <p>Please mind to give licensing information for all licensed material used in your watchface, at the bottom section of the <code>README.md</code>. Only works issued under an open license that allows embedded redistribution (OFL/SIL, Apache, BSD, CC-BY, etc.), are suitable to be merged into our repositories.</p>
   <p>Wrapping up, your pull request should have the following files included:
     <ul> 
       <li><code>my-watch-face/usr/share/asteroid-launcher/watchfaces/my-watch-face.qml</code></li>
@@ -98,7 +97,7 @@ layout: documentation
       <li><code>my-watch-face/usr/share/asteroid-launcher/wallpapers/my-watch-face-wallpapername.jpg</code><br>Put a 480x480 JPG file you possibly like to include as custom wallpaper here.</li>
       <li><code>.thumbnails/my-watch-face.webp</code><br>Square thumbnail in WEBP format taken on Flatmesh wallpaper.</li>
       <li><code>.thumbnails/my-watch-face-round.webp</code><br>Round thumbnail in WEBP format with transparent circle cut out.</li>
-      <li><code>README.md</code><br>Extended with your watchface entry and licensing information when required.</li>
+      <li><code>README.md</code><br>Extended with your watchface entry and licensing information, if required.</li>
   </ul>
   </p>
   <p>Thank you for contributing your work and sharing it with the community!</p>
