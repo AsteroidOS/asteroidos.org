@@ -82,12 +82,12 @@ layout: documentation
   <h1 id="how-to-share">Share your watchface</h1>
 </div>
 <div>
-  <p>Pull requesting your finished watchface to the <a href="https://github.com/AsteroidOS/unofficial-watchfaces">unofficial-watchfaces repo</a> is always very welcome! Follow this guide to ensure consitency with existing community watchfaces and a quick review process.</p>
+  <p>Your finished watchface is always welcome on our <a href="https://github.com/AsteroidOS/unofficial-watchfaces">unofficial-watchfaces repository</a>! You can do this via pull requests. Follow this guide to ensure consistency with existing community watchfaces and a quick review process.</p>
   <p>Edit the <code>README.md</code> and sort your watchface entry into the list alphabetically. The required thumbnails can be conveniently created by using the <code>./test-in-qmlscene.sh</code> script. </p>
-  <p>Please mind to give licensing information for all licensed material used in your watchface, at the bottom section of the <code>README.md</code>. Only works issued under an open license that allows embedded redistribution (OFL/SIL, Apache, BSD, CC-BY, etc.), are suitable to be merged into our repositories.</p> 
-  <p>Square thumbnails are taken on the iconic flatmesh background. This helps to easily compare the watchfaces visually on the same background when scrolling through the list. Flatmesh is downloaded on start of the script if you have not placed a custom <code>background.jpg</code> to top level already.</p>
+  <p>Remember to provide licensing information to all licensed material used in your watchface, at the bottom section of the <code>README.md</code>. Only works issued under an open license that allows embedded redistribution (OFL/SIL, Apache, BSD, CC-BY, etc.), are suitable to be merged into our repositories.</p> 
+  <p>Square thumbnails are taken on the iconic flatmesh background. This helps to easily compare the watchfaces visually on the same background when scrolling through the list. The flatmesh background is automatically downloaded when you start the script and if a custom <code>background.jpg</code> isn't used.</p>
   <p>Round thumbnails are meant to present watchfaces on a background the developer found to be most suitable. Save this custom background as <code>background-round.jpg</code> and the script will use it when generating the previews.</p>
-  <p>Pressing the <code>Generate previews</code> button saves and correctly names three high quality PNG images. Those can either be found at top level during runtime of qmlscene, in case you like to process them manually. Or you can use the images that get automatically created and copied to the correct folders by the script as soon as you close the qmlscene window.</p>
+  <p>Pressing the <code>Generate previews</code> button saves and correctly names three high quality PNG images. Those can either be found at top-level during runtime of qmlscene, in case you like to process them manually. Or you can use the images that get automatically created and copied to the correct folders by the script as soon as you close the qmlscene window.</p>
   <p>Wrapping up, your pull request should have the following files included:
     <ul> 
       <li><code>my-watch-face/usr/share/asteroid-launcher/watchfaces/my-watch-face.qml</code></li>
