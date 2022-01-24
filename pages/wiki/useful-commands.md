@@ -11,10 +11,11 @@ Commands and gestures to enter the fastboot (bootloader) mode are listed at the 
 
 ---
 
-AsteroidOS complies to the [freedesktop.org notifications specification](https://people.gnome.org/~mccann/docs/notification-spec/notification-spec-latest.html), which means you can use standard Linux desktop tools such as libnotify to show notifications in asteroid-launcher. However, lipstick already comes with a useful command named `notificationtool` that allows to create/update/close/list notifications from the CLI.
+AsteroidOS complies to the [freedesktop.org notifications specification](https://people.gnome.org/~mccann/docs/notification-spec/notification-spec-latest.html), which means you can use standard Linux desktop tools such as libnotify to show notifications in asteroid-launcher.
+On AsteroidOS a useful command named `notificationtool` is provided that allows you to create/update/close/list notifications from the CLI.
 
 ```
-# Creates a new notification with various paramters
+# Creates a new notification with various parameters
 notificationtool -o add \
         --icon=ios-happy \
         --application="Super App" \
@@ -25,6 +26,24 @@ notificationtool -o add \
         "Great Title" \
         "Amazing content"
 ```
+
+# Launch applications
+
+---
+
+AsteroidOS uses an `invoker` to launch apps. The invoker is used to allow for quicker app startup by caching many of the Qt components into memory.
+
+```
+# Launch the alarm clock app using the invoker and hide the title bar.
+# Ensure that this command is executed under the `ceres` user.
+EGL_PLATFORM=wayland \
+        QT_QPA_PLATFORM=wayland \
+        QT_WAYLAND_DISABLE_WINDOWDECORATION=1 \
+        invoker --single-instance --type=qtcomponents-qt5 \
+        /usr/bin/asteroid-alarmclock
+```
+
+
 
 # Screenshots
 
