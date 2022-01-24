@@ -23,7 +23,7 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - Moto 360 (2nd generation) *(maintained by MagneFire)*
 - Skagen Falster 2 *(maintained by MagneFire)*
 - Samsung Gear Live *(unmaintained)*
-- Sony Smartwatch 3 *(unmaintained)*
+- Sony Smartwatch 3 *(unmaintained)* Limited support, see <a href="https://asteroidos.org/install/tetra/">install</a> page.
 - Ticwatch E & S *(maintained by kido)*
 - Ticwatch C2+ *(maintained by R0NAM1)*
 - Ticwatch Pro *(maintained by C9Glax, LecrisUT & MagneFire)*
