@@ -4,14 +4,14 @@ layout: documentation
 ---
 
 Configuring an IP connection on your watch has to be done manually until a GUI settings option is available.
-On watches with supported WLan, you can enable wifi and configure the connection using <code>connmanctl</code> like described below.
+On watches that support WLAN, you can enable Wi-Fi and configure the connection using <code>connmanctl</code> like described below.
 Forwarding IP requests to a connected PC via USB is another option, explained in the second paragraph.
 
 By default, there is no <code>root</code> or <code>ceres</code> password, and no firewall rules. A password can be set using the <code>passwd</code> command.
 
 
 
-# IP over WLan
+# IP over WLAN
 
 *****
 
