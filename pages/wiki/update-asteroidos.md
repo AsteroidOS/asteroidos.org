@@ -11,7 +11,7 @@ As currently no AsteroidOS watch has access to the internet by stock means, no G
 
 *****
 
-If you don't want to lose your personal data, and prefer upgrading Asteroid without reflashing it, you have two options to establish an internet connection from the watch.
+If you don't want to loose your personal data, and prefer upgrading Asteroid without reflashing it, you have two options to establish an internet connection from the watch.
 
 In case your watch supports WLAN, connect it to your local Wi-Fi network using <code>connmanctl</code> as described on the [IP Connection page](https://asteroidos.org/wiki/ip-connection/). Alternatively you can share your internet connection from a PC to the watch via USB. 
 

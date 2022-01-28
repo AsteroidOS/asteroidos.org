@@ -26,7 +26,7 @@ connmanctl&gt; connect wifi_CODE-FOR-YOUR-SSID
 connmanctl&gt; quit
 </code></pre>
 
-Verfify that you got an ip adress asigned with <code># ip a show dev wlan0</code>.
+Verfify that you got an ip address asigned with <code># ip a show dev wlan0</code>.
 
 Some more <a href="https://wiki.archlinux.org/index.php/ConnMan#Connecting_to_a_protected_access_point">details</a> on ArchWiki
 
