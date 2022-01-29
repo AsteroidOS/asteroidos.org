@@ -29,7 +29,7 @@ layout: documentation
       fonts, images, etc.) into the <code>/usr/share/asteroid-launcher/watchfaces/</code> directory on your watch.</p>
     <pre><code>scp watchface-name.qml root@192.168.2.15:/usr/share/asteroid-launcher/watchfaces/</code></pre>
     <p>If the watchface has additional dependencies on assets you can push them the same way.</p>
-    <pre><code>scp image.png root@192.168.2.15:/usr/share/asteroid-launcher/watchfaces/</code></pre>
+    <pre><code>scp image.png root@192.168.2.15:/usr/share/asteroid-launcher/watchfaces-img/</code></pre>
     <p>Some watchfaces include their own font.</p>
     <pre><code>scp fontname.ttf root@192.168.2.15:/usr/share/fonts/</code></pre>
   </div>
@@ -39,7 +39,7 @@ layout: documentation
 </div>
 <p>In case you wish to install a wallpaper that has no installation script or is not provided as a package you can install
   it manually using the following instructions.</p>
-<pre><code>scp wallpapername.png root@192.168.2.15:/usr/share/asteroid-launcher/wallpapers/</code></pre>
+<pre><code>scp wallpapername.png root@192.168.2.15:/usr/share/asteroid-launcher/wallpapers/full/</code></pre>
 
 <div class="page-header">
   <h1 id="packageinstallation">Package Installation</h1>
