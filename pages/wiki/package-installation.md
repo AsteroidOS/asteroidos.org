@@ -37,10 +37,29 @@ layout: documentation
 <div class="page-header">
   <h1 id="wallpaperinstallation">Wallpaper Installation</h1>
 </div>
-<p>In case you wish to install a wallpaper that has no installation script or is not provided as a package you can install
-  it manually using the following instructions.</p>
-<pre><code>scp wallpapername.png root@192.168.2.15:/usr/share/asteroid-launcher/wallpapers/full/</code></pre>
-
+<div>
+  <h4>Scripted method</h4>
+  <p>The scripts provided in the <a href="https://github.com/AsteroidOS/asteroid-wallpapers">asteroid-wallpapers</a> repo aim to make adding custom wallpapers easy.</p>
+  <div>
+    <p>To use the script you will need to clone the <a href="https://github.com/AsteroidOS/asteroid-wallpapers">asteroid-wallpapers</a>.
+      <pre><code>git clone https://github.com/AsteroidOS/asteroid-wallpapers</code></pre>
+      Change into the new directory.
+      <pre><code>cd asteroid-wallpapers</code></pre>
+      Place jpg, jpeg, png, svg, bmp or webp wallpaper images of at least 480x480px resolution here. Then generate preview images and copy scaled versions of your wallpapers to the correct folders.
+      <pre><code>./generate-scaled-images.sh</code></pre>
+      Copy all wallpapers and preview images to a watch connected via USB/SDK Mode:
+      <pre><code>./copy-to-watch.sh</code></pre>
+      For advanced copy options execute:
+      <pre><code>./copy-to-watch.sh -h</code></pre>
+   </p>
+  </div>
+  <br/>
+  <h4>Manual method</h4>
+  <p>In case you wish to quickly install a wallpaper that is not provided as a package, you can install it manually using the following command. Mind that copying a large image file might impact overall performance. Usage of the above described scripted method is highly advised.</p>
+  <div>
+    <pre><code>scp wallpapername.jpg root@192.168.2.15:/usr/share/asteroid-launcher/wallpapers/full/</code></pre>
+  </div>
+</div>
 <div class="page-header">
   <h1 id="packageinstallation">Package Installation</h1>
 </div>
@@ -69,14 +88,6 @@ layout: documentation
   <h1 id="troubleshooting">Troubleshooting</h1>
 </div>
 <div>
-  <h4>Using SCP/SSH results in a <code>REMOTE HOST IDENTIFICATION HAS CHANGED!</code> warning</h4>
-  <p>
-    This means that there is already a different device known with the same IP adress. This happens if you reinstall
-    AsteroidOS or you use multiple watches. The warning can be resolved by removing the record of the IP adress from the
-    list of known hosts as follows:
-    <pre><code>ssh-keygen -R 192.168.2.15</code></pre>
-  </p>
-  <br />
   <h4>Missing dependencies detected during package install</h4>
   <p>
     The package you are trying to install may depend on other packages and their versions. You can install the
