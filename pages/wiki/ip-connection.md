@@ -26,7 +26,11 @@ connmanctl&gt; connect wifi_CODE-FOR-YOUR-SSID
 connmanctl&gt; quit
 </code></pre>
 
-Verfify that you got an ip address asigned with <code># ip a show dev wlan0</code>.
+Check whether an IP address has been assigned to the watch using <code>ip a show dev wlan0</code> or <code>ifconfig wlan0</code>.
+
+Note that activated WLAN consumes additional power. Currently, it is recommended to disable the function after use.
+<code>connmanctl disable wifi</code> is used to disable Wi-Fi and power off WLAN temporarily.
+<code>connmanctl enable wifi</code> activates WLAN again and connects to the last used Wi-Fi network.
 
 Some more <a href="https://wiki.archlinux.org/index.php/ConnMan#Connecting_to_a_protected_access_point">details</a> on ArchWiki
 
