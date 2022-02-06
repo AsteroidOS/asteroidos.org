@@ -41,7 +41,7 @@ layout: documentation
   <h4>Scripted method</h4>
   <p>The scripts provided in the <a href="https://github.com/AsteroidOS/asteroid-wallpapers">asteroid-wallpapers</a> repo aim to make adding custom wallpapers easy.</p>
   <div>
-    <p>To use the script you will need to clone the <a href="https://github.com/AsteroidOS/asteroid-wallpapers">asteroid-wallpapers</a>.
+    <p>To use the script you will need to clone the <a href="https://github.com/AsteroidOS/asteroid-wallpapers">asteroid-wallpapers</a> repo.
       <pre><code>git clone https://github.com/AsteroidOS/asteroid-wallpapers</code></pre>
       Change into the new directory.
       <pre><code>cd asteroid-wallpapers</code></pre>
