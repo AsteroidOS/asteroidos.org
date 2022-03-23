@@ -11,7 +11,7 @@ Commands and gestures to enter the fastboot (bootloader) mode are listed at the 
 
 ---
 
-AsteroidOS complies to the [freedesktop.org notifications specification](https://people.gnome.org/~mccann/docs/notification-spec/notification-spec-latest.html), which means you can use standard Linux desktop tools such as libnotify to show notifications in asteroid-launcher.
+AsteroidOS complies to the [freedesktop.org notifications specification](https://specifications.freedesktop.org/notification-spec/notification-spec-latest.html), which means you can use standard Linux desktop tools such as libnotify to show notifications in asteroid-launcher.
 On AsteroidOS a useful command named `notificationtool` is provided that allows you to create/update/close/list notifications from the CLI.
 
 ```
