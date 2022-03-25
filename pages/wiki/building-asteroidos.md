@@ -46,10 +46,10 @@ cd asteroid/
 
 Install the prerequisites:
 
-
-```
-apt-get install git build-essential cpio diffstat gawk chrpath texinfo python2 python3 wget shared-mime-info zstd liblz4-tool
-```
+| Distro | Command |
+| ------ | ------- |
+| Ubuntu | ```apt-get install git build-essential cpio diffstat gawk chrpath texinfo python2 python3 wget shared-mime-info zstd liblz4-tool``` |
+| Fedora | ```dnf install chrpath diffstat g++ lz4 rpcgen perl perl-bignum python3-pip socat texinfo``` |
 
 This repository basically only contains a shell script that populates *src/* with OpenEmbedded and the appropriate Asteroid layers. Then, it setups the environment for a bitbake build. The following command will setup a build for *dory* (the LG G Watch) but you can also build an image for other watches by using the corresponding codename. (Codenames can be found on the <a href="{{rel 'install'}}">Install page</a>.)
 
