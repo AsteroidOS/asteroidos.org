@@ -24,7 +24,7 @@ If you have questions regarding the installation process, please check out the *
 </div></a>
 <a href="{{rel '/install/smelt'}}"><div class="install-box">
   <img src="{{assets}}/img/smelt.png" width="100%"><br>
-  <b>Moto 360 2015</b><br>(smelt)<br>
+  <b>Moto 360 2015</b><br>(carp/smelt)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/sparrow'}}"><div class="install-box">
@@ -44,7 +44,7 @@ If you have questions regarding the installation process, please check out the *
 </div></a>
 <a href="{{rel '/install/catfish'}}"><div class="install-box">
   <img src="{{assets}}/img/catfish.png" width="100%"><br>
-  <b>TicWatch Pro</b><br>(catfish)<br>
+  <b>TicWatch Pro 2018/2020</b><br>(catfish/catfish_ext)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/dory'}}"><div class="install-box">
@@ -79,7 +79,7 @@ If you have questions regarding the installation process, please check out the *
 </div></a>
 <a href="{{rel '/install/skipjack'}}"><div class="install-box">
   <img src="{{assets}}/img/skipjack.png" width="100%"><br>
-  <b>TicWatch C2+</b><br>(skipjack)<br>
+  <b>TicWatch C2/C2+</b><br>(skipjack)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/mooneye'}}"><div class="install-box">
