@@ -17,7 +17,7 @@ layout: documentation
   <h1 id="batteryprofile">Battery Profile</h1>
 </div>
 
-<p>Clients can read an Asteroid watch's battery level using the BLE battery profile. This profile is a standard <a href="https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.service.battery_service.xml">defined by the Bluetooth Consortium</a> very well documented and implemented by many other devices.</p>
+<p>Clients can read an AsteroidOS watch's battery level using the BLE battery profile. This profile is a standard <a href="https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.service.battery_service.xml">defined by the Bluetooth Consortium</a> very well documented and implemented by many other devices.</p>
 
 <h3>Battery Service (UUID: 0000180F-0000-1000-8000-00805f9b34fb)</h3>
 <p><b>Battery Level Characteristic (UUID: 00002a19-0000-1000-8000-00805f9b34fb)</b></p>
@@ -27,7 +27,7 @@ layout: documentation
   <h1 id="mediaprofile">Media Profile</h1>
 </div>
 
-<p>Apps on an asteroid watch can control client's media playback capabilities (for example with the asteroid-music) using the Media profile. This profile is custom and functions as below:</p>
+<p>Apps on an AsteroidOS watch can control client's media playback capabilities (for example with the asteroid-music) using the Media profile. This profile is custom and functions as below:</p>
 
 <h3>Media Service (UUID: 00007071-0000-0000-0000-00A57E401D05)</h3>
 <p><b>Title Characteristic (UUID: 00007001-0000-0000-0000-00A57E401D05)</b></p>
@@ -54,7 +54,7 @@ layout: documentation
   <h1 id="notificationprofile">Notification Profile</h1>
 </div>
 
-<p>Clients can create notifications on the watch side by using the Notification Profile. This profile is typically used to synchronize notifications from a phone to a watch or to send special alerts such as AsteroidOSSync's "Find my watch" feature.</p>
+<p>Clients can create notifications on the watch side by using the Notification Profile. This profile follows the <a href="https://developer.apple.com/library/archive/documentation/CoreBluetooth/Reference/AppleNotificationCenterServiceSpecification/Specification/Specification.html">Apple Notification Center Service (ANCS) Specification</a>. This profile is typically used to synchronize notifications from a phone to a watch or to send special alerts such as AsteroidOSSync's "Find my watch" feature.</p>
 
 <h3>Notification Service (UUID: 00009071-0000-0000-0000-00A57E401D05)</h3>
 <p><b>Notification Update Characteristic (UUID: 00009001-0000-0000-0000-00A57E401D05)</b></p>
