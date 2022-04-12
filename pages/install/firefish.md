@@ -1,7 +1,7 @@
 ---
 title: Fossil Gen 4
 deviceName: firefish
-repo: ray
+repo: ray/firefish
 section: install
 layout: aw-install
 ---
