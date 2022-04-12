@@ -1,6 +1,7 @@
 ---
 title: Skagen Falster 2
 deviceName: ray
+repo: ray/firefish
 section: install
 layout: aw-install
 ---
