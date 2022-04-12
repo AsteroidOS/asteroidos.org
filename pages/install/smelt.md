@@ -1,6 +1,7 @@
 ---
 title: Moto 360 2015
 deviceName: smelt
+repo: carp/smelt
 section: install
 layout: aw-install
 ---
