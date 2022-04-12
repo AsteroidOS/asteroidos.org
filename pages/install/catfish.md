@@ -1,6 +1,7 @@
 ---
 title: Ticwatch Pro
 deviceName: catfish
+repo: catfish/catfish_ext/catshark
 layout: aw-install
 ---
 
