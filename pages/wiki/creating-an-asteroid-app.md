@@ -73,8 +73,13 @@ Before running QtCreator you must run the previously mentioned script:
 source /usr/local/oecore-x86_64/environment-setup-armv7vehf-neon-oe-linux-gnueabi
 qtcreator
 ```
+One other environment variable needs to be set to work seamlessly with AsteroidOS:
 
-This can be done automatically by prepending `source /usr/local/oecore-x86_64/environment-setup-armv7vehf-neon-oe-linux-gnueabi` before `#!/bin/sh` in `/usr/bin/qtcreator.sh`
+```
+export CMAKE_PROGRAM_PATH=/usr/local/oecore-x86_64/sysroots/armv7vehf-neon-oe-linux-gnueabi/usr/bin/
+```
+
+This can be done automatically by prepending `source /usr/local/oecore-x86_64/environment-setup-armv7vehf-neon-oe-linux-gnueabi` and the export command before `#!/bin/sh` in `/usr/bin/qtcreator.sh`
 
 Now that you are in QtCreator go to ‘_Tools-&gt;Options-&gt;Devices_‘
 
@@ -90,11 +95,13 @@ Under the '_Kits_' add a kit with the previously defined device:
 - Set the `Device` to `AsteroidOS Watch`.
 - Set the sysroot to `/usr/local/oecore-x86_64/sysroots/armv7vehf-neon-oe-linux-gnueabi/`.
 - In the CMake generator change the `Generator` to `Unix Makefiles`.
+- Change `Qt version` to `None`.
 - Change `C` compiler to `<No compiler>`.
 - Change `C++` compiler to `<No compiler>`.
-- Change `Qt version` to `None`.
 - Change `CMake Tool` to `System CMake at /usr/local/oecore-x86_64/usr/bin/cmake`
 - Clear the `CMake Configuration` fields.
+
+Note that if these steps are not done *in this order*, QtCreator will not let you change both the `C` compiler and `C++` compiler to `<No compiler>`.  Specifically, setting `Qt version` to `None` must be done first.
 
 # First app
 
@@ -146,3 +153,37 @@ If you want to disable screen locking for easier development you can enable the 
 ```
 mcetool -D on
 ```
+# Troubleshooting
+
+The most common problems stem from not following these directions *exactly*.  QtCreator helpfully tries to find compilers and set variables, but tends to set things up for the desktop as the target rather than AsteroidOS, so it often gets things wrong.  The first step for troubleshooting with QtCreator is to go very carefully over each of the steps listed above and verify that they all match exactly.
+
+## Could not find a package configuration file provided by "ECM"
+
+This is most often caused not having the environment variables set up as shown [above](#configure-qtcreator-for-cross-compilation) under the topic of configuring QtCreator.  The environment variables must all be set and then you must lauch `qtcreator` *in the same shell*.  If you're not sure you've done this, an easy way to check is to try this command from the command line:
+
+```
+echo $CC
+```
+
+This should result in a line like this:
+```
+arm-oe-linux-gnueabi-gcc -march=armv7ve -mfpu=neon -mfloat-abi=hard --sysroot=/usr/local/oecore-x86_64/sysroots/armv7vehf-neon-oe-linux-gnueabi
+```
+
+If instead you get an empty line or some other non-ARM compiler, you may have made an error.  One common error is to run the script directly instead of running it using `source` (or `.` on some Linux distributions).  Another common error that causes the error about not finding ECM is if, in the Kit, the system CMake is used instead of the one for the AsteroidOS SDK.
+
+## warning: The project contains C++ source files, but the currently active kit has no C++ compiler. The code model will not be fully functional.
+
+This is not really an error but a warning.  It's the result of having correctly chosen `<No compiler>` as per the instructions above and may safely be ignored.
+
+## file INSTALL cannot find ... .desktop
+
+This is probably the result of a missing `CMAKE_PROGRAM_PATH`.  As mentioned above, this must be set in order for a script that generates the desktop file to be correctly found and uses.
+
+## Remote process crashed
+
+One possibility is that your software has a bug, but another is that the `XDG_RUNTIME_DIR` is not set to `/run/user/1000` as mentioned above.
+
+## "I fixed it but I get the same error!"
+
+This most often happens when something was originally wrong with the configuration, but a CMake scan was made and a possibly faulty Makefile from an earlier attempt still exists.  To fix this, choose `Build` from the menu, and then `Rescan project`.  This will run CMake again, ignoring existing cached values and forcing the recreation of a Makefile.
