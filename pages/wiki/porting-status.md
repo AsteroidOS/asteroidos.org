@@ -82,6 +82,7 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - PineTime
 - Umidigi Uwatch GT
 - Honor Magic Watch 2
+- OPPO Watch Free
 
 # Tizen Smartwatches
 ---

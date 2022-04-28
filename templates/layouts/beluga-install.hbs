@@ -49,13 +49,13 @@
       <br>
       <br>Enable ADB on your watch with the following steps:
         <ol>
-          <img src="{{assets}}/img/install-1.jpg" class="install-centered-img"/>
+          <img src="{{assets}}/img/install-beluga-1.png" class="install-centered-img"/>
           <li>Open the settings app and go to the <b>System</b> and then <b>About</b> page.</li>
           <li>Tap the <b>Build number</b> 7 times until Developer options become available.</li>
 
-          <img src="{{assets}}/img/install-2.jpg" class="install-centered-img"/>
+          <img src="{{assets}}/img/install-beluga-2.png" class="install-centered-img"/>
           <li>Go back to the settings menu and then to the <b>Developer options</b> page.</li>
-          <li>Enable <b>ADB debugging</b>.</li>
+          <li>Enable <b>ADB debugging</b> and <b>OEM unlock</b>.</li>
         </ol>
       <br><b>Finally, to unlock the bootloader</b> enter the following commands in a terminal with your watch connected:</li>
       <br><pre><code class="bash">adb reboot bootloader<br>fastboot oem unlock</code></pre>
@@ -80,36 +80,21 @@ fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.
 fastboot continue</code></pre>
 
           <b><li type="a">Temporary installation</li></b>
-          <br>Reset your watch to factory settings in setting (All data will be erase) and flash recovery using Linux:
-          <pre><code class="bash">fastboot flash recovery ~/Downloads/adb-recovery-to-view-log.fastboot</code></pre>
-
-          or using Windows:
-          <pre><code class="bash">fastboot flash recovery %systemdrive%%homepath%\Downloads\adb-recovery-to-view-log.fastboot</code></pre>
-          Then, boot recovery mode in fastboot menu.<br>and use adb look like
-          <pre><code class="bash">$ adb shell
-sh-5.1# mount /dev/mmcblk0p40 /mnt       
-sh-5.1# ls /mnt/
-sh-5.1# cd /mnt
-sh-5.1# mkdir media
-sh-5.1# cd media
-sh-5.1# mkdir 0
-sh-5.1# exit
-</code></pre>
+          Boot the temporary image (using the on screen boot menu). Important to not boot into WearOS after unlock your bootloader!
+          <br><br>
+          The bootlogo will popup with the message "<b>Push asteroidos.ext4 via ADB</b>" will show below the bootlogo.
           <br>Push AsteroidOS to the internal sdcard using Linux:
-          <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceName}}.ext4 /mnt/media/0/asteroidos.ext4</code></pre>
+          <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
 
           or using Windows:
-          <pre><code class="bash">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4 /mnt/media/0/asteroidos.ext4</code></pre>
-
-          Then, use <code class="bash">adb reboot bootloader</code><br><br>
+          <pre><code class="bash">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
 
           Everytime you want to reboot AsteroidOS from Wear OS, run:
           <pre><code>adb reboot bootloader</code></pre>
           Then, if you are using Linux:
-          <pre><code>fastboot flash recover ~/Downloads/zImage-dtb-{{deviceName}}.fastboot</code></pre>
+          <pre><code>fastboot boot ~/Downloads/zImage-dtb-{{deviceName}}.fastboot</code></pre>
           or on Windows:
-          <pre><code>fastboot flash recover %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot</code></pre>
-          and boot with recovery mode in fastboot menu only.
+          <pre><code>fastboot boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot</code></pre>
           </ol>
         <br><h3>3. Enjoy your new OS!</h3><br><br>
     </div>
