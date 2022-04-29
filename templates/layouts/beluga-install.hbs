@@ -88,10 +88,10 @@ fastboot continue</code></pre>
           <pre><code>fastboot flash recovery %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot</code></pre>
           Then, Boot the temporary image (using the on screen boot menu). The bootlogo will popup with the message "<b>Push asteroidos.ext4 via ADB</b>" will show below the bootlogo.
           <br>Push AsteroidOS to the internal sdcard using Linux:
-          <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+          <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceName}}.ext4 /sdcard/media/0/asteroidos.ext4</code></pre>
 
           or using Windows:
-          <pre><code class="bash">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+          <pre><code class="bash">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4 /sdcard/media/0/asteroidos.ext4</code></pre>
 
           Everytime you want to reboot AsteroidOS from Wear OS, run:
           <pre><code>adb reboot bootloader</code></pre>
