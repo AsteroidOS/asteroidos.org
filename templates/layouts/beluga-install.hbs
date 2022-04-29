@@ -80,10 +80,10 @@ fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.
 fastboot continue</code></pre>
 
           <b><li type="a">Temporary installation</li></b>
-          Boot Fastboot mode. <b>Important to not boot into WearOS after unlock your bootloader!</b>
-          <br><br>
-          You need to flash recovery.<br>if you are using Linux:
+          <b>Important to not boot into WearOS after unlock your bootloader!</b>
+          While your watch is in bootloader mode, flash the recovery partitions using Linux:
           <pre><code>fastboot flash recovery ~/Downloads/zImage-dtb-{{deviceName}}.fastboot</code></pre>
+
           or on Windows:
           <pre><code>fastboot flash recovery %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot</code></pre>
           Then, Boot the temporary image (using the on screen boot menu). The bootlogo will popup with the message "<b>Push asteroidos.ext4 via ADB</b>" will show below the bootlogo.
@@ -97,6 +97,7 @@ fastboot continue</code></pre>
           <pre><code>adb reboot bootloader</code></pre>
           Then, if you are using Linux:
           <pre><code>fastboot flash recovery ~/Downloads/zImage-dtb-{{deviceName}}.fastboot</code></pre>
+
           or on Windows:
           <pre><code>fastboot flash recovery %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot</code></pre>
           </ol>
