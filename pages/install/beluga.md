@@ -23,5 +23,5 @@ layout: beluga-install
 
 <div class="callout callout-warning">
     <h4>Warning!</h4>
-    <p>OPPO Watch Free are not supported! See the list on the <a href="{{rel 'wiki/porting-status'}}">porting status</a> page to find out if your model is supported.</p>
+    <p>The OPPO Watch Free is not supported! See the list on the <a href="{{rel 'wiki/porting-status'}}">porting status</a> page to find out if your model is supported.</p>
 </div>
