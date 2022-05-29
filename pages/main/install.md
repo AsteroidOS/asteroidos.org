@@ -67,6 +67,11 @@ If you have questions regarding the installation process, please check out the *
   <b>MTK6580 watches</b><br>(inharmony)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
+<a href="{{rel '/install/narwhal'}}"><div class="install-box">
+  <img src="{{assets}}/img/narwhal.png" width="100%"><br>
+  <b>LG Watch W7</b><br>(narwhal)<br>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
 <a href="{{rel '/install/ray'}}"><div class="install-box">
   <img src="{{assets}}/img/ray.png" width="100%"><br>
   <b>Skagen Falster 2</b><br>(ray)<br>
