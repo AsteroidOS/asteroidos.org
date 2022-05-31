@@ -94,7 +94,7 @@ If you have questions regarding the installation process, please check out the *
 </div></a>
 <a href="{{rel '/install/mooneye'}}"><div class="install-box">
   <img src="{{assets}}/img/mooneye.png" width="100%"><br>
-  <b>Ticwatch E & S</b><br>(mooneye)<br>
+  <b>TicWatch E & S</b><br>(mooneye)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/swift'}}"><div class="install-box">

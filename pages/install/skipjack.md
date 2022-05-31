@@ -1,5 +1,5 @@
 ---
-title: Ticwatch C2+
+title: TicWatch C2+
 deviceName: skipjack
 layout: aw-install
 ---
