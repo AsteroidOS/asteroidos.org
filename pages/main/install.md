@@ -9,7 +9,7 @@ If you have questions regarding the installation process, please check out the *
 
 <a href="{{rel 'install/bass'}}"><div class="install-box">
   <img src="{{assets}}/img/bass.png" width="100%"><br>
-  <b>LG G Watch Urbane</b><br>(bass)<br>
+  <b>LG Watch Urbane</b><br>(bass)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"><i class="icon ion-md-star"><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/sturgeon'}}"><div class="install-box">
