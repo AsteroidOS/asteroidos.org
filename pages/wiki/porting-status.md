@@ -19,8 +19,8 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - Huawei Watch 2 *(maintained by MagneFire, flocke, fosspill, FlorentBrianFoxcorner, jrt and the community)*
 - LG G Watch *(maintained by kido)*
 - LG G Watch R *(maintained by atx)*
-- LG G Watch Urbane *(maintained by TheAppleMan & kido)*
-- LG G Watch W7 *(maintained by dodoradio & MagneFire)*
+- LG Watch Urbane *(maintained by TheAppleMan & kido)*
+- LG Watch W7 *(maintained by dodoradio & MagneFire)*
 - Moto 360 (2nd generation) *(maintained by MagneFire)*
 - Skagen Falster 2 *(maintained by MagneFire)*
 - OPPO Watch *(maintained by MagneFire & wannaphong)*
