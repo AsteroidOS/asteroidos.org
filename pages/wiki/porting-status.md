@@ -26,9 +26,9 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - OPPO Watch *(maintained by MagneFire & wannaphong)*
 - Samsung Gear Live *(unmaintained)*
 - Sony Smartwatch 3 *(unmaintained)* Limited support, see <a href="https://asteroidos.org/install/tetra/">install</a> page.
-- Ticwatch E & S *(maintained by kido)*
-- Ticwatch C2+ *(maintained by R0NAM1)*
-- Ticwatch Pro *(maintained by C9Glax, LecrisUT & MagneFire)*
+- TicWatch E & S *(maintained by kido)*
+- TicWatch C2+ *(maintained by R0NAM1)*
+- TicWatch Pro *(maintained by C9Glax, LecrisUT & MagneFire)*
 
 &nbsp;
 #### Possible ports not supported yet:
