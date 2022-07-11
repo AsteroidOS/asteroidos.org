@@ -84,7 +84,7 @@ If you have questions regarding the installation process, please check out the *
 </div></a>
 <a href="{{rel '/install/skipjack'}}"><div class="install-box">
   <img src="{{assets}}/img/skipjack.png" width="100%"><br>
-  <b>TicWatch C2/C2+</b><br>(skipjack)<br>
+  <b>TicWatch C2/C2+/S2</b><br>(skipjack)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 <a href="{{rel '/install/beluga'}}"><div class="install-box">
