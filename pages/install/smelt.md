@@ -1,7 +1,7 @@
 ---
 title: Moto 360 2015
 deviceName: smelt
-repo: carp/smelt
+label: carp/smelt
 windowsDrivers: https://motorola-global-portal.custhelp.com/euf/assets/downloads/Motorola_Mobile_Drivers_64bit.msi
 section: install
 layout: aw-install
