@@ -21,6 +21,7 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - LG G Watch R *(maintained by atx)*
 - LG Watch Urbane *(maintained by TheAppleMan & kido)*
 - LG Watch W7 *(maintained by dodoradio & MagneFire)*
+- Moto 360 (1st generation) *(maintained by MagneFire)*
 - Moto 360 (2nd generation) *(maintained by MagneFire)*
 - Skagen Falster 2 *(maintained by MagneFire)*
 - OPPO Watch *(maintained by MagneFire & wannaphong)*
@@ -44,7 +45,6 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - Michael Kors Access Grayson (pinouts are on the inside)
 - Misfit Vapor
 - Montblanc Summit
-- Moto 360 (1st generation)
 - Moto 360 Sport
 - Nixon Mission
 - New Balance RunIQ Watch

@@ -109,6 +109,11 @@ The AsteroidOS support level for some watches is currently deemed experimental f
   <b>OPPO Watch</b><br>(beluga)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></i></span><span class="star-bad"><i class="icon ion-md-star"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
+<a href="{{rel '/install/minnow'}}"><div class="install-box">
+  <img src="{{assets}}/img/minnow.png" width="100%"><br>
+  <b>Moto 360</b><br>(minnow)<br>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
 <a href="{{rel '/install/tetra'}}"><div class="install-box">
   <img src="{{assets}}/img/tetra.png" width="100%"><br>
   <b>Sony Smartwatch 3</b><br>(tetra)<br>
