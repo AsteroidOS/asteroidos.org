@@ -29,6 +29,7 @@ layout: documentation
   <li><a href="{{rel 'wiki/creating-an-asteroid-app'}}">Creating an Asteroid app</a></li>
   <li><a href="{{rel 'wiki/watchfaces-creation'}}">Watchfaces creation</a></li>
   <li><a href="{{rel 'wiki/emulator'}}">Emulator</a></li>
+  <li><a href="{{rel 'wiki/localweb'}}">Local version of asteroidos.org</a></li>
   <li><a href="{{rel 'wiki/ble-profiles'}}">Bluetooth Low Energy Profiles</a></li>
   <li><a href="{{rel 'wiki/conferences'}}">Conferences</a></li>
   <li><a href="{{rel 'wiki/porting-guide'}}">Porting Guide</a></li>
