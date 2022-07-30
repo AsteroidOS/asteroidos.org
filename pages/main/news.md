@@ -10,7 +10,7 @@ slug: news
                 <a href="{{ relative ../../page.dest this.dest }}">
                     <div class="news-title">
                         <h1>{{ data.title }}</h1>
-                        <div class="news-date">{{formatDate data.posted "%d/%m/%Y"}}</div>
+                        <div class="news-date">{{dateFormat data.posted "DD/MM/YYYY"}}</div>
                     </div>
                     <p>{{ data.summary }}</p>
                 </a>
