@@ -163,8 +163,8 @@ module.exports = function(grunt) {
   });
 
   // Load npm plugins to provide necessary tasks.
-  grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('assemble-less');
+  grunt.loadNpmTasks('grunt-assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -173,7 +173,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-prettify');
   grunt.loadNpmTasks('grunt-repos');
   grunt.loadNpmTasks('grunt-sync-pkg');
-  grunt.loadNpmTasks('grunt-http-download');
 
   grunt.registerTask('design', [
     'copy',
