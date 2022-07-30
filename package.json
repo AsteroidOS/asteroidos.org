@@ -17,7 +17,7 @@
     "@octokit/rest": "^14.0.0",
     "assemble-contrib-permalinks": "^0.3.6",
     "chalk": "^0.5.1",
-    "cheerio": "^0.17.0",
+    "cheerio": "^1.0.0-rc.12",
     "cwd": "^0.10.0",
     "fs-utils": "^0.7.0",
     "git-branch": "^2.0.1",
