@@ -6,7 +6,7 @@
 'use strict';
 
 var file = require('fs-utils');
-var marked = require('marked-extras');
+//var marked = require('marked-extras');
 var strip = require('strip-indent');
 var _ = require('lodash');
 
