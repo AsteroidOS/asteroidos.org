@@ -43,7 +43,6 @@
     "highlight.js": "^11.6.0",
     "lodash": "^4.17.21",
     "marked": "^3.0.0",
-    "marked-extras": "^0.2.4",
     "relative": "^0.1.6",
     "remote-origin-url": "^2.0.0",
     "request": "^2.42.0",
