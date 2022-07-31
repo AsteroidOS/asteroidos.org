@@ -15,7 +15,6 @@
   "main": "Gruntfile.js",
   "devDependencies": {
     "@octokit/rest": "^14.0.9",
-    "assemble-contrib-permalinks": "^0.3.6",
     "chalk": "^0.5.1",
     "cheerio": "^1.0.0-rc.12",
     "cwd": "^0.10.0",
@@ -27,6 +26,7 @@
     "gray-matter": "^4.0.3",
     "grunt": "^1.5.3",
     "grunt-assemble": "^0.6.3",
+    "grunt-assemble-permalinks": "^0.1.1",
     "grunt-contrib-clean": "^2.0.1",
     "grunt-contrib-connect": "^2.1.0",
     "grunt-contrib-copy": "^1.0.0",

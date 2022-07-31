@@ -47,7 +47,7 @@ layout:           content
 helpers:          <%= site.templates %>/_helpers
 plugins:
   # npm
-  - assemble-contrib-permalinks
+  - grunt-assemble-permalinks
 
   # local
   - <%= site.templates %>/_plugins/navigation.js
