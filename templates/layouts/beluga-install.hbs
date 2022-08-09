@@ -13,6 +13,13 @@
     <div class="container docs-container">
       <h1>Hardware Support</h1>
       <p>Before installing AsteroidOS to your watch, make sure you are aware of the capabilities and limitations of AsteroidOS on the {{title}}. The following table should summarize the current support of this watch:</p>
+      {{#with (getModel deviceName)}}
+        <div class="support-row">
+          {{#features}}
+              <div class="support-col">{{name}}<div class="support-col-{{status}}"></div></div>
+          {{/features}}
+        </div>
+      {{/with}}
       {{> body }}
       <p>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
       <h1>Preparation</h1>
@@ -38,7 +45,7 @@
         <a class="btn btn-primary" href="https://release.asteroidos.org/tools/adb_1_0_39+fastboot+ext2simg.zip" role="button">adb-1_0_39+fastboot+ext2simg.zip</a>
         <br><br>
         Extract the content to a folder of your liking.<br>
-        Navigate to that folder using Windows commandline (cmd.exe).
+        Navigate to that folder using the Windows commandline (cmd.exe).
         <br><br>
       </div>
 

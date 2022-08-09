@@ -13,8 +13,15 @@
     <div class="container docs-container">
       <h1>Hardware Support</h1>
       <p>Before installing AsteroidOS to your watch, make sure you are aware of the capabilities and limitations of AsteroidOS on the {{title}}. The following table should summarize the current support of this watch:</p>
+      {{#with (getModel deviceName)}}
+        <div class="support-row">
+          {{#features}}
+              <div class="support-col">{{name}}<div class="support-col-{{status}}"></div></div>
+          {{/features}}
+        </div>
+      {{/with}}
       {{> body }}
-      <p>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label {{#if label}}{{label}}{{else}}{{deviceName}}{{/if}} for issues specific to your watch.</p>
+      <p>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
       <h1>Preparation</h1>
       <div class="install-preparation-box">
         <h3>Download AsteroidOS nightly builds</h3>
@@ -29,16 +36,16 @@
         <br><br>
         <pre><code class="bash">sudo apt install android-tools-adb android-tools-fastboot</code></pre>
         <br>
-        <b>On Windows systems</b> install this ADB driver <a href="https://adb.clockworkmod.com/">from clockworkmod</a>
+        <b>On Windows systems</b> install this ADB driver
         <br><br>
-        <a class="btn btn-primary" href="http://download.clockworkmod.com/test/UniversalAdbDriverSetup.msi" role="button">UniversalAdbDriverSetup.msi</a>
+        <a class="btn btn-primary" href="{{#if windowsDrivers}}{{windowsDrivers}}{{else}}http://download.clockworkmod.com/test/UniversalAdbDriverSetup.msi{{/if}}" role="button">{{#if windowsDrivers}}{{replace windowsDrivers ".*\/" "" ""}}{{else}}UniversalAdbDriverSetup.msi{{/if}}</a>
         <br><br>
         Download this zip file containing ADB & Fastboot from Android SDK
         <br><br>
         <a class="btn btn-primary" href="https://release.asteroidos.org/tools/adb_1_0_39+fastboot+ext2simg.zip" role="button">adb-1_0_39+fastboot+ext2simg.zip</a>
         <br><br>
         Extract the content to a folder of your liking.<br>
-        Navigate to that folder using Windows commandline (cmd.exe).
+        Navigate to that folder using the Windows commandline (cmd.exe).
         <br><br>
       </div>
 
@@ -50,12 +57,12 @@
       <br>Enable ADB on your watch with the following steps:
         <ol>
           <img src="{{assets}}/img/install-1.jpg" class="install-centered-img"/>
-          <li>Open the settings app and go to the "About" page.</li>
-          <li>Tap the Build number 7 times until Developer options become enabled.</li>
+          <li>Open the settings app and go to the <b>System</b> and then <b>About</b> page.</li>
+          <li>Tap the <b>Build number</b> 7 times until Developer options become available.</li>
 
           <img src="{{assets}}/img/install-2.jpg" class="install-centered-img"/>
-          <li>Go back to the settings menu and then to the "Developer options" page.</li>
-          <li>Enable ADB debugging.</li>
+          <li>Go back to the settings menu and then to the <b>Developer options</b> page.</li>
+          <li>Enable <b>ADB debugging</b>.</li>
         </ol>
       <br><b>Finally, to unlock the bootloader</b> enter the following commands in a terminal with your watch connected:</li>
       <br><pre><code class="bash">adb reboot bootloader<br>fastboot oem unlock</code></pre>
