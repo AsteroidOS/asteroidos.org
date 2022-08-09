@@ -4,18 +4,6 @@ deviceName: minnow
 layout: aw-install
 ---
 
-<div class="support-row">
-  <div class="support-col">Display<div class="support-col-good"></div></div>
-  <div class="support-col">Touch<div class="support-col-good"></div></div>
-  <div class="support-col">Microphone<div class="support-col-good"></div></div>
-  <div class="support-col">Bluetooth<div class="support-col-bad"></div></div>
-  <div class="support-col">Haptics<div class="support-col-good"></div></div>
-  <div class="support-col">USB<div class="support-col-good"></div></div>
-  <div class="support-col">WLAN<div class="support-col-good"></div></div>
-  <div class="support-col">Tilt-to-Wake<div class="support-col-bad"></div></div>
-  <div class="support-col">Always-on-Display<div class="support-col-bad"></div></div>
-</div>
-
 <div class="callout callout-info">
     <h4>USB connection</h4>
     <p>The Moto 360 doesn't expose a USB connection. It is however possible to connect to the watch using an adapter cable.</p>
