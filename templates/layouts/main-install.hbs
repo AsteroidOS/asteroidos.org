@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body{{#slug}} class="{{.}}"{{/slug}}>
+    {{!-- Docs master nav --}}
+    {{> nav-main }}
+
+    <div id="content" class="docs-header">
+    <div class="container">
+    <h1>Install</h1>
+    </div>
+    </div>
+
+    {{!-- Content --}}
+    <div class="container docs-container">
+      <p>AsteroidOS can be installed as an alternative operating system on various smartwatches. Instructions for each model can be found below:</p>
+      <p>If you have questions regarding the installation process, please check out the <a href="#FAQ">FAQ</a> section.</p>
+    {{#each supported}}
+      {{> installbox}}
+    {{/each}}
+
+    <div class="page-header">
+      <h1>Experimental</h1>
+    </div>
+    <p>The AsteroidOS support level for some watches is currently deemed experimental for various reasons. They are not recommended for daily use but should still give an overall impression of AsteroidOS.</p>
+    {{#each experimental}}
+      {{> installbox}}
+    {{/each}}
+
+    {{> body }}
+    </div>
+
+    {{!-- Footer --}}
+    {{> footer }}
+
+    {{!-- JavaScript and analytics only. --}}
+    {{> javascripts }}
+  </body>
+</html>
