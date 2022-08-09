@@ -59,6 +59,7 @@
     },
     {
       "name":"catfish",
+      "othernames":[ "catfish_ext", "catshark" ],
       "models": [
         "TicWatch Pro 2018/2020"
       ],
@@ -241,6 +242,7 @@
     },
     {
       "name":"sawfish",
+      "othernames":[ "sawshark" ],
       "models": [
         "Huawei Watch 2"
       ],
@@ -280,6 +282,7 @@
     },
     {
       "name":"smelt",
+      "othernames":[ "carp" ],
       "models": [
         "Moto 360 2015"
       ],
