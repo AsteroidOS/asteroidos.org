@@ -1,126 +1,12 @@
 ---
 title: Install
 slug: install
+layout: main-install
+supported: [ bass, sturgeon, lenok, smelt, sparrow, wren, anthias, catfish, dory, firefish, harmony, inharmony, narwhal, ray, sawfish, skipjack, mooneye, swift ]
+experimental: [ beluga, minnow, tetra, sprat ]
 ---
 
-AsteroidOS can be installed as an alternative operating system on various smartwatches. Instructions for each model can be found below:
-
-If you have questions regarding the installation process, please check out the **FAQ** section.
-
-<a href="{{rel 'install/bass'}}"><div class="install-box">
-  <img src="{{assets}}/img/bass.png" width="100%"><br>
-  <b>LG Watch Urbane</b><br>(bass)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"><i class="icon ion-md-star"><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/sturgeon'}}"><div class="install-box">
-  <img src="{{assets}}/img/sturgeon.png" width="100%"><br>
-  <b>Huawei Watch</b><br>(sturgeon)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"><i class="icon ion-md-star"><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/lenok'}}"><div class="install-box">
-  <img src="{{assets}}/img/lenok.png" width="100%"><br>
-  <b>LG G Watch R</b><br>(lenok)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/smelt'}}"><div class="install-box">
-  <img src="{{assets}}/img/smelt.png" width="100%"><br>
-  <b>Moto 360 2015</b><br>(carp/smelt)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/sparrow'}}"><div class="install-box">
-  <img src="{{assets}}/img/sparrow.png" width="100%"><br>
-  <b>Asus Zenwatch 2</b><br>(sparrow)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/wren'}}"><div class="install-box">
-  <img src="{{assets}}/img/wren.png" width="100%"><br>
-  <b>Asus Zenwatch 2</b><br>(wren)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel 'install/anthias'}}"><div class="install-box">
-  <img src="{{assets}}/img/anthias.png" width="100%"><br>
-  <b>Asus Zenwatch 1</b><br>(anthias)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/catfish'}}"><div class="install-box">
-  <img src="{{assets}}/img/catfish.png" width="100%"><br>
-  <b>TicWatch Pro 2018/2020</b><br>(catfish/catfish_ext/catshark)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/dory'}}"><div class="install-box">
-  <img src="{{assets}}/img/dory.png" width="100%"><br>
-  <b>LG G Watch</b><br>(dory)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/firefish'}}"><div class="install-box">
-  <img src="{{assets}}/img/firefish.png" width="100%"><br>
-  <b>Fossil Gen 4</b><br>(firefish)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/harmony'}}"><div class="install-box">
-  <img src="{{assets}}/img/harmony.png" width="100%"><br>
-  <b>MTK6580 watches</b><br>(harmony)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/inharmony'}}"><div class="install-box">
-  <img src="{{assets}}/img/inharmony.png" width="100%"><br>
-  <b>MTK6580 watches</b><br>(inharmony)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/narwhal'}}"><div class="install-box">
-  <img src="{{assets}}/img/narwhal.png" width="100%"><br>
-  <b>LG Watch W7</b><br>(narwhal)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/ray'}}"><div class="install-box">
-  <img src="{{assets}}/img/ray.png" width="100%"><br>
-  <b>Skagen Falster 2</b><br>(ray)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/sawfish'}}"><div class="install-box">
-  <img src="{{assets}}/img/sawfish.png" width="100%"><br>
-  <b>Huawei Watch 2</b><br>(sawfish/sawshark)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/skipjack'}}"><div class="install-box">
-  <img src="{{assets}}/img/skipjack.png" width="100%"><br>
-  <b>TicWatch C2/C2+/S2</b><br>(skipjack)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/mooneye'}}"><div class="install-box">
-  <img src="{{assets}}/img/mooneye.png" width="100%"><br>
-  <b>TicWatch E & S</b><br>(mooneye)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/swift'}}"><div class="install-box">
-  <img src="{{assets}}/img/swift.png" width="100%"><br>
-  <b>Asus Zenwatch 3</b><br>(swift)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-
-<div class="page-header">
-  <h1>Experimental</h1>
-</div>
-
-The AsteroidOS support level for some watches is currently deemed experimental for various reasons. They are not recommended for daily use but should still give an overall impression of AsteroidOS.
-
-<a href="{{rel '/install/beluga'}}"><div class="install-box">
-  <img src="{{assets}}/img/beluga.png" width="100%"><br>
-  <b>OPPO Watch</b><br>(beluga)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></i></span><span class="star-bad"><i class="icon ion-md-star"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/minnow'}}"><div class="install-box">
-  <img src="{{assets}}/img/minnow.png" width="100%"><br>
-  <b>Moto 360</b><br>(minnow)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-<a href="{{rel '/install/tetra'}}"><div class="install-box">
-  <img src="{{assets}}/img/tetra.png" width="100%"><br>
-  <b>Sony Smartwatch 3</b><br>(tetra)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
-
-<div class="page-header">
+<div id="FAQ" class="page-header">
   <h1>FAQ</h1>
 </div>
 
@@ -131,7 +17,7 @@ The AsteroidOS support level for some watches is currently deemed experimental f
 
 <div class="callout">
     <h4>Where can I find a phone synchronization app?</h4>
-    A synchronization client for Android phones named "AsteroidOSSync" is [available for you to download on F-Droid](https://f-droid.org/packages/org.asteroidos.sync/). <br/>Ubuntu Touch users can [download "Telescope" from the OpenStore](https://open-store.io/app/telescope.asteroidos).
+    A synchronization client for Android phones named "AsteroidOSSync" is <a href="https://f-droid.org/packages/org.asteroidos.sync/">available for you to download on F-Droid</a>. <br/>Ubuntu Touch users can <a href="https://open-store.io/app/telescope.asteroidos">download "Telescope" from the OpenStore</a>.
 </div>
 
 <div class="callout">
@@ -141,12 +27,12 @@ The AsteroidOS support level for some watches is currently deemed experimental f
 
 <div class="callout">
     <h4>My watch is not listed on this page. What can I do?</h4>
-    You should refer to the [Porting Status]({{rel 'wiki/porting-status'}}) page of the documentation and check if a port of AsteroidOS to your watch is possible or in progress. If you are interested in porting AsteroidOS yourself to a new watch, please read the [Porting Guide]({{rel 'wiki/porting-guide'}}) page and contact us via IRC.
+    You should refer to the <a href="{{rel 'wiki/porting-status'}}">Porting Status</a> page of the documentation and check if a port of AsteroidOS to your watch is possible or in progress. If you are interested in porting AsteroidOS yourself to a new watch, please read the <a href="{{rel 'wiki/porting-guide'}}">Porting Guide</a> page and contact us via IRC.
 </div>
 
 <div class="callout">
     <h4>I do not want to flash a prebuilt image on my watch. Can I compile AsteroidOS myself?</h4>
-    Review the [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}) page for detailed instructions on how to compile AsteroidOS yourself.
+    Review the <a href="{{rel 'wiki/building-asteroidos'}}">Building AsteroidOS</a> page for detailed instructions on how to compile AsteroidOS yourself.
 </div>
 
 <div class="callout">
@@ -156,7 +42,7 @@ The AsteroidOS support level for some watches is currently deemed experimental f
 
 <div class="callout">
     <h4>My fastboot command crashes or hangs at "invalid sparse file format at header magi" (with a missing "c" in magic)</h4>
-    This error occurs when using deprecated fastboot and ADB commands on Windows systems. If you already had those commands installed and skipped downloading our [supplied zip file](https://release.asteroidos.org/tools/adb_1_0_39+fastboot+ext2simg.zip), please install those commands instead.
+    This error occurs when using deprecated fastboot and ADB commands on Windows systems. If you already had those commands installed and skipped downloading our <a href="https://release.asteroidos.org/tools/adb_1_0_39+fastboot+ext2simg.zip">supplied zip file</a>, please install those commands instead.
 </div>
 
 <div class="callout">
@@ -168,3 +54,4 @@ The AsteroidOS support level for some watches is currently deemed experimental f
     <h4>My Asus Zenwatch 2 flashed successfully but does not boot</h4>
     There are two versions of the Asus Zenwatch 2, codenamed Sparrow and Wren. Their images are not interchangeable. Please ensure you are using the right files.
 </div>
+
