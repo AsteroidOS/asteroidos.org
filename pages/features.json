@@ -2,6 +2,10 @@
   "watches": [
     {
       "name":"anthias",
+      "models": [
+        "Asus Zenwatch 1"
+      ],
+      "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -14,6 +18,10 @@
     },
     {
       "name":"bass",
+      "models": [
+        "LG Watch Urbane"
+      ],
+      "stars":5,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -29,6 +37,10 @@
     },
     {
       "name":"beluga",
+      "models": [
+        "OPPO Watch"
+      ],
+      "stars":2,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -47,6 +59,10 @@
     },
     {
       "name":"catfish",
+      "models": [
+        "TicWatch Pro 2018/2020"
+      ],
+      "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -61,6 +77,10 @@
     },
     {
       "name":"dory",
+      "models": [
+        "LG G Watch"
+      ],
+      "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -74,6 +94,10 @@
     },
     {
       "name":"firefish",
+      "models": [
+        "Fossil Gen 4"
+      ],
+      "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -88,6 +112,10 @@
     },
     {
       "name":"harmony",
+      "models": [
+        "MTK6580 watches"
+      ],
+      "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -104,6 +132,10 @@
     },
     {
       "name":"inharmony",
+      "models": [
+        "MTK6580 watches"
+      ],
+      "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -120,6 +152,10 @@
     },
     {
       "name":"lenok",
+      "models": [
+        "LG G Watch R"
+      ],
+      "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -135,6 +171,10 @@
     },
     {
       "name":"minnow",
+      "models": [
+        "Moto 360"
+      ],
+      "stars":1,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -149,6 +189,10 @@
     },
     {
       "name":"mooneye",
+      "models": [
+        "TicWatch E & S"
+      ],
+      "stars":2,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -161,6 +205,10 @@
     },
     {
       "name":"narwhal",
+      "models": [
+        "LG Watch W7"
+      ],
+      "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -175,6 +223,10 @@
     },
     {
       "name":"ray",
+      "models": [
+        "Skagen Falster 2"
+      ],
+      "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -189,6 +241,10 @@
     },
     {
       "name":"sawfish",
+      "models": [
+        "Huawei Watch 2"
+      ],
+      "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -204,6 +260,10 @@
     },
     {
       "name":"skipjack",
+      "models": [
+        "TicWatch C2/C2+/S2"
+      ],
+      "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -220,6 +280,10 @@
     },
     {
       "name":"smelt",
+      "models": [
+        "Moto 360 2015"
+      ],
+      "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -234,6 +298,10 @@
     },
     {
       "name":"sparrow",
+      "models": [
+        "Asus Zenwatch 2"
+      ],
+      "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -248,6 +316,10 @@
     },
     {
       "name":"sprat",
+      "models": [
+        "Samsung Gear Live"
+      ],
+      "stars":1,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -260,6 +332,10 @@
     },
     {
       "name":"sturgeon",
+      "models": [
+        "Huawei Watch"
+      ],
+      "stars":5,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -275,6 +351,10 @@
     },
     {
       "name":"swift",
+      "models": [
+        "Asus Zenwatch 3"
+      ],
+      "stars":2,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -283,7 +363,16 @@
         { "name":"Compass", "status":"bad" },
         { "name":"Haptics", "status":"good" },
         { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"good" },
+        { "name":"WLAN", "status":"good" }
+      ]
+    },
+    {
+      "name":"tetra",
+      "models": [
+        "Sony Smartwatch 3"
+      ],
+      "stars":1,
+      "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
         { "name":"Microphone", "status":"bad" },
@@ -298,6 +387,10 @@
     },
     {
       "name":"wren",
+      "models": [
+        "Asus Zenwatch 2"
+      ],
+      "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
