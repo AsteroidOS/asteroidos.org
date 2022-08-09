@@ -1,0 +1,313 @@
+{
+  "watches": [
+    {
+      "name":"anthias",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Compass", "status":"bad" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" }
+      ]
+    },
+    {
+      "name":"bass",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" }
+      ]
+    },
+    {
+      "name":"beluga",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Speaker", "status":"bad" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"GPS", "status":"bad" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"WLAN", "status":"bad" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"NFC", "status":"bad" }
+      ]
+    },
+    {
+      "name":"catfish",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"bad" }
+      ]
+    },
+    {
+      "name":"dory",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"bad" }
+      ]
+    },
+    {
+      "name":"firefish",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" }
+      ]
+    },
+    {
+      "name":"harmony",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"Camera", "status":"good" },
+        { "name":"Heart Rate", "status":"bad" },
+        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Always-on-Display", "status":"bad" }
+      ]
+    },
+    {
+      "name":"inharmony",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"Camera", "status":"good" },
+        { "name":"Heart Rate", "status":"bad" },
+        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Always-on-Display", "status":"bad" }
+      ]
+    },
+    {
+      "name":"lenok",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" }
+      ]
+    },
+    {
+      "name":"minnow",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Bluetooth", "status":"bad" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Always-on-Display", "status":"bad" }
+      ]
+    },
+    {
+      "name":"mooneye",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Bluetooth", "status":"bad" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" }
+      ]
+    },
+    {
+      "name":"narwhal",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Hands", "status":"bad" }
+      ]
+    },
+    {
+      "name":"ray",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" }
+      ]
+    },
+    {
+      "name":"sawfish",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Speaker", "status":"bad" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"bad" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" }
+      ]
+    },
+    {
+      "name":"skipjack",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"GPS", "status":"bad" },
+        { "name":"NFC", "status":"bad" },
+        { "name":"WLAN", "status":"bad" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" }
+      ]
+    },
+    {
+      "name":"smelt",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" }
+      ]
+    },
+    {
+      "name":"sparrow",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Compass", "status":"bad" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" }
+      ]
+    },
+    {
+      "name":"sprat",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Compass", "status":"bad" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" }
+      ]
+    },
+    {
+      "name":"sturgeon",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Speaker", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Heart Rate", "status":"unknown" },
+        { "name":"Tilt-to-Wake", "status":"good" }
+      ]
+    },
+    {
+      "name":"swift",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Bluetooth", "status":"bad" },
+        { "name":"Compass", "status":"bad" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
+      ]
+    },
+    {
+      "name":"wren",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Compass", "status":"bad" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"bad" }
+      ]
+    }
+  ]
+}
