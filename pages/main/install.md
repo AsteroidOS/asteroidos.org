@@ -87,11 +87,6 @@ If you have questions regarding the installation process, please check out the *
   <b>TicWatch C2/C2+/S2</b><br>(skipjack)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
-<a href="{{rel '/install/beluga'}}"><div class="install-box">
-  <img src="{{assets}}/img/beluga.png" width="100%"><br>
-  <b>OPPO Watch</b><br>(beluga)<br>
-  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
-</div></a>
 <a href="{{rel '/install/mooneye'}}"><div class="install-box">
   <img src="{{assets}}/img/mooneye.png" width="100%"><br>
   <b>TicWatch E & S</b><br>(mooneye)<br>
@@ -101,6 +96,28 @@ If you have questions regarding the installation process, please check out the *
   <img src="{{assets}}/img/swift.png" width="100%"><br>
   <b>Asus Zenwatch 3</b><br>(swift)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
+
+<div class="page-header">
+  <h1>Experimental</h1>
+</div>
+
+The AsteroidOS support level for some watches is currently deemed experimental for various reasons. They are not recommended for daily use but should still give an overall impression of AsteroidOS.
+
+<a href="{{rel '/install/beluga'}}"><div class="install-box">
+  <img src="{{assets}}/img/beluga.png" width="100%"><br>
+  <b>OPPO Watch</b><br>(beluga)<br>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></i></span><span class="star-bad"><i class="icon ion-md-star"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
+<a href="{{rel '/install/minnow'}}"><div class="install-box">
+  <img src="{{assets}}/img/minnow.png" width="100%"><br>
+  <b>Moto 360</b><br>(minnow)<br>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
+<a href="{{rel '/install/tetra'}}"><div class="install-box">
+  <img src="{{assets}}/img/tetra.png" width="100%"><br>
+  <b>Sony Smartwatch 3</b><br>(tetra)<br>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
 
 <div class="page-header">
