@@ -1,7 +1,7 @@
 'use strict';
 
 
-let models = require("../../pages/features.json");
+let models = require("../../pages/watches-support.json");
 
 /**
  * Watch model helpers
