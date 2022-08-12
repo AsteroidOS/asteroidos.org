@@ -2,8 +2,6 @@
 title: Install
 slug: install
 layout: main-install
-supported: [ bass, sturgeon, lenok, smelt, sparrow, wren, anthias, catfish, dory, firefish, harmony, inharmony, narwhal, ray, sawfish, skipjack, mooneye, swift ]
-experimental: [ beluga, minnow, tetra, sprat ]
 ---
 
 <div id="FAQ" class="page-header">

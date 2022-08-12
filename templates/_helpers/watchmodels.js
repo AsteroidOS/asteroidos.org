@@ -21,6 +21,18 @@ module.exports.register = function (Handlebars, options, params) {
   });
 
   /**
+   * Get all Models with given status in descending
+   * order of stars
+   *
+   * @param   {String}  status    Status of watch
+   * @return  {Array}             Model object collection
+   */
+
+  Handlebars.registerHelper('getAllWithStatus', function(mystatus) {
+   return models.watches.filter((s) => s.status===mystatus).sort((a, b) => parseInt(b.stars) - parseInt(a.stars));
+  });
+
+  /**
    * Create stars string from passed value
    *
    * @param   {Number}  stars    Number of stars

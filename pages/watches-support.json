@@ -5,6 +5,7 @@
       "models": [
         "Asus Zenwatch 1"
       ],
+      "status":"supported",
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -21,6 +22,7 @@
       "models": [
         "LG Watch Urbane"
       ],
+      "status":"supported",
       "stars":5,
       "features": [
         { "name":"Display", "status":"good" },
@@ -40,6 +42,7 @@
       "models": [
         "OPPO Watch"
       ],
+      "status":"experimental",
       "stars":2,
       "features": [
         { "name":"Display", "status":"good" },
@@ -60,9 +63,11 @@
     {
       "name":"catfish",
       "othernames":[ "catfish_ext", "catshark" ],
+      "status":"supported",
       "models": [
         "TicWatch Pro 2018/2020"
       ],
+      "status":"supported",
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -81,6 +86,7 @@
       "models": [
         "LG G Watch"
       ],
+      "status":"supported",
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -98,6 +104,7 @@
       "models": [
         "Fossil Gen 4"
       ],
+      "status":"supported",
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -116,6 +123,7 @@
       "models": [
         "MTK6580 watches"
       ],
+      "status":"supported",
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -136,6 +144,7 @@
       "models": [
         "MTK6580 watches"
       ],
+      "status":"supported",
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -156,6 +165,7 @@
       "models": [
         "LG G Watch R"
       ],
+      "status":"supported",
       "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
@@ -175,6 +185,7 @@
       "models": [
         "Moto 360"
       ],
+      "status":"experimental",
       "stars":1,
       "features": [
         { "name":"Display", "status":"good" },
@@ -193,6 +204,7 @@
       "models": [
         "TicWatch E & S"
       ],
+      "status":"supported",
       "stars":2,
       "features": [
         { "name":"Display", "status":"good" },
@@ -209,6 +221,7 @@
       "models": [
         "LG Watch W7"
       ],
+      "status":"supported",
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -227,6 +240,7 @@
       "models": [
         "Skagen Falster 2"
       ],
+      "status":"supported",
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -243,9 +257,11 @@
     {
       "name":"sawfish",
       "othernames":[ "sawshark" ],
+      "status":"supported",
       "models": [
         "Huawei Watch 2"
       ],
+      "status":"supported",
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -265,6 +281,7 @@
       "models": [
         "TicWatch C2/C2+/S2"
       ],
+      "status":"supported",
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -283,9 +300,11 @@
     {
       "name":"smelt",
       "othernames":[ "carp" ],
+      "status":"supported",
       "models": [
         "Moto 360 2015"
       ],
+      "status":"supported",
       "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
@@ -304,6 +323,7 @@
       "models": [
         "Asus Zenwatch 2"
       ],
+      "status":"supported",
       "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
@@ -322,6 +342,7 @@
       "models": [
         "Samsung Gear Live"
       ],
+      "status":"experimental",
       "stars":1,
       "features": [
         { "name":"Display", "status":"good" },
@@ -338,6 +359,7 @@
       "models": [
         "Huawei Watch"
       ],
+      "status":"supported",
       "stars":5,
       "features": [
         { "name":"Display", "status":"good" },
@@ -357,6 +379,7 @@
       "models": [
         "Asus Zenwatch 3"
       ],
+      "status":"supported",
       "stars":2,
       "features": [
         { "name":"Display", "status":"good" },
@@ -374,6 +397,7 @@
       "models": [
         "Sony Smartwatch 3"
       ],
+      "status":"experimental",
       "stars":1,
       "features": [
         { "name":"Display", "status":"good" },
@@ -393,6 +417,7 @@
       "models": [
         "Asus Zenwatch 2"
       ],
+      "status":"supported",
       "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
