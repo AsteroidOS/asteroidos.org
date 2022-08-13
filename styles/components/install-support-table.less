@@ -10,6 +10,13 @@
   flex-wrap: wrap;
 }
 
+th.rotated {
+    width: 30px;
+    height: 40px;
+    white-space: nowrap;
+    transform: translateX(10px) rotate(-45deg);
+}
+
 .support-col {
   width: auto;
   max-width: 100%;
@@ -20,6 +27,26 @@
   // Add minimal gap between columns.
   margin: 1px;
   padding: 0 !important;
+}
+
+.name-col {
+    width: 90px;
+}
+
+td.support-col-good {
+  min-width: 30px;
+}
+
+td.support-col-bad {
+  min-width: 30px;
+}
+
+td.support-col-unknown {
+  min-width: 30px;
+}
+
+td.support-col-na {
+  min-width: 30px;
 }
 
 .support-col-good {

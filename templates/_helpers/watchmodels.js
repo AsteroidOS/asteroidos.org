@@ -33,6 +33,45 @@ module.exports.register = function (Handlebars, options, params) {
   });
 
   /**
+   * Get all Features sorted by decreasing count of the number of
+   * watches mentioning that feature
+   *
+   * @return  {Array}            Sorted array of feature names
+   */
+
+  Handlebars.registerHelper('getAllFeatures', function() {
+   // this complex-looking thing simply creates a Map of all feature names
+   // and the number of time they are mentioned
+   const fs = models.watches.map((w) => w.features.map(({name}) => name)).
+     flat().
+     reduce((m, item) => m.set(item, m.has(item) ? m.get(item) + 1 : 1), new Map());
+   return [...fs].sort((a, b) => b[1] - a[1]).map((a) => a[0]);
+  });
+
+  /**
+   * Get all Features sorted by decreasing count of the number of
+   * watches mentioning that feature
+   *
+   * @param   {Object}  model       The watch model object
+   * @param   {Array}   featurelist Master list of features
+   * @return  {Array}               Array of feature statuses
+   */
+
+  Handlebars.registerHelper('getAugmentedFeatures', function(watch, featurelist) {
+      var ret = [];
+      for (var fl of featurelist) {
+          var found = "na";
+          for (var wf of watch.features) {
+              if (wf.name===fl) {
+                  found = wf.status;
+              }
+          }
+          ret.push(found);
+      }
+      return ret;
+  });
+
+  /**
    * Create stars string from passed value
    *
    * @param   {Number}  stars    Number of stars
@@ -56,7 +95,7 @@ module.exports.register = function (Handlebars, options, params) {
       }
       ret += '</span>';
       return ret;
-      
+
   });
 
 };
