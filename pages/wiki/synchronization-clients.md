@@ -49,4 +49,4 @@ layout: documentation
   <h1 id="new">New synchronization clients</h1>
 </div>
 
-<p>We would warmly welcome any community members interested in writing a new synchronization app to read the <a href="https://asteroidos.org/wiki/ble-profiles">BLE profiles documentation</a> and <a href="https://asteroidos.org/contact">get in touch</a> with us via IRC.</p>
+<p>We would warmly welcome any community members interested in writing a new synchronization app to read the <a href="{{rel 'wiki/ble-profiles'}}">BLE profiles documentation</a> and <a href="{{rel 'contact'}}">get in touch</a> with us via IRC.</p>

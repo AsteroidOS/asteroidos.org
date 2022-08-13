@@ -110,7 +110,7 @@ systemctl --force reboot recovery # Restarts the watch in recovery mode
 
 ---
 
-Although we offer [synchronization clients](https://asteroidos.org/wiki/synchronization-clients/) for different platforms, it might still be useful to set the time zone or synchronise the date and time using standard Linux tools. The Linux folder `/usr/share/zoneinfo/` contains the naming scheme for your local time zone in `<continent>/<zone>` format.
+Although we offer [synchronization clients]({{rel 'wiki/synchronization-clients'}}) for different platforms, it might still be useful to set the time zone or synchronise the date and time using standard Linux tools. The Linux folder `/usr/share/zoneinfo/` contains the naming scheme for your local time zone in `<continent>/<zone>` format.
 
 <b>Please Note</b> that setting a time zone will break time sync with the forementioned client apps.
 

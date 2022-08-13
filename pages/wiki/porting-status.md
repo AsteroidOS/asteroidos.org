@@ -11,41 +11,41 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 
 &nbsp;
 #### Supported watches and other ports:
-- [Asus Zenwatch 1 - anthias](https://asteroidos.org/install/anthias)
+- [Asus Zenwatch 1 - anthias]({{rel 'install/anthias)'}}
   - *maintained by locusf*
-- Asus Zenwatch 2 [1,63" - sparrow](https://asteroidos.org/install/sparrow) / [1,45" - wren](https://asteroidos.org/install/wren)
+- Asus Zenwatch 2 [1,63" - sparrow]({{rel 'install/sparrow'}}) / [1,45" - wren]({{rel 'install/wren)'}}
   - *maintained by Lrs121 & dlandau*
-- [Asus Zenwatch 3 - swift](https://asteroidos.org/install/swift)
+- [Asus Zenwatch 3 - swift]({{rel 'install/swift)'}}
   - *maintained by anYc*
-- [Fossil Gen 4 - firefish](https://asteroidos.org/install/firefish)
+- [Fossil Gen 4 - firefish]({{rel 'install/firefish)'}}
   - *maintained by dodoradio & MagneFire*
-- [Huawei Watch - sturgeon](https://asteroidos.org/install/sturgeon)
+- [Huawei Watch - sturgeon]({{rel 'install/sturgeon)'}}
   - maintained by MagneFire*
-- [Huawei Watch 2 - sawfish/sawshark](https://asteroidos.org/install/sawfish)
+- [Huawei Watch 2 - sawfish/sawshark]({{rel 'install/sawfish)'}}
   - *maintained by MagneFire, flocke, fosspill, FlorentBrianFoxcorner, jrt and the community*
-- [LG G Watch - dory](https://asteroidos.org/install/dory)
+- [LG G Watch - dory]({{rel 'install/dory)'}}
   - *maintained by kido*
-- [LG G Watch R - lenok](https://asteroidos.org/install/lenok)
+- [LG G Watch R - lenok]({{rel 'install/lenok)'}}
   - *maintained by atx*
-- [LG Watch Urbane - bass](https://asteroidos.org/install/bass) 
+- [LG Watch Urbane - bass]({{rel 'install/bass) '}}
   - *maintained by TheAppleMan & kido*
-- [LG Watch W7 - narwhal](https://asteroidos.org/install/narwhal)
+- [LG Watch W7 - narwhal]({{rel 'install/narwhal)'}}
   - *maintained by dodoradio & MagneFire*
-- [Moto 360 (1st gen) - minnow](https://asteroidos.org/install/minnow)
+- [Moto 360 (1st gen) - minnow]({{rel 'install/minnow)'}}
   - *maintained by MagneFire*
-- [Moto 360 (2nd gen) - carp/smelt](https://asteroidos.org/install/smelt)
+- [Moto 360 (2nd gen) - carp/smelt]({{rel 'install/smelt)'}}
   - *maintained by MagneFire*
-- [OPPO Watch (41/46mm) - beluga](https://asteroidos.org/install/beluga)
+- [OPPO Watch (41/46mm) - beluga]({{rel 'install/beluga)'}}
   - *maintained by MagneFire & wannaphong*
-- [Skagen Falster 2 - ray](https://asteroidos.org/install/ray)
+- [Skagen Falster 2 - ray]({{rel 'install/ray)'}}
   - *maintained by MagneFire* 
-- [Sony Smartwatch 3 - tetra](https://asteroidos.org/install/tetra)
+- [Sony Smartwatch 3 - tetra]({{rel 'install/tetra)'}}
   - *unmaintained*
-- [Ticwatch E & S - mooneye](https://asteroidos.org/install/mooneye)
+- [Ticwatch E & S - mooneye]({{rel 'install/mooneye)'}}
   - *maintained by kido*
-- [Ticwatch C2/C2+/S2 - skipjack](https://asteroidos.org/install/skipjack)
+- [Ticwatch C2/C2+/S2 - skipjack]({{rel 'install/skipjack)'}}
   - *maintained by R0NAM1*
-- [Ticwatch Pro - catfish/catfish_ext/catshark](https://asteroidos.org/install/catfish)
+- [Ticwatch Pro - catfish/catfish_ext/catshark]({{rel 'install/catfish)'}}
   - *maintained by C9Glax, LecrisUT & MagneFire*
 
 &nbsp;

@@ -13,7 +13,7 @@ As currently no AsteroidOS watch has access to the internet by stock means, no G
 
 If you don't want to loose your personal data, and prefer upgrading Asteroid without reflashing it, you have two options to establish an internet connection from the watch.
 
-In case your watch supports WLAN, connect it to your local Wi-Fi network using <code>connmanctl</code> as described on the [IP Connection page](https://asteroidos.org/wiki/ip-connection/). Alternatively you can share your internet connection from a PC to the watch via USB. 
+In case your watch supports WLAN, connect it to your local Wi-Fi network using <code>connmanctl</code> as described on the [IP Connection page]({{rel 'wiki/ip-connection/). Alternatively you can share your internet connection from a PC to the watch via USB. '}}
 
 Once your watch can connect to the internet, you can use AsteroidOS' package manager: `opkg`
 
@@ -38,4 +38,4 @@ If your watch is in Developer Mode, run the following command on your computer: 
 
 If your watch is in ADB Mode, run the following command on your computer: `adb shell reboot -f bootloader`.
 
-In case your watch does not successfully boot, try the manual methods to reach the fastboot (bootloader) menu described in the last section of the [useful commands page](https://asteroidos.org/wiki/useful-commands/).
+In case your watch does not successfully boot, try the manual methods to reach the fastboot (bootloader) menu described in the last section of the [useful commands page]({{rel 'wiki/useful-commands/).'}}
