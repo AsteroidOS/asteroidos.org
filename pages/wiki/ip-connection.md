@@ -46,7 +46,7 @@ Configure a NAT **on your computer** (Note: Replace eth0 with the name of the in
     echo 1 > /proc/sys/net/ipv4/ip_forward
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 
-Configure a default gateway and DNS **on the watch** with the following commands ran via [SSH](https://asteroidos.org/wiki/ssh/):
+Configure a default gateway and DNS **on the watch** with the following commands ran via [SSH]({{rel 'wiki/ssh'}}):
 
     route add default gw 192.168.2.1
     echo "nameserver 8.8.8.8" >> /etc/resolv.conf

@@ -11,7 +11,7 @@ If you don't have a supported smartwatch or if you want to develop an app withou
 
 Nightly builds of AsteroidOS for QEMU can be found [here](https://release.asteroidos.org/nightlies/qemux86/). You will need to download [a prebuilt rootfs](https://release.asteroidos.org/nightlies/qemux86/asteroid-image-qemux86.ext4) and [kernel](https://release.asteroidos.org/nightlies/qemux86/bzImage-qemux86.bin).
 
-If you want more control over your asteroid image, you can also [build AsteroidOS yourself](https://asteroidos.org/wiki/building-asteroidos/) using the "qemux86" machine codename (the resulting rootfs and kernel will then be located in your `build/tmp-glibc/deploy/images/qemux86/` directory).
+If you want more control over your asteroid image, you can also [build AsteroidOS yourself]({{rel 'wiki/building-asteroidos'}}) using the "qemux86" machine codename (the resulting rootfs and kernel will then be located in your `build/tmp-glibc/deploy/images/qemux86/` directory).
 
 # Get an appropriate version of QEMU
 
@@ -72,7 +72,7 @@ qemu-system-i386 -enable-kvm -kernel bzImage-qemux86.bin \
   ```
 
 ## Watch seems to lock up after a few seconds
-  It's possible that the display is no longer updating but that the watch is actually still running.  To make sure that the emulator continues to update the screen you can enter [demo mode](useful-commands/#screen) to keep the screen on.  If you have followed this guide and the watch is listening on port 2222, this command will turn on demo mode.
+  It's possible that the display is no longer updating but that the watch is actually still running.  To make sure that the emulator continues to update the screen you can enter [demo mode]({{rel 'wiki/useful-commands/#screen'}}) to keep the screen on.  If you have followed this guide and the watch is listening on port 2222, this command will turn on demo mode.
 
 ```
 ssh -t -p2222 root@localhost mcetool -D on

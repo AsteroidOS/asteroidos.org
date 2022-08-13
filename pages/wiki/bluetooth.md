@@ -112,7 +112,7 @@ Address 1: 8.8.8.8 google-public-dns-a.google.com</code></pre>
 <div class="page-header">
   <h1 id="bt-hid-audio">Bluetooth Audio and HID</h1>
 </div>
-<p>You will need to enable legacy mode in order to connect to legacy (BR/EDR) mode Bluetooth devices. To enable legacy mode you will need to edit the configuration file <b>on the watch</b> via <a href="https://asteroidos.org/wiki/ssh/">SSH</a> use the following command:</p>
+<p>You will need to enable legacy mode in order to connect to legacy (BR/EDR) mode Bluetooth devices. To enable legacy mode you will need to edit the configuration file <b>on the watch</b> via <a href="{{rel 'wiki/ssh/'}}">SSH</a> use the following command:</p>
 <pre><code>sh-4.4# vi /etc/bluetooth/main.conf
 </code></pre>
 <p>Now edit the contents to the following:</p>

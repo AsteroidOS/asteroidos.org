@@ -17,7 +17,7 @@ layout: documentation
   <h1 id="sshoverwifi">SSH over Wi-Fi</h1>
 </div>
 <p>Dropbear is already running on the watch so we just need to configure an IP address to connect to.</p>
-<p>The <a href="https://asteroidos.org/wiki/ip-connection">IP Connection page</a> describes how to set up Wi-Fi.</p>
+<p>The <a href="{{rel 'wiki/ip-connection'}}">IP Connection page</a> describes how to set up Wi-Fi.</p>
 <p>Once the setup is done, you can look for the IP address your Router assigned via DHCP, with <code># ip a show dev wlan0</code>.</p>
 <div class="page-header">
   <h1 id="troubleshooting">Troubleshooting</h1>
