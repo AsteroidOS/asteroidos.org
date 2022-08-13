@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body{{#slug}} class="{{.}}"{{/slug}}>
+    {{!-- Docs master nav --}}
+    {{> nav-main }}
+
+    {{> install-header }}
+
+    {{!-- Content --}}
+    <div class="container docs-container">
+      <table table-layout="fixed"><tr class="support-row"><th class="name-col">model</th>
+      {{#each (getAllFeatures)}}
+         <th class="rotated">{{.}}</th>
+      {{/each}} 
+      </tr>
+      {{#each (getAllWithStatus "supported")}}
+        <tr class="support-row"><td class="name-col"><a href="../{{name}}">{{name}}</a></td>
+          {{#each (getAugmentedFeatures this (getAllFeatures))}}
+              <td class="support-col-{{.}}"></td>
+          {{/each}}
+        </tr>
+      {{/each}}
+      {{#each (getAllWithStatus "experimental")}}
+        <tr class="support-row"><td class="name-col"><a href="../{{name}}"><mark>{{name}}</mark></a></td>
+          {{#each (getAugmentedFeatures this (getAllFeatures))}}
+              <td class="support-col-{{.}}"></td>
+          {{/each}}
+        </tr>
+      {{/each}}
+      </table>
+      {{#markdown}}
+        {{> body }}
+      {{/markdown}}
+    </div>
+
+    {{!-- Footer --}}
+    {{> footer }}
+
+    {{!-- JavaScript and analytics only. --}}
+    {{> javascripts }}
+  </body>
+</html>
