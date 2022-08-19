@@ -119,6 +119,11 @@ The AsteroidOS support level for some watches is currently deemed experimental f
   <b>Moto 360</b><br>(minnow)<br>
   <i>Support: <span class="star-good"><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
 </div></a>
+<a href="{{rel '/install/sprat'}}"><div class="install-box">
+  <img src="{{assets}}/img/sprat.png" width="100%"><br>
+  <b>Samsung Gear Live</b><br>(sprat)<br>
+  <i>Support: <span class="star-good"><i class="icon ion-md-star"></i></span><span class="star-bad"><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i><i class="icon ion-md-star"></i></span></i>
+</div></a>
 
 <div class="page-header">
   <h1>FAQ</h1>
