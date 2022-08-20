@@ -66,6 +66,10 @@ layout: documentation
 </div>
 <p>Smartwatches usually don’t carry&nbsp;speakers but they often have microphones. AsteroidOS does not use those microphones yet but it’s usually easy to support and should be supported&nbsp;for the future of the project. AsteroidOS uses <a href="https://github.com/AsteroidOS/meta-asteroid/tree/master/recipes-multimedia/pulseaudio">pulseaudio</a> for its audio stack. pulseaudio takes benefits from the pulseaudio-droid-card module to use the Android’s Audio HAL.&nbsp;In order to test the microphone, you can install and run parec from the build/tmp-glibc/work/armv7ve-neon-oe-linux-gnueabi/pulseaudio/9.0-r0/packages-split/pulseaudio-misc/ package. If you lack an audio interface, make sure you <a href="https://github.com/AsteroidOS/meta-dory-hybris/commit/0276357cdb266ce28eb37ca958c70f5273d588cd">loaded the audio firmware</a>.</p>
 <p>In case a problem persist, enabling <a href="https://wiki.ubuntu.com/PulseAudio/Log">extra debug information</a> from pulseaudio can give you detailed info on the cause of the issue.</p>
+<p>To play an audio file use the following command:</p/
+<p>gst-launch-1.0 filesrc location=input.mp3 ! mpegaudioparse! mpg123audiodec ! pulsesink</p>
+<p>To make an audio recording, use the following command:</p/
+<p>gst-launch-1.0 pulsesrc ! audioconvert ! wavenc ! filesink location=recording.wav</p>
 <div class="page-header">
   <h1 id="bluetooth">Bluetooth</h1>
 </div>
