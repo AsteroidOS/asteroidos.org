@@ -5,7 +5,7 @@ layout: main-install
 ---
 
 <div id="FAQ" class="page-header">
-  <h1>FAQ</h1>
+  <h1>Install FAQ</h1>
 </div>
 
 <div class="callout">
@@ -14,13 +14,8 @@ layout: main-install
 </div>
 
 <div class="callout">
-    <h4>Where can I find a phone synchronization app?</h4>
-    A synchronization client for Android phones named "AsteroidOSSync" is <a href="https://f-droid.org/packages/org.asteroidos.sync/">available for you to download on F-Droid</a>. <br/>Ubuntu Touch users can <a href="https://open-store.io/app/telescope.asteroidos">download "Telescope" from the OpenStore</a>.
-</div>
-
-<div class="callout">
     <h4>What features will and won't work on my watch with AsteroidOS?</h4>
-    The available AsteroidOS features depend on the watch you want to use. Review the table in your device's installation page for detailed support information.
+    The available AsteroidOS features depend on the watch you want to use. Review the table in your device's installation page for detailed support information or the [features table]({{rel 'install/features'}}) for a summary.
 </div>
 
 <div class="callout">
