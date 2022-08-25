@@ -40,6 +40,15 @@
           <a href="{{rel 'wiki/documentation'}}/">Documentation</a>
         </li>
         {{/is}}
+        {{#is slug 'faq'}}
+        <li class="active">
+          <span>FAQ</span>
+        </li>
+        {{else}}
+        <li>
+          <a href="{{rel 'faq'}}/">FAQ</a>
+        </li>
+        {{/is}}
         {{#is slug 'community'}}
         <li class="active">
           <span>Get Involved</span>
