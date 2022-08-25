@@ -228,6 +228,7 @@
         { "name":"Touch", "status":"good" },
         { "name":"Microphone", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
+        { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
@@ -329,6 +330,7 @@
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
         { "name":"Microphone", "status":"good" },
+        { "name":"Speaker", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
         { "name":"Compass", "status":"bad" },
         { "name":"Haptics", "status":"good" },
@@ -370,7 +372,7 @@
         { "name":"Haptics", "status":"good" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
-        { "name":"Heart Rate", "status":"unknown" },
+        { "name":"Heart Rate", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"good" }
       ]
     },
@@ -427,7 +429,8 @@
         { "name":"Compass", "status":"bad" },
         { "name":"Haptics", "status":"good" },
         { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"bad" }
+        { "name":"WLAN", "status":"bad" },
+        { "name":"Tilt-to-Wake", "status":"good" }
       ]
     }
   ]
