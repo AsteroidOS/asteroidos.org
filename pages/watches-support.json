@@ -6,6 +6,7 @@
         "Asus Zenwatch 1"
       ],
       "status":"supported",
+      "maintainers": [ "locusf" ],
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -23,6 +24,7 @@
         "LG Watch Urbane"
       ],
       "status":"supported",
+      "maintainers": [ "TheAppleMan", "kido" ],
       "stars":5,
       "features": [
         { "name":"Display", "status":"good" },
@@ -43,6 +45,7 @@
         "OPPO Watch"
       ],
       "status":"experimental",
+      "maintainers": [ "MagneFire", "wannaphong" ],
       "stars":2,
       "features": [
         { "name":"Display", "status":"good" },
@@ -63,11 +66,11 @@
     {
       "name":"catfish",
       "othernames":[ "catfish_ext", "catshark" ],
-      "status":"supported",
       "models": [
         "TicWatch Pro 2018/2020"
       ],
       "status":"supported",
+      "maintainers": [ "C9Glax", "LecrisUT", "MagneFire" ],
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -87,6 +90,7 @@
         "LG G Watch"
       ],
       "status":"supported",
+      "maintainers": [ "kido" ],
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -105,6 +109,7 @@
         "Fossil Gen 4"
       ],
       "status":"supported",
+      "maintainers": [ "dodoradio", "MagneFire" ],
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -124,6 +129,7 @@
         "MTK6580 watches"
       ],
       "status":"supported",
+      "maintainers": [ "kido" ],
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -145,6 +151,7 @@
         "MTK6580 watches"
       ],
       "status":"supported",
+      "maintainers": [ "kido" ],
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -166,6 +173,7 @@
         "LG G Watch R"
       ],
       "status":"supported",
+      "maintainers": [ "atx" ],
       "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
@@ -186,6 +194,7 @@
         "Moto 360"
       ],
       "status":"experimental",
+      "maintainers": [ "MagneFire" ],
       "stars":1,
       "features": [
         { "name":"Display", "status":"good" },
@@ -205,6 +214,7 @@
         "TicWatch E & S"
       ],
       "status":"supported",
+      "maintainers": [ "kido" ],
       "stars":2,
       "features": [
         { "name":"Display", "status":"good" },
@@ -222,6 +232,7 @@
         "LG Watch W7"
       ],
       "status":"supported",
+      "maintainers": [ "dodoradio", "MagneFire" ],
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -242,6 +253,7 @@
         "Skagen Falster 2"
       ],
       "status":"supported",
+      "maintainers": [ "MagneFire" ],
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -263,6 +275,7 @@
         "Huawei Watch 2"
       ],
       "status":"supported",
+      "maintainers": [ "MagneFire", "flocke", "fosspill", "FlorentBrianFoxcorner", "jrt" ],
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -283,6 +296,7 @@
         "TicWatch C2/C2+/S2"
       ],
       "status":"supported",
+      "maintainers": [ "R0NAM1" ],
       "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
@@ -306,6 +320,7 @@
         "Moto 360 2015"
       ],
       "status":"supported",
+      "maintainers": [ "MagneFire" ],
       "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
@@ -325,6 +340,7 @@
         "Asus Zenwatch 2"
       ],
       "status":"supported",
+      "maintainers": [ "Lrs121", "dlandau" ],
       "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
@@ -345,6 +361,7 @@
         "Samsung Gear Live"
       ],
       "status":"experimental",
+      "maintainers": [ ],
       "stars":1,
       "features": [
         { "name":"Display", "status":"good" },
@@ -362,6 +379,7 @@
         "Huawei Watch"
       ],
       "status":"supported",
+      "maintainers": [ "MagneFire" ],
       "stars":5,
       "features": [
         { "name":"Display", "status":"good" },
@@ -382,6 +400,7 @@
         "Asus Zenwatch 3"
       ],
       "status":"supported",
+      "maintainers": [ "anYc" ],
       "stars":2,
       "features": [
         { "name":"Display", "status":"good" },
@@ -400,6 +419,7 @@
         "Sony Smartwatch 3"
       ],
       "status":"experimental",
+      "maintainers": [ ],
       "stars":1,
       "features": [
         { "name":"Display", "status":"good" },
@@ -420,6 +440,7 @@
         "Asus Zenwatch 2"
       ],
       "status":"supported",
+      "maintainers": [ "Lrs121", "dlandau" ],
       "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
