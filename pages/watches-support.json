@@ -15,7 +15,8 @@
         { "name":"Bluetooth", "status":"good" },
         { "name":"Compass", "status":"bad" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" }
+        { "name":"USB", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -36,7 +37,8 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" }
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -60,6 +62,7 @@
         { "name":"Heart Rate", "status":"good" },
         { "name":"WLAN", "status":"bad" },
         { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
         { "name":"NFC", "status":"bad" }
       ]
     },
@@ -81,7 +84,8 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"bad" }
+        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -100,7 +104,8 @@
         { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
         { "name":"USB", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"bad" }
+        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -120,7 +125,8 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" }
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -185,7 +191,8 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" }
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -223,7 +230,8 @@
         { "name":"Bluetooth", "status":"bad" },
         { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" }
+        { "name":"USB", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -244,6 +252,7 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
         { "name":"Hands", "status":"bad" }
       ]
     },
@@ -264,7 +273,8 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" }
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -287,7 +297,8 @@
         { "name":"USB", "status":"bad" },
         { "name":"WLAN", "status":"good" },
         { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" }
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -308,6 +319,7 @@
         { "name":"WLAN", "status":"bad" },
         { "name":"Heart Rate", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
         { "name":"Haptics", "status":"good" },
         { "name":"USB", "status":"good" }
       ]
@@ -331,7 +343,8 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" }
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -352,7 +365,8 @@
         { "name":"Haptics", "status":"good" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" }
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -370,7 +384,8 @@
         { "name":"Bluetooth", "status":"good" },
         { "name":"Compass", "status":"bad" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" }
+        { "name":"USB", "status":"good" },
+        { "name":"Always-on-Display", "status":"unknown" }
       ]
     },
     {
@@ -391,7 +406,8 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" }
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -410,7 +426,8 @@
         { "name":"Compass", "status":"bad" },
         { "name":"Haptics", "status":"good" },
         { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"good" }
+        { "name":"WLAN", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     },
     {
@@ -451,7 +468,8 @@
         { "name":"Haptics", "status":"good" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"bad" },
-        { "name":"Tilt-to-Wake", "status":"good" }
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" }
       ]
     }
   ]
