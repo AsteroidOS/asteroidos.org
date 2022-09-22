@@ -14,7 +14,7 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 {{#each (getAllWithStatus "supported")}}
 - <a href="../../install/{{name}}">{{models}} ({{name}})</a>
 {{#if maintainers}}
-  - maintained by {{maintainers}}
+  - maintained by {{#maintainers}}{{#if @index}}, {{/if}}{{.}}{{/maintainers}}
 {{else}}
   - *unmaintained*
 {{/if}}
