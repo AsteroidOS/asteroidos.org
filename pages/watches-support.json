@@ -315,7 +315,7 @@
         { "name":"Microphone", "status":"bad" },
         { "name":"Bluetooth", "status":"good" },
         { "name":"GPS", "status":"bad" },
-        { "name":"NFC", "status":"bad" },
+        { "name":"NFC (on C2/C2+)", "status":"bad" },
         { "name":"WLAN", "status":"bad" },
         { "name":"Heart Rate", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"good" },
