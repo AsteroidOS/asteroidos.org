@@ -1,5 +1,5 @@
 {{#with this}}
-  <a href="{{name}}"><div class="install-box">
+  <a href="{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}"><div class="install-box">
     <img src="../public/img/{{name}}.png" width="100%"><br>
     <b>{{models}}</b><br>({{name}}{{#if othernames}},{{othernames}}{{/if}})<br>
     <i>Support: {{#starString stars 5}}{{/starString}}</i>
