@@ -258,6 +258,7 @@
     },
     {
       "name":"ray",
+      "reference": "firefish",
       "models": [
         "Skagen Falster 2"
       ],
@@ -453,6 +454,7 @@
     },
     {
       "name":"wren",
+      "reference": "sparrow",
       "models": [
         "Asus Zenwatch 2"
       ],
