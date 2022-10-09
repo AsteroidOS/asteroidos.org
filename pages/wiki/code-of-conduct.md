@@ -37,7 +37,7 @@ layout: documentation
 <div class="page-header">
   <h1 id="reporting">Reporting Violations of this Code of Conduct</h1>
 </div>
-<p>If you believe someone is harassing you or has otherwise violated this Code of Conduct, please contact kido on&nbsp;irc.freenode.net&nbsp;to send an abuse report. If this is the initial report of a problem, please include as much detail as possible. It is easiest for us to address issues when we have more context.</p>
+If you believe someone is harassing you or has otherwise violated this Code of Conduct, please contact kido on&nbsp;irc.libera.chat&nbsp; or one of the admins of the [&#35;Asteroid:matrix.org](https://matrix.to/#/#Asteroid:matrix.org) channel to send an abuse report. If this is the initial report of a problem, please include as much detail as possible. It is easiest for us to address issues when we have more context.
 <div class="page-header">
   <h1 id="consequences">Consequences</h1>
 </div>
