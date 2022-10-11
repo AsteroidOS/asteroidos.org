@@ -1,5 +1,5 @@
 ---
-title: MTK6580 watches
+title: MTK6580 Watches
 deviceName: harmony
 layout: mtk-install
 ---
