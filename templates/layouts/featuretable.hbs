@@ -17,14 +17,14 @@
       {{/each}} 
       </tr>
       {{#each (getAllWithStatus "supported")}}
-        <tr class="support-row"><td class="name-col"><a href="../{{name}}">{{name}}</a></td>
+        <tr class="support-row"><td class="name-col"><a href="../{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}">{{name}}</a></td>
           {{#each (getAugmentedFeatures this (getAllFeatures))}}
               <td class="support-col-{{.}}"></td>
           {{/each}}
         </tr>
       {{/each}}
       {{#each (getAllWithStatus "experimental")}}
-        <tr class="support-row"><td class="name-col"><a href="../{{name}}"><mark>{{name}}</mark></a></td>
+        <tr class="support-row"><td class="name-col"><a href="../{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}"><mark>{{name}}</mark></a></td>
           {{#each (getAugmentedFeatures this (getAllFeatures))}}
               <td class="support-col-{{.}}"></td>
           {{/each}}
