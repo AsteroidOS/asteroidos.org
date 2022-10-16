@@ -11,12 +11,14 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
-        { "name":"Compass", "status":"bad" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"Tilt-to-Wake", "status":"unknown" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Compass", "status":"bad" },
+        { "name":"Heart Rate", "status":"unknown" },
+        { "name":"USB", "status":"good" }
       ]
     },
     {
@@ -30,15 +32,15 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"good" },
-        { "name":"Bluetooth", "status":"good" },
-        { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"good" },
-        { "name":"Heart Rate", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" }
       ]
     },
     {
@@ -52,25 +54,26 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"bad" },
-        { "name":"Speaker", "status":"bad" },
         { "name":"Bluetooth", "status":"good" },
-        { "name":"GPS", "status":"bad" },
-        { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"Heart Rate", "status":"good" },
-        { "name":"WLAN", "status":"bad" },
         { "name":"Tilt-to-Wake", "status":"good" },
         { "name":"Always-on-Display", "status":"good" },
-        { "name":"NFC", "status":"bad" }
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Speaker", "status":"bad" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"bad" },
+        { "name":"GPS", "status":"bad" },
+        { "name":"NFC", "status":"bad" },
+        { "name":"Cellular", "status":"bad", "comment": "one 46mm only (eSIM)" }
       ]
     },
     {
       "name":"catfish",
       "othernames":[ "catfish_ext", "catshark" ],
       "models": [
-        "TicWatch Pro 2018/2020"
+        "TicWatch Pro 2018/20"
       ],
       "status":"supported",
       "maintainers": [ "C9Glax", "LecrisUT", "MagneFire" ],
@@ -78,14 +81,21 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"bad" },
         { "name":"Bluetooth", "status":"good" },
         { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Light Sensor", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Dual-Display", "status":"partial" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Speaker", "status":"bad" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
-        { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"bad" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"GPS", "status":"bad" },
+        { "name":"NFC", "status":"bad" },
+        { "name":"Cellular", "status":"bad", "comment": "catshark only (eSIM)" }
       ]
     },
     {
@@ -99,13 +109,13 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
-        { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"bad" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"USB", "status":"good" }
       ]
     },
     {
@@ -119,14 +129,17 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"bad" },
         { "name":"Bluetooth", "status":"good" },
         { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Light Sensor", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Heart Rate", "status":"good" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
-        { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"GPS", "status":"bad" },
+        { "name":"NFC", "status":"bad" }
       ]
     },
     {
@@ -140,15 +153,15 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
-        { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"Camera", "status":"good" },
-        { "name":"Heart Rate", "status":"bad" },
         { "name":"Tilt-to-Wake", "status":"bad" },
-        { "name":"Always-on-Display", "status":"bad" }
+        { "name":"Always-on-Display", "status":"bad" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Heart Rate", "status":"bad" },
+        { "name":"USB", "status":"good" },
+        { "name":"Camera", "status":"good" }
       ]
     },
     {
@@ -162,15 +175,15 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
-        { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"Camera", "status":"good" },
-        { "name":"Heart Rate", "status":"bad" },
         { "name":"Tilt-to-Wake", "status":"bad" },
-        { "name":"Always-on-Display", "status":"bad" }
+        { "name":"Always-on-Display", "status":"bad" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Heart Rate", "status":"bad" },
+        { "name":"USB", "status":"good" },
+        { "name":"Camera", "status":"good" }
       ]
     },
     {
@@ -184,21 +197,21 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"bad" },
         { "name":"Bluetooth", "status":"good" },
-        { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"good" },
-        { "name":"Heart Rate", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" }
       ]
     },
     {
       "name":"minnow",
       "models": [
-        "Moto 360"
+        "Moto 360 2014"
       ],
       "status":"experimental",
       "maintainers": [ "MagneFire" ],
@@ -206,13 +219,14 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"good" },
         { "name":"Bluetooth", "status":"bad" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"bad" },
-        { "name":"Always-on-Display", "status":"bad" }
+        { "name":"Light Sensor", "status":"good" },
+        { "name":"Always-on-Display", "status":"bad" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" }
       ]
     },
     {
@@ -226,12 +240,16 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"bad" },
         { "name":"Bluetooth", "status":"bad" },
-        { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"unknown" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Speaker", "status":"bad" },
+        { "name":"Compass", "status":"good" },
         { "name":"USB", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"WLAN", "status":"bad" },
+        { "name":"GPS", "status":"bad" }
       ]
     },
     {
@@ -245,14 +263,14 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
-        { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"good" },
         { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
         { "name":"Hands", "status":"bad" }
       ]
     },
@@ -268,20 +286,22 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"bad" },
         { "name":"Bluetooth", "status":"good" },
         { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Light Sensor", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Heart Rate", "status":"good" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
-        { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"GPS", "status":"bad" },
+        { "name":"NFC", "status":"bad" }
       ]
     },
     {
       "name":"sawfish",
       "othernames":[ "sawshark" ],
-      "status":"supported",
       "models": [
         "Huawei Watch 2"
       ],
@@ -291,19 +311,22 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"bad" },
-        { "name":"Speaker", "status":"bad" },
         { "name":"Bluetooth", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"bad" },
-        { "name":"WLAN", "status":"good" },
-        { "name":"Heart Rate", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"Light Sensor", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Speaker", "status":"bad" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"USB", "status":"partial" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"Cellular", "status":"bad", "comment": "sawshark only (SIM)" }
       ]
     },
     {
       "name":"skipjack",
+      "othernames":[ "tunny" ],
       "models": [
         "TicWatch C2/C2+/S2"
       ],
@@ -313,22 +336,21 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"bad" },
         { "name":"Bluetooth", "status":"good" },
-        { "name":"GPS", "status":"bad" },
-        { "name":"NFC", "status":"bad" },
-        { "name":"WLAN", "status":"bad" },
-        { "name":"Heart Rate", "status":"good" },
+        { "name":"Haptics", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"good" },
         { "name":"Always-on-Display", "status":"good" },
-        { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" }
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"bad" },
+        { "name":"GPS", "status":"bad" },
+        { "name":"NFC", "status":"bad", "comment": "C2(+) only" }
       ]
     },
     {
       "name":"smelt",
       "othernames":[ "carp" ],
-      "status":"supported",
       "models": [
         "Moto 360 2015"
       ],
@@ -338,20 +360,22 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
         { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Light Sensor", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
-        { "name":"Heart Rate", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"GPS", "status":"bad", "comment": "sport model only" }
       ]
     },
     {
       "name":"sparrow",
       "models": [
-        "Asus Zenwatch 2"
+        "Asus Zenwatch 2 1.63''"
       ],
       "status":"supported",
       "maintainers": [ "Lrs121", "dlandau" ],
@@ -359,15 +383,14 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
         { "name":"Microphone", "status":"good" },
         { "name":"Speaker", "status":"good" },
-        { "name":"Bluetooth", "status":"good" },
-        { "name":"Compass", "status":"bad" },
-        { "name":"Haptics", "status":"good" },
         { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"WLAN", "status":"good" }
       ]
     },
     {
@@ -379,14 +402,15 @@
       "maintainers": [ ],
       "stars":1,
       "features": [
-        { "name":"Display", "status":"good" },
+        { "name":"Display", "status":"partial" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
-        { "name":"Compass", "status":"bad" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"Always-on-Display", "status":"unknown" }
+        { "name":"Tilt-to-Wake", "status":"unknown" },
+        { "name":"Always-on-Display", "status":"unknown" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Compass", "status":"bad" },
+        { "name":"USB", "status":"good" }
       ]
     },
     {
@@ -400,15 +424,15 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"good" },
-        { "name":"Speaker", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"good" },
-        { "name":"Heart Rate", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Speaker", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" }
       ]
     },
     {
@@ -422,13 +446,13 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"bad" },
         { "name":"Bluetooth", "status":"bad" },
-        { "name":"Compass", "status":"bad" },
         { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"good" },
         { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"WLAN", "status":"good" }
       ]
     },
     {
@@ -442,21 +466,24 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"bad" },
         { "name":"Bluetooth", "status":"good" },
-        { "name":"Compass", "status":"good" },
         { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Light Sensor", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Compass", "status":"good" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"NFC", "status":"bad" },
+        { "name":"GPS", "status":"bad" }
       ]
     },
     {
       "name":"wren",
       "reference": "sparrow",
       "models": [
-        "Asus Zenwatch 2"
+        "Asus Zenwatch 2 1.45''"
       ],
       "status":"supported",
       "maintainers": [ "Lrs121", "dlandau" ],
@@ -464,14 +491,13 @@
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Microphone", "status":"bad" },
         { "name":"Bluetooth", "status":"good" },
-        { "name":"Compass", "status":"bad" },
         { "name":"Haptics", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"bad" },
         { "name":"Tilt-to-Wake", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" }
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" }
       ]
     }
   ]

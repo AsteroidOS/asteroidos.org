@@ -11,7 +11,7 @@
         { "name":"Bluetooth", "status":"good/partial/bad/unknown" },
         { "name":"Haptics", "status":"good/partial/bad/unknown" },
         { "name":"Tilt-to-Wake", "status":"good/partial/bad/unknown" },
-        { "name":"Ambient Light", "status":"good/partial/bad/unknown" },
+        { "name":"Light Sensor", "status":"good/partial/bad/unknown" },
         { "name":"Always-on-Display", "status":"good/partial/bad/unknown" },
         { "name":"Dual-Display", "status":"good/partial/bad/unknown" },
         { "name":"Microphone", "status":"good/partial/bad/unknown" },
