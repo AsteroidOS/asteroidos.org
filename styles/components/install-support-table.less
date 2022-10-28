@@ -19,6 +19,7 @@ th.rotated {
 
 .support-col {
   width: auto;
+  height: 25px;
   max-width: 100%;
   // Grow colums to fill entire width.
   flex: 1 0 auto;
@@ -27,53 +28,53 @@ th.rotated {
   // Add minimal gap between columns.
   margin: 1px;
   padding: 0 !important;
+  // for tooltips
+  position: relative;
+}
+
+td.support-col {
+  min-width: 25px;
 }
 
 .name-col {
     width: 90px;
 }
 
-td.support-col-good {
-  min-width: 30px;
-}
-
-td.support-col-bad {
-  min-width: 30px;
-}
-
-td.support-col-unknown {
-  min-width: 30px;
-}
-
-td.support-col-partial {
-  min-width: 30px;
-}
-
-td.support-col-na {
-  min-width: 30px;
-}
-
-.support-col-good {
-  height: 25px;
+.good {
   background-color: #5ab948;
 }
 
-.support-col-unknown {
-  height: 25px;
+.unknown {
   background-color: #3366ff;
 }
 
-.support-col-partial {
-  height: 25px;
+.partial {
   background-color: #ffa31a;
 }
 
-.support-col-bad {
-  height: 25px;
+.bad {
   background-color: #b94a48;
 }
 
-.support-col-na {
-  height: 25px;
+.na {
   background-color: #8c8c8c;
+}
+
+
+.support-col .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    bottom: 70%;
+    left: 70%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.support-col:hover .tooltiptext {
+    visibility: visible;
 }
