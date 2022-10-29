@@ -44,7 +44,7 @@ layout: documentation
 </div>
 <div>
   <p>Use the <code>./deploy.sh</code> script to copy your watchface creation to the watch using either SCP or ADB commands.</p>
-  <p>Connect your AsteroidOS Watch, configured to either ADB Mode (ADB transfer) or Developer Mode (SCP transfer) in Settings -> USB.</p>
+  <p>Connect your AsteroidOS Watch, configured to either ADB Mode (ADB transfer) or Developer Mode (SCP transfer) in Settings &rarr; USB.</p>
   <p>Start <code>./deploy.sh</code> to use SCP commands or <code>./deploy.sh -a</code> for ADB commands.</p>
   <p>You can also use <code>./deploy.sh --help</code> to get a list of available options.</p>
   <p>Select your watchface by entering the alphabetically assigned number to deploy it to the watch.</p>
