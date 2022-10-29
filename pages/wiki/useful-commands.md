@@ -112,7 +112,7 @@ systemctl --force reboot recovery # Restarts the watch in recovery mode
 
 Although we offer [synchronization clients]({{rel 'wiki/synchronization-clients'}}) for different platforms, it might still be useful to set the time zone or synchronise the date and time using standard Linux tools. The Linux folder `/usr/share/zoneinfo/` contains the naming scheme for your local time zone in `<continent>/<zone>` format.
 
-<b>Please Note</b> that setting a time zone will break time sync with the forementioned client apps.
+**Please Note** that setting a time zone will break time sync with the forementioned client apps.
 
 ```
 ssh root@192.168.2.15 "timedatectl set-timezone <continent>/<zone>" # e.g. Europe/Berlin
@@ -143,4 +143,4 @@ Press and hold the power button when the manufacturer bootlogo appears, until th
 
 &nbsp;
 #### Smelt
-Keep holding the power button during the boot process and release it quickly after the third vibration.
+Keep holding the power button during the boot process and release it quickly after the second (double) vibration.
