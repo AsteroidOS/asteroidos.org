@@ -35,13 +35,23 @@ bitbake meta-toolchain-qt5
 Assuming you already prepared a docker or podman build environment like in: [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}).
 
 ```
-sudo docker rm -f asteroidos-toolchain ; sudo docker run --name asteroidos-toolchain -it -v /etc/passwd:/etc/passwd:ro -u "$(id -u):$(id -g)" -v "$HOME/.gitconfig:/$HOME/.gitconfig:ro" -v "$(pwd):/asteroid" asteroidos-toolchain bash -c "source ./prepare-build.sh dory && bitbake meta-toolchain-qt5"
+sudo docker rm -f asteroidos-toolchain
+sudo docker run -it \
+  --name asteroidos-toolchain \
+  -v /etc/passwd:/etc/passwd:ro \
+  -u "$(id -u):$(id -g)" \
+  -v "$HOME/.gitconfig:/$HOME/.gitconfig:ro" \
+  -v "$(pwd):/asteroid" asteroidos-toolchain \
+  bash -c "source ./prepare-build.sh dory && bitbake meta-toolchain-qt5"
 ```
 
 or
 
 ```
-podman run --rm -it -v  "$(pwd)":/asteroid:z --userns keep-id asteroidos-toolchain bash -c "source ./prepare-build.sh dory && bitbake meta-toolchain-qt5"
+podman run --rm -it \
+  -v "$(pwd)":/asteroid:z \
+  --userns keep-id asteroidos-toolchain \
+  bash -c "source ./prepare-build.sh dory && bitbake meta-toolchain-qt5"
 ```
 
 # Install the SDK
@@ -81,7 +91,7 @@ export CMAKE_PROGRAM_PATH=/usr/local/oecore-x86_64/sysroots/armv7vehf-neon-oe-li
 
 This can be done automatically by prepending `source /usr/local/oecore-x86_64/environment-setup-armv7vehf-neon-oe-linux-gnueabi` and the export command before `#!/bin/sh` in `/usr/bin/qtcreator.sh`
 
-Now that you are in QtCreator go to ‘_Tools-&gt;Options-&gt;Devices_‘
+Now that you are in QtCreator go to `Tools` &rarr; `Options` &rarr; `Devices`
 
 - Add a new Generic Linux Device.
 - Name it "AsteroidOS Watch".
@@ -90,7 +100,7 @@ Now that you are in QtCreator go to ‘_Tools-&gt;Options-&gt;Devices_‘
 - Choose Password authentication and leave the password field empty.
 
 
-Under the '_Kits_' add a kit with the previously defined device:
+Under the `Kits` add a kit with the previously defined device:
 - Set `Device type` to `Generic Linux Device`.
 - Set the `Device` to `AsteroidOS Watch`.
 - Set the sysroot to `/usr/local/oecore-x86_64/sysroots/armv7vehf-neon-oe-linux-gnueabi/`.
@@ -128,11 +138,11 @@ Open the project as described in the previous sections.
 - Under the `Build & Run` section click on the `Run` configuration. This opens all run settings.
 - Scroll down to the `Run` settings.
 
-Change the following '_Run_' settings:
+Change the following `Run` settings:
 - Set the `Run configuration` to `Custom Executable (on AsteroidOS Watch)`.
 - Set the `Remote executable` to `invoker`. Add the `--single-instance --type=qtcomponents-qt5 /usr/local/bin/asteroid-helloworld` command line arguments.
 
-Change the following '_Environment_' variables:
+Change the following `Environment` variables:
 - Add `XDG_RUNTIME_DIR` and set its value to `/run/user/1000`. So that the invoker works under the root user.
 - (Optional) Add `QT_WAYLAND_DISABLE_WINDOWDECORATION` with value `1`. To make the app full screen and hide the titlebar.
 
