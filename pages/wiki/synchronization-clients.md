@@ -9,7 +9,14 @@ layout: documentation
   <h1 id="android">Android application</h1>
 </div>
 
-<p>An official synchronization application for Android phones named <a href="https://f-droid.org/en/packages/org.asteroidos.sync">AsteroidOSSync is available to download on F-Droid</a>. This app currently offers the best experience possible with AsteroidOS.</p>
+<p>An official synchronization application for Android phones named <a href="https://f-droid.org/packages/org.asteroidos.sync">AsteroidOSSync is available to download on F-Droid:</a></p>
+<a href="https://f-droid.org/packages/org.asteroidos.sync">
+  <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+  alt="Get AsteroidOSSync on F-Droid"
+  height="80">
+</a>
+<p>This app currently offers the best experience possible with AsteroidOS.</p>
+
 
 <div class="page-header">
   <h1 id="iossync">iOS application</h1>
