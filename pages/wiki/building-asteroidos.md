@@ -70,7 +70,9 @@ Once the environment is prepared, you can simply trigger a build with the follow
 ```
 bitbake asteroid-image
 ```
-*Note:* Bitbake is a powerful tool that can also build single packages (e.g: bitbake strace) or [the SDK]({{rel 'wiki/building-asteroidos'}}) for example. Refer to its documentation for more details.
+*Notes:*
+1) The build process requires roughly 2GB memory per thread. It might be necessary to limit the number of threads. This can be done by prepending `BB_NUMBER_THREADS=n` to the build command. Or by adding `BB_NUMBER_THREADS = "n"` to `build/conf/local.conf`. Where `n` is the amount of threads.
+2) Bitbake is a powerful tool that can also build single packages (e.g: bitbake strace) or [the SDK]({{rel 'wiki/building-asteroidos'}}) for example. Refer to its documentation for more details.
 
 If this step was successful, you can proceed to the [Installing]({{rel 'wiki/building-asteroidos/#installing'}}) section below.
 
