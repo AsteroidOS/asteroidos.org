@@ -50,7 +50,7 @@ Install the prerequisites:
 | ------ | ------- |
 | Ubuntu | ```apt-get install git build-essential cpio diffstat gawk chrpath texinfo python3 wget shared-mime-info zstd liblz4-tool``` |
 | Fedora | ```dnf install chrpath diffstat g++ lz4 rpcgen perl perl-bignum python3-pip socat texinfo``` |
-| Arch | ```yay -Sy base-devel cpio diffstat gawk chrpath texinfo python3 wget shared-mime-info zstd lz4``` |
+| Arch | ```yay -Sy base-devel cpio diffstat gawk chrpath texinfo python3 wget shared-mime-info zstd lz4 rpcsvc-proto``` |
 
 &nbsp;
 
