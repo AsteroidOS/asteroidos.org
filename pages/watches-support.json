@@ -48,15 +48,16 @@
       "models": [
         "OPPO Watch"
       ],
-      "status":"experimental",
+      "status":"supported",
       "maintainers": [ "MagneFire", "wannaphong" ],
-      "stars":2,
+      "stars":3,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
         { "name":"Haptics", "status":"good" },
         { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Light Sensor", "status":"good" },
         { "name":"Always-on-Display", "status":"good" },
         { "name":"Microphone", "status":"bad" },
         { "name":"Speaker", "status":"bad" },
@@ -64,8 +65,8 @@
         { "name":"Heart Rate", "status":"good" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"bad" },
-        { "name":"GPS", "status":"bad" },
-        { "name":"NFC", "status":"bad" },
+        { "name":"GPS", "status":"good" },
+        { "name":"NFC", "status":"good" },
         { "name":"Cellular", "status":"bad", "comment": "one 46mm only (eSIM)" }
       ]
     },
