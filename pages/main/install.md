@@ -15,7 +15,7 @@ layout: main-install
 
 <div class="callout">
     <h4>What features will and won't work on my watch with AsteroidOS?</h4>
-    The available AsteroidOS features depend on the watch you want to use. Review the table in your device's installation page for detailed support information or the [features table]({{rel 'install/features'}}) for a summary.
+    The available AsteroidOS features depend on the watch you want to use. Review the table in your device's installation page for detailed support information or the <a href="{{rel 'install/features'}}">features table</a> for a summary.
 </div>
 
 <div class="callout">
