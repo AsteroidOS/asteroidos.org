@@ -1,5 +1,5 @@
 ---
-title: Hack your wrist
+title: Free your wrist
 slug: index
 lead: "AsteroidOS is an open-source operating system for smartwatches."
 layout: content
