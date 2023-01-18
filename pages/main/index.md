@@ -13,7 +13,7 @@ layout: content
   <div class="container">
     <h1>{{ title }}</h1>
     <p>{{ lead }}</p>
-    <a class="btn btn-primary" href="{{rel 'wiki/documentation'}}" role="button">Learn more</a>
+    <a class="btn btn-primary" href="{{rel 'faq'}}" role="button">Learn more</a>
     <a class="btn btn-primary" href="{{rel 'install'}}" role="button">Get AsteroidOS</a>
   </div>
 </div>
