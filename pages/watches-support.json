@@ -105,14 +105,14 @@
         "LG G Watch"
       ],
       "status":"supported",
-      "maintainers": [ "kido" ],
-      "stars":3,
+      "maintainers": [ "kido", "MagneFire" ],
+      "stars":4,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
         { "name":"Bluetooth", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Tilt-to-Wake", "status":"good" },
         { "name":"Always-on-Display", "status":"good" },
         { "name":"Microphone", "status":"good" },
         { "name":"Compass", "status":"good" },
