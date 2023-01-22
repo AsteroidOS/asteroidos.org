@@ -5,8 +5,8 @@ lead: "AsteroidOS is an open-source linux distribution for smartwatches."
 layout: content
 ---
 
-<div class="videocontainer">
-  <iframe src="https://www.youtube-nocookie.com/embed/bEmKH7ylSXc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
+<div class="bannercontainer">
+  <img src="{{assets}}/img/startpage-banner.jpg" class="bannerimg" />
 </div>
  
 <div class="index-header" id="content">
