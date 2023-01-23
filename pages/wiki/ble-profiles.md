@@ -123,14 +123,14 @@ A client can change the server's system time using the Time Profile. This should
 
 ### Time Service (UUID: 00005071-0000-0000-0000-00A57E401D05)
 **Time Set Characteristic (UUID: 00005001-0000-0000-0000-00A57E401D05)**
-This characteristic can be written. It is made of 5 bytes:
+This characteristic can be written. It is made of 6 bytes:
 
- - *Year*: (byte 0) An unsigned value to be added to 1900 to set the current year.
- - *Month*: (byte 1) A value between 0 and 11 (included) with 0 corresponding to January and 11 to December
- - *Day*: (byte 2) A value between 0 and 31
- - *Hour*: (byte 3) A value between 0 and 60
- - *Minute*: (byte 4) A value between 0 and 60
- - *Second*: (byte 5) A value between 0 and 60
+ - *Year*: (byte 0) Year - 1900. 
+ - *Month*: (byte 1) A value in the range \[0-11\] where 0 = January and 11 = December
+ - *Day*: (byte 2) A value in the range \[1-31\]
+ - *Hour*: (byte 3) A value in the range \[0-23\]
+ - *Minute*: (byte 4) A value in the range \[0-59\]
+ - *Second*: (byte 5) A value in the range \[0-59\]
 
 # Weather Profile
 
