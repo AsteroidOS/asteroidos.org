@@ -134,22 +134,52 @@ This characteristic can be written. It is made of 6 bytes:
 
 # Weather Profile
 
-A client can fill weather information buffers on the watch using the Weather Profile. Those information can typically be used by asteroid-weather or asteroid-launcher's Today page to show current info.
+A client can fill weather information buffers on the watch using the Weather Profile. Those information can typically be used by asteroid-weather or asteroid-launcher's Today page to show current info.  For each of the characteristics except for the Weather City Characteristic, the data is interpreted as a sequence of five two-byte big-endian values that correspond to "today" through "today + 4 days".
 
 ### Weather Service (UUID: 00008071-0000-0000-0000-00A57E401D05)
 
 **Weather City Characteristic (UUID: 00008001-0000-0000-0000-00A57E401D05)**
 
-This characteristic can be written by the client to set the name of the city whose weather information are attached to. Values should be UTF-8 strings.
+This characteristic can be written by the client to set the name of the city whose weather information are attached to. Values should be UTF-8 strings and they do **not** need to be NUL-terminated.
 
 **Weather IDs Characteristic (UUID: 00008002-0000-0000-0000-00A57E401D05)**
 
-This characteristic can be written by the client with a value of 10 bytes. Each pair or byte represents an [OWM weather condition ID](https://openweathermap.org/weather-conditions) for a specific day of forecast. For instance: Bytes 0 and 1 set to 500 represent light rain today.
+This characteristic can be written by the client with a value of 10 bytes. Each pair of bytes represents an [OWM weather condition ID](https://openweathermap.org/weather-conditions) for a specific day of forecast. For instance: Bytes 0 and 1 set to 500 represent light rain today.
+
+For example, here is a valid value:
+
+```
+0x00 0xc8 0x03 0x21 0x03 0x20 0x01 0xf4 0x02 0x58
+```
+
+The interpretation is:
+```
+0x00c8 = 200 = "Thunderstorm with light rain"
+0x0321 = 801 = "Few clouds: 11-25%"
+0x0320 = 800 = "Clear"
+0x01f4 = 500 = "Light rain"
+0x0258 = 600 = "Light snow"
+```
 
 **Weather Min Temperatures Characteristic (UUID: 00008003-0000-0000-0000-00A57E401D05)**
 
-This characteristic can be written by the client with a value of 10 bytes. Each pair or byte represents a minimum temperature for a specific day of forecast. For instance: Bytes 2 and 3 set to 20 represent a minimum temperature of 20°C tomorrow.
+This characteristic can be written by the client with a value of 10 bytes. Each pair of bytes represents a minimum temperature for a specific day of forecast. Note that temperatures are given in degrees Kelvin and not Celsius, so a value of 273 (0x0111) would correspond to a temperature of 0°C or 32°F. 
+
+Example:
+
+```
+0x01 0x11 0x02 0x11 0x03 0x11 0xff 0xff 0x00 0x00
+```
+
+The interpretation is mathematically sound (but physically unrealistic!):
+```
+0x0111 = 273K = 0°C
+0x0211 = 529K = 256°C
+0x0311 = 785K = 512°C
+0xffff = 65535K = 65262°C
+0x0000 = 0K = -273°C
+```
 
 **Weather Max Temperatures Characteristic (UUID: 00008004-0000-0000-0000-00A57E401D05)**
 
-This characteristic can be written by the client with a value of 10 bytes. Each pair or byte represents a maximum temperature for a specific day of forecast. For instance: Bytes 4 and 5 set to 30 represent a maximum temperature of 30°C the day after tomorrow.
+This characteristic can be written by the client with a value of 10 bytes. Each pair of bytes represents a maximum temperature for a specific day of forecast. Interpretation is identical to that of the Weather Min Temperatures Characteristic.
