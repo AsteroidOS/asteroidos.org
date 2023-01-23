@@ -6,7 +6,7 @@ layout: content
 ---
 
 <div class="bannercontainer">
-  <img src="{{assets}}/img/startpage-banner.jpg" class="bannerimg" />
+  <img src="{{assets}}/img/startpage-banner.png" class="bannerimg" />
 </div>
  
 <div class="index-header" id="content">
