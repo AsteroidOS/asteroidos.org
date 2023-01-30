@@ -76,7 +76,6 @@ cmake -B build
 cmake --build build
 ```
 
-
 # Configure QtCreator for cross compilation
 
 ---
@@ -152,9 +151,87 @@ Change the following `Environment` variables:
 
 Your app should now be able to run from the application when you click the start button in the bottom left sidebar.
 
+# Learn QML
+
+Main docs: https://doc.qt.io/ (AOS uses qt5)
+
+AOS specific component/API: https://github.com/AsteroidOS/qml-asteroid
+
+Examples of use of most of those can be found by searching the AsteroidOS codebase: https://github.com/search?q=org%3AAsteroidOS+StatusPage&type=code
+
+# Development Cycle
+
+Have 2 terminals:
+
+1. Do ssh and journalctl in one
+2. Other build app or vim
+
+QML Tester is an **on-watch** app to quickly test and debug qml's. You can install by running this command **on-watch**:
+
+```
+opkg install qmltester
+```
+
+Then you can Edit qmls by vim and scp
+
+```
+vim scp://user@myserver[:port]//path/to/file.txt
+```
+
+You can debug by reading the system logs by following along:
+
+```
+journalctl -f
+```
+
 # Tips and tricks
 
 ---
+
+Add these lines at the end of CMakeLists.txt for package automation:
+
+```
+set(CPACK_GENERATOR "DEB")
+string(TOLOWER "${CMAKE_PROJECT_NAME}" lcproject_name)
+set(CPACK_DEBIAN_FILE_NAME "${lcproject_name}-${CMAKE_PROJECT_VERSION}.ipk")
+set(CPACK_STRIP_FILES TRUE)
+set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE armv7vehf-neon)
+if (NOT CPACK_PACKAGE_CONTACT) 
+    set(CPACK_PACKAGE_CONTACT bogus@example.org)
+    message(WARNING "No package contact specified: using ${CPACK_PACKAGE_CONTACT}")
+endif()
+include(CPack)
+```
+
+here is a shell script to quickly install an app:
+
+```
+#!/bin/sh
+
+source /usr/local/oecore-x86_64/environment-setup-armv7vehf-neon-oe-linux-gnueabi
+export CMAKE_PROGRAM_PATH=/usr/local/oecore-x86_64/sysroots/armv7vehf-neon-oe-linux-gnueabi/usr/bin/
+cmake -B build
+cmake --build build
+cmake --build build -t package
+
+file="$(ls ./build/*.ipk | sort -V | tail -n1)"
+filename="$(basename $file)"
+sshpass -p "<password>" scp $file ceres@192.168.2.15:/home/ceres/
+sshpass -p "<password>" ssh root@192.168.2.15 << EOF
+  cd /home/ceres/
+  opkg install --force-overwrite $filename
+EOF
+```
+
+Useful Vs Code Extensions:
+
+1. ms-vscode.cpptools
+2. twxs.cmake
+3. tonka3000.qtvsctools
+4. felgo.felgo **or** bbenoist.QML
+5. Gruntfuggly.todo-tree: for project management 
+
+not related to qml/qt but `Codeium.codeium` is the only thing that works well for qml autocomplete
 
 If you want to start your app from the command line, open a shell with [SSH]({{rel 'wiki/ssh'}}), connect to ceres and use invoker:
 
