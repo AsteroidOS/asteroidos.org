@@ -153,55 +153,27 @@ Your app should now be able to run from the application when you click the start
 
 # Learn QML
 
-Main docs: https://doc.qt.io/ (AOS uses qt5)
+The Qt documentation can be found [here](https://doc.qt.io/). (AsteroidOS uses Qt5)
 
-AOS specific component/API: https://github.com/AsteroidOS/qml-asteroid
+[qml-asteroid](https://github.com/AsteroidOS/qml-asteroid) provides APIs and UI components specific to AsteroidOS. Example uses of qml-asteroid components can be found by searching the AsteroidOS codebase: https://github.com/search?q=org%3AAsteroidOS+StatusPage&type=code
 
-Examples of use of most of those can be found by searching the AsteroidOS codebase: https://github.com/search?q=org%3AAsteroidOS+StatusPage&type=code
+# Quickly test a QML file on the watch
 
-# Development Cycle
-
-Have 2 terminals:
-
-1. Do ssh and journalctl in one
-2. Other build app or vim
-
-QML Tester is an **on-watch** app to quickly test and debug qml's. You can install by running this command **on-watch**:
+QML Tester is an on-watch app to quickly test and debug QML files. You can install it by running this command on-watch:
 
 ```
 opkg install qmltester
 ```
 
-Then you can Edit qmls by vim and scp
+Then you can edit QML files by vim and scp
 
 ```
-vim scp://user@myserver[:port]//path/to/file.txt
-```
-
-You can debug by reading the system logs by following along:
-
-```
-journalctl -f
+vim scp://ceres@192.168.2.15//path/to/file.qml
 ```
 
 # Tips and tricks
 
 ---
-
-Add these lines at the end of CMakeLists.txt for package automation:
-
-```
-set(CPACK_GENERATOR "DEB")
-string(TOLOWER "${CMAKE_PROJECT_NAME}" lcproject_name)
-set(CPACK_DEBIAN_FILE_NAME "${lcproject_name}-${CMAKE_PROJECT_VERSION}.ipk")
-set(CPACK_STRIP_FILES TRUE)
-set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE armv7vehf-neon)
-if (NOT CPACK_PACKAGE_CONTACT) 
-    set(CPACK_PACKAGE_CONTACT bogus@example.org)
-    message(WARNING "No package contact specified: using ${CPACK_PACKAGE_CONTACT}")
-endif()
-include(CPack)
-```
 
 here is a shell script to quickly install an app:
 
@@ -223,15 +195,11 @@ sshpass -p "<password>" ssh root@192.168.2.15 << EOF
 EOF
 ```
 
-Useful Vs Code Extensions:
+You can debug by reading the system logs by following along:
 
-1. ms-vscode.cpptools
-2. twxs.cmake
-3. tonka3000.qtvsctools
-4. felgo.felgo **or** bbenoist.QML
-5. Gruntfuggly.todo-tree: for project management 
-
-not related to qml/qt but `Codeium.codeium` is the only thing that works well for qml autocomplete
+```
+journalctl -f
+```
 
 If you want to start your app from the command line, open a shell with [SSH]({{rel 'wiki/ssh'}}), connect to ceres and use invoker:
 
