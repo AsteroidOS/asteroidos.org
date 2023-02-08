@@ -165,7 +165,7 @@ QML Tester is an on-watch app to quickly test and debug QML files. You can insta
 opkg install qmltester
 ```
 
-Then you can edit QML files by vim and scp
+Then you can edit QML files by using vim and scp
 
 ```
 vim scp://ceres@192.168.2.15//path/to/file.qml
@@ -175,7 +175,7 @@ vim scp://ceres@192.168.2.15//path/to/file.qml
 
 ---
 
-here is a shell script to quickly install an app:
+Here is a shell script to quickly install an app:
 
 ```
 #!/bin/sh
@@ -195,7 +195,7 @@ sshpass -p "<password>" ssh root@192.168.2.15 << EOF
 EOF
 ```
 
-You can debug by reading the system logs by following along:
+You can debug your app by following along system logs with:
 
 ```
 journalctl -f
