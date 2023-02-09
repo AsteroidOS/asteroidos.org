@@ -34,7 +34,7 @@ podman run --rm --detach \
   asteroidos-web
 ```
 
-After the initial clone of `asteroidos.org` you need to install the node dependencys first before `grunt` works
+After the initial clone of `asteroidos.org` you need to install the node dependencies first before `grunt` works
 
 ``` Bash
 podman exec asteroidos-web npm install
@@ -53,7 +53,7 @@ If you decide to make changes to your copy of the website, you can make the chan
 **Note:** if you want to simply run and view the unmodified version, you can simply use:
 
 ``` Bash
-podman run --rm --detach --publish 8080:80 asteroid-web
+podman run --rm --detach --publish 8080:80 asteroidos-web
 ```
 
 This will run the version of the website within the container that existed when the container was constructed.
