@@ -82,6 +82,20 @@ scp wallpapername.jpg root@192.168.2.15:/usr/share/asteroid-launcher/wallpapers/
 # Package Installation
 
 While AsteroidOS has a package manager, there is currently no graphical app store.
+
+### Installation of prebuilt packages
+There is a [server](https://release.asteroidos.org/nightlies/) that contains the latest prebuilt image files and packages.  AsteroidOS uses a version of the [`opkg`](https://openwrt.org/docs/guide-user/additional-software/opkg) package manager.  It's a lightweight package manager that allows the user to find, install and upgrade software that's installed on an AsteroidOS watch.
+
+To use it to upgrade all software packages on the watch, see the instructions for how to [upgrade using `opkg`]({{rel 'wiki/update-asteroidos'}}).
+
+There are also some packages that are not installed by default that might be useful to some users.  For example, for developers, there is [`asteroid-qmltester`](https://github.com/MagneFire/asteroid-qmltester) that provides a very handy way to test out QML code on the watch or in the emulator.  To install it is simple from the command line as root on the watch.
+
+```
+opkg install asteroid-qmltester
+```
+
+**Note:** as of 10 February 2023, the nightly builds aren't quite working correctly for these extra packages.  See [this open issue](https://github.com/AsteroidOS/asteroid/issues/235) for details.
+
 ### Installation of local packages
 Before you can install the package you need to push it to the watch.
 ```
