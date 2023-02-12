@@ -76,7 +76,6 @@ cmake -B build
 cmake --build build
 ```
 
-
 # Configure QtCreator for cross compilation
 
 ---
@@ -152,9 +151,55 @@ Change the following `Environment` variables:
 
 Your app should now be able to run from the application when you click the start button in the bottom left sidebar.
 
+# Learn QML
+
+The Qt documentation can be found [here](https://doc.qt.io/). (AsteroidOS uses Qt5)
+
+[qml-asteroid](https://github.com/AsteroidOS/qml-asteroid) provides APIs and UI components specific to AsteroidOS. Example uses of qml-asteroid components can be found by searching the AsteroidOS codebase: https://github.com/search?q=org%3AAsteroidOS+StatusPage&type=code
+
+# Quickly test a QML file on the watch
+
+QML Tester is an on-watch app to quickly test and debug QML files. You can install it by running this command on-watch:
+
+```
+opkg install qmltester
+```
+
+Then you can edit QML files by using vim and scp
+
+```
+vim scp://ceres@192.168.2.15//path/to/file.qml
+```
+
 # Tips and tricks
 
 ---
+
+Here is a shell script to quickly install an app:
+
+```
+#!/bin/sh
+
+source /usr/local/oecore-x86_64/environment-setup-armv7vehf-neon-oe-linux-gnueabi
+export CMAKE_PROGRAM_PATH=/usr/local/oecore-x86_64/sysroots/armv7vehf-neon-oe-linux-gnueabi/usr/bin/
+cmake -B build
+cmake --build build
+cmake --build build -t package
+
+file="$(ls ./build/*.ipk | sort -V | tail -n1)"
+filename="$(basename $file)"
+sshpass -p "<password>" scp $file ceres@192.168.2.15:/home/ceres/
+sshpass -p "<password>" ssh root@192.168.2.15 << EOF
+  cd /home/ceres/
+  opkg install --force-overwrite $filename
+EOF
+```
+
+You can debug your app by following along system logs with:
+
+```
+journalctl -f
+```
 
 If you want to start your app from the command line, open a shell with [SSH]({{rel 'wiki/ssh'}}), connect to ceres and use invoker:
 
