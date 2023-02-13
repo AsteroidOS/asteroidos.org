@@ -4,6 +4,10 @@ deviceName: bass
 section: install
 layout: aw-install
 ---
+<div class="callout callout-info">
+    <h4>Model number</h4>
+    <p>W150</p>
+</div>
 
 <div class="callout callout-info">
     <h4>Heart rate sensor not working?</h4>
