@@ -271,7 +271,7 @@
         { "name":"Microphone", "status":"good" },
         { "name":"Compass", "status":"good" },
         { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"good" },
+        { "name":"WLAN", "status":"bad" },
         { "name":"Hands", "status":"bad" }
       ]
     },
