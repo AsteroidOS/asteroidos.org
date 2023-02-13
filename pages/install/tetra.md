@@ -3,6 +3,10 @@ title: Sony Smartwatch 3
 deviceName: tetra
 layout: aw-install-simg
 ---
+<div class="callout callout-info">
+    <h4>Model number</h4>
+    <p>SWR50</p>
+</div>
 
 <div class="callout callout-warning">
     <h4>Warning!</h4>
