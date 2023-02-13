@@ -6,6 +6,13 @@ windowsDrivers: https://motorola-global-portal.custhelp.com/euf/assets/downloads
 section: install
 layout: aw-install
 ---
+<div class="callout callout-info">
+    <h4>Model number</h4>
+    <p>360L - Moto 360 2nd gen, 46mm, 20mm (smelt)</p>
+    <p>360S - Moto 360 2nd gen, 42mm, 18mm (carp)</p>
+    <p>360W - Moto 360 2nd gen, 42mm, 16mm (carp)</p>
+    <p>360SP - Moto 360 sports (sportscarp)</p>
+</div>
 
 <div class="callout callout-info">
     <p>GPS is only available on the Moto 360 Sport</p>
