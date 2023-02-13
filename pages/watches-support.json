@@ -329,7 +329,7 @@
       "name":"skipjack",
       "othernames":[ "tunny" ],
       "models": [
-        "TicWatch C2/C2+/S2"
+        "TicWatch C2/C2+/S2/E2"
       ],
       "status":"supported",
       "maintainers": [ "R0NAM1" ],
