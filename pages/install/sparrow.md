@@ -4,6 +4,11 @@ deviceNames: [sparrow, wren]
 label: sparrow/wren
 layout: aw-install-multi
 ---
+<div class="callout callout-info">
+    <h4>Model number</h4>
+    <p>WI501Q - Asus ZenWatch 2, 46mm (sparrow)</p>
+    <p>WI502Q - Asus ZenWatch 2, 41mm (wren)</p>
+</div>
 
 <div class="callout callout-warning">
     <h4>Warning!</h4>
