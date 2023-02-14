@@ -1,7 +1,13 @@
     
 {
       "name":"CODENAME",
+      "othernames":[ "OTHERCODENAME1", "OTHERCODENAME2" ],
       "models": [ "MODELNAME" ],
+      "modelnumbers": [
+        { "num":"XYZ2015", "name":"MODELNAME", "codename":"CODENAME" },
+        { "num":"XYZ2020", "name":"MODELNAME1", "codename":"OTHERCODENAME1" },
+        { "num":"XYZ2025", "name":"MODELNAME2", "codename":"OTHERCODENAME2" }
+      ],
       "status":"supported/experimental",
       "maintainers": [ "MAINTAINER" ],
       "stars":1-5,
