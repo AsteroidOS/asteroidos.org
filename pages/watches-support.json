@@ -5,6 +5,9 @@
       "models": [
         "Asus Zenwatch 1"
       ],
+      "modelnumbers": [
+        { "num":"WI500Q", "name":"Asus Zenwatch 1", "codename":"anthias" }
+      ],
       "status":"supported",
       "maintainers": [ "locusf" ],
       "stars":3,
@@ -25,6 +28,9 @@
       "name":"bass",
       "models": [
         "LG Watch Urbane"
+      ],
+      "modelnumbers": [
+        { "num":"W150", "name":"LG Watch Urbane", "codename":"bass" }
       ],
       "status":"supported",
       "maintainers": [ "TheAppleMan", "kido" ],
@@ -47,6 +53,11 @@
       "name":"beluga",
       "models": [
         "OPPO Watch"
+      ],
+      "modelnumbers": [
+        { "num":"OW19W6", "name":"OPPO Watch 41mm WiFi", "codename":"beluga" },
+        { "num":"OW19W8", "name":"OPPO Watch 46mm WiFi", "codename":"beluga" },
+        { "num":"OW19W12", "name":"OPPO Watch 46mm LTE", "codename":"belugaxl" }
       ],
       "status":"supported",
       "maintainers": [ "MagneFire", "wannaphong" ],
@@ -76,6 +87,11 @@
       "models": [
         "TicWatch Pro 2018/20"
       ],
+      "modelnumbers": [
+        { "num":"WF11018", "name":"TicWatch Pro LTE", "codename":"catfish_ext" },
+        { "num":"WF12096", "name":"TicWatch Pro 2018", "codename":"catfish" },
+        { "num":"WF12106", "name":"TicWatch Pro 2020", "codename":"catshark" }
+      ],
       "status":"supported",
       "maintainers": [ "C9Glax", "LecrisUT", "MagneFire" ],
       "stars":4,
@@ -104,6 +120,9 @@
       "models": [
         "LG G Watch"
       ],
+      "modelnumbers": [
+        { "num":"W100", "name":"LG G Watch", "codename":"dory" }
+      ],
       "status":"supported",
       "maintainers": [ "kido", "MagneFire" ],
       "stars":4,
@@ -123,6 +142,15 @@
       "name":"firefish",
       "models": [
         "Fossil Gen 4"
+      ],
+      "modelnumbers": [
+        { "num":"DW6B1", "name":"Misfit Vapor 2 (46mm)", "codename":"firefish" },
+        { "num":"DW6xx", "name":"Fossil Q Explorist HR", "codename":"firefish" },
+        { "num":"DW6xx", "name":"Diesel On Full Guard 2.5", "codename":"firefish" },
+        { "num":"DW7F1", "name":"Fossil Q Venture HR", "codename":"ray" },
+        { "num":"DW7S1", "name":"Skagen Falster 2", "codename":"ray" },
+        { "num":"DW7xx", "name":"Misfit Vapor 2 (41mm)", "codename":"ray" },
+        { "num":"DW7xx", "name":"Michael Kors Access Runway", "codename":"ray" }
       ],
       "status":"supported",
       "maintainers": [ "dodoradio", "MagneFire" ],
@@ -148,6 +176,25 @@
       "models": [
         "MTK6580 watches"
       ],
+      "modelnumbers": [
+        { "num":"KW68", "name":"Kingswear KW68 3G Phone", "codename":"harmony" },
+        { "num":"KW88", "name":"Kingswear KW88", "codename":"harmony" },
+        { "num":"KW88 Pro", "name":"Kingswear KW88 Pro", "codename":"harmony" },
+        { "num":"KW98", "name":"Kingswear KW98", "codename":"harmony" },
+        { "num":"KW99", "name":"Kingswear KW99", "codename":"harmony" },
+        { "num":"KW99 Pro", "name":"Kingswear KW99 Pro", "codename":"harmony" },
+        { "num":"Blocks Watch", "name":"Blocks Watch", "codename":"harmony" },
+        { "num":"LES1", "name":"Lemfo LES1", "codename":"harmony" },
+        { "num":"LooK Watch", "name":"LooK Watch", "codename":"harmony" },
+        { "num":"D101", "name":"Diggro DI01 3G", "codename":"harmony" },
+        { "num":"D107", "name":"Diggro DI07", "codename":"harmony" },
+        { "num":"W1", "name":"AllCall W1", "codename":"harmony" },
+        { "num":"W2", "name":"AllCall W2", "codename":"harmony" },
+        { "num":"Thor", "name":"Zeblaze Thor (original)", "codename":"harmony" },
+        { "num":"Thor S", "name":"Zeblaze Thor S", "codename":"harmony" },
+        { "num":"Thor S", "name":"Zeblaze Thor S", "codename":"harmony" },
+        { "num":"IQ I2", "name":"IQ I2", "codename":"harmony" }
+      ],
       "status":"supported",
       "maintainers": [ "kido" ],
       "stars":3,
@@ -169,6 +216,11 @@
       "name":"inharmony",
       "models": [
         "MTK6580 watches"
+      ],
+      "modelnumbers": [
+        { "num":"D106", "name":"Diggro DI06", "codename":"inharmony" },
+        { "num":"D107", "name":"older Diggro DI07", "codename":"inharmony" },
+        { "num":"LES1", "name":"Lemfo LES1", "codename":"inharmony" }
       ],
       "status":"supported",
       "maintainers": [ "kido" ],
@@ -192,6 +244,9 @@
       "models": [
         "LG G Watch R"
       ],
+      "modelnumbers": [
+        { "num":"W110", "name":"LG G Watch R", "codename":"lenok" }
+      ],
       "status":"supported",
       "maintainers": [ "atx" ],
       "stars":4,
@@ -214,6 +269,9 @@
       "models": [
         "Moto 360 2014"
       ],
+      "modelnumbers": [
+        { "num":"Moto 360", "name":"Moto 360 2014", "codename":"minnow" }
+      ],
       "status":"experimental",
       "maintainers": [ "MagneFire" ],
       "stars":1,
@@ -234,6 +292,10 @@
       "name":"mooneye",
       "models": [
         "TicWatch E & S"
+      ],
+      "modelnumbers": [
+        { "num":"WF12086", "name":"TicWatch E", "codename":"mooneye" },
+        { "num":"WF12066", "name":"TicWatch S", "codename":"mooneye" }
       ],
       "status":"supported",
       "maintainers": [ "kido" ],
@@ -258,6 +320,9 @@
       "models": [
         "LG Watch W7"
       ],
+      "modelnumbers": [
+        { "num":"LM-W315", "name":"LG Watch W7", "codename":"narwhal" }
+      ],
       "status":"supported",
       "maintainers": [ "dodoradio", "MagneFire" ],
       "stars":3,
@@ -280,6 +345,8 @@
       "reference": "firefish",
       "models": [
         "Skagen Falster 2"
+      ],
+      "modelnumbers": [
       ],
       "status":"supported",
       "maintainers": [ "MagneFire" ],
@@ -306,6 +373,10 @@
       "models": [
         "Huawei Watch 2"
       ],
+      "modelnumbers": [
+        { "num":"LEO-BX9", "name":"Huawei Watch 2", "codename":"sawfish" },
+        { "num":"LEO-DLXX", "name":"Huawei Watch 2 LTE", "codename":"sawshark" }
+      ],
       "status":"supported",
       "maintainers": [ "MagneFire", "flocke", "fosspill", "FlorentBrianFoxcorner", "jrt" ],
       "stars":3,
@@ -331,6 +402,11 @@
       "models": [
         "TicWatch C2/C2+/S2/E2"
       ],
+      "modelnumbers": [
+        { "num":"WG12016", "name":"TicWatch S2", "codename":"tunny" },
+        { "num":"WG12026", "name":"TicWatch E2", "codename":"tunny" },
+        { "num":"WG12036", "name":"TicWatch C2/C2+", "codename":"skipjack" }
+      ],
       "status":"supported",
       "maintainers": [ "R0NAM1" ],
       "stars":3,
@@ -355,6 +431,12 @@
       "models": [
         "Moto 360 2015"
       ],
+      "modelnumbers": [
+        { "num":"360L", "name":"Moto 360 2nd gen, 46mm, 20mm", "codename":"smelt" },
+        { "num":"360S", "name":"Moto 360 2nd gen, 42mm, 18mm", "codename":"carp" },
+        { "num":"360W", "name":"Moto 360 2nd gen, 42mm, 16mm", "codename":"carp" },
+        { "num":"360SP", "name":"Moto 360 sports", "codename":"sportscarp" }
+      ],
       "status":"supported",
       "maintainers": [ "MagneFire" ],
       "stars":4,
@@ -378,6 +460,10 @@
       "models": [
         "Asus Zenwatch 2 1.63''"
       ],
+      "modelnumbers": [
+        { "num":"WI501Q", "name":"Asus ZenWatch 2, 46mm", "codename":"sparrow" },
+        { "num":"WI502Q", "name":"Asus ZenWatch 2, 41mm", "codename":"wren" }
+      ],
       "status":"supported",
       "maintainers": [ "Lrs121", "dlandau" ],
       "stars":4,
@@ -399,6 +485,9 @@
       "models": [
         "Samsung Gear Live"
       ],
+      "modelnumbers": [
+        { "num":"SM-R382", "name":"Samsung Gear Live", "codename":"sprat" }
+      ],
       "status":"experimental",
       "maintainers": [ ],
       "stars":1,
@@ -418,6 +507,9 @@
       "name":"sturgeon",
       "models": [
         "Huawei Watch"
+      ],
+      "modelnumbers": [
+        { "num":"Huawei Watch", "name":"Huawei Watch", "codename":"sturgeon" }
       ],
       "status":"supported",
       "maintainers": [ "MagneFire" ],
@@ -441,6 +533,9 @@
       "models": [
         "Asus Zenwatch 3"
       ],
+      "modelnumbers": [
+        { "num":"WI503Q", "name":"Asus Zenwatch 3", "codename":"swift" }
+      ],
       "status":"supported",
       "maintainers": [ "anYc" ],
       "stars":2,
@@ -460,6 +555,9 @@
       "name":"tetra",
       "models": [
         "Sony Smartwatch 3"
+      ],
+      "modelnumbers": [
+        { "num":"SWR50", "name":"Sony Smartwatch 3", "codename":"tetra" }
       ],
       "status":"experimental",
       "maintainers": [ ],
@@ -485,6 +583,8 @@
       "reference": "sparrow",
       "models": [
         "Asus Zenwatch 2 1.45''"
+      ],
+      "modelnumbers": [
       ],
       "status":"supported",
       "maintainers": [ "Lrs121", "dlandau" ],
