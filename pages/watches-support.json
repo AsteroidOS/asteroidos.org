@@ -435,7 +435,7 @@
         { "num":"360L", "name":"Moto 360 2nd gen, 46mm, 20mm", "codename":"smelt" },
         { "num":"360S", "name":"Moto 360 2nd gen, 42mm, 18mm", "codename":"carp" },
         { "num":"360W", "name":"Moto 360 2nd gen, 42mm, 16mm", "codename":"carp" },
-        { "num":"360SP", "name":"Moto 360 sports", "codename":"sportscarp" }
+        { "num":"360SP", "name":"Moto 360 Sport", "codename":"sportscarp" }
       ],
       "status":"supported",
       "maintainers": [ "MagneFire" ],
