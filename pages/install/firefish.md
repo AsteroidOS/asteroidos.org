@@ -8,26 +8,12 @@ layout: aw-install-multi
 <div class="callout callout-info">
     <h4>Model number and variants</h4>
     <p></p>
-    <p></p>
     <p>The Fossil Gen 4 is marketed as different versions from different manufacturers.
     This means that there are two known versions that are compatible with a range of Fossil Gen 4 watches.
-    These two versions are referred to as: <code>ray</code> and <code>firefish</code></p>
-    <p></p>
-    DW6XX - <code>firefish</code> is compatible with the following variants:
-    <ul>
-        <li>DW6B1 - Misfit Vapor 2 (46mm)</li>
-        <li>DW6xx - Fossil Q Explorist HR</li>
-        <li>DW6xx - Diesel On Full Guard 2.5</li>
-        <li>And other variants with model number DW6xx</li>
-    </ul>
-    DW7XX - <code>ray</code> is compatible with the following variants:
-    <ul>
-        <li>DW7F1 - Fossil Q Venture HR</li>
-        <li>DW7S1 - Skagen Falster 2</li>
-        <li>DW7xx - Misfit Vapor 2 (41mm)</li>
-        <li>DW7xx - Michael Kors Access Runway</li>
-        <li>And other variants with model number DW7xx</li>
-    </ul>
+    These two versions are referred to as <code>firefish</code> and <code>ray</code>.  One difference between the two is that <code>firefish</code> has a larger display than <code>ray</code>.
+    </p><p>
+    Generally, models that start with DW6 have a are compatible with <code>firefish</code> and models that start with DW7 are compatible with <code>ray</code>.
+    </p>
 </div>
 
 <div class="callout callout-info">
