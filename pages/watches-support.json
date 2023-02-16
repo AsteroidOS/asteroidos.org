@@ -177,12 +177,12 @@
         "MTK6580 watches"
       ],
       "modelnumbers": [
-        { "num":"KW68", "name":"Kingswear KW68 3G Phone", "codename":"harmony" },
-        { "num":"KW88", "name":"Kingswear KW88", "codename":"harmony" },
-        { "num":"KW88 Pro", "name":"Kingswear KW88 Pro", "codename":"harmony" },
-        { "num":"KW98", "name":"Kingswear KW98", "codename":"harmony" },
-        { "num":"KW99", "name":"Kingswear KW99", "codename":"harmony" },
-        { "num":"KW99 Pro", "name":"Kingswear KW99 Pro", "codename":"harmony" },
+        { "num":"KW68", "name":"Kingwear KW68 3G Phone", "codename":"harmony" },
+        { "num":"KW88", "name":"Kingwear KW88", "codename":"harmony" },
+        { "num":"KW88 Pro", "name":"Kingwear KW88 Pro", "codename":"harmony" },
+        { "num":"KW98", "name":"Kingwear KW98", "codename":"harmony" },
+        { "num":"KW99", "name":"Kingwear KW99", "codename":"harmony" },
+        { "num":"KW99 Pro", "name":"Kingwear KW99 Pro", "codename":"harmony" },
         { "num":"Blocks Watch", "name":"Blocks Watch", "codename":"harmony" },
         { "num":"LES1", "name":"Lemfo LES1", "codename":"harmony" },
         { "num":"LooK Watch", "name":"LooK Watch", "codename":"harmony" },
