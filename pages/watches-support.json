@@ -144,13 +144,21 @@
         "Fossil Gen 4"
       ],
       "modelnumbers": [
+        { "num":"DW6A1", "name":"Armani Exchange Connected Drexler", "codename":"firefish" },
         { "num":"DW6B1", "name":"Misfit Vapor 2 (46mm)", "codename":"firefish" },
         { "num":"DW6F1", "name":"Fossil Q Explorist HR Gen4", "codename":"firefish" },
         { "num":"DW6D1", "name":"Diesel On Full Guard 2.5", "codename":"firefish" },
-        { "num":"DW7F1", "name":"Fossil Q Venture HR", "codename":"ray" },
-        { "num":"DW7S1", "name":"Skagen Falster 2", "codename":"ray" },
         { "num":"DW7B1", "name":"Misfit Vapor 2 (41mm)", "codename":"ray" },
-        { "num":"DW7M1", "name":"Michael Kors Access Runway", "codename":"ray" }
+        { "num":"DW7E1", "name":"Emporio Armani Connected Matteo", "codename":"ray" },
+        { "num":"DW7E2", "name":"Emporio Armani Connected Alberto 2018", "codename":"ray" },
+        { "num":"DW7F1", "name":"Fossil Q Venture HR Gen4", "codename":"ray" },
+        { "num":"DW7F2", "name":"Fossil Q Sloan HR Gen 4", "codename":"ray" },
+        { "num":"DW7K1", "name":"Kate Spade Scallop Smartwatch 2", "codename":"ray" },
+        { "num":"DW7M1", "name":"Michael Kors Access Runway", "codename":"ray" },
+        { "num":"DW7M2", "name":"Michael Kors Access Sofie HR", "codename":"ray" },
+        { "num":"DW7S1", "name":"Skagen Falster 2", "codename":"ray" },
+        { "num":"DW7T1", "name":"Tory Burch ToryTrack Gigi", "codename":"ray" },
+        { "num":"DW7T2", "name":"Tory Burch ToryTrack Tory", "codename":"ray" }
       ],
       "status":"supported",
       "maintainers": [ "dodoradio", "MagneFire" ],
