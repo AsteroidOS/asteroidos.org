@@ -149,8 +149,8 @@
         { "num":"DW6D1", "name":"Diesel On Full Guard 2.5", "codename":"firefish" },
         { "num":"DW7F1", "name":"Fossil Q Venture HR", "codename":"ray" },
         { "num":"DW7S1", "name":"Skagen Falster 2", "codename":"ray" },
-        { "num":"DW7xx", "name":"Misfit Vapor 2 (41mm)", "codename":"ray" },
-        { "num":"DW7xx", "name":"Michael Kors Access Runway", "codename":"ray" }
+        { "num":"DW7B1", "name":"Misfit Vapor 2 (41mm)", "codename":"ray" },
+        { "num":"DW7M1", "name":"Michael Kors Access Runway", "codename":"ray" }
       ],
       "status":"supported",
       "maintainers": [ "dodoradio", "MagneFire" ],
