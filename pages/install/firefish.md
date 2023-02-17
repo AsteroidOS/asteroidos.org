@@ -12,7 +12,7 @@ layout: aw-install-multi
     This means that there are two known versions that are compatible with a range of Fossil Gen 4 watches.
     These two versions are referred to as <code>firefish</code> and <code>ray</code>.  One difference between the two is that <code>firefish</code> has a larger display than <code>ray</code>.
     </p><p>
-    Generally, models that start with DW6 have a are compatible with <code>firefish</code> and models that start with DW7 are compatible with <code>ray</code>.
+    Generally, models that start with DW6 are compatible with <code>firefish</code>. Models that start with DW7 are compatible with <code>ray</code>.
     </p>
 </div>
 
