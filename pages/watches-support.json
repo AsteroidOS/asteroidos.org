@@ -145,8 +145,8 @@
       ],
       "modelnumbers": [
         { "num":"DW6B1", "name":"Misfit Vapor 2 (46mm)", "codename":"firefish" },
-        { "num":"DW6xx", "name":"Fossil Q Explorist HR", "codename":"firefish" },
-        { "num":"DW6xx", "name":"Diesel On Full Guard 2.5", "codename":"firefish" },
+        { "num":"DW6F1", "name":"Fossil Q Explorist HR Gen4", "codename":"firefish" },
+        { "num":"DW6D1", "name":"Diesel On Full Guard 2.5", "codename":"firefish" },
         { "num":"DW7F1", "name":"Fossil Q Venture HR", "codename":"ray" },
         { "num":"DW7S1", "name":"Skagen Falster 2", "codename":"ray" },
         { "num":"DW7xx", "name":"Misfit Vapor 2 (41mm)", "codename":"ray" },
