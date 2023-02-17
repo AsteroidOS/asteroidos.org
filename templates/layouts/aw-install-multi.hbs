@@ -31,6 +31,20 @@
         {{/with}}
         </table>
       {{/deviceNames}}
+      </table>
+      <br/>
+      <table class="table table-striped">
+        <thead><tr><th>Model Number</th><th>Model Name</th><th>Codename</th></tr></thead>
+        <tbody>
+      {{#deviceNames}}
+        {{#with (getModel .)}}
+          {{#modelnumbers}}
+            <tr><td>{{num}}</td><td>{{name}}</td><td>{{codename}}</td></tr>
+          {{/modelnumbers}}
+        {{/with}}
+      {{/deviceNames}}
+        </tbody>
+      </table>
       {{> body }}
       <p>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
       <h1>Choose your variant</h1>

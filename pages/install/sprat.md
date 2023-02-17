@@ -3,11 +3,6 @@ title: Samsung Gear Live
 deviceName: sprat
 layout: aw-install
 ---
-<div class="callout callout-info">
-    <h4>Model number</h4>
-    <p>SM-R382</p>
-</div>
-
 <div class="callout callout-warning">
     <h4>Warning!</h4>
     <p>It has been reported that the AsteroidOS UI is currently unusable on the Samsung Gear Live.</p>
