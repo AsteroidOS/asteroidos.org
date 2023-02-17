@@ -509,7 +509,7 @@
         "Huawei Watch"
       ],
       "modelnumbers": [
-        { "num":"Huawei Watch", "name":"Huawei Watch", "codename":"sturgeon" }
+        { "num":"W1", "name":"Huawei Watch", "codename":"sturgeon" }
       ],
       "status":"supported",
       "maintainers": [ "MagneFire" ],
