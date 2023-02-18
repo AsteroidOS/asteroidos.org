@@ -13,24 +13,24 @@ One of the main goals of AsteroidOS is to provide users with greater control ove
 ## Which features does AsteroidOS provide?
 Currently, AsteroidOS has these features available:
  - phone notifications
- - always on display
+ - Always-on-Display
  - tilt to wake
  - palm to sleep
  - multiple launcher styles
- - (live) wallpapers
+ - wallpapers
  - [community watchfaces](https://github.com/AsteroidOS/unofficial-watchfaces)
  - nightstand mode
 
 ## Does AsteroidOS have any apps included?
 The following apps are delivered with an AsteroidOS installation:
- - agenda, a calender
+ - agenda, a calendar
  - alarm clock
  - calculator
  - compass
  - diamonds game
  - flashlight
  - heartrate check
- - music, a MPRIS media remote control
+ - music, a media remote control
  - settings
  - stopwatch
  - timer
