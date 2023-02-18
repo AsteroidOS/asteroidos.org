@@ -36,6 +36,9 @@ The following apps are delivered with an AsteroidOS installation:
  - timer
  - weather forecast
 
+## Is there something like a "Play Store" to download apps?
+Not yet, but this is something that is being considered for future implementation. There are a number of contributed apps that are not installed in the default image. These can be [installed manually]({{rel 'wiki/package-installation/#packageinstallation'}}) if desired.
+
 ## Where can I find a phone synchronization app?
 A phone is not *required* to use AsteroidOS, but several convenient functions are available when an AsteroidOS watch is paired with a *synchronization client*.
  - Android users can use "AsteroidOSSync" which is available for [download on F-Droid](https://f-droid.org/packages/org.asteroidos.sync/)
@@ -77,9 +80,6 @@ There are a great many more *ideas* for apps than apps at the moment. Some of th
  - *and many more*
 
 Some of these are being worked on, and others are just ideas at this point. If you think you might like to contribute, see our [GitHub repository](https://github.com/AsteroidOS/asteroid/issues) and the [Contact]({{rel 'contact'}}) page. There are many opportunities for creativity!
-
-## Is there something like a "Play Store" to download apps?
-Not yet, but this is something that is being considered for future implementation. There are a number of contributed apps that are not installed in the default image. These can be [installed manually]({{rel 'wiki/package-installation/#packageinstallation'}}) if desired.
 
 ## What if my question isn't answered here?
 There are many additional resources. The [Documentation]({{rel 'documentation'}}) page should be your first stop. It has a lot of useful information about both using and developing for AsteroidOS. If you can't find your answer on this web site, see [Contact]({{rel 'contact'}}).
