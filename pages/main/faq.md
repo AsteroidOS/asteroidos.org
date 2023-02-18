@@ -9,6 +9,32 @@ This page contains some Frequently Asked Questions.
 ## What is AsteroidOS?
 AsteroidOS is an open source Linux distribution that runs on many different smartwatches. It uses [Qt](http://www.qt.io/) and QML to provide the graphical interface.
 
+## Which features does AsteroidOS provide?
+Currently, AsteroidOS has these features available:
+ - phone notifications
+ - always on display
+ - tilt to wake
+ - palm to sleep
+ - multiple launcher styles
+ - (live) wallpapers
+ - [community watchfaces](https://github.com/AsteroidOS/unofficial-watchfaces)
+ - nightstand mode
+
+## Does AsteroidOS have any apps included?
+The following apps are delivered with an AsteroidOS installation:
+ - agenda, a calender
+ - alarm clock
+ - calculator
+ - compass
+ - diamonds game
+ - flashlight
+ - heartrate check
+ - music, a MPRIS media remote control
+ - settings
+ - stopwatch
+ - timer
+ - weather forecast
+
 ## Is AsteroidOS based on Android?
 No. AsteroidOS uses [libhybris](https://en.wikipedia.org/wiki/Hybris_(software)) to simplify porting to most Android and WearOS watches, but it is not Android nor is it WearOS or a derivative of either.
 
@@ -35,9 +61,6 @@ Yes, if you choose the "temporary install" option. See the [installation FAQ]({{
 
 ## Where can I find a phone synchronization app?
 A phone is not *required* to use AsteroidOS, but several convenient functions are available when an AsteroidOS watch is paired with a *synchronization client*. For Android phones, "AsteroidOSSync" is available for [download on F-Droid](https://f-droid.org/packages/org.asteroidos.sync/). Ubuntu Touch users can download ["Telescope" from OpenStore](https://open-store.io/app/telescope.asteroidos). There is currently no app for iPhone, however notifications can be shared from an iPhone to the watch. See [this page]({{rel 'wiki/synchronization-clients'}}) for details.
-
-## What features and apps does AsteroidOS provide?
-Since version 1.0, AsteroidOS has had phone notifications, an agenda, an alarm clock, a calculator, a music remote control, settings customizations, a stopwatch, a timer, and a weather forecast app. Since then, we have also added a game, a flashlight app, a heartrate checking app and many more watchfaces.
 
 ## What features and apps does AsteroidOS currently **not** provide?
 There are a great many more *ideas* for apps than apps at the moment. Some of the more commonly requested, but not yet available applications and features are:
