@@ -35,6 +35,12 @@ The following apps are delivered with an AsteroidOS installation:
  - timer
  - weather forecast
 
+## Where can I find a phone synchronization app?
+A phone is not *required* to use AsteroidOS, but several convenient functions are available when an AsteroidOS watch is paired with a *synchronization client*.
+ - Android users can use "AsteroidOSSync" which is available for [download on F-Droid](https://f-droid.org/packages/org.asteroidos.sync/)
+ - Ubuntu Touch users can download ["Telescope" from OpenStore](https://open-store.io/app/telescope.asteroidos)
+ - There is currently no app for iPhone, however notifications can be shared from an iPhone to the watch. See [this page]({{rel 'wiki/synchronization-clients'}}) for details.
+
 ## Is AsteroidOS based on Android?
 No. AsteroidOS uses [libhybris](https://en.wikipedia.org/wiki/Hybris_(software)) to simplify porting to most Android and WearOS watches, but it is not Android nor is it WearOS or a derivative of either.
 
@@ -59,9 +65,6 @@ Maybe in the future. See the [porting status]({{rel 'wiki/porting-status'}}) pag
 
 ## Will I be able to revert to the previous operating system after installing AsteroidOS on my watch?
 Yes, if you choose the "temporary install" option. See the [installation FAQ]({{rel 'install#FAQ'}}) for details.
-
-## Where can I find a phone synchronization app?
-A phone is not *required* to use AsteroidOS, but several convenient functions are available when an AsteroidOS watch is paired with a *synchronization client*. For Android phones, "AsteroidOSSync" is available for [download on F-Droid](https://f-droid.org/packages/org.asteroidos.sync/). Ubuntu Touch users can download ["Telescope" from OpenStore](https://open-store.io/app/telescope.asteroidos). There is currently no app for iPhone, however notifications can be shared from an iPhone to the watch. See [this page]({{rel 'wiki/synchronization-clients'}}) for details.
 
 ## What features and apps does AsteroidOS currently **not** provide?
 There are a great many more *ideas* for apps than apps at the moment. Some of the more commonly requested, but not yet available applications and features are:
