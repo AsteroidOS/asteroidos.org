@@ -7,7 +7,8 @@ layout: documentation
 
 This page contains some Frequently Asked Questions.
 ## What is AsteroidOS?
-AsteroidOS is an open source Linux distribution that runs on many different smartwatches. It uses [Qt](http://www.qt.io/) and QML to provide the graphical interface.
+AsteroidOS is an open source Linux distribution that runs on many different smartwatches. It uses [Qt](http://www.qt.io/) and QML to provide the graphical interface.\
+One of the main goals of AsteroidOS is to provide users with greater control over their devices and data privacy. The operating system is fully customizable, and users can modify it to meet their specific needs.
 
 ## Which features does AsteroidOS provide?
 Currently, AsteroidOS has these features available:
