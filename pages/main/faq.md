@@ -42,7 +42,8 @@ No. AsteroidOS uses [libhybris](https://en.wikipedia.org/wiki/Hybris_(software))
 No. [WearOS](https://en.wikipedia.org/wiki/Wear_OS) is a version of Android that runs on wearable devices. AsteroidOS is a Linux distribution that does not run Android and therefore cannot run either Android or WearOS applications.
 
 ## What are the differences between AsteroidOS and WearOS?
-One significant difference is that AsteroidOS is open source software, while WearOS is not. This means that if you would like to change something, and you are a developer, you can [build the software]({{rel 'wiki/building-asteroidos'}}) yourself. Or perhaps you would like to [create your own watchface]({{rel 'wiki/watchfaces-creation'}}). Another significant difference is that unlike WearOS, AsteroidOS tries to make the watch useful even without pairing it with a phone. By contrast, WearOS watches won't even start running until they are paired with a phone.
+One significant difference is that AsteroidOS is open source software, while WearOS is not. That is, if you want to change something and you are a developer, you can [build the software]({{rel 'wiki/building-asteroidos'}}) yourself. Or perhaps you would like to [create your own watchface]({{rel 'wiki/watchfaces-creation'}}).\
+Another significant difference is that AsteroidOS, unlike WearOS, tries to make the watch usable without pairing it with a phone. In contrast, WearOS watches only run when they are paired with a phone.
 
 ## Does AsteroidOS have any tracking features?
 No. AsteroidOS does not collect any tracking data and you don't need to use or establish any accounts to use it. Nothing on the default installation is able to connect to the internet. While it is possible to [connect an AsteroidOS watch to the internet]({{rel 'wiki/ip-connection'}}) this must be explicitly done by the user.
