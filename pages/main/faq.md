@@ -72,10 +72,8 @@ Yes, if you choose the "temporary install" option. See the [installation FAQ]({{
 
 ## What features and apps does AsteroidOS currently **not** provide?
 There are a great many more *ideas* for apps than apps at the moment. Some of the more commonly requested, but not yet available applications and features are:
- - fitness tracking application
- - step counter
- - ongoing heartrate monitor
  - call answering from the watch
+ - fitness and health tracking application (step counter, ongoing heartrate monitor, etc.)
  - support for using the watch as a phone (for some watches that incorporate a cellular phone chip)
  - *and many more*
 
