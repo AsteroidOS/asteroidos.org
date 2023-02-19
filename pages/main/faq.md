@@ -62,7 +62,8 @@ No. AsteroidOS does not collect any tracking data and you don't need to use or e
 Maybe. Check the [Install]({{rel 'install'}}) page to see if your watch is listed.
 
 ## Which features of my watch are currently supported by AsteroidOS?
-Check the [features table]({{rel 'install/features'}}) to see all of the watches and which features they support.
+The available AsteroidOS features depend on the watch you want to use. Review the table on the installation page for your device to get detailed support information.\
+Or check the [features table]({{rel 'install/features'}}) to see a matrix of all AsteroidOS watches and their feature support.
 
 ## My watch isn't listed. Can I still run AsteroidOS?
 Maybe in the future. See the [porting status]({{rel 'wiki/porting-status'}}) page for details on what kinds of watches might be supported in the future and what the general requirements are for running AsteroidOS.
