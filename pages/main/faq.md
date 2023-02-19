@@ -75,7 +75,7 @@ Review the [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}) page for de
 
 ## My watch isn't listed. Can I still run AsteroidOS?
 Maybe in the future. See the [porting status]({{rel 'wiki/porting-status'}}) page for details on what kinds of watches might be supported in the future and what the general requirements are for running AsteroidOS.\
-If you are interested in porting AsteroidOS to a new watch yourself, please read the [Porting Guide] ({{rel 'wiki/porting-guide'}}) page and contact us via our [matrix channel]({{rel 'contact'}}) in case of possible questions.
+If you are interested in porting AsteroidOS to a new watch yourself, please read the [Porting Guide]({{rel 'wiki/porting-guide'}}) page and contact us via our [matrix channel]({{rel 'contact'}}) in case of possible questions.
 
 ## Which features of my watch are currently supported by AsteroidOS?
 The available AsteroidOS features depend on the watch you want to use. Review the table on the installation page for your device to get detailed support information.\
