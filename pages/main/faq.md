@@ -66,7 +66,8 @@ The available AsteroidOS features depend on the watch you want to use. Review th
 Or check the [features table]({{rel 'install/features'}}) to see a matrix of all AsteroidOS watches and their feature support.
 
 ## My watch isn't listed. Can I still run AsteroidOS?
-Maybe in the future. See the [porting status]({{rel 'wiki/porting-status'}}) page for details on what kinds of watches might be supported in the future and what the general requirements are for running AsteroidOS.
+Maybe in the future. See the [porting status]({{rel 'wiki/porting-status'}}) page for details on what kinds of watches might be supported in the future and what the general requirements are for running AsteroidOS.\
+If you are interested in porting AsteroidOS to a new watch yourself, please read the [Porting Guide] ({{rel 'wiki/porting-guide'}}) page and contact us via our [matrix channel]({{rel 'contact'}}) in case of possible questions.
 
 ## Will I be able to revert to the previous operating system after installing AsteroidOS on my watch?
 Yes, very easily if you choose the "temporary install" option.\
