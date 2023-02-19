@@ -15,26 +15,26 @@ Currently, AsteroidOS has these features available:
  - Always-on-Display
  - Tilt-to-Wake
  - Palm-to-Sleep
- - phone notifications
- - multiple app launcher styles
- - wallpapers
- - [community watchfaces](https://github.com/AsteroidOS/unofficial-watchfaces)
- - nightstand mode
+ - Phone notifications
+ - Multiple app launcher styles
+ - Wallpapers
+ - [Community watchfaces](https://github.com/AsteroidOS/unofficial-watchfaces)
+ - Nightstand mode
 
 ## Does AsteroidOS have any apps included?
 The following apps are delivered with an AsteroidOS installation:
- - agenda, a calendar
- - alarm clock
- - calculator
- - compass
- - diamonds game
- - flashlight
- - heartrate check
- - music, a media remote control
- - settings
- - stopwatch
- - timer
- - weather forecast
+ - Agenda, a calendar
+ - Alarm clock
+ - Calculator
+ - Compass
+ - Diamonds game
+ - Flashlight
+ - Heartrate check
+ - Music, a media remote control
+ - Settings
+ - Stopwatch
+ - Timer
+ - Weather forecast
 
 ## Is there something like a "Play Store" to download apps?
 Not yet, but this is something that is being considered for future implementation. There are a number of contributed apps that are not installed in the default image. These can be [installed manually]({{rel 'wiki/package-installation/#packageinstallation'}}) if desired.
@@ -72,10 +72,10 @@ Yes, if you choose the "temporary install" option. See the [installation FAQ]({{
 
 ## What features and apps does AsteroidOS currently **not** provide?
 There are a great many more *ideas* for apps than apps at the moment. Some of the more commonly requested, but not yet available applications and features are:
- - call answering from the watch
- - fitness and health tracking application (step counter, ongoing heartrate monitor, etc.)
- - support for using the watch as a phone (for some watches that incorporate a cellular phone chip)
- - *and many more*
+ - Call answering from the watch
+ - Fitness and health tracking application (step counter, ongoing heartrate monitor, etc.)
+ - Support for using the watch as a phone (for some watches that incorporate a cellular phone chip)
+ - *And many more*
 
 Some of these are being worked on, and others are just ideas at this point. If you think you might like to contribute, see our [GitHub repository](https://github.com/AsteroidOS/asteroid/issues) and the [Contact]({{rel 'contact'}}) page. There are many opportunities for creativity!
 
