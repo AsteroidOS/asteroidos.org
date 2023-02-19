@@ -69,6 +69,9 @@ Or check the [features table]({{rel 'install/features'}}) to see a matrix of all
 Maybe in the future. See the [porting status]({{rel 'wiki/porting-status'}}) page for details on what kinds of watches might be supported in the future and what the general requirements are for running AsteroidOS.\
 If you are interested in porting AsteroidOS to a new watch yourself, please read the [Porting Guide] ({{rel 'wiki/porting-guide'}}) page and contact us via our [matrix channel]({{rel 'contact'}}) in case of possible questions.
 
+## I do not want to flash a prebuilt image on my watch. Can I compile AsteroidOS myself?
+Review the [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}) page for detailed instructions on how to compile AsteroidOS yourself.
+
 ## Will I be able to revert to the previous operating system after installing AsteroidOS on my watch?
 Yes, very easily if you choose the "temporary install" option.\
 For most watches, you may choose to only temporarily install AsteroidOS alongside the existing OS, called a "dual-boot". When doing so, the `asteroidos.ext4` image is pushed to the userdata partition using ADB. With no alteration to the previous OS. The downside of this method being, AsteroidOS needs to be manually booted using `fastboot boot boot-image.fastboot` while connected via USB, after every reboot or shutdown. Else, the previous OS will start up as usual.\
