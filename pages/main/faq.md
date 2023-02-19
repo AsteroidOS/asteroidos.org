@@ -12,11 +12,11 @@ One of the main goals of AsteroidOS is to provide users with greater control ove
 
 ## Which features does AsteroidOS provide?
 Currently, AsteroidOS has these features available:
- - phone notifications
  - Always-on-Display
- - tilt to wake
- - palm to sleep
- - multiple launcher styles
+ - Tilt-to-Wake
+ - Palm-to-Sleep
+ - phone notifications
+ - multiple app launcher styles
  - wallpapers
  - [community watchfaces](https://github.com/AsteroidOS/unofficial-watchfaces)
  - nightstand mode
