@@ -33,10 +33,10 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 
 &nbsp;
 ### Unreleased early ports with initial support
-- [Casio WSD-FXX Series](https://github.com/AsteroidOS/meta-smartwatch/pull/140) (ayu/koi) maintained by dodoradio
-- [Fossil Gen5][https://github.com/AsteroidOS/meta-smartwatch/pull/138] (triggerfish) maintained by dodoradio
-- [LG Watch Urbane 2nd Edition](https://github.com/AsteroidOS/meta-smartwatch/pull/153) (nemo) maintained by eLtMosen
-- [Polar M600](https://github.com/AsteroidOS/meta-smartwatch/pull/139) (pike) maintained by dodoradio
+- [Casio WSD-FXX Series (ayu/koi)](https://github.com/AsteroidOS/meta-smartwatch/pull/140) maintained by dodoradio
+- [Fossil Gen5 (triggerfish)](https://github.com/AsteroidOS/meta-smartwatch/pull/138) maintained by dodoradio
+- [LG Watch Urbane 2nd Edition (nemo)](https://github.com/AsteroidOS/meta-smartwatch/pull/153) maintained by eLtMosen
+- [Polar M600 (pike)](https://github.com/AsteroidOS/meta-smartwatch/pull/139) maintained by dodoradio
 
 &nbsp;
 ### Possible ports not yet supported
