@@ -32,23 +32,26 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 {{/each}}
 
 &nbsp;
-### Possible ports not yet supported
+### Unreleased early ports with initial support
+- [Casio WSD-FXX Series](https://github.com/AsteroidOS/meta-smartwatch/pull/140) (ayu/koi) maintained by dodoradio
+- [Fossil Gen5][https://github.com/AsteroidOS/meta-smartwatch/pull/138] (triggerfish) maintained by dodoradio
+- [LG Watch Urbane 2nd Edition](https://github.com/AsteroidOS/meta-smartwatch/pull/153) (nemo) maintained by eLtMosen
+- [Polar M600](https://github.com/AsteroidOS/meta-smartwatch/pull/139) (pike) maintained by dodoradio
 
-- Casio Smart Outdoor Watch
+&nbsp;
+### Possible ports not yet supported
 - Diesel Full Guard (pinouts are on the inside)
 - Elephone Ele Watch
 - Emporio Armani Connected (pinouts are on the inside)
 - Fossil Q Explorist (pinouts are on the inside)
 - Guess Connect
 - Hugo BOSS BOSS Touch
-- LG Watch Urbane 2nd Edition
 - Michael Kors Access Grayson (pinouts are on the inside)
 - Misfit Vapor
 - Montblanc Summit
 - Moto 360 Sport
 - Nixon Mission
 - New Balance RunIQ Watch
-- Samsung Gear Live *(no longer maintained)*
 - Samsung Gear S
 - Tag Heuer Connected
 - Tag Heuer Connected Modular 45
@@ -72,15 +75,13 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 - Michael Kors Dylan
 - Michael Kors Sofie
 - Movado Connect
-- Polar M600
 - Skagen Falster
 
 &nbsp;
 ### Impossible ports due to unmet hardware dependencies
 
 - Honor Magic Watch 2
-- Huawei Watch GT
-- Huawei Watch GT 2
+- Huawei Watch GT Series
 - OPPO Watch Free
 - PineTime
 - Umidigi Uwatch GT
