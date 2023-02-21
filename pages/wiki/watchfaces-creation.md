@@ -26,20 +26,19 @@ Change directory into unofficial-watchfaces folder. `cd unofficial-watchfaces/`
 
 You will find the watchface testing script in this directory. It was created to simulate watchface behaviour on your local machine using `qmlscene`. `qmlscene` is provided by the `qt-creator` package.
 
-Executing the script `./test-in-qmlscene.sh` lists all community watchfaces. Enter a number to start simulating the assigned watchface in qmlscene. A detailed description of the scripts features can be found further down on this page.
+Executing the script `./watchface` starts a text-based menu.  Choose "test" and the menu will then list all community watchfaces. Choose a watchface to start simulating the assigned watchface in qmlscene. A detailed description of the scripts features can be found further down on this page.
 
-
-The `./cloner.sh` script takes care of copying and renaming all files, folders and references to those, into a name of your liking. E.g.:
+If you find a watchface you'd like to start with, you can "clone" it and make your own customizations.  To do this, use `./watchface` to start a text menu, and then select "clone".  Choose the watchface you'd like to clone and then create a new name for your customized version.  The script takes care of copying and renaming all files, folders and references to those, into a name of your liking.  If you'd prefer not to use the menu, you can also accomplish the same thing via command line:
 
 ```
-./cloner.sh analog-nort analog-my-watch-face
+./watchface clone analog-nort analog-my-watch-face
 ```
 
-Your renamed copy will appear in the list of watchfaces when starting `./test-in-qmlscene.sh` again.
+Your renamed copy will appear in the list of watchfaces when starting `./watchface` again.
 
-The `cloner.sh` expects two inputs. The first watchface must exist, your choosen name must not already exist. Please avoid special characters and spaces in the name. We tend to roughly categorize `analog-` and `digital-` watchfaces by these prefixes.
+The `clone` option of `watchface` expects two inputs. The first watchface must exist, your choosen name must not already exist. Please avoid special characters and spaces in the name. We tend to roughly categorize `analog-` and `digital-` watchfaces by these prefixes.
 
-In this example, analog-nort is choosen as a good example to begin with. It is purely based on rotating SVG images located in `analog-my-watch-face/usr/share/asteroid-launcher/watchface-img/`. You can have your first custom results by just editing the corresponding hour, minute and second images in e.g. [Inkscape](https://inkscape.org).
+In this example, analog-nort is choosen as a good example to begin with. It is purely based on rotating SVG images located in `analog-my-watch-face/usr/share/asteroid-launcher/watchface-img/`. You can have your first custom results by just editing the corresponding hour, minute and second images using an SVG editing tool such as [Inkscape](https://inkscape.org).
 
 The actual QML code for your watchface is always located in `analog-my-watch-face/usr/share/asteroid-launcher/watchfaces/analog-my-watch-face.qml`.
 
@@ -50,9 +49,11 @@ To dive deeper into QML, [doc.qt.io](https://doc.qt.io/) offers a [QML Tutorial]
 
 Following these guidelines will make it easier to share your creation with others.
 
+## Using images
+
 Use the SVG image format where ever possible to reduce filesize and ensure scaling to different watch display resolutions.
 
-When setting up the SVG page in the vector editor of your choice, mind to define a pixel `width` and `height` of at least 800 x 800px to prevent upscaling. This is needed as a workaround since QT does only downscale correctly but has unsolved issues with upscaling to higher display resolutions then defined in the SVGs `width` and `height`.
+When setting up the SVG page in the vector editor of your choice, mind to define a pixel `width` and `height` of at least 800 x 800px to prevent upscaling. This is needed as a workaround since QT does only downscale correctly but has unsolved issues with upscaling to higher display resolutions than defined in the SVG's `width` and `height`.
 
 It is advised to optimise SVG images using e.g. [svgo](https://github.com/svg/svgo) to remove editor specific meta data and redundant information that can be removed without loss.
 
@@ -62,11 +63,15 @@ All images used in your watchface should reside in `my-watch-face/usr/share/aste
 
 Names of images and assets should include the watchface name as prefix to the name to avoid conflict with assets from other watchfaces. E.g.: `my-watch-face-imagename.svg`
 
+If you plan to use the AsteroidOS logo in your design, please use the provided `../watchface-img/asteroid-logo.svg`. Any alterations to the logo file should be saved under new filename `my-watch-face-asteroid-logo.svg` to avoid conflict with other watchfaces that use the plain unaltered logo.
+
+## Using fonts
+
 Font files are to be placed in `my-watch-face/usr/share/fonts/`. They will be copied and installed to the watch by using the `./deploy.sh` script described further below on this page.
 
 Please mind to strictly use fonts issued under open licenses that allow embedded redistribution (OFL/SIL, Apache, BSD, CC-BY, etc.) in case you plan to publish your watchface to the unofficial-watchfaces repo or aim for inclusion into the AsteroidOS stock images.
 
-If you plan to use the AsteroidOS logo in your design, please use the provided `../watchface-img/asteroid-logo.svg`. Any alterations to the logo file should be saved under new filename `my-watch-face-asteroid-logo.svg` to avoid conflict with other watchfaces that use the plain unaltered logo.
+## Other considerations
 
 Using a background that completely hides the user selected wallpaper is not advised. Please ensure that your design is legible when paired with the stock wallpapers.
 
@@ -77,19 +82,27 @@ Do not ever forget to brag all over the internet with your cool new watchface an
 # Testing on the watch
 ---
 
-
-Use the `./deploy.sh` script to copy your watchface creation to the watch using either SCP or ADB commands.
+Use the `./watchface` script to copy your watchface creation to the watch using either SCP or ADB commands.
 
 Connect your AsteroidOS Watch, configured to either ADB Mode (ADB transfer) or Developer Mode (SCP transfer) in Settings &rarr; USB.
 
-Start `./deploy.sh` to use SCP commands or `./deploy.sh -a` for ADB commands.
+Start `./watchface` to use SCP commands or `./watchface -a` for ADB commands.
 
-You can also use `./deploy.sh --help` to get a list of available options.
-Select your watchface by entering the alphabetically assigned number to deploy it to the watch.
+You can also use `./watchface --help` to get a list of available options.
 
-You can then restart the session on the watch with pressing `y` to install new fonts you provided and show your watchface on the watch.
+From the `watchface` menu, select `deploy` and then select your watchface to deploy it to the watch.
 
-Note that restarting the session might break things like Always-on-Display or the battery display for the remaining uptime. Reboot the watch in that case.
+The session will automatically be restarted so that any new images or fonts are loaded and display correctly.
+
+Note that restarting the session might break things like Always-on-Display or the battery display for the remaining uptime.  If you encounter such symptoms, you can reboot the watch by using the `-b` or `--boot` options of `watchface`.  
+
+**Example:**
+
+To try out your customized watchface as described above, and to additionally reboot after the watchface is installed you can either use the menus or do everything from the command line.
+
+```
+./watchface --boot deploy analog-my-watch-face
+```
 
 # Features of the local test script
 ---

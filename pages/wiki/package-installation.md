@@ -21,12 +21,14 @@ cd unofficial-watchfaces
 
 Execute the script with no flag to use SSH connection and SCP commands.
 ```
-./deploy.sh
+./watchface
 ```
 Or use ADB connection and commands with the `-a` flag.
 ```
-./deploy.sh -a
+./watchface -a
 ```
+
+These commands will display a series of text menus.  To install watchfaces on your watch, choose the `deploy` option.
 
 ### Manual method
 If you wish to install a watchface that has no installation script or is not provided as a package you may install it manually using the following instructions.
@@ -78,6 +80,11 @@ In case you wish to quickly install a wallpaper that is not provided as a packag
 scp wallpapername.jpg root@192.168.2.15:/usr/share/asteroid-launcher/wallpapers/full/
 ```
 
+Alternatively, you may also use the `watchface` script from the [unofficial-watchface collection](https://github.com/AsteroidOS/unofficial-watchfaces).  It has a command line option `-w` or `--wall` which can install a picture as wallpaper to the watch while you are installing a watchface.
+
+```
+./watchface --wall MyPicture.jpg deploy sporty-round-v2
+```
 
 # Package Installation
 
