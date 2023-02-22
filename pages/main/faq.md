@@ -60,14 +60,14 @@ No. AsteroidOS uses [libhybris](https://en.wikipedia.org/wiki/Hybris_(software))
 ## Can I run WearOS applications?
 No. [WearOS](https://en.wikipedia.org/wiki/Wear_OS) is a version of Android that runs on wearable devices. AsteroidOS is a Linux distribution that does not run Android and therefore cannot run either Android or WearOS applications.
 
-## What are the differences to WearOS?
+## What is different to WearOS?
 One significant difference is that AsteroidOS is open source software, while WearOS is not. That is, if you want to change something and you are a developer, you can [build the software]({{rel 'wiki/building-asteroidos'}}) yourself. Or perhaps you would like to [create your own watchface]({{rel 'wiki/watchfaces-creation'}}).\
 Another significant difference is that AsteroidOS, unlike WearOS, tries to make the watch usable without pairing it with a phone. In contrast, WearOS watches only run when they are paired with a phone.
 
 ## Does AsteroidOS have any tracking features?
 No. AsteroidOS does not collect any tracking data and you don't need to use or establish any accounts to use it. Nothing on the default installation is able to connect to the internet. While it is possible to [connect an AsteroidOS watch to the internet]({{rel 'wiki/ip-connection'}}) this must be explicitly done by the user.
 
-## Can I run AsteroidOS on my watch?
+## Can my watch run AsteroidOS?
 Maybe. Check the [Install]({{rel 'install'}}) page to see if your watch is listed.
 
 ## Can I compile AsteroidOS myself?
@@ -86,5 +86,5 @@ Yes, very easily if you choose the "temporary install" option.\
 For most watches, you may choose to only temporarily install AsteroidOS alongside the existing OS, called a "dual-boot". When doing so, the `asteroidos.ext4` image is pushed to the userdata partition using ADB. With no alteration to the previous OS. The downside of this method being, AsteroidOS needs to be manually booted using `fastboot boot boot-image.fastboot` while connected via USB, after every reboot or shutdown. Else, the previous OS will start up as usual.\
 In case you decide to replace your previous OS using the full install method, to make the watch boot into AsteroidOS without manual intervention. It is advised that you make a backup of your <b>userdata</b> and <b>boot</b> partitions before flashing AsteroidOS. Only then, you will be able to re-flash those backups to restore the previous OS later.
 
-## My question is not answered here.
+## My question is not answered.
 There are many additional resources. The [Documentation]({{rel 'documentation'}}) page should be your first stop. It has a lot of useful information about both using and developing for AsteroidOS. If you can't find your answer on this web site, see [Contact]({{rel 'contact'}}).
