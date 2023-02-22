@@ -88,9 +88,9 @@
         "TicWatch Pro 2018/20"
       ],
       "modelnumbers": [
-        { "num":"WF11018", "name":"TicWatch Pro LTE", "codename":"catfish_ext" },
+        { "num":"WF11018", "name":"TicWatch Pro LTE", "codename":"catshark" },
         { "num":"WF12096", "name":"TicWatch Pro 2018", "codename":"catfish" },
-        { "num":"WF12106", "name":"TicWatch Pro 2020", "codename":"catshark" }
+        { "num":"WF12106", "name":"TicWatch Pro 2020", "codename":"catfish_ext" }
       ],
       "status":"supported",
       "maintainers": [ "C9Glax", "LecrisUT", "MagneFire" ],
