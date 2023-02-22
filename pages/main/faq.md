@@ -71,7 +71,7 @@ No. AsteroidOS does not collect any tracking data and you don't need to use or e
 Maybe. Check the [Install]({{rel 'install'}}) page to see if your watch is listed.
 
 ## Can I compile AsteroidOS myself?
-If do not want to flash a prebuilt image onto your watch, review the [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}) page for detailed instructions on how to compile AsteroidOS yourself.
+If you do not want to flash a prebuilt image onto your watch, review the [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}) page for detailed instructions on how to compile AsteroidOS yourself.
 
 ## My watch isn't listed.
 Maybe  you can still run Asteroid OS in the future. See the [porting status]({{rel 'wiki/porting-status'}}) page for details on what kinds of watches might be supported in the future and what the general requirements are for running AsteroidOS.\
