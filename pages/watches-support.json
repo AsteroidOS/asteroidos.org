@@ -11,6 +11,9 @@
       "status":"supported",
       "maintainers": [ "locusf" ],
       "stars":3,
+      "soc":"msm",
+      "kernelversion":"3.10",
+      "androidversion":"marshmallow",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -35,6 +38,9 @@
       "status":"supported",
       "maintainers": [ "TheAppleMan", "kido" ],
       "stars":5,
+      "soc":"msm",
+      "kernelversion":"3.10",
+      "androidversion":"lollipop",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -62,6 +68,9 @@
       "status":"supported",
       "maintainers": [ "MagneFire", "wannaphong" ],
       "stars":3,
+      "soc":"msm",
+      "kernelversion":"4.9",
+      "androidversion":"pie",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -95,6 +104,9 @@
       "status":"supported",
       "maintainers": [ "C9Glax", "LecrisUT", "MagneFire" ],
       "stars":4,
+      "soc":"msm",
+      "kernelversion":"3.18",
+      "androidversion":"pie",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -126,6 +138,9 @@
       "status":"supported",
       "maintainers": [ "kido", "MagneFire" ],
       "stars":4,
+      "soc":"msm",
+      "kernelversion":"3.10",
+      "androidversion":"marshmallow",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -163,6 +178,9 @@
       "status":"supported",
       "maintainers": [ "dodoradio", "MagneFire" ],
       "stars":3,
+      "soc":"msm",
+      "kernelversion":"3.18",
+      "androidversion":"oreo",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -206,6 +224,9 @@
       "status":"supported",
       "maintainers": [ "kido" ],
       "stars":3,
+      "soc":"mtk6580",
+      "kernelversion":"3.10",
+      "androidversion":"lollipop",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -233,6 +254,9 @@
       "status":"supported",
       "maintainers": [ "kido" ],
       "stars":3,
+      "soc":"mtk6580",
+      "kernelversion":"3.10",
+      "androidversion":"lollipop",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -258,6 +282,9 @@
       "status":"supported",
       "maintainers": [ "atx" ],
       "stars":4,
+      "soc":"msm",
+      "kernelversion":"3.10",
+      "androidversion":"marshmallow",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -283,6 +310,9 @@
       "status":"experimental",
       "maintainers": [ "MagneFire" ],
       "stars":1,
+      "soc":"omap",
+      "kernelversion":"3.10",
+      "androidversion":"marshmallow",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -308,6 +338,9 @@
       "status":"supported",
       "maintainers": [ "kido" ],
       "stars":2,
+      "soc":"mediatek",
+      "kernelversion":"4.4",
+      "androidversion":"oreo",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -334,6 +367,9 @@
       "status":"supported",
       "maintainers": [ "dodoradio", "MagneFire" ],
       "stars":3,
+      "soc":"msm",
+      "kernelversion":"3.18",
+      "androidversion":"oreo",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -359,6 +395,9 @@
       "status":"supported",
       "maintainers": [ "MagneFire" ],
       "stars":3,
+      "soc":"msm",
+      "kernelversion":"3.18",
+      "androidversion":"oreo",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -388,6 +427,9 @@
       "status":"supported",
       "maintainers": [ "MagneFire", "flocke", "fosspill", "FlorentBrianFoxcorner", "jrt" ],
       "stars":3,
+      "soc":"msm",
+      "kernelversion":"3.18",
+      "androidversion":"nougat",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -418,6 +460,9 @@
       "status":"supported",
       "maintainers": [ "R0NAM1" ],
       "stars":3,
+      "soc":"msm",
+      "kernelversion":"3.18",
+      "androidversion":"oreo",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -448,6 +493,9 @@
       "status":"supported",
       "maintainers": [ "MagneFire" ],
       "stars":4,
+      "soc":"msm",
+      "kernelversion":"3.10",
+      "androidversion":"marshmallow",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -475,6 +523,9 @@
       "status":"supported",
       "maintainers": [ "Lrs121", "dlandau" ],
       "stars":4,
+      "soc":"msm",
+      "kernelversion":"3.10",
+      "androidversion":"marshmallow",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -499,6 +550,9 @@
       "status":"experimental",
       "maintainers": [ ],
       "stars":1,
+      "soc":"msm",
+      "kernelversion":"3.10",
+      "androidversion":"marshmallow",
       "features": [
         { "name":"Display", "status":"partial" },
         { "name":"Touch", "status":"good" },
@@ -522,6 +576,9 @@
       "status":"supported",
       "maintainers": [ "MagneFire" ],
       "stars":5,
+      "soc":"msm",
+      "kernelversion":"3.10",
+      "androidversion":"marshmallow",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -547,6 +604,9 @@
       "status":"supported",
       "maintainers": [ "anYc" ],
       "stars":2,
+      "soc":"msm",
+      "kernelversion":"3.18",
+      "androidversion":"marshmallow",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -570,6 +630,9 @@
       "status":"experimental",
       "maintainers": [ ],
       "stars":1,
+      "soc":"bcm",
+      "kernelversion":"3.10",
+      "androidversion":"marshmallow",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -597,6 +660,9 @@
       "status":"supported",
       "maintainers": [ "Lrs121", "dlandau" ],
       "stars":4,
+      "soc":"msm",
+      "kernelversion":"3.10",
+      "androidversion":"marshmallow",
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
