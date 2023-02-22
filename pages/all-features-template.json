@@ -11,6 +11,9 @@
       "status":"supported/experimental",
       "maintainers": [ "MAINTAINER" ],
       "stars":1-5,
+      "soc":"bcm/msm/mediatek/mtk6580/omap",
+      "kernelversion":"4.10",
+      "androidversion":"lollipop/marshmallow/nougat/oreo/pie",
       "features": [
         { "name":"Display", "status":"good/partial/bad/unknown" },
         { "name":"Touch", "status":"good/partial/bad/unknown" },
