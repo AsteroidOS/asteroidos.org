@@ -12,10 +12,8 @@
     {{!-- Content --}}
     <div class="container docs-container">
       <h1>Hardware Support</h1>
-      <p>Before installing AsteroidOS to your watch, make sure you are aware of the capabilities and limitations of AsteroidOS on the {{title}}.</p>
-
       {{#deviceNames}}
-        The following table summarizes the current support of the <b>{{.}}</b> version of this watch:
+        The following table summarizes the state of the features of the <b>{{.}}</b> version of this watch:
         <table>
         {{#with (getModel .)}}
           <tr>
