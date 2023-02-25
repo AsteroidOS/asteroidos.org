@@ -448,9 +448,8 @@
     },
     {
       "name":"skipjack",
-      "othernames":[ "tunny" ],
       "models": [
-        "TicWatch C2/C2+/S2/E2"
+        "TicWatch C2/C2+"
       ],
       "modelnumbers": [
         { "num":"WG12016", "name":"TicWatch S2", "codename":"tunny" },
@@ -646,6 +645,34 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"NFC", "status":"bad" },
+        { "name":"GPS", "status":"bad" }
+      ]
+    },
+    {
+      "name":"tunny",
+      "reference": "skipjack",
+      "models": [
+        "TicWatch E2/S2"
+      ],
+      "modelnumbers": [
+      ],
+      "status":"supported",
+      "maintainers": [ "R0NAM1" ],
+      "stars":3,
+      "soc":"msm",
+      "kernelversion":"3.18",
+      "androidversion":"oreo",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"bad" },
         { "name":"GPS", "status":"bad" }
       ]
     },
