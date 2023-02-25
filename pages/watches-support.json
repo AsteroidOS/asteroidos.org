@@ -156,7 +156,7 @@
     {
       "name":"firefish",
       "models": [
-        "Fossil Gen 4"
+        "Fossil Gen 4 46mm"
       ],
       "modelnumbers": [
         { "num":"DW6A1", "name":"Armani Exchange Connected Drexler", "codename":"firefish" },
@@ -388,7 +388,7 @@
       "name":"ray",
       "reference": "firefish",
       "models": [
-        "Skagen Falster 2"
+        "Fossil Gen 4 41mm"
       ],
       "modelnumbers": [
       ],
