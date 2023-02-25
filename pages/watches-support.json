@@ -541,8 +541,9 @@
     },
     {
       "name":"sparrow",
+      "othernames":[ "wren" ],
       "models": [
-        "Asus Zenwatch 2 1.63''"
+        "Asus Zenwatch 2"
       ],
       "modelnumbers": [
         { "num":"WI501Q", "name":"Asus ZenWatch 2, 46mm", "codename":"sparrow" },
@@ -562,7 +563,7 @@
         { "name":"Tilt-to-Wake", "status":"good" },
         { "name":"Always-on-Display", "status":"good" },
         { "name":"Microphone", "status":"good" },
-        { "name":"Speaker", "status":"good" },
+        { "name":"Speaker", "status":"good", "comment": "sparrow only" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" }
       ]
@@ -675,32 +676,6 @@
         { "name":"WLAN", "status":"good" },
         { "name":"NFC", "status":"bad" },
         { "name":"GPS", "status":"bad" }
-      ]
-    },
-    {
-      "name":"wren",
-      "reference": "sparrow",
-      "models": [
-        "Asus Zenwatch 2 1.45''"
-      ],
-      "modelnumbers": [
-      ],
-      "status":"supported",
-      "maintainers": [ "Lrs121", "dlandau" ],
-      "stars":4,
-      "soc":"msm",
-      "kernelversion":"3.10",
-      "androidversion":"marshmallow",
-      "features": [
-        { "name":"Display", "status":"good" },
-        { "name":"Touch", "status":"good" },
-        { "name":"Bluetooth", "status":"good" },
-        { "name":"Haptics", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"good" },
-        { "name":"Always-on-Display", "status":"good" },
-        { "name":"Microphone", "status":"good" },
-        { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"good" }
       ]
     }
   ]
