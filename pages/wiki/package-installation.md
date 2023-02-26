@@ -30,6 +30,8 @@ Or use ADB connection and commands with the `-a` flag.
 
 These commands will display a series of text menus.  To install watchfaces on your watch, choose the `deploy` option.
 
+**Note:** to make sure you have the latest versions of everything, you can run `./watchface update`.  This will pull the very latest versions from the web.
+
 ### Manual method
 If you wish to install a watchface that has no installation script or is not provided as a package you may install it manually using the following instructions.
 
