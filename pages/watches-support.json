@@ -194,7 +194,8 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"GPS", "status":"bad" },
-        { "name":"NFC", "status":"bad" }
+        { "name":"NFC", "status":"bad" },
+        { "name":"Crown", "status":"good" }
       ]
     },
     {
@@ -381,6 +382,7 @@
         { "name":"Compass", "status":"good" },
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"bad" },
+        { "name":"Crown", "status":"good" },
         { "name":"Hands", "status":"bad" }
       ]
     },
@@ -439,7 +441,8 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"GPS", "status":"bad" },
-        { "name":"NFC", "status":"bad" }
+        { "name":"NFC", "status":"bad" },
+        { "name":"Crown", "status":"good" }
       ]
     },
     {
