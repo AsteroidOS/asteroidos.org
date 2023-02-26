@@ -34,6 +34,7 @@
         { "name":"NFC", "status":"bad" },                                       // not yet implemented anywhere
         { "name":"Cellular", "status":"bad" },                                  // not yet implemented anywhere
         { "name":"Camera", "status":"good/partial/bad/unknown" },
+        { "name":"Crown", "status":"good/partial/bad/unknown" },
         { "name":"Hands", "status":"bad" },
       ]
     },
