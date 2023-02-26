@@ -385,6 +385,34 @@
       ]
     },
     {
+      "name":"pike",
+      "models": [
+        "Polar M600"
+      ],
+      "modelnumbers": [
+        { "num":"M600", "name":"Polar M600", "codename":"pike" }
+      ],
+      "status":"supported",
+      "maintainers": [ "dodoradio" ],
+      "stars":3,
+      "soc":"mediatek",
+      "kernelversion":"3.10",
+      "androidversion":"oreo",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Bluetooth", "status":"bad" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Light Sensor", "status":"unknown" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"unknown" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"bad" }
+      ]
+    },
+    {
       "name":"ray",
       "reference": "firefish",
       "models": [
