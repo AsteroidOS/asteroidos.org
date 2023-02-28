@@ -87,4 +87,4 @@ For most watches, you may choose to only temporarily install AsteroidOS alongsid
 In case you decide to replace your previous OS using the full install method, to make the watch boot into AsteroidOS without manual intervention. It is advised that you make a backup of your <b>userdata</b> and <b>boot</b> partitions before flashing AsteroidOS. Only then, you will be able to re-flash those backups to restore the previous OS later.
 
 ## My question is not answered.
-There are many additional resources. The [Documentation]({{rel 'documentation'}}) page should be your first stop. It has a lot of useful information about both using and developing for AsteroidOS. If you can't find your answer on this web site, see [Contact]({{rel 'contact'}}).
+There are many additional resources. The [Documentation]({{rel 'wiki/documentation'}}) page should be your first stop. It has a lot of useful information about both using and developing for AsteroidOS. If you can't find your answer on this web site, see [Contact]({{rel 'contact'}}).
