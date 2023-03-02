@@ -15,21 +15,47 @@
   border-radius: 4px;
 
   display: inline-block;
-  width: 100%;
+  width: 184px;
+  margin-left: 15VW;
+  margin-top: 20px;
 
   text-align: center;
 
   .box-shadow(0 2px 4px rgba(0,0,0,.2));
 
-  @media (min-width: @grid-float-breakpoint) {
-    width: 45%;
-    margin: 2%
+  @media (min-width: 340px) {
+    width: 60%;
+    margin-left: 17VW;
+    margin-top: 20px;
+  }
+
+  @media (min-width: @screen-xs-min) {
+    width: 41%;
+    margin: 3%
+  }
+
+  @media (min-width: @screen-sm-min) {
+    width: 31.2%;
+    margin: 0.9%
   }
 
   @media (min-width: @screen-md-min) {
-    width: 20%;
-    margin: 2%
+    width: 23.3%;
+    margin: 0.7%
   }
+
+  @media (min-width: @screen-lg-min) {
+    width: 18.7%;
+    margin: 0.5%
+  }
+}
+
+.install-watch-img {
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 // Android Wear screenshots in an install page
