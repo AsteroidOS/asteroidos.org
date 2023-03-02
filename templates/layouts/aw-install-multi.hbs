@@ -14,7 +14,7 @@
       <h1>Hardware Support</h1>
       {{#deviceNames}}
         The following table summarizes the state of the features of the <b>{{.}}</b> version of this watch:
-        <table>
+        <table class="table table-support">
         {{#with (getModel .)}}
           <tr>
             {{#features}}
