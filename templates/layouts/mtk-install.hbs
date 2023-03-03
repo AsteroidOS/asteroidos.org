@@ -13,49 +13,58 @@
     <div class="container docs-container">
       <h1>Hardware Support</h1>
       <p>The following table summarizes the state of the features of the {{title}}.</p>
-      <table>
-      {{#with (getModel deviceName)}}
-        <tr> 
-          {{#features}}
-              <th>{{name}}</th>
-          {{/features}}
-        </tr>
-        <tr> 
-          {{#features}}
-              <td class="support-col {{status}}"><span class="tooltiptext">{{status}}</span></td>
-          {{/features}}
-        </tr>
-      {{/with}}
-      </table>
+      {{#deviceNames}}
+        <table>
+        {{#with (getModel .)}}
+          <tr>
+            {{#features}}
+                <th>{{name}}</th>
+            {{/features}}
+          </tr>
+          <tr>
+            {{#features}}
+                <td class="support-col {{status}}"><span class="tooltiptext">{{status}}</span></td>
+            {{/features}}
+          </tr>
+        {{/with}}
+        </table>
+      {{/deviceNames}}
       <br/>
       <table class="table table-striped">
         <thead><tr><th>Model Number</th><th>Model Name</th><th>Codename</th></tr></thead>
         <tbody>
-        {{#with (getModel deviceName)}}
+      {{#deviceNames}}
+        {{#with (getModel .)}}
           {{#modelnumbers}}
             <tr><td>{{num}}</td><td>{{name}}</td><td>{{codename}}</td></tr>
           {{/modelnumbers}}
         {{/with}}
+      {{/deviceNames}}
         </tbody>
       </table>
       {{> body }}
       <p>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
-      <h1>Preparation</h1>
+      <h1>Choose your variant</h1>
+      {{#deviceNames}}
       <div class="install-preparation-box">
-        <h3>Download AsteroidOS nightly builds</h3>
+        <h3>Download AsteroidOS for {{.}}</h3>
         Store the files in your "Downloads" folder so the later commands work<br><br>
-        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/asteroid-image-{{deviceName}}.ext4" role="button">asteroid-image-{{deviceName}}.ext4</a>
-        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/zImage-dtb-{{deviceName}}.fastboot" role="button">zImage-dtb-{{deviceName}}.fastboot</a>
-        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/MT6580_AsteroidOS_scatter-{{deviceName}}.txt" role="button">MT6580_AsteroidOS_scatter-{{deviceName}}.txt</a>
-        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/logo.bin" role="button">logo.bin</a>
-        <br><br><img src="{{assets}}/img/{{deviceName}}.png" class="install-preparation-img"><br>
+        <p>
+          <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.ext4" role="button">asteroid-image-{{.}}.ext4</a>
+          <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.fastboot" role="button">zImage-dtb-{{.}}.fastboot</a>
+        </p>
+        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/MT6580_AsteroidOS_scatter-{{.}}.txt" role="button">MT6580_AsteroidOS_scatter-{{.}}.txt</a>
+        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/logo.bin" role="button">logo.bin</a>
+        <br><br><img src="{{../assets}}/img/{{.}}.png" class="install-preparation-img"><br>
       </div>
+      {{/deviceNames}}
+      <h1>Preparation</h1>
       <div class="install-preparation-box">
         <h3>Install SPFlashTool</h3>
         SPFlashTool is a tool designed to flash Mediatek devices, you can <a href="https://spflashtool.com/download/">download its latest version from spflashtool.com</a>
         <br><br>
         <b>On Linux systems</b>
-        <br>
+        <br><br>
         <a class="btn btn-primary" href="https://spflashtool.com/download/SP_Flash_Tool-5.1916_Linux.zip" role="button">SP_Flash_Tool-5.1916_Linux.zip</a>
         <br><br>
         Extract the content to a folder of your liking and run <i>flash_tool</i> as root.<br>
