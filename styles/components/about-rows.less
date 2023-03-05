@@ -2,18 +2,48 @@
 // Rows on the About page
 // --------------------------------------------------
 
-.about-row {
-  display: inline;
+.about-container {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  column-gap: 1em;
 
-  @media (min-width: @grid-float-breakpoint) {
-    display: table;
+  @media (max-width: 720px) {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+.about-row {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  padding: 0 1em 0 1em;
+
+  @media (max-width: 720px) {
+    padding: 0 1.5em 0 1.5em;
   }
 }
 
 .about-text {
-  display: table-cell;
+  text-align: justify;
   vertical-align: middle;
-  padding: 40px;
+
+  h2 {text-align: center;}
+
+  @media (min-width: 720px) {
+    min-height: 230px;
+    padding: 0 1em 0 1em;
+  }
+  @media (min-width: @screen-sm-max) {
+    min-height: 170px;
+  }
+  @media (min-width: @screen-md-max) {
+    min-height: 150px;
+  }
 }
 
 .about-img {
