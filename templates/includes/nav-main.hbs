@@ -13,15 +13,6 @@
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
-        {{#is slug 'news'}}
-        <li class="active">
-          <span>News</span>
-        </li>
-        {{else}}
-        <li>
-          <a href="{{rel 'news'}}/">News</a>
-        </li>
-        {{/is}}
         {{#is slug 'watches'}}
         <li class="active">
           <span>Watches</span>
@@ -29,6 +20,15 @@
         {{else}}
         <li>
           <a href="{{rel 'watches'}}/">Watches</a>
+        </li>
+        {{/is}}
+        {{#is slug 'faq'}}
+        <li class="active">
+          <span>FAQ</span>
+        </li>
+        {{else}}
+        <li>
+          <a href="{{rel 'faq'}}/">FAQ</a>
         </li>
         {{/is}}
         {{#is slug 'documentation'}}
@@ -40,13 +40,13 @@
           <a href="{{rel 'wiki/documentation'}}/">Documentation</a>
         </li>
         {{/is}}
-        {{#is slug 'faq'}}
+        {{#is slug 'news'}}
         <li class="active">
-          <span>FAQ</span>
+          <span>News</span>
         </li>
         {{else}}
         <li>
-          <a href="{{rel 'faq'}}/">FAQ</a>
+          <a href="{{rel 'news'}}/">News</a>
         </li>
         {{/is}}
         {{#is slug 'community'}}
