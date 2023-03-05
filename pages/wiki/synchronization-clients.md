@@ -24,7 +24,7 @@ layout: documentation
 
 <p>There is currently no application available for iOS phones to synchronize with AsteroidOS watches. As far as we know, there hasn't been any development done on such an app yet.</p>
 
-<p>However, if the watch is paired with an iOS device, AsteroidOS is capable of displaying notifications from the phone. Pairing can be done using Apple's Bluetooth settings, but several iOS users have reported that a generic BLE scanner/communication app like <a href="https://apps.apple.com/gb/app/nrf-connect-for-mobile/id1054362403">nRF Connect</a> seems to be more reliable for pairing Bluetooth devices. Specific functionality like syncing time or weather forecast are however not supported!</p>
+<p>However, if the watch is paired with an iOS device, AsteroidOS is capable of displaying notifications from the phone. Pairing can only done using 3rd party BLE scanner/communication apps like <a href="https://apps.apple.com/gb/app/nrf-connect-for-mobile/id1054362403">nRF Connect</a> as BLE-only devices do not show up in iOS Bluetooth settings. Specific functionality like syncing time or weather forecast are however not supported!</p>
 
 <div class="page-header">
   <h1 id="sfos">SailfishOS application</h1>

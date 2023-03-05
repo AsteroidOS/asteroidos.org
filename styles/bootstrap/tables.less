@@ -74,6 +74,29 @@ th {
   }
 }
 
+.table-support {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th {
+        border-top: 0px;
+        text-align: center;
+        @media (max-width: @screen-md-max) {
+          padding: 2px;
+          font-size: 1.15VW;
+        }
+        @media (max-width: @screen-sm-max) {
+          font-size: 1.05VW;
+        }
+        @media (max-width: @screen-xs-max) {
+          font-size: 1.2VW;
+          padding: 1px;
+        }
+      }
+    }
+  }
+}
 
 // Bordered version
 //
