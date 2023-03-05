@@ -32,6 +32,40 @@ th.rotated {
   position: relative;
 }
 
+.support-div {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.install-support-col {
+  //Make divs behave like text so they get centered
+  display: inline-block;
+
+  width: auto;
+  max-width: 100%;
+  // Make font bold.
+  font-weight: 700;
+  // Add gap between columns.
+  margin-right: 6px;
+  margin-left: 2px;
+  margin-bottom: 12px;
+
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  padding-right: 10px;
+  padding-left: 10px;
+  // for tooltips
+  position: relative;
+
+  border-radius: 5px;
+
+  .box-shadow(0 2px 2px rgba(0,0,0,.2));
+
+  @media (prefers-color-scheme: dark) {
+    color: black !important;
+  }
+}
+
 td.support-col {
   min-width: 15px;
 }
@@ -44,19 +78,19 @@ th {
 }
 
 .good {
-  background-color: #5ab948;
+  background-color: #57E510;
 }
 
 .unknown {
-  background-color: #3366ff;
+  background-color: #1EDAEB;
 }
 
 .partial {
-  background-color: #ffa31a;
+  background-color: #FFAD33;
 }
 
 .bad {
-  background-color: #b94a48;
+  background-color: #FD785D;
 }
 
 .na {
@@ -65,7 +99,7 @@ th {
 
 
 .support-col .tooltiptext {
-    visibility: hidden;
+    display: none;
     width: 80px;
     bottom: 70%;
     left: 70%;
@@ -78,6 +112,20 @@ th {
     z-index: 1;
 }
 
-.support-col:hover .tooltiptext {
-    visibility: visible;
+.install-support-col .tooltiptext {
+    display: none;
+    width: 80px;
+    bottom: 70%;
+    left: 70%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.install-support-col:hover .tooltiptext {
+    display: inline;
 }
