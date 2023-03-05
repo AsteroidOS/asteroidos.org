@@ -1,5 +1,5 @@
 ---
-title: Install
-slug: install
+title: Watches
+slug: watches
 layout: main-install
 ---
