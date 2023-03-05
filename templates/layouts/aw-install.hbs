@@ -40,7 +40,7 @@
       </table>
       {{> body }}
       <p>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
-      <h1>Preparation</h1>
+      <h1>Prepare installation</h1>
       <div class="install-preparation-box">
         <h3>Download AsteroidOS nightly builds</h3>
         Store the files in your "Downloads" folder so the later commands work<br><br>
@@ -86,10 +86,10 @@
       <br><pre><code class="bash">adb reboot bootloader<br>fastboot oem unlock</code></pre>
       Follow the instructions on your watch's screen. <b>Please note it may void your warranty.</b>
       <br><br>
-      <h3>2. Flash and boot AsteroidOS</h3>
+      <h3>2. Install and boot AsteroidOS</h3>
         <div class="callout callout-warning">
           <h4>Choose your installation type</h4>
-          <p>You can now decide if you want to replace Wear OS definitively or try AsteroidOS as a <i>dual-boot</i>. The "real installation" provides the best experience but it is advised to make a backup of your data first. The "temporary installation" is a good way to try AsteroidOS if you don't plan to use it daily.</p>
+          <p>You can now decide if you want to replace Wear OS definitively by flashing the system and boot image. Or try AsteroidOS as a <i>dual-boot</i> by sideloading the AsteroidOS system image and boot it only temporarily. The "real installation" provides the best experience but it is advised to make a backup of your data first. The "temporary installation" is a good way to try AsteroidOS if you don't plan to use it daily and intend to keep your previous OS.</p>
         </div>
 
         <ol>
