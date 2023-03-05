@@ -14,4 +14,4 @@ layout: featuretable
 </table>
 
 <br/>
-For more details on each watch, see the <a href="{{rel 'install'}}">Install</a> page.
+For more information on each device, click on the respective code name in the first column. These are linked to the entries on the <a href="{{rel 'watches'}}">Watches</a> page.
