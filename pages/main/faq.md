@@ -68,7 +68,7 @@ Another significant difference is that AsteroidOS, unlike WearOS, tries to make 
 No. AsteroidOS does not collect any tracking data and you don't need to use or establish any accounts to use it. Nothing on the default installation is able to connect to the internet. While it is possible to [connect an AsteroidOS watch to the internet]({{rel 'wiki/ip-connection'}}) this must be explicitly done by the user.
 
 ## Can my watch run AsteroidOS?
-Maybe. Check the [Install]({{rel 'install'}}) page to see if your watch is listed.
+Maybe. Check the [Watches]({{rel 'watches'}}) page. It lists all devices supported by AsteroidOS. The star rating indicates the current level of support for each device's hardware features. Watches with at least 3 stars can be considered suitable for everyday use.
 
 ## Can I compile AsteroidOS myself?
 If you do not want to flash a prebuilt image onto your watch, review the [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}) page for detailed instructions on how to compile AsteroidOS yourself.
@@ -79,7 +79,7 @@ If you are interested in porting AsteroidOS to a new watch yourself, please read
 
 ## Which features of my watch are currently supported?
 The available AsteroidOS features depend on the watch you want to use. Review the table on the installation page for your device to get detailed support information.\
-Or check the [features table]({{rel 'install/features'}}) to see a matrix of all AsteroidOS watches and their feature support.
+Or check the [features table]({{rel 'watches/features'}}) to see a matrix of all AsteroidOS watches and their feature support.
 
 ## Will I be able to revert to the previous operating system?
 Yes, very easily if you choose the "temporary install" option.\
