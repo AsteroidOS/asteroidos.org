@@ -11,3 +11,33 @@
     padding: 0 @g (@g / 2) 0;
   }
 }
+
+.docs-main-container {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  column-gap: 1em;
+
+  @media (max-width: 720px) {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+  display: inline-flex;
+}
+
+.docs-main-row {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  padding: 0 1em 0 1em;
+
+  @media (min-width: @grid-float-breakpoint) {
+    display: table;
+  @media (max-width: 720px) {
+    padding: 0 1.5em 0 1.5em;
+  }
+  }
+}
