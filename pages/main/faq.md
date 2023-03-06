@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Questions (FAQ)
 slug: faq
-layout: documentation
+layout: faq
 ---
 # What is AsteroidOS?
 AsteroidOS is an open source Linux distribution that runs on many different smartwatches. It uses [Qt](http://www.qt.io/) and QML to provide the graphical interface.\
