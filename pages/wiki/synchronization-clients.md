@@ -15,6 +15,7 @@ layout: documentation
   alt="Get AsteroidOSSync on F-Droid"
   height="80">
 </a>
+<img src="{{assets}}/img/logo-aossync-sync.png" style="margin: 15px;">
 <p>This app currently offers the best experience possible with AsteroidOS.</p>
 
 <div class="page-header">
@@ -26,6 +27,7 @@ layout: documentation
   alt="Get Gadgetbridge on F-Droid"
   height="80">
 </a>
+<img src="{{assets}}/img/logo-gadgetbridge-sync.png" style="margin: 15px;">
 <p>The AsteroidOS Gadgetbridge integration is considered to be in initial stage. Nearly all features provided by AsteroidOSSync are supported. Only the remote volume control and screenshot functions are missing.</p>
 
 <div class="page-header">
@@ -46,6 +48,7 @@ layout: documentation
   alt="Get Telescope on OpenStore"
   style="margin: 15px;">
 </a>
+<img src="{{assets}}/img/logo-telescope-sync.png" style="margin: 15px;">
 <p>This app tries to re-use as much code from the SailfishOS client Starship as possible. Some of their codes is shared in a daemon named <a href="https://github.com/AsteroidOS/asteroidsyncservice">asteroidsyncservice</a> which uses <a href="https://github.com/AsteroidOS/libasteroid">libasteroid</a>. The app is still under development. First functions like notifications, time syncronisation and battery status reading are already implemented.</p>
 
 <div class="page-header">
@@ -72,4 +75,4 @@ layout: documentation
   <h1 id="new">New synchronization clients</h1>
 </div>
 
-<p>We would warmly welcome any community members interested in writing a new synchronization app to read the <a href="{{rel 'wiki/ble-profiles'}}">BLE profiles documentation</a> and <a href="{{rel 'contact'}}">get in touch</a> with us via IRC.</p>
+<p>We would warmly welcome any community members interested in writing a new synchronization app to read the <a href="{{rel 'wiki/ble-profiles'}}">BLE profiles documentation</a> and <a href="{{rel 'contact'}}">get in touch</a> with us via our <a href="https://matrix.to/#/#Asteroid:matrix.org">Matrix channel.</a></p>
