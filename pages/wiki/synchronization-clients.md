@@ -37,18 +37,24 @@ layout: documentation
 <p>However, if the watch is paired with an iOS device, AsteroidOS is capable of displaying notifications from the phone. Pairing can only done using 3rd party BLE scanner/communication apps like <a href="https://apps.apple.com/gb/app/nrf-connect-for-mobile/id1054362403">nRF Connect</a> as BLE-only devices do not show up in iOS Bluetooth settings. Specific functionality like syncing time or weather forecast are however not supported!</p>
 
 <div class="page-header">
+  <h1 id="ubuntu">Ubuntu Touch/UBPorts application</h1>
+</div>
+
+<p>A synchronization app for Ubuntu Touch named <a href="https://github.com/AsteroidOS/telescope">Telescope</a> has been started by the community. You can <a href="https://open-store.io/app/telescope.asteroidos">download the app in the OpenStore</a></p>
+<a href="https://open-store.io/app/telescope.asteroidos">
+  <img src="https://open-store.io/badges/en_US.png"
+  alt="Get Telescope on OpenStore"
+  style="margin: 15px;">
+</a>
+<p>This app tries to re-use as much code from the SailfishOS client Starship as possible. Some of their codes is shared in a daemon named <a href="https://github.com/AsteroidOS/asteroidsyncservice">asteroidsyncservice</a> which uses <a href="https://github.com/AsteroidOS/libasteroid">libasteroid</a>. The app is still under development. First functions like notifications, time syncronisation and battery status reading are already implemented.</p>
+
+<div class="page-header">
   <h1 id="sfos">SailfishOS application</h1>
 </div>
 
 <p>An official synchronization app for SailfishOS named <a href="https://github.com/AsteroidOS/starfish">Starfish</a> has been written using <a href="https://github.com/AsteroidOS/libasteroid">libasteroid</a>. However it is not in a usable state yet due to technical limitations in the current Bluetooth Low Energy stack of SailfishOS. This app requires security features of Bluetooth Low Energy that only work with a kernel patched with a backported Bluetooth subsystem. For this reason, the development of Starfish is now on hold.</p>
 
 <p>Jolla has been contacted about that issue. However, at this point, it is still unclear if and when Jolla will patch the Bluetooth Low Energy stack of their phone operating system. There is then no way to predict if/when Starfish will work for everyone.</p>
-
-<div class="page-header">
-  <h1 id="ubuntu">Ubuntu Touch/UBPorts application</h1>
-</div>
-
-<p>A synchronization app for Ubuntu Touch named <a href="https://github.com/AsteroidOS/telescope">Telescope</a> has been started by the community. This app tries to re-use as much code from Starfish as possible so some of their codes is shared in a daemon named <a href="https://github.com/AsteroidOS/asteroidsyncservice">asteroidsyncservice</a> which uses <a href="https://github.com/AsteroidOS/libasteroid">libasteroid</a>. The app is still under development, first functions like notifications, time syncronisation and battery status reading are already implemented. You can download the app in the <a href="https://open-store.io/app/telescope.asteroidos">OpenStore</a></p>
 
 <div class="page-header">
   <h1 id="desktop">Desktop apps</h1>
