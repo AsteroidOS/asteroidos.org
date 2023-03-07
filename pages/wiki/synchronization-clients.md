@@ -52,9 +52,7 @@ layout: documentation
   <h1 id="sfos">SailfishOS application</h1>
 </div>
 
-<p>An official synchronization app for SailfishOS named <a href="https://github.com/AsteroidOS/starfish">Starfish</a> has been written using <a href="https://github.com/AsteroidOS/libasteroid">libasteroid</a>. However it is not in a usable state yet due to technical limitations in the current Bluetooth Low Energy stack of SailfishOS. This app requires security features of Bluetooth Low Energy that only work with a kernel patched with a backported Bluetooth subsystem. For this reason, the development of Starfish is now on hold.</p>
-
-<p>Jolla has been contacted about that issue. However, at this point, it is still unclear if and when Jolla will patch the Bluetooth Low Energy stack of their phone operating system. There is then no way to predict if/when Starfish will work for everyone.</p>
+<p>An official synchronization app for SailfishOS named <a href="https://github.com/AsteroidOS/starship">Starship</a> has been written using <a href="https://github.com/AsteroidOS/libasteroid">libasteroid</a>. However, it is not in a usable state yet.</p>
 
 <div class="page-header">
   <h1 id="desktop">Desktop apps</h1>
