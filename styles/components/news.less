@@ -2,6 +2,40 @@
 // News preview on the Newspage
 // --------------------------------------------------
 
+.news-two-column {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 5VW;
+  -webkit-column-gap: 5VW;
+  column-gap: 5VW;
+
+  @media (max-width: 720px) {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+  margin: 5VH 3VW 5VH 3VW;
+}
+
+.news-two-col-paragraph {
+  margin: 0 0 2VH;
+  width: 100%;
+  text-indent: 40px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    display: table;
+
+  }
+}
+
+.news-header-centered {
+  vertical-align: middle;
+  text-align: center;
+  min-width: 100%;
+}
+
 .news-row {
   display: table;
 
@@ -64,7 +98,7 @@
 }
 
 .news-content p {
-    margin-left: 40px;
+    text-indent: 40px;
 }
 
 @media (max-width: 767px) {
