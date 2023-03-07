@@ -15,6 +15,7 @@
     -webkit-column-count: 1;
     column-count: 1;
   }
+  margin: 0 0 6VH 0;
 }
 
 .about-row {
@@ -50,4 +51,191 @@
   text-align: center;
   vertical-align: middle;
   margin: 20px 0;
+}
+
+#slideshow {
+  // >= 1200px md size
+  position: absolute;
+  overflow: clip;
+  left:0;
+  right:0;
+  text-align: center;
+  height: 225px;
+  width: 100%;
+  margin: 7VH 0 0 0;
+
+  //From < 991px (sm) on
+  @media (max-width: 991px) {
+    height: 220px;
+    width: 100%;
+    margin: 6VH 0 0 0;
+  }
+  //From < 768px (sm) on
+  @media (max-width: 767px) {
+    height: 215px;
+    width: 100%;
+    margin: 5VH 0 0 0;
+  }
+  //From < 520px (sm) on
+  @media (max-width: 519px) {
+    height: 200px;
+    width: 100%;
+    margin: 3VH 0 0 0;
+  }
+}
+
+.absolute-spacer {
+  margin: 305px 0 0 0;
+
+  @media (max-width: 991px) {
+    margin: 280px 0 0 0;
+  }
+  //From < 768px (sm) on
+  @media (max-width: 767px) {
+    margin: 265px 0 0 0;
+  }
+  //From < 520px (sm) on
+  @media (max-width: 519px) {
+    margin: 220px 0 0 0;
+  }
+}
+
+.slide-wrapper {
+  width: 5000px; //slide width * amount of shots
+  -webkit-animation: slide 35s ease infinite;
+
+  //From < 990px (sm) on
+  @media (max-width: 991px) {
+    width: 4875px;
+    -webkit-animation: slide 30s ease infinite;
+  }
+  //From < 768px (sm) on
+  @media (max-width: 767px) {
+    width: 4500px;
+    -webkit-animation: slide 30s ease infinite;
+  }
+    //From < 520px (sm) on
+  @media (max-width: 519px) {
+    width: 4125px;
+    -webkit-animation: slide 30s ease infinite;
+  }
+}
+
+.slide {
+  float: left;
+
+  height: 225px;
+  width: 200px;
+  img {
+    height: 220px;
+    width: 220px;
+  }
+
+  img {
+    border-radius: 50%;
+    .box-shadow(0 4px 4px rgba(0,0,0,.24));
+  }
+
+  //From < 992px (sm) on
+  @media (max-width: 991px) {
+    height: 220px;
+    width: 195px;
+    img {
+      height: 210px;
+      width: 210px;
+    }
+  }
+  //From < 768px (sm) on
+  @media (max-width: 767px) {
+    height: 215px;
+    width: 180px;
+    img {
+      height: 200px;
+      width: 200px;
+    }
+  }
+  //From < 520px (sm) on
+  @media (max-width: 519px) {
+    height: 200px;
+    width: 165px;
+    img {
+      height: 190px;
+      width: 190px;
+    }
+  }
+}
+
+@-webkit-keyframes slide {
+  5% {margin-left: -0px;}
+  17% {margin-left: -400px;}
+  29% {margin-left: -800px;}
+  41% {margin-left: -1200px;}
+  53% {margin-left: -1600px;}
+  65% {margin-left: -2000px;}
+  78% {margin-left: -2400px;}
+  90% {margin-left: -2800px;}
+}
+//From < 1200px (md) on
+@media (max-width: 1199px) {
+  @-webkit-keyframes slide {
+    5% {margin-left: -0px;}
+    15% {margin-left: -400px;}
+    24% {margin-left: -800px;}
+    34% {margin-left: -1200px;}
+    43% {margin-left: -1600px;}
+    53% {margin-left: -2000px;}
+    62% {margin-left: -2400px;}
+    72% {margin-left: -2800px;}
+    81% {margin-left: -3200px;}
+    90% {margin-left: -3600px;}
+  }
+}
+//From < 992px (sm) on
+@media (max-width: 991px) {
+  @-webkit-keyframes slide {
+    5% {margin-left: -0px;}
+    13% {margin-left: -390px;}
+    21% {margin-left: -780px;}
+    29% {margin-left: -1170px;}
+    37% {margin-left: -1560px;}
+    45% {margin-left: -1950px;}
+    54% {margin-left: -2340px;}
+    63% {margin-left: -2730px;}
+    72% {margin-left: -3120px;}
+    81% {margin-left: -3510px;}
+    90% {margin-left: -3705px;}
+  }
+}
+//From < 768px (sm) on
+@media (max-width: 767px) {
+  @-webkit-keyframes slide {
+    5% {margin-left: -0px;}
+    13% {margin-left: -360px;}
+    21% {margin-left: -720px;}
+    29% {margin-left: -1080px;}
+    37% {margin-left: -1440px;}
+    45% {margin-left: -1800px;}
+    53% {margin-left: -2160px;}
+    61% {margin-left: -2520px;}
+    70% {margin-left: -2880px;}
+    79% {margin-left: -3240px;}
+    90% {margin-left: -3600px;}
+  }
+}
+//From < 520px (sm) on
+@media (max-width: 519px) {
+  @-webkit-keyframes slide {
+    4% {margin-left: -0px;}
+    12% {margin-left: -330px;}
+    20% {margin-left: -660px;}
+    28% {margin-left: -990px;}
+    36% {margin-left: -1320px;}
+    42% {margin-left: -1650px;}
+    50% {margin-left: -1980px;}
+    58% {margin-left: -2310px;}
+    66% {margin-left: -2640px;}
+    74% {margin-left: -2970px;}
+    82% {margin-left: -3300px;}
+    90% {margin-left: -3630px;}
+  }
 }
