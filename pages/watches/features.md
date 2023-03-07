@@ -6,11 +6,11 @@ layout: featuretable
 
 <h2>Legend</h2>
 <table>
-<tr><td><b>good</b></td><td>The hardware exists and is working</td><td class="support-col good" /></tr>
-<tr><td><b>bad</b></td><td>The hardware exists and is NOT working</td><td class="support-col bad" /></tr>
-<tr><td><b>n/a</b></td><td>The hardware does not exist</td><td class="support-col na"/ ></tr>
-<tr><td><b>partial</b></td><td>The hardware exists but is only partially working</td><td class="support-col partial" /></tr>
-<tr><td><b>unknown</b></td><td>The hardware exists but the status is unknown</td><td class="support-col unknown" /></tr>
+<tr><td class="name-col"><b>good</b></td><td class="legend-col good" /><td>The hardware exists and is working</td></tr>
+<tr><td class="name-col"><b>bad</b></td><td class="legend-col bad" /><td>The hardware exists and is NOT working</td></tr>
+<tr><td class="name-col"><b>n/a</b></td><td class="legend-col na"/ ><td>The hardware does not exist</td></tr>
+<tr><td class="name-col"><b>partial</b></td><td class="legend-col partial" /><td>The hardware exists but is only partially working</td></tr>
+<tr><td class="name-col"><b>unknown</b></td></td><td class="legend-col unknown" /><td>The hardware exists but the status is unknown</tr>
 </table>
 
 <br/>

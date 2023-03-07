@@ -27,7 +27,7 @@ th.rotated {
   // Make font bold.
   font-weight: 700;
   // Add minimal gap between columns.
-  margin: 0.2VW;
+  margin: 1px;
   padding: 0 !important;
   // for tooltips
   position: relative;
@@ -71,11 +71,25 @@ td.support-col {
   min-width: 15px;
 }
 
-th {
-  min-width: 17px;
+td.legend-col {
+  height: 25px;
+  width: 3.5VW;
+  min-width: 25px;
+  margin: 1px;
 }
+
+th {
+  min-width: 15px;
+  font-size: 0.9em;
+  margin: 1px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    font-size: 1em;
+  }
+}
+
 .name-col {
-    min-width: 70px;
+  min-width: 70px;
 }
 
 .good {
