@@ -1,7 +1,7 @@
 ---
 title: Gadgetbridge adds AsteroidOS support
 layout: news
-posted: 2023-03-03
+posted: 2023-03-07
 post: true
 thumbnails: gadgetbridge
 summary: Gadgetbridge has added support for all AsteroidOS watches in release 0.73.0. Thanks to Noodelz for this great work on a near feature-complete initial implementation!
