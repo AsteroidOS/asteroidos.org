@@ -6,7 +6,7 @@ layout: documentation
 <p>AsteroidOS watches can be synchronized with a variety of devices given that they install a "synchronization client". This page lists all the known synchronization clients by platform.</p>
 
 <div class="page-header">
-  <h1 id="android">Android application</h1>
+  <h1 id="android">AsteroidOSSync Android application</h1>
 </div>
 
 <p>An official synchronization application for Android phones named <a href="https://f-droid.org/packages/org.asteroidos.sync">AsteroidOSSync is available to download on F-Droid:</a></p>
@@ -17,6 +17,16 @@ layout: documentation
 </a>
 <p>This app currently offers the best experience possible with AsteroidOS.</p>
 
+<div class="page-header">
+  <h1 id="gadgetbridge">Gadgetbridge Android application</h1>
+</div>
+<p>Gadgetbridge support for AsteroidOS watches has been added, <a href="https://codeberg.org/Freeyourgadget/Gadgetbridge/pulls/3013">thanks to community contribution to the Gadgetbridge project</a>.</p>
+<a href="https://f-droid.org/packages/nodomain.freeyourgadget.gadgetbridge/">
+  <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+  alt="Get Gadgetbridge on F-Droid"
+  height="80">
+</a>
+<p>The AsteroidOS Gadgetbridge integration is considered to be in initial stage. Nearly all features provided by AsteroidOSSync are supported. Only the remote volume control and screenshot functions are missing.</p>
 
 <div class="page-header">
   <h1 id="iossync">iOS application</h1>
