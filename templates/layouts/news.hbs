@@ -15,9 +15,9 @@
         <img src="/public/img/news-thumbnails/{{ thumbnails }}.jpg" width="100%" />
         <br><br><br>
       </div>
-
-      {{> body }}
-
+      {{#markdown}}
+        {{> body}}
+      {{/markdown}}
       <hr>
       <div style="float: right; color: #888">Written by {{ author }} on the {{dateFormat posted "DD/MM/YYYY"}}</div>
     </div>
