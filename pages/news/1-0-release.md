@@ -28,7 +28,7 @@ author: Florent Revest
     <li>Last, but not least, it comes with a <a href="https://release.asteroidos.org/1.0/sdk/">Software Development Kit (SDK)</a>, <a href="https://github.com/AsteroidOS/asteroid-gps-test">examples</a>, and <a href="{{rel 'wiki/creating-an-asteroid-app/'}}">a tutorial</a> enabling developers to create new custom watch applications for the OS.</li>
 </ul>
 
-<center><img class="community-header-img" src="/public/img/news-thumbnails/1-0-screenshots1.png"></img></center>
+<center><img class="community-header-img" src="/public/img/news-thumbnails/1-0-screenshots1.webp"></img></center>
 
 <h1>What's next?</h1>
 
@@ -46,4 +46,4 @@ author: Florent Revest
 
 <p>On a less technical side, I look forward to organizing new community events like the ones we've already had in <a href="https://twitter.com/AsteroidOS/status/897508413692923904">London</a>, <a href="https://twitter.com/AsteroidOS/status/957238049615810561">Brussels</a>, <a href="https://twitter.com/AsteroidOS/status/770510222737702912">Berlin</a>, <a href="https://twitter.com/JamesNoori/status/857152404688601088">Gothenburg</a> and <a href="https://twitter.com/AsteroidOS/status/930137446569988096">Toulouse</a>. Stay tuned on <a href="https://twitter.com/AsteroidOS">Twitter</a>!</p>
 
-<center><img class="community-header-img" src="/public/img/news-thumbnails/1-0-screenshots2.png"></img></center>
+<center><img class="community-header-img" src="/public/img/news-thumbnails/1-0-screenshots2.webp"></img></center>
