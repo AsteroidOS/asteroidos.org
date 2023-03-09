@@ -19,6 +19,6 @@ According to Noodelz,
 >The other thing is that call support is pretty bad. If you answer a call, it doesn't dismiss the notification on the watch so it'll keep ringing. This is because calls aren't given an ID, so there's no easy way to store the ID of the call to dismiss the notification.
 >All updates to notifications will ring the watch. This can be good or bad. For example AntennaPod will update its download notification and send a billion updates to the watch's notification service, and each one will ring. This is because GB doesn't give whether or not a notification update is supposed to be audible or not."`
 
-<img style="width: 60%; height: auto; margin: 0 15VW 0 15VW" src="/public/img/news-img/gadgetbridge-running.jpg" />
+<img class="news-img-center" src="/public/img/news-img/gadgetbridge-running.webp" />
 
 5 Asteroid watches paired simultaneously to one phone, something not possible on AsteroidOSSync
