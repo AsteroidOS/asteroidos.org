@@ -19,7 +19,7 @@ The network is currently in hostile-takeover by a commercial entity and a huge n
 
 <p>To join us visit the chat <a href="https://matrix.to/#/#Asteroid:matrix.org">here</a>.</p>
 
-<img class="community-header-img" style="width: 50%; height: auto;" src="/public/img/news-img/element-login.png" />
+<img class="community-header-img" style="width: 50%; height: auto;" src="/public/img/news-img/element-login.webp" />
 
 <p>For those of you with questions about Matrix, there is an elaborate FAQ on the <a href="https://matrix.org/faq/">matrix.org page</a> that I can recommend to everyone interested.</p>
 
