@@ -8,7 +8,7 @@ summary: Gadgetbridge has added support for all AsteroidOS watches in release 0.
 author: Timo Könnecke (eLtMosen)
 ---
 # A new way to sync with your watch!
-[Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge), the application that allows you to connect your Pebble, Mi Band, Amazfit Bip and HPlus device and many more devices to your Android phone, can now sync to all AsteroidOS watches since [release of version 0.73.0](https://codeberg.org/Freeyourgadget/Gadgetbridge/src/branch/master/CHANGELOG.md)
+[Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge), the open-source Android application that supports connection to Pebble, Mi Band, Amazfit Bip devices and many devices can now also sync to AsteroidOS watches since [release of version 0.73.0](https://codeberg.org/Freeyourgadget/Gadgetbridge/src/branch/master/CHANGELOG.md)
 
 This has been made possible by [Noodelz contribution to the Gadgetbridge project.](https://codeberg.org/Freeyourgadget/Gadgetbridge/pulls/3013)
 Nearly all capabilities provided by AsteroidOSSync are now supported by Gadgetbridge, only the remote volume control and screenshot functions are missing.
