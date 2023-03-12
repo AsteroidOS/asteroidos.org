@@ -14,11 +14,15 @@
       <li><h4>Repeat the flash process.</h4>Some users have reported needing up to five flashing attempts for a successful result.</li>
     </ul>
     <h3>Boot gets stuck even after repeated reflash</h3>
-    Congratulations, you might have found a new issue for us to solve. While this should not happen with stable builds, the nightlies are advancing quickly, and are not tested on all watches. Since the watches install pages link to the nightlies currently, you likely used those. You can try again and <a href="https://release.asteroidos.org/">install a stable build when available</a>.<br>To help us solve the problem, you could try to collect logs. It is possible that the watch does not show a UI but is already accessible using <code>ssh ceres@192.168.2.15</code> or <code>adb shell</code> in the state the boot process stops. In case ssh or ADB connections work, try the following commands to write logs to local .txt files.
+    Congratulations, you might have found a new issue for us to solve. While this should not happen with stable builds, the nightlies are advancing quickly, and are not tested on all watches. Since the watches install pages link to the nightlies currently, you likely used those. You can try again and <a href="https://release.asteroidos.org/">install a stable build when available</a>.<br>To help us solve the problem, you could try to collect logs. It is possible that the watch does not show a UI but is already accessible using <code>ssh ceres@192.168.2.15</code> or <code>adb shell</code> in the state the boot process stops. In case SSH connection works, try the following commands to write logs to local .txt files.
     <ul>
-      <li><code>ssh root@192.168.2.15 "dmesg" > dmesg-watch.txt</code></li>
       <li><code>ssh root@192.168.2.15 "journalctl" > journal-watch.txt</code></li>
-      <li><code>adb shell logcat > logcat-watch.txt</code></li>
+      <li><code>ssh root@192.168.2.15 "/system/bin/logcat" > logcat-watch.txt</code></li>
+    </ul>
+    or, if your watch presents an ADB interface, use the following commands:
+    <ul>
+      <li><code>adb shell journalctl > journal-watch.txt</code></li>
+      <li><code>adb shell "/system/bin/logcat" > logcat-watch.txt</code></li>
     </ul>
     In case no connection is available, it is still interesting to see if the watch leaves any traces in your local dmesg. Try to spot USB related messages in <code>sudo dmesg -w</code> while the watch is connected and booting. Record the log using the <code>sudo dmesg > dmesg-local.txt</code> command.<br>
     You can share those logs in a new <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">Github issue</a> tagged with the watch codename. For support chat, you are invited to <a href="https://matrix.to/#/#Asteroid:matrix.org">join our Matrix channel</a>.
