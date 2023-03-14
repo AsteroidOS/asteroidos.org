@@ -5,7 +5,10 @@ slug: community
 
 <img src="{{assets}}/img/community.jpg" class="community-header-img"/>
 
-<p>AsteroidOS is driven by a vibrant community. If you are interested in making wearable devices more open, we would be delighted if you join us:</p>
+<p>AsteroidOS is driven by a vibrant community. If you are interested in making wearable devices more open, we would be delighted if you join us:
+<br>As a user, you can help us tremendously by testing and providing valuable feedback. Your insights, fresh view and feature requests can help shape the future of our platform and ensure that we continue to meet the needs of our users.
+<br>As a developer, you can utilize our solid build tools and tap into the expertise of our experienced community members to guide the way. Whether you're interested in contributing to the codebase or developing apps, we welcome your participation and look forward to working with you.
+<br>Our main activity is in the AsteroidOS Matrix chat room, where you can connect with other members of the community and share your thoughts and ideas. Joining the chat room is easy - simply click here.</p>
 <div class="community-box-wrapper">
 <div class="community-box-ratio"><div class="community-box"><div class="community-centered-text">
   <h3>Developing</h3><br>
