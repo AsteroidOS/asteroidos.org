@@ -12,9 +12,9 @@
 }
 
 .community-box-wrapper {
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-bottom: 3VH;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 3VH;
 }
 
 // Just keeps a ratio
@@ -22,7 +22,7 @@
   display: inline-flex;
 
   width: 100%;
-  margin: 1%;
+  margin: 2% 1%;
   @media (min-width: @grid-float-breakpoint) {
     width: 45%;
     margin: 2%
@@ -41,10 +41,16 @@
 
   padding: 10px 20px 30px 20px;
 
-  min-height: 275px;
+  min-height: 200px;
+  @media (min-width: @grid-float-breakpoint) {
+    min-height: 250px;
+  }
+  @media (min-width: @screen-md-min) {
+    min-height: 275px;
+  }
 
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
 
   text-align: center;
 
