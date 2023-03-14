@@ -40,6 +40,6 @@ slug: community
   Enthusiasts can join the community on <a href="/contact/">Matrix</a>, <a href="https://twitter.com/AsteroidOS">Twitter</a> and <a href="https://github.com/AsteroidOS/">GitHub</a> or even at various events such as Meetups, QtCon, FOSDEM, workshops and others...
 </div></div></div>
 <div class="community-box-ratio">
-  <img src="{{assets}}/img/iwantyou.jpg" class="community-box-img">
+  <img src="{{assets}}/img/iwantyou.webp" class="community-box-img">
 </div>
 </div>
