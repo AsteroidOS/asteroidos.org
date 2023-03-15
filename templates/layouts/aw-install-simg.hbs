@@ -58,34 +58,18 @@
         Navigate to that folder using the Windows commandline (cmd.exe).
         <br><br>
       </div>
-
       <h1>Instructions</h1>
-      <h3>1. Unlock your bootloader</h3>
-      Installing AsteroidOS requires an unlocked bootloader. Accessing the bootloader can be achieved via ADB in Wear OS, as described in steps 1.1 to 1.4 below.
-      <br>You can skip these steps if you are familiar with the manual method to access the bootloader. The different methods are explained on the <a href="https://asteroidos.org/wiki/useful-commands/#boot-to-fastboot-bootloader-menu">useful commands page</a>.
-      <br>
-      <br>Enable ADB on your watch with the following steps:
-        <ol>
-          <img src="{{assets}}/img/install-1.jpg" class="install-centered-img"/>
-          <li>Open the settings app and go to the <b>System</b> and then <b>About</b> page.</li>
-          <li>Tap the <b>Build number</b> 7 times until Developer options become available.</li>
 
-          <img src="{{assets}}/img/install-2.jpg" class="install-centered-img"/>
-          <li>Go back to the settings menu and then to the <b>Developer options</b> page.</li>
-          <li>Enable <b>ADB debugging</b>.</li>
-        </ol>
-      <br><b>Finally, to unlock the bootloader</b> enter the following commands in a terminal with your watch connected:</li>
-      <br><pre><code class="bash">adb reboot bootloader<br>fastboot oem unlock</code></pre>
-      Follow the instructions on your watch's screen. <b>Please note it may void your warranty.</b>
-      <br><br>
-      <h3>2. Install and boot AsteroidOS</h3>
+      {{> install-unlock-adb-round }}
+
+      <h2>2. Install and boot AsteroidOS</h2>
         <div class="callout callout-warning">
           <h4>Choose your installation type</h4>
           <p>You can now decide if you want to replace Wear OS definitively by flashing the system and boot image. Or try AsteroidOS as a <i>dual-boot</i> by sideloading the AsteroidOS system image and boot it only temporarily. The "real installation" provides the best experience but it is advised to make a backup of your data first. The "temporary installation" is a good way to try AsteroidOS if you don't plan to use it daily and intend to keep your previous OS.</p>
         </div>
 
         <ol>
-          <b><li type="a">Real installation</li></b>
+          <h3><li type="a">Real installation</li></h3>
           While your watch is in bootloader mode, flash the userdata and boot partitions using Linux:
           <pre><code class="bash">fastboot flash userdata ~/Downloads/asteroid-image-{{deviceName}}.simg
 fastboot flash boot ~/Downloads/zImage-dtb-{{deviceName}}.fastboot
@@ -96,7 +80,7 @@ fastboot continue</code></pre>
 fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot
 fastboot continue</code></pre>
 
-          <b><li type="a">Temporary installation</li></b>
+          <h3><li type="a">Temporary installation</li></h3>
           Reboot to Wear OS, re-enable developer mode and ADB debugging.
           <br>Push AsteroidOS to the internal sdcard using Linux:
           <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
@@ -111,7 +95,7 @@ fastboot continue</code></pre>
           or on Windows:
           <pre><code>fastboot boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot</code></pre>
           </ol>
-        <br><h3>3. Enjoy your new OS!</h3><br><br>
+        <h2>3. Enjoy your new OS!</h2><br><br>
 
     {{> install-problems }}
 

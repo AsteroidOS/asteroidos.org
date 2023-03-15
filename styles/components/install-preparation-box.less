@@ -37,3 +37,47 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+.unlock-adb-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 2VH;
+}
+.unlock-step-wrapper {
+  float: left;
+  max-width: 240px;
+  margin: 0 22px 0 22px;
+      //From < 1200px on
+  @media (max-width: 1199px) {
+    max-width: 200px;
+    margin: 1VH 15px 0 15px;
+  }
+    //From < 990px on
+  @media (max-width: 991px) {
+    max-width: 220px;
+    margin: 1VH 10px 0 10px;
+  }
+  //From < 768px on
+  @media (max-width: 767px) {
+    max-width: 46%;
+    margin: 1VH 2% 0 2%;
+  }
+    //From < 375px on
+  @media (max-width: 374px) {
+    max-width: 80%;
+
+    margin: 1VH 5% 0 5%;
+  }
+}
+.unlock-step-img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 8px;
+}
+.unlock-step-text {
+  text-align: center;
+  margin: 1VW 0 0;
+  min-height: 60px;
+  max-width: 240px;
+  padding: 0 5% 0 5%;
+}
