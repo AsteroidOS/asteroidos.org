@@ -7,27 +7,19 @@
     {{!-- Docs master nav --}}
     {{> nav-main }}
 
-    {{> install-header }}
+    {{> watches-header }}
 
     {{!-- Content --}}
     <div class="container docs-container">
-      <h1>Hardware Support</h1>
-      <p>The following table summarizes the state of the features of the {{title}}.</p>
-      <table>
+     <h1>Hardware Support</h1>
+      <p>The following list shows the state of the features of the {{title}}.<br>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
+      <div class="support-div">
       {{#with (getModel deviceName)}}
-        <tr> 
           {{#features}}
-              <th>{{name}}</th>
+              <div class="install-support-col {{status}}"><span class="tooltiptext">{{status}}</span>{{name}}</div>
           {{/features}}
-        </tr>
-        <tr> 
-          {{#features}}
-              <td class="support-col {{status}}"><span class="tooltiptext">{{status}}</span></td>
-          {{/features}}
-        </tr>
       {{/with}}
-      </table>
-      <br/>
+      </div>
       <table class="table table-striped">
         <thead><tr><th>Model Number</th><th>Model Name</th><th>Codename</th></tr></thead>
         <tbody>
@@ -39,8 +31,7 @@
         </tbody>
       </table>
       {{> body }}
-      <p>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
-      <h1>Preparation</h1>
+      <h1>Prepare installation</h1>
       <div class="install-preparation-box">
         <h3>Download AsteroidOS nightly builds</h3>
         Store the files in your "Downloads" folder so the later commands work<br><br>
@@ -54,9 +45,9 @@
         <br><br>
         <pre><code class="bash">sudo apt install android-tools-adb android-tools-fastboot</code></pre>
         <br>
-        <b>On Windows systems</b> install this ADB driver
+        <b>On Windows systems</b> install the Google USB driver
         <br><br>
-        <a class="btn btn-primary" href="{{#if windowsDrivers}}{{windowsDrivers}}{{else}}http://download.clockworkmod.com/test/UniversalAdbDriverSetup.msi{{/if}}" role="button">{{#if windowsDrivers}}{{replace windowsDrivers ".*\/" "" ""}}{{else}}UniversalAdbDriverSetup.msi{{/if}}</a>
+        <a class="btn btn-primary" href="https://developer.android.com/studio/run/win-usb" role="button" target="_blank" rel="noopener noreferrer" title="Open download source in new tab or window">Get the Google USB Driver ZIP</a>
         <br><br>
         Download this zip file containing ADB & Fastboot from Android SDK
         <br><br>

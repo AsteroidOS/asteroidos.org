@@ -7,29 +7,21 @@
     {{!-- Docs master nav --}}
     {{> nav-main }}
 
-    {{> install-header }}
+    {{> watches-header }}
 
     {{!-- Content --}}
     <div class="container docs-container">
-      <h1>Hardware Support</h1>
-      <p>The following table summarizes the state of the features of the {{title}}.</p>
+     <h1>Hardware Support</h1>
+      <p>The following list shows the state of the features of the {{title}}.<br>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
       {{#deviceNames}}
-        <table>
+        <div class="support-div">
         {{#with (getModel .)}}
-          <tr>
-            {{#features}}
-                <th>{{name}}</th>
-            {{/features}}
-          </tr>
-          <tr>
-            {{#features}}
-                <td class="support-col {{status}}"><span class="tooltiptext">{{status}}</span></td>
-            {{/features}}
-          </tr>
+          {{#features}}
+              <div class="install-support-col {{status}}"><span class="tooltiptext">{{status}}</span>{{name}}</div>
+          {{/features}}
         {{/with}}
-        </table>
+      </div>
       {{/deviceNames}}
-      <br/>
       <table class="table table-striped">
         <thead><tr><th>Model Number</th><th>Model Name</th><th>Codename</th></tr></thead>
         <tbody>
@@ -43,7 +35,6 @@
         </tbody>
       </table>
       {{> body }}
-      <p>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
       <h1>Choose your variant</h1>
       {{#deviceNames}}
       <div class="install-preparation-box">
@@ -58,7 +49,7 @@
         <br><br><img src="{{../assets}}/img/{{.}}.png" class="install-preparation-img"><br>
       </div>
       {{/deviceNames}}
-      <h1>Preparation</h1>
+      <h1>Prepare installation</h1>
       <div class="install-preparation-box">
         <h3>Install SPFlashTool</h3>
         SPFlashTool is a tool designed to flash Mediatek devices, you can <a href="https://spflashtool.com/download/">download its latest version from spflashtool.com</a>
@@ -77,7 +68,7 @@
         <br><br>
       </div>
 
-      <h1>Instructions</h1>
+      <h1>Install instructions</h1>
       <h3>1. Connect your watch</h3>
       Plug the USB cable of your watch to your computer, with the current operating system running.
       <h3>2. Setup SPFlashTool</h3>

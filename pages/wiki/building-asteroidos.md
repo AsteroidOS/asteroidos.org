@@ -54,7 +54,7 @@ Install the prerequisites:
 
 &nbsp;
 
-This repository basically only contains a shell script that populates `src/` with OpenEmbedded and the appropriate Asteroid layers. Then, it setups the environment for a bitbake build. The following command will setup a build for `dory` (the LG G Watch) but you can also build an image for other watches by using the corresponding codename. (Codenames can be found on the <a href="{{rel 'install'}}">Install page</a>.)
+This repository basically only contains a shell script that populates `src/` with OpenEmbedded and the appropriate Asteroid layers. Then, it setups the environment for a bitbake build. The following command will setup a build for `dory` (the LG G Watch) but you can also build an image for other watches by using the corresponding codename. (Codenames can be found on the <a href="{{rel 'watches'}}">Watches page</a>.)
 
 ```
 source ./prepare-build.sh dory # Be careful that this script must be sourced and not only ran
@@ -123,7 +123,7 @@ podman build --tag asteroidos-toolchain .
 
 Now that the container with the toolchain software has been created, we can use this to build AsteroidOS.  All of the tools are contained and run within the container, but we use a *shared volume*, essentially some drive space that both the host computer and the container can read and write, for actually creating the AsteroidOS image files.
 
-In this example, we will build AsteroidOS for `dory`(the LG G Watch).  To build for a different watch than the LG G Watch, use its corresponding codename instead of `dory` when executing the `docker run ...` command.  You can find the codenames for the supported watched on the [Install page]({{rel 'install'}}).
+In this example, we will build AsteroidOS for `dory`(the LG G Watch).  To build for a different watch than the LG G Watch, use its corresponding codename instead of `dory` when executing the `docker run ...` command.  You can find the codenames for the supported watches on the [Watches page]({{rel 'watches'}}).
 
 Assuming that you have carefully followed the instructions so far and are in the `asteroid` directory, you can now build the sofware.
 
@@ -179,4 +179,4 @@ If this step was successful, you can proceed to [Installing]({{rel 'wiki/buildin
 
 After a while, whether you build with or without containers, the generated image should be available in `build/tmp-glibc/deploy/images/dory/` (for `dory` -- for other watches, the image files are in the corresponding code word directory.)
 
-Install AsteroidOS using your usual device's instructions, which you can find on the [Install page]({{rel 'install'}}).
+Install AsteroidOS using your usual device's instructions, which you can find linked from the [Watches page]({{rel 'watches'}}).

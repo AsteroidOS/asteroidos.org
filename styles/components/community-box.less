@@ -11,23 +11,25 @@
   padding-bottom: 50px;
 }
 
+.community-box-wrapper {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 3VH;
+}
+
 // Just keeps a ratio
 .community-box-ratio {
-  display: inline-block;
+  display: inline-flex;
 
   width: 100%;
-  padding-top: 35%;
-  position: relative;
-  margin: 1%;
+  margin: 2% 1%;
   @media (min-width: @grid-float-breakpoint) {
     width: 45%;
-    padding-top: 50%;
     margin: 2%
   }
 
   @media (min-width: @screen-md-min) {
-    width: 20%;
-    padding-top: 25%;
+    width: 21%;
     margin: 2%
   }
 }
@@ -37,16 +39,18 @@
   background: #fff;
   background-color: #fff;
 
-  padding: 10px;
+  padding: 10px 20px 30px 20px;
+
+  min-height: 200px;
+  @media (min-width: @grid-float-breakpoint) {
+    min-height: 250px;
+  }
+  @media (min-width: @screen-md-min) {
+    min-height: 275px;
+  }
 
   border: none;
-  border-radius: 4px;
-
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
+  border-radius: 5px;
 
   text-align: center;
 
@@ -54,21 +58,15 @@
 }
 
 .community-box-img {
-  padding: 10px;
-
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 100%;
+  max-height: 275px;
+  display: inline-flex;
 
   @media (max-width: @grid-float-breakpoint) {
       display: none;
   }
-}
-
-.community-centered-text {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }

@@ -13,22 +13,22 @@
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
-        {{#is slug 'news'}}
+        {{#is slug 'watches'}}
         <li class="active">
-          <span>News</span>
+          <span>Watches</span>
         </li>
         {{else}}
         <li>
-          <a href="{{rel 'news'}}/">News</a>
+          <a href="{{rel 'watches'}}/">Watches</a>
         </li>
         {{/is}}
-        {{#is slug 'install'}}
+        {{#is slug 'faq'}}
         <li class="active">
-          <span>Install</span>
+          <span>FAQ</span>
         </li>
         {{else}}
         <li>
-          <a href="{{rel 'install'}}/">Install</a>
+          <a href="{{rel 'faq'}}/">FAQ</a>
         </li>
         {{/is}}
         {{#is slug 'documentation'}}
@@ -40,13 +40,13 @@
           <a href="{{rel 'wiki/documentation'}}/">Documentation</a>
         </li>
         {{/is}}
-        {{#is slug 'faq'}}
+        {{#is slug 'news'}}
         <li class="active">
-          <span>FAQ</span>
+          <span>News</span>
         </li>
         {{else}}
         <li>
-          <a href="{{rel 'faq'}}/">FAQ</a>
+          <a href="{{rel 'news'}}/">News</a>
         </li>
         {{/is}}
         {{#is slug 'community'}}
