@@ -3,7 +3,8 @@ title: Feature list
 slug: features
 layout: featuretable
 ---
-
+<br>
+<h4>This table has been updated on: <code>2023-03-16</code></h4>
 <h2>Legend</h2>
 <table>
 <tr><td class="name-col"><b>good</b></td><td class="legend-col good" /><td>The hardware exists and is working</td></tr>
