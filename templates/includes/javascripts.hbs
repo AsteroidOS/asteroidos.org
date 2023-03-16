@@ -11,3 +11,14 @@
 	var webpMachine = new webpHero.WebpMachine()
 	webpMachine.polyfillDocument()
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $('input').change(() => {
+  const first = $('input[name=OSSelector]:checked').val();
+  const second = $('input[name=MethSelector]:checked').val();
+  $("div[name=LinTemp]").toggle(first === "Lin" && second === "Temp");
+  $("div[name=LinReal]").toggle(first === "Lin" && second === "Real");
+  $("div[name=WinTemp]").toggle(first === "Win" && second === "Temp");
+  $("div[name=WinReal]").toggle(first === "Win" && second === "Real");
+});
+</script>
