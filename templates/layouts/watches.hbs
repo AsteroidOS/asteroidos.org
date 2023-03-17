@@ -19,7 +19,7 @@
       <p>Before installing AsteroidOS, make sure you are aware of the capabilities and limitations of AsteroidOS by consulting the <a href="{{rel 'faq'}}">FAQ page</a>.</p>
       <p>A summary of the state of all features of all watches AsteroidOS supports is in the <a href="{{rel 'watches/features'}}">Features Table</a>.</p>
     {{#each (getAllWithStatus "supported")}}
-      {{> installbox}}
+      {{> watch-box}}
     {{/each}}
 
     <div class="page-header">
@@ -27,7 +27,7 @@
     </div>
     <p>The AsteroidOS support level for some watches is currently deemed experimental for various reasons. They are not recommended for daily use but should still give an overall impression of AsteroidOS.</p>
     {{#each (getAllWithStatus "experimental")}}
-      {{> installbox}}
+      {{> watch-box}}
     {{/each}}
 
     {{> body }}
