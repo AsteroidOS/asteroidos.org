@@ -3,16 +3,20 @@
   <br>
   <div name="LinAdb" style="display: block">
     <h4>Debian / Ubuntu</h4>
-    <code class="install-code">sudo apt install android-tools-adb android-tools-fastboot</code>
+    <code class="install-code" id="apt" style="white-space: pre; line-height: 40px;">sudo apt install <br> android-tools-adb android-tools-fastboot</code>
+    <input type="button"  class="btn btn-primary" onclick="copyToClipboard('#apt')" value="&#x2702;"></input>
     <br><br>
     <h4>Fedora / OpenSUSE / CentOS</h4>
-    <code class="install-code">sudo dnf install android-tools</code>
+    <code class="install-code" id="dnf">sudo dnf install android-tools</code>
+    <input type="button"  class="btn btn-primary" onclick="copyToClipboard('#dnf')" value="&#x2702;"></input>
     <br><br>
     <h4>Arch and derivatives</h4>
-    <code class="install-code">sudo pacman -Sy android-tools</code>
+    <code class="install-code" id="pacman">sudo pacman -Sy android-tools</code>
+    <input type="button"  class="btn btn-primary" onclick="copyToClipboard('#pacman')" value="&#x2702;"></input>
     <br><br>
     <h4>Gentoo</h4>
-    <code class="install-code">emerge --ask dev-util/android-tools</code>
+    <code class="install-code" id="portage">emerge --ask dev-util/android-tools</code>
+    <input type="button"  class="btn btn-primary" onclick="copyToClipboard('#portage')" value="&#x2702;"></input>
   </div>
   <div name="WinAdb" style="display: none">
     Install the Google USB driver
