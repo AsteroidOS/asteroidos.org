@@ -73,13 +73,12 @@
       </div>
       <h1>Instructions</h1>
 
-      {{> install-unlock-adb-round }}
-
       {{#if installParts}}
         {{#each installParts as | partialName |}}
-          {{> (partialName)}}
+          {{> (partialName) assets=../assets deviceNames=../deviceNames}}
         {{/each}}
       {{else}}
+        {{> install-unlock-adb-round }}
         {{> fullinstall }}
         {{> tempinstall }}
       {{/if}}
