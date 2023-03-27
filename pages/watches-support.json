@@ -516,7 +516,6 @@
     },
     {
       "name":"sparrow",
-      "othernames":[ "wren" ],
       "models": [
         "Asus Zenwatch 2"
       ],
@@ -679,6 +678,32 @@
         { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"bad" },
         { "name":"GPS", "status":"bad" }
+      ]
+    },
+    {
+      "name":"wren",
+      "reference": "sparrow",
+      "models": [
+        "Asus Zenwatch 2"
+      ],
+      "modelnumbers": [
+      ],
+      "status":"supported",
+      "maintainers": [ "Lrs121", "dlandau" ],
+      "stars":4,
+      "soc":"msm",
+      "kernelversion":"3.10",
+      "androidversion":"marshmallow",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" }
       ]
     }
   ]
