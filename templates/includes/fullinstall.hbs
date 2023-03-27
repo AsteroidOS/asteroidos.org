@@ -10,11 +10,11 @@
         <ol>
           <h3><li type="a">Real installation</li></h3>
           While your watch is in bootloader mode, flash the userdata and boot partitions using Linux:
-          <pre><code class="bash">fastboot flash userdata ~/Downloads/asteroid-image-{{deviceNames.[0]}}.ext4
+          <pre><code class="bash">fastboot flash userdata ~/Downloads/asteroid-image-{{deviceNames.[0]}}.{{#if simg}}simg{{else}}ext4{{/if}}
 fastboot flash boot ~/Downloads/zImage-dtb-{{deviceNames.[0]}}.fastboot
 fastboot continue</code></pre>
 
           or using Windows:
-          <pre><code class="bash">fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.ext4
+          <pre><code class="bash">fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.{{#if simg}}simg{{else}}ext4{{/if}}
 fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceNames.[0]}}.fastboot
 fastboot continue</code></pre>
