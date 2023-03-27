@@ -46,6 +46,9 @@
         <h3>Download AsteroidOS for {{.}}</h3>
         Store the files in your "Downloads" folder so the later commands work<br><br>
         <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.ext4" role="button">asteroid-image-{{.}}.ext4</a>
+        {{#if simg}}
+        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.simg" role="button">asteroid-image-{{.}}.simg</a>
+        {{/if}}
         <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.fastboot" role="button">zImage-dtb-{{.}}.fastboot</a>
         <br><br><img src="{{../assets}}/img/{{.}}.png" class="install-preparation-img"><br>
       </div>
@@ -57,7 +60,7 @@
         <h3>Install ADB & Fastboot</h3>
         <b>On Linux systems</b> with apt package manager
         <br><br>
-        <pre><code class="bash">sudo apt install android-tools-adb android-tools-fastboot</code></pre>
+        <pre><code class="bash">sudo apt install android-tools-adb android-tools-fastboot{{#if simg}} android-tools-fsutils{{/if}}</code></pre>
         <br>
         <b>On Windows systems</b> install the Google USB driver
         <br><br>
