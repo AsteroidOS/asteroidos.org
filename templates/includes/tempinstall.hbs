@@ -1,16 +1,16 @@
   <h3><li type="a">Temporary installation</li></h3>
   Reboot to Wear OS, re-enable developer mode and ADB debugging.
   <br>Push AsteroidOS to the internal sdcard using Linux:
-  <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+  <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
 
   or using Windows:
-  <pre><code class="bash">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceName}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+  <pre><code class="bash">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
 
   Everytime you want to reboot AsteroidOS from Wear OS, run:
   <pre><code>adb reboot bootloader</code></pre>
   Then, if you are using Linux:
-  <pre><code>fastboot boot ~/Downloads/zImage-dtb-{{deviceName}}.fastboot</code></pre>
+  <pre><code>fastboot boot ~/Downloads/zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
   or on Windows:
-  <pre><code>fastboot boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceName}}.fastboot</code></pre>
+  <pre><code>fastboot boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
 </ol>
 <h2>3. Enjoy your new OS!</h2><br><br>
