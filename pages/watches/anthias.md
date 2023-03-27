@@ -1,5 +1,5 @@
 ---
 title: Asus Zenwatch 1
-deviceName: anthias
+deviceNames: [ anthias ]
 layout: aw-install
 ---

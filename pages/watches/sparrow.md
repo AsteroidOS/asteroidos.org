@@ -2,7 +2,7 @@
 title: Asus Zenwatch 2
 deviceNames: [sparrow, wren]
 label: sparrow/wren
-layout: aw-install-multi
+layout: aw-install
 ---
 <div class="callout callout-warning">
     <h4>Warning!</h4>

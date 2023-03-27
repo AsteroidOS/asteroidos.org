@@ -1,6 +1,6 @@
 ---
 title: Huawei Watch
-deviceName: sturgeon
+deviceNames: [ sturgeon ]
 section: install
 layout: aw-install
 ---

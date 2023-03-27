@@ -1,6 +1,6 @@
 ---
 title: LG Watch W7
-deviceName: narwhal
+deviceNames: [ narwhal ]
 section: install
 layout: aw-install
 ---

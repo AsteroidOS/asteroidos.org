@@ -3,7 +3,7 @@ title: Fossil Gen 4
 deviceNames: [firefish, ray]
 label: ray/firefish
 section: install
-layout: aw-install-multi
+layout: aw-install
 ---
 <div class="callout callout-info">
     <h4>Model number and variants</h4>

@@ -1,6 +1,6 @@
 ---
 title: LG G Watch R
-deviceName: lenok
+deviceNames: [ lenok ]
 layout: aw-install
 ---
 <div class="callout callout-info">

@@ -1,6 +1,6 @@
 ---
 title: Samsung Gear Live
-deviceName: sprat
+deviceNames: [ sprat ]
 layout: aw-install
 ---
 <div class="callout callout-warning">

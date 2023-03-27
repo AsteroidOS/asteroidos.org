@@ -12,33 +12,47 @@
     {{!-- Content --}}
     <div class="container docs-container">
       <h1>Hardware Support</h1>
-      <p>The following list shows the state of the features of the {{title}}.<br>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
-      <div class="support-div">
-      {{#with (getModel deviceName)}}
+      <p><br>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceNames.[0]}}{{/if}}</code> for issues specific to your watch.</p>
+      {{#deviceNames}}
+        <p>The following list shows the state of the features of the {{.}} version of this watch.</p>
+        <div class="support-div">
+        {{#with (getModel .)}}
           {{#features}}
               <div class="install-support-col {{status}}"><span class="tooltiptext">{{status}}</span>{{name}}</div>
           {{/features}}
-      {{/with}}
-      </div>
+        {{/with}}
+        </div>
+      {{/deviceNames}}
       <table class="table table-striped">
         <thead><tr><th>Model Number</th><th>Model Name</th><th>Codename</th></tr></thead>
         <tbody>
-        {{#with (getModel deviceName)}}
+      {{#deviceNames}}
+        {{#with (getModel .)}}
           {{#modelnumbers}}
             <tr><td>{{num}}</td><td>{{name}}</td><td>{{codename}}</td></tr>
           {{/modelnumbers}}
         {{/with}}
+      {{/deviceNames}}
         </tbody>
       </table>
       {{> body }}
+      {{#if deviceNames.[1]}}
+      <h1>Choose your variant</h1>
+      {{else}}
       <h1>Prepare installation</h1>
+      {{/if}}
+      {{#deviceNames}}
       <div class="install-preparation-box">
-        <h3>Download AsteroidOS for {{deviceName}}</h3>
+        <h3>Download AsteroidOS for {{.}}</h3>
         Store the files in your "Downloads" folder so the later commands work<br><br>
-        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/asteroid-image-{{deviceName}}.ext4" role="button">asteroid-image-{{deviceName}}.ext4</a>
-        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/zImage-dtb-{{deviceName}}.fastboot" role="button">zImage-dtb-{{deviceName}}.fastboot</a>
-        <br><br><img src="{{assets}}/img/{{deviceName}}.png" class="install-preparation-img"><br>
+        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.ext4" role="button">asteroid-image-{{.}}.ext4</a>
+        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.fastboot" role="button">zImage-dtb-{{.}}.fastboot</a>
+        <br><br><img src="{{../assets}}/img/{{.}}.png" class="install-preparation-img"><br>
       </div>
+      {{/deviceNames}}
+      {{#if deviceNames.[1]}}
+      <h1>Prepare installation</h1>
+      {{/if}}
       <div class="install-preparation-box">
         <h3>Install ADB & Fastboot</h3>
         <b>On Linux systems</b> with apt package manager

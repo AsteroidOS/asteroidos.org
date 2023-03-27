@@ -1,6 +1,6 @@
 ---
 title: LG Watch Urbane
-deviceName: bass
+deviceNames: [ bass ]
 section: install
 layout: aw-install
 ---

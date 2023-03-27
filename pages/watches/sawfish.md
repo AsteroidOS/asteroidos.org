@@ -1,6 +1,6 @@
 ---
 title: Huawei Watch 2
-deviceName: sawfish
+deviceNames: [ sawfish ]
 section: install
 layout: aw-install
 ---
