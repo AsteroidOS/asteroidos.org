@@ -1,5 +1,5 @@
 ---
 title: Polar M600
-deviceName: pike
+deviceNames: [ pike ]
 layout: aw-install
 ---

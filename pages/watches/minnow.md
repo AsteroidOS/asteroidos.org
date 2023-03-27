@@ -1,6 +1,6 @@
 ---
 title: Moto 360
-deviceName: minnow
+deviceNames: [ minnow ]
 layout: aw-install
 ---
 

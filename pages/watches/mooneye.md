@@ -1,6 +1,6 @@
 ---
 title: TicWatch E & S
-deviceName: mooneye
+deviceNames: [ mooneye ]
 layout: aw-install
 installParts: [ temponly, tempinstall ]
 ---

@@ -1,6 +1,6 @@
 ---
 title: Moto 360 2015 42mm/46mm
-deviceName: smelt
+deviceNames: [ smelt ]
 label: carp/smelt
 windowsDrivers: https://motorola-global-portal.custhelp.com/euf/assets/downloads/Motorola_Mobile_Drivers_64bit.msi
 section: install

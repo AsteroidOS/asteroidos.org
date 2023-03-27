@@ -1,5 +1,5 @@
 ---
 title: Asus Zenwatch 3
-deviceName: swift
+deviceNames: [ swift ]
 layout: aw-install
 ---

@@ -1,5 +1,5 @@
 ---
 title: LG G Watch
-deviceName: dory
+deviceNames: [ dory ] 
 layout: aw-install
 ---
