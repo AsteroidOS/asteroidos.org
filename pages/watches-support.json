@@ -200,7 +200,6 @@
     },
     {
       "name":"harmony",
-      "othernames":[ "inharmony" ],
       "models": [
         "MTK6580 watches"
       ],
@@ -224,6 +223,34 @@
         { "num":"D106", "name":"Diggro DI06", "codename":"inharmony" },
         { "num":"D107", "name":"older Diggro DI07", "codename":"inharmony" },
         { "num":"LES1", "name":"Lemfo LES1", "codename":"inharmony" }
+      ],
+      "status":"supported",
+      "maintainers": [ "kido" ],
+      "stars":3,
+      "soc":"mtk6580",
+      "kernelversion":"3.10",
+      "androidversion":"lollipop",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Always-on-Display", "status":"bad" },
+        { "name":"Microphone", "status":"good" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Heart Rate", "status":"bad" },
+        { "name":"USB", "status":"good" },
+        { "name":"Camera", "status":"good" }
+      ]
+    },
+    {
+      "name":"inharmony",
+      "reference": "harmony",
+      "models": [
+        "MTK6580 watches"
+      ],
+      "modelnumbers": [
       ],
       "status":"supported",
       "maintainers": [ "kido" ],
