@@ -11,7 +11,7 @@
 
     {{!-- Content --}}
     <div class="container docs-container">
-     <h1>Hardware Support</h1>
+      <h1>Hardware Support</h1>
       <p>The following list shows the state of the features of the {{title}}.<br>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
       <div class="support-div">
       {{#with (getModel deviceName)}}
@@ -33,7 +33,7 @@
       {{> body }}
       <h1>Prepare installation</h1>
       <div class="install-preparation-box">
-        <h3>Download AsteroidOS nightly builds</h3>
+        <h3>Download AsteroidOS for {{deviceName}}</h3>
         Store the files in your "Downloads" folder so the later commands work<br><br>
         <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/asteroid-image-{{deviceName}}.ext4" role="button">asteroid-image-{{deviceName}}.ext4</a>
         <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{deviceName}}/zImage-dtb-{{deviceName}}.fastboot" role="button">zImage-dtb-{{deviceName}}.fastboot</a>
