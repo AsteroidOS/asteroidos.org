@@ -11,16 +11,17 @@
 
     {{!-- Content --}}
     <div class="container docs-container">
-     <h1>Hardware Support</h1>
-      <p>The following list shows the state of the features of the {{title}}.<br>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
+      <h1>Hardware Support</h1>
+      <p><br>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
       {{#deviceNames}}
+        <p>The following list shows the state of the features of the {{.}} version of this watch.</p>
         <div class="support-div">
         {{#with (getModel .)}}
           {{#features}}
               <div class="install-support-col {{status}}"><span class="tooltiptext">{{status}}</span>{{name}}</div>
           {{/features}}
         {{/with}}
-      </div>
+        </div>
       {{/deviceNames}}
       <table class="table table-striped">
         <thead><tr><th>Model Number</th><th>Model Name</th><th>Codename</th></tr></thead>
