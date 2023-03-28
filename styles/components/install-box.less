@@ -68,3 +68,22 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.radio-install input[type="radio"] {
+  display: none;
+}
+.radio-install label {
+  display: inline-block;
+  border: 5px solid #DDD;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 4px 8px;
+  margin: 10px 5px 10px 0;
+  cursor: pointer;
+}
+.radio-install input[type="radio"]:checked+label {
+  border-color: #57E510;
+}
+.radio-install :hover {
+  border-color: #57E510;
+}
