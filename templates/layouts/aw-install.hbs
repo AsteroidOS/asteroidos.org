@@ -64,10 +64,17 @@
         {{/each}}
       {{else}}
         {{> prepare-install-adb }}
+
         {{> install-unlock-adb-round }}
+
+        {{> install-select-method }}
+
         {{> fullinstall }}
+
         {{> tempinstall }}
       {{/if}}
+
+        <h2>3. Enjoy your new OS!</h2><br><br>
 
     {{> install-problems }}
 

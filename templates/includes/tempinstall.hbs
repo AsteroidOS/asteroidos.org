@@ -1,16 +1,23 @@
-  <h3><li type="a">Temporary installation</li></h3>
-  Reboot to Wear OS, re-enable developer mode and ADB debugging.
-  <br>Push AsteroidOS to the internal sdcard using Linux:
-  <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+        <div name="LinTemp" style="display: block">
+          <h3>2.2 Temporary installation using Linux</h3>
+          Reboot to Wear OS, re-enable developer mode and ADB debugging like shown in steps 1.1.1 - 1.1.7.
+          <br>Note, you can access the Wear OS settings app via long press of the power button already while the initial pairing screen is shown.
+          <br><br>Push AsteroidOS to the internal sdcard:
+          <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+          Everytime you want to reboot into AsteroidOS from Wear OS, run:
+          <pre><code>adb reboot bootloader</code></pre>
+          Then, while the watch is in fastboot bootloader mode:
+          <pre><code>fastboot boot ~/Downloads/zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
+        </div>
 
-  or using Windows:
-  <pre><code class="bash">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
-
-  Everytime you want to reboot AsteroidOS from Wear OS, run:
-  <pre><code>adb reboot bootloader</code></pre>
-  Then, if you are using Linux:
-  <pre><code>fastboot boot ~/Downloads/zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
-  or on Windows:
-  <pre><code>fastboot boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
-</ol>
-<h2>3. Enjoy your new OS!</h2><br><br>
+        <div name="WinTemp" style="display: none">
+          <h3>2.2 Temporary installation using Windows</h3>
+          Reboot to Wear OS, re-enable developer mode and ADB debugging like shown in steps 1.1.1 - 1.1.7.
+          <br>Note, you can access the Wear OS settings app via long press of the power button already while the initial pairing screen is shown.
+          <br><br>Push AsteroidOS to the internal sdcard:
+          <pre><code class="bash">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+          Everytime you want to reboot into AsteroidOS from Wear OS, run:
+          <pre><code>adb reboot bootloader</code></pre>
+          Then, while the watch is in fastboot bootloader mode:
+          <pre><code>fastboot boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
+        </div>

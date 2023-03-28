@@ -1,20 +1,24 @@
-          <h3><li type="a">Temporary installation</li></h3>
+        <div name="LinTemp" style="display: block">
+          <h3>2.2 Temporary installation using Linux</h3>
           <b>It's important to not boot into WearOS after unlocking your bootloader!</b>
-          <br>While your watch is in bootloader mode, flash the recovery partitions using Linux:
+          <br>While your watch is in bootloader mode, flash the recovery partition:
           <pre><code>fastboot flash recovery ~/Downloads/zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
+          Then, use the top button on the watch to select "Recovery mode" and push the bottom button to boot into AsteroidOS.
+          <br>The bootlogo will popup with the message "<b>Push asteroidos.ext4 via ADB</b>" will show below the bootlogo.
+          <br>Push AsteroidOS to the internal sdcard:
+          <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/media/0/asteroidos.ext4</code></pre>
+        </div>
 
-          or on Windows:
+        <div name="WinTemp" style="display: none">
+          <h3>2.2 Temporary installation using Windows</h3>
+          <b>It's important to not boot into WearOS after unlocking your bootloader!</b>
+          <br>While your watch is in bootloader mode, flash the recovery partition:
           <pre><code>fastboot flash recovery %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
           Then, use the top button on the watch to select "Recovery mode" and push the bottom button to boot into AsteroidOS.
           <br>The bootlogo will popup with the message "<b>Push asteroidos.ext4 via ADB</b>" will show below the bootlogo.
-          <br>Push AsteroidOS to the internal sdcard using Linux:
-          <pre><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/media/0/asteroidos.ext4</code></pre>
-
-          or using Windows:
+          <br>Push AsteroidOS to the internal sdcard:
           <pre><code class="bash">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/media/0/asteroidos.ext4</code></pre>
-
+        </div>
           Everytime you want to reboot AsteroidOS:
           <br>
           While in recovery mode use the top button on the watch to select "Recovery mode" and push the bottom button to boot into the temporary image of AsteroidOS.
-          </ol>
-        <h2>3. Enjoy your new OS!</h2><br><br>
