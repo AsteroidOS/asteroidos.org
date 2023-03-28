@@ -36,10 +36,15 @@
         </tbody>
       </table>
       {{> body }}
-      {{#if deviceNames.[1]}}
-      <h1>Choose your variant</h1>
-      {{else}}
       <h1>Prepare installation</h1>
+      <h2>Prerequisites</h2>
+
+        {{> install-prep-radio-buttons }}
+
+      {{#if deviceNames.[1]}}
+      <h2>Choose your variant</h2>
+      {{else}}
+      <h2>Downloads</h2>
       {{/if}}
       {{#deviceNames}}
       <div class="install-preparation-box">
@@ -53,10 +58,6 @@
         <br><br><img src="{{../assets}}/img/{{.}}.png" class="install-preparation-img"><br>
       </div>
       {{/deviceNames}}
-      {{#if deviceNames.[1]}}
-      <h1>Prepare installation</h1>
-      {{/if}}
-
       {{#if installParts}}
         {{#each installParts as | partialName |}}
           {{> (partialName) assets=../assets deviceNames=../deviceNames simg=../simg}}
