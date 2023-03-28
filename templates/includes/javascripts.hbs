@@ -16,6 +16,8 @@
   $('input').change(() => {
   const first = $('input[name=OSSelector]:checked').val();
   const second = $('input[name=MethSelector]:checked').val();
+  $("div[name=LinAdb]").toggle(first === "Lin");
+  $("div[name=WinAdb]").toggle(first === "Win");
   $("div[name=LinTemp]").toggle(first === "Lin" && second === "Temp");
   $("div[name=LinReal]").toggle(first === "Lin" && second === "Real");
   $("div[name=WinTemp]").toggle(first === "Win" && second === "Temp");

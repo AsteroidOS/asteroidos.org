@@ -1,19 +1,31 @@
       <div class="install-preparation-box">
         <h3>Install ADB & Fastboot</h3>
-        <b>On Linux systems</b> with apt package manager
-        <br><br>
-        <pre><code class="bash">sudo apt install android-tools-adb android-tools-fastboot{{#if simg}} android-tools-fsutils{{/if}}</code></pre>
-        <br>
-        <b>On Windows systems</b> install the Google USB driver
-        <br><br>
-        <a class="btn btn-primary" href="https://developer.android.com/studio/run/win-usb" role="button" target="_blank" rel="noopener noreferrer" title="Open download source in new tab or window">Get the Google USB Driver ZIP</a>
-        <br><br>
-        Download this zip file containing ADB & Fastboot from Android SDK
-        <br><br>
-        <a class="btn btn-primary" href="https://release.asteroidos.org/tools/adb_1_0_39+fastboot+ext2simg.zip" role="button">adb-1_0_39+fastboot+ext2simg.zip</a>
-        <br><br>
-        Extract the content to a folder of your liking.<br>
-        Navigate to that folder using the Windows commandline (cmd.exe).
+        <div name="LinAdb" style="display: block">
+          <h4>Debian / Ubuntu</h4>
+          <code class="install-code" id="apt" style="white-space: pre; line-height: 40px;">sudo apt install <br> android-tools-adb android-tools-fastboot</code>
+          <input type="button"  class="btn btn-primary" onclick="copyToClipboard('#apt')" value="&#x2702;"></input>
+          <br><br>
+          <h4>Fedora / OpenSUSE / CentOS</h4>
+          <code class="install-code" id="dnf">sudo dnf install android-tools</code>
+          <input type="button"  class="btn btn-primary" onclick="copyToClipboard('#dnf')" value="&#x2702;"></input>
+          <br><br>
+          <h4>Arch and derivatives</h4>
+          <code class="install-code" id="pacman">sudo pacman -Sy android-tools</code>
+          <input type="button"  class="btn btn-primary" onclick="copyToClipboard('#pacman')" value="&#x2702;"></input>
+          <br><br>
+        </div>
+        <div name="WinAdb" style="display: none">
+          Install the Google USB driver
+          <br><br>
+          <a class="btn btn-primary" href="https://developer.android.com/studio/run/win-usb" role="button" target="_blank" rel="noopener noreferrer" title="Open download source in new tab or window">Get the Google USB Driver ZIP</a>
+          <br><br>
+          Download this zip file containing ADB & Fastboot from Android SDK
+          <br><br>
+          <a class="btn btn-primary" href="https://release.asteroidos.org/tools/adb_1_0_39+fastboot+ext2simg.zip" role="button">adb-1_0_39+fastboot+ext2simg.zip</a>
+          <br><br>
+          Extract the content to a folder of your liking.<br>
+          Navigate to that folder using the Windows commandline (cmd.exe).
+        </div>
         <br><br>
       </div>
       <h1>Instructions</h1>
