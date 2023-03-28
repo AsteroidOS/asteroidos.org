@@ -1,20 +1,23 @@
-      <h2>2. Install and boot AsteroidOS</h2>
-        <div class="callout callout-warning">
-          <h4>Choose your installation type</h4>
-          <p>You can now decide if you want to replace Wear OS definitively by flashing the system and boot image. Or try AsteroidOS as a <i>dual-boot</i> by sideloading the AsteroidOS system image and boot it only temporarily. The "real installation" provides the best experience but it is advised to make a backup of your data first. The "temporary installation" is a good way to try AsteroidOS if you don't plan to use it daily and intend to keep your previous OS.</p>
-        </div>
         {{#if deviceNames.[1]}}
         <p>Note that in the instructions below, {{deviceNames.[0]}} is used as part of several file names.  For {{deviceNames.[1]}}, simply substitute that name in each file name.</p>
         {{/if}}
+        <div name="LinReal" style="display: none">
+          <h3>2.2 Real installation using Linux</h3>
+          While your watch is in fastboot bootloader mode, flash the userdata partition:
+          <pre><code class="bash">fastboot flash userdata ~/Downloads/asteroid-image-{{deviceNames.[0]}}.{{#if simg}}simg{{else}}ext4{{/if}}</code></pre>
+          And the boot partition:
+          <pre><code class="bash">fastboot flash boot ~/Downloads/zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
+          Then continue the boot process:
+          <pre><code class="bash">fastboot continue</code></pre>
+        </div>
 
-        <ol>
-          <h3><li type="a">Real installation</li></h3>
-          While your watch is in bootloader mode, flash the userdata and boot partitions using Linux:
-          <pre><code class="bash">fastboot flash userdata ~/Downloads/asteroid-image-{{deviceNames.[0]}}.{{#if simg}}simg{{else}}ext4{{/if}}
-fastboot flash boot ~/Downloads/zImage-dtb-{{deviceNames.[0]}}.fastboot
-fastboot continue</code></pre>
+        <div name="WinReal" style="display: none">
+          <h3>2.2 Real installation using Windows</h3>
+          While your watch is in fastboot bootloader mode, flash the userdata partition:
+          <pre><code class="bash">fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.{{#if simg}}simg{{else}}ext4{{/if}}</code></pre>
+          And the boot partition:
+          <pre><code class="bash">fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
+          Then continue the boot process:
+          <pre><code class="bash">fastboot continue</code></pre>
+        </div>
 
-          or using Windows:
-          <pre><code class="bash">fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.{{#if simg}}simg{{else}}ext4{{/if}}
-fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceNames.[0]}}.fastboot
-fastboot continue</code></pre>

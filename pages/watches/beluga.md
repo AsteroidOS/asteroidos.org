@@ -3,7 +3,7 @@ title: OPPO Watch
 deviceNames: [ beluga ] 
 section: install
 layout: aw-install
-installParts: [ prepare-install-adb, install-unlock-adb-beluga, fullinstall, belugatempinstall ]
+installParts: [ prepare-install-adb, install-unlock-adb-beluga, install-select-method, fullinstall, belugatempinstall ]
 ---
 <div class="callout callout-warning">
     <h4>Warning!</h4>
