@@ -94,3 +94,12 @@
 .install-code {
   padding: 10px;
 }
+
+.clipboard-button {
+  display: none;
+
+    //Show clipboard button only while screen is larger than phone
+    @media (min-width: @screen-xs-min) {
+    display: inline-block;
+  }
+}
