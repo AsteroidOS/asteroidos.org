@@ -45,9 +45,9 @@ function copyToClipboard(element) {
   document.execCommand("copy");
   $temp.remove();
   $(document).click(function(event) {
-  if (event.target.value = "✂") event.target.value = "✔";
+  if (event.target.value == "⧉") { event.target.value = "✔"; }
   setTimeout( function() {
-        if (event.target.value = "✔") event.target.value = "✂";
+        if (event.target.value == "✔") { event.target.value = "⧉"; }
     }, 1000);
 });
 }

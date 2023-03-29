@@ -92,14 +92,37 @@
 }
 
 .install-code {
-  padding: 10px;
+  padding: 11px 14px;
+  margin-right: 2px;
+}
+
+.install-code-wrapper {
+  display: flex;
+  align-items: center;
+
+}
+
+.install-code-pre-wrapper {
+
+  @media (min-width: @screen-xs-min) {
+    display: flex;
+  }
 }
 
 .clipboard-button {
   display: none;
+  min-height: 36px;
+  min-width: 42px;
 
     //Show clipboard button only while screen is larger than phone
-    @media (min-width: @screen-xs-min) {
+  @media (min-width: @screen-xs-min) {
     display: inline-block;
+  }
+}
+.clipboard-button-wrapper {
+  display: none;
+
+  @media (min-width: @screen-xs-min) {
+    display: flex;
   }
 }

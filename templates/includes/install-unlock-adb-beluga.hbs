@@ -44,10 +44,24 @@
   <h3>1.2 Reboot to fastboot bootloader mode</h3>
   Enter the following ADB command in a terminal with your watch connected to USB.
   <a id="skip-adb-unlock"></a>
-  <pre><code class="bash">adb reboot bootloader</code></pre>
+  <div class="install-code-wrapper">
+    <div class="install-code-pre-wrapper">
+      <pre><code class="bash" id="adbreboot">adb reboot bootloader</code></pre>
+    </div>
+    <div class="clipboard-button-wrapper">
+      <input type="button"  class="btn btn-primary clipboard-button" onclick="copyToClipboard('#adbreboot')" value="&#10697;"></input>
+    </div>
+  </div>
   <h3>1.3 Use fastboot to unlock the bootloader</h3>
   With your watch now in fastboot mode, enter this command in a terminal to start the unlock procedure.
-  <pre><code class="bash">fastboot oem unlock</code></pre>
+  <div class="install-code-wrapper">
+    <div class="install-code-pre-wrapper">
+      <pre><code class="bash" id="fastbootunlock">fastboot oem unlock</code></pre>
+    </div>
+    <div class="clipboard-button-wrapper">
+      <input type="button"  class="btn btn-primary clipboard-button" onclick="copyToClipboard('#fastbootunlock')" value="&#10697;"></input>
+    </div>
+  </div>
   <h3>1.4 Follow the instructions on your watch's screen</h3><b>Please note again, this may void your warranty and will wipe your userdata.</b>
   <br><br>
 </div>
@@ -60,12 +74,26 @@
   <h3>1.b Using ADB</h3>
   Set <b>ADB-Mode</b> in the <b>USB</b> page of the AsteroidOS <b>Settings</b> app.
   <br>Enter the following ADB command in a terminal with your watch connected to USB.
-  <pre><code class="bash">adb reboot bootloader</code></pre>
+  <div class="install-code-wrapper">
+    <div class="install-code-pre-wrapper">
+      <pre><code class="bash" id="rebootadb">adb reboot bootloader</code></pre>
+    </div>
+    <div class="clipboard-button-wrapper">
+      <input type="button"  class="btn btn-primary clipboard-button" onclick="copyToClipboard('#rebootadb')" value="&#10697;"></input>
+    </div>
+  </div>
   <div name="LinuxSsh" style="display: none">
     <h3>1.c Using SSH</h3>
     Set <b>Developer-Mode</b> in the <b>USB</b> page of the AsteroidOS <b>Settings</b> app.
     <br>Enter the following SSH command in a terminal with your watch connected to USB.
-    <pre><code class="bash">ssh ceres@192.168.2.15 "reboot bootloader"</code></pre>
+    <div class="install-code-wrapper">
+      <div class="install-code-pre-wrapper">
+        <pre><code class="bash" id="rebootssh">ssh ceres@192.168.2.15 "reboot bootloader"</code></pre>
+      </div>
+      <div class="clipboard-button-wrapper">
+        <input type="button"  class="btn btn-primary clipboard-button" onclick="copyToClipboard('#rebootssh')" value="&#10697;"></input>
+      </div>
+    </div>
   </div>
   <br><br>
 </div>
