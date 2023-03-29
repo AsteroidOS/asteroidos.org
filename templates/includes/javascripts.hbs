@@ -16,12 +16,17 @@
   $('input').change(() => {
   const first = $('input[name=OSSelector]:checked').val();
   const second = $('input[name=MethSelector]:checked').val();
+  const third = $('input[name=BaseSelector]:checked').val();
   $("div[name=LinAdb]").toggle(first === "Lin");
   $("div[name=WinAdb]").toggle(first === "Win");
   $("div[name=LinTemp]").toggle(first === "Lin" && second === "Temp");
   $("div[name=LinReal]").toggle(first === "Lin" && second === "Real");
   $("div[name=WinTemp]").toggle(first === "Win" && second === "Temp");
   $("div[name=WinReal]").toggle(first === "Win" && second === "Real");
+  $("div[name=WearosAdb]").toggle(third === "WearOs");
+  $("div[name=AosAdb]").toggle(third === "Reflash");
+  $("div[name=LinuxSsh]").toggle(first === "Lin" && third === "Reflash");
+
 });
 </script>
 <script type="text/javascript">
