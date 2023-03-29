@@ -13,7 +13,32 @@
 
   border: none;
   border-radius: 4px;
+  min-height: 455px;
+  display: inline-block;
+  width: 100%;
 
+  text-align: center;
+
+  vertical-align: top;
+
+  .box-shadow(0 2px 4px rgba(0,0,0,.2));
+
+  @media (min-width: @screen-md-min) {
+    width: 45%;
+    margin: 2%
+  }
+}
+
+.install-prerequisits-box {
+  overflow: hidden; // hide the overhang on code/pre blocks
+
+  background: #fff;
+  background-color: #fff;
+
+  padding: 10px;
+
+  border: none;
+  border-radius: 4px;
   display: inline-block;
   width: 100%;
 
@@ -32,10 +57,13 @@
 // Android Wear screenshots in an install page
 .install-preparation-img {
   width: 50%;
+  max-width: 300px;
+  min-width: 250px;
+  min-height: 250px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .unlock-adb-wrapper {
