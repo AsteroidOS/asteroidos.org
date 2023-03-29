@@ -7,30 +7,36 @@
 <script src="{{ assets }}/js/application.js"></script>
 <script src="https://unpkg.com/webp-hero@0.0.2/dist-cjs/polyfills.js"></script>
 <script src="https://unpkg.com/webp-hero@0.0.2/dist-cjs/webp-hero.bundle.js"></script>
+
+<!-- Show webp images in older browsers -->
 <script>
 	var webpMachine = new webpHero.WebpMachine()
 	webpMachine.polyfillDocument()
 </script>
+
+<!-- Radio button logic for the install pages -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
   $('input').change(() => {
-  const first = $('input[name=OSSelector]:checked').val();
-  const second = $('input[name=MethSelector]:checked').val();
-  const third = $('input[name=BaseSelector]:checked').val();
-  $("div[name=LinAdb]").toggle(first === "Lin");
-  $("div[name=WinAdb]").toggle(first === "Win");
-  $("div[name=LinProblem]").toggle(first === "Lin");
-  $("div[name=WinProblem]").toggle(first === "Win");
-  $("div[name=LinTemp]").toggle(first === "Lin" && second === "Temp");
-  $("div[name=LinReal]").toggle(first === "Lin" && second === "Real");
-  $("div[name=WinTemp]").toggle(first === "Win" && second === "Temp");
-  $("div[name=WinReal]").toggle(first === "Win" && second === "Real");
-  $("div[name=WearosAdb]").toggle(third === "WearOs");
-  $("div[name=AosAdb]").toggle(third === "Reflash");
-  $("div[name=LinuxSsh]").toggle(first === "Lin" && third === "Reflash");
+  const OSSelect = $('input[name=OSSelector]:checked').val();
+  const MethSelect = $('input[name=MethSelector]:checked').val();
+  const BaseSelect = $('input[name=BaseSelector]:checked').val();
+  $("div[name=LinAdb]").toggle(OSSelect === "Lin");
+  $("div[name=WinAdb]").toggle(OSSelect === "Win");
+  $("div[name=LinProblem]").toggle(OSSelect === "Lin");
+  $("div[name=WinProblem]").toggle(OSSelect === "Win");
+  $("div[name=LinTemp]").toggle(OSSelect === "Lin" && MethSelect === "Temp");
+  $("div[name=LinReal]").toggle(OSSelect === "Lin" && MethSelect === "Real");
+  $("div[name=WinTemp]").toggle(OSSelect === "Win" && MethSelect === "Temp");
+  $("div[name=WinReal]").toggle(OSSelect === "Win" && MethSelect === "Real");
+  $("div[name=WearosAdb]").toggle(BaseSelect === "WearOs");
+  $("div[name=AosAdb]").toggle(BaseSelect === "Reflash");
+  $("div[name=LinuxSsh]").toggle(OSSelect === "Lin" && BaseSelect === "Reflash");
 
 });
 </script>
+
+<!-- Copy to clipboard button logic -->
 <script type="text/javascript">
 function copyToClipboard(element) {
   var $temp = $("<input>");
