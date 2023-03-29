@@ -19,6 +19,8 @@
   const third = $('input[name=BaseSelector]:checked').val();
   $("div[name=LinAdb]").toggle(first === "Lin");
   $("div[name=WinAdb]").toggle(first === "Win");
+  $("div[name=LinProblem]").toggle(first === "Lin");
+  $("div[name=WinProblem]").toggle(first === "Win");
   $("div[name=LinTemp]").toggle(first === "Lin" && second === "Temp");
   $("div[name=LinReal]").toggle(first === "Lin" && second === "Real");
   $("div[name=WinTemp]").toggle(first === "Win" && second === "Temp");
