@@ -23,9 +23,8 @@ code {
 // Blocks of code
 pre {
   display: block;
-  padding: ((@line-height-computed - 1) / 2);
-  margin: 0 0 (@line-height-computed / 2);
-  font-size: (@font-size-base - 1); // 14px to 13px
+  margin-right: 5px;
+  font-size: (@font-size-base); // 14px to 13px
   line-height: @line-height-base;
   word-break: break-all;
   word-wrap: break-word;
@@ -37,11 +36,10 @@ pre {
 
   // Account for some code outputs that place code tags in pre tags
   code {
-    padding: 0;
+    padding: 12px 18px;
     font-size: inherit;
     color: inherit;
-    white-space: pre; // Don't wrap text
-    background-color: transparent;
+    //white-space: pre; // Don't wrap text
     border-radius: 0;
   }
 }
