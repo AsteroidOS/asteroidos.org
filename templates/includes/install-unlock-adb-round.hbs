@@ -1,50 +1,71 @@
 {{!-- Unlock Adb Round --}}
-<h2>1. Unlock your bootloader</h2>
-<div class="callout callout-warning">
-  <h4>Note</h4>
-  Unlocking the bootloader may void your warranty.
-  <br>The unlock process will trigger a factory reset of Wear OS. Backup any data you do not want to loose.
+<div name="WearosAdb" style="display: block">
+  <h2>1. Unlock your bootloader</h2>
+  <div class="callout callout-warning">
+    <h4>Note</h4>
+    Unlocking the bootloader may void your warranty.
+    <br>The unlock process will trigger a factory reset of Wear OS. Backup any data you do not want to loose.
+  </div>
+  Installing AsteroidOS requires an unlocked bootloader.
+  <br>Accessing the fastboot bootloader menu on your watch can be achieved either by using ADB in Wear OS or by manually stopping the boot process at the fastboot screen.
+  <br>If you are familiar with the manual method to access the bootloader menu on your watch, you can <a href="#skip-adb-unlock">skip to step 1.3</a>. Those methods are explained on the <a href="https://asteroidos.org/wiki/useful-commands/#boot-to-fastboot-bootloader-menu">useful commands page</a>.
+  To boot into fastboot menu from ADB within WearOS, follow steps 1.1 to 1.2.
+  <h3>1.1 Enable ADB on your watch</h3>
+  <div class="unlock-adb-wrapper">
+    <div class="unlock-step-wrapper">
+      <img src="{{assets}}/img/install-aw-01.webp" class="unlock-step-img">
+      <div class="unlock-step-text">1. Open the <b>settings</b> app</div>
+    </div>
+    <div class="unlock-step-wrapper">
+      <img src="{{assets}}/img/install-aw-02.webp" class="unlock-step-img">
+      <div class="unlock-step-text">2. Open the <b>System</b> page</div>
+    </div>
+    <div class="unlock-step-wrapper">
+      <img src="{{assets}}/img/install-aw-03.webp" class="unlock-step-img">
+      <div class="unlock-step-text">3. Open the <b>About</b> page</div>
+    </div>
+    <div class="unlock-step-wrapper">
+      <img src="{{assets}}/img/install-aw-04.webp" class="unlock-step-img">
+      <div class="unlock-step-text">4. Tap the <b>Build number</b> 7 times to reveal Developer options</div>
+    </div>
+    <div class="unlock-step-wrapper">
+      <img src="{{assets}}/img/install-aw-01.webp" class="unlock-step-img">
+      <div class="unlock-step-text">5. Open the <b>Settings</b> app again</div>
+    </div>
+    <div class="unlock-step-wrapper">
+      <img src="{{assets}}/img/install-aw-05.webp" class="unlock-step-img">
+      <div class="unlock-step-text">6. Open the <b>Developer options</b> page</div>
+    </div>
+    <div class="unlock-step-wrapper">
+      <img src="{{assets}}/img/install-aw-06.webp" class="unlock-step-img">
+      <div class="unlock-step-text">7. Enable <b>ADB debugging</b></div>
+    </div>
+  </div>
+  <h3>1.2 Reboot to fastboot bootloader mode</h3>
+  Enter the following ADB command in a terminal with your watch connected to USB.
+  <a id="skip-adb-unlock"></a>
+  <pre><code class="bash">adb reboot bootloader</code></pre>
+  <h3>1.3 Use fastboot to unlock the bootloader</h3>
+  With your watch now in fastboot mode, enter this command in a terminal to start the unlock procedure.
+  <pre><code class="bash">fastboot oem unlock</code></pre>
+  <h3>1.4 Follow the instructions on your watch's screen</h3><b>Please note again, this may void your warranty and will wipe your userdata.</b>
+  <br><br>
 </div>
-Installing AsteroidOS requires an unlocked bootloader.
-<br>Accessing the fastboot bootloader menu on your watch can be achieved using ADB in Wear OS, as described below in step 1.1.
-<br>If you are familiar with the manual method to access the bootloader menu, you can <a href="#skip-adb-unlock">skip to step 1.3</a>. Those methods are explained on the <a href="https://asteroidos.org/wiki/useful-commands/#boot-to-fastboot-bootloader-menu">useful commands page</a>.
-<h3>1.1 Enable ADB on your watch</h3>
-<div class="unlock-adb-wrapper">
-  <div class="unlock-step-wrapper">
-    <img src="{{assets}}/img/install-aw-01.webp" class="unlock-step-img">
-    <div class="unlock-step-text">1. Open the <b>settings</b> app</div>
+<div name="AosAdb" style="display: none">
+  <h2>1. Reboot into fastboot bootloader menu</h2>
+  If your watch can be booted into AsteroidOS, all of the below described methods work to access the fastboot menu on your watch.
+  <br>In case AsteroidOS can not be booted successfully, use the manual method.
+  <h3>1.a Manual method</h3>
+  Long press the power button for up to 10 seconds until the watch reboots. Then quickly perform a key combination or sequence right when the watch powers on again, to stop the boot process at the fastboot screen. The specific key combination for your watch is explained on the <a href="https://asteroidos.org/wiki/useful-commands/#boot-to-fastboot-bootloader-menu">useful commands page</a>.
+  <h3>1.b Using ADB</h3>
+  Set <b>ADB-Mode</b> in the <b>USB</b> page of the AsteroidOS <b>Settings</b> app.
+  <br>Enter the following ADB command in a terminal with your watch connected to USB.
+  <pre><code class="bash">adb reboot bootloader</code></pre>
+  <div name="LinuxSsh" style="display: none">
+    <h3>1.c Using SSH</h3>
+    Set <b>Developer-Mode</b> in the <b>USB</b> page of the AsteroidOS <b>Settings</b> app.
+    <br>Enter the following SSH command in a terminal with your watch connected to USB.
+    <pre><code class="bash">ssh ceres@192.168.2.15 "reboot bootloader"</code></pre>
   </div>
-  <div class="unlock-step-wrapper">
-    <img src="{{assets}}/img/install-aw-02.webp" class="unlock-step-img">
-    <div class="unlock-step-text">2. Open the <b>System</b> page</div>
-  </div>
-  <div class="unlock-step-wrapper">
-    <img src="{{assets}}/img/install-aw-03.webp" class="unlock-step-img">
-    <div class="unlock-step-text">3. Open the <b>About</b> page</div>
-  </div>
-  <div class="unlock-step-wrapper">
-    <img src="{{assets}}/img/install-aw-04.webp" class="unlock-step-img">
-    <div class="unlock-step-text">4. Tap the <b>Build number</b> 7 times to reveal Developer options</div>
-  </div>
-  <div class="unlock-step-wrapper">
-    <img src="{{assets}}/img/install-aw-01.webp" class="unlock-step-img">
-    <div class="unlock-step-text">5. Open the <b>Settings</b> app again</div>
-  </div>
-  <div class="unlock-step-wrapper">
-    <img src="{{assets}}/img/install-aw-05.webp" class="unlock-step-img">
-    <div class="unlock-step-text">6. Open the <b>Developer options</b> page</div>
-  </div>
-  <div class="unlock-step-wrapper">
-    <img src="{{assets}}/img/install-aw-06.webp" class="unlock-step-img">
-    <div class="unlock-step-text">7. Enable <b>ADB debugging</b></div>
-  </div>
+  <br><br>
 </div>
-<h3>1.2 Reboot to fastboot bootloader mode</h3>
-Enter the following ADB command in a terminal with your watch connected to USB.
-<a id="skip-adb-unlock"></a>
-<br><pre><code class="bash">adb reboot bootloader</code></pre>
-<h3>1.3 Use fastboot to unlock the bootloader</h3>
-With your watch now in fastboot mode, enter this command in a terminal to start the unlock procedure.
-<pre><code class="bash">fastboot oem unlock</code></pre>
-<h3>1.4 Follow the instructions on your watch's screen</h3><b>Please note again, this may void your warranty and will wipe your userdata.</b>
-<br><br>
