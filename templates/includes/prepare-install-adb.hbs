@@ -1,18 +1,34 @@
       <div class="install-preparation-box">
         <h3>Install ADB & Fastboot</h3>
+        <br>
         <div name="LinAdb" style="display: block">
           <h4>Debian / Ubuntu</h4>
-          <code class="install-code" id="apt" style="white-space: pre; line-height: 40px;">sudo apt install <br> android-tools-adb android-tools-fastboot</code>
-          <input type="button"  class="btn btn-primary clipboard-button" onclick="copyToClipboard('#apt')" value="&#10697;"></input>
-          <br><br>
+          <div class="install-code-wrapper" style="justify-content: center;">
+            <div class="install-code-pre-wrapper">
+              <pre class="install-code-pre" style="border-radius: 4px;"><code id="apt">sudo apt install android-tools-adb <br>android-tools-fastboot</code></pre>
+            </div>
+            <div class="clipboard-button-wrapper">
+              <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#apt')" value="&#10697;"></input>
+            </div>
+          </div>
           <h4>Fedora / OpenSUSE / CentOS</h4>
-          <code class="install-code" id="dnf">sudo dnf install android-tools</code>
-          <input type="button"  class="btn btn-primary clipboard-button" onclick="copyToClipboard('#dnf')" value="&#10697;"></input>
-          <br><br>
+          <div class="install-code-wrapper" style="justify-content: center;">
+            <div class="install-code-pre-wrapper">
+              <pre class="install-code-pre"><code id="dnf">sudo dnf install android-tools</code></pre>
+            </div>
+            <div class="clipboard-button-wrapper">
+             <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#dnf')" value="&#10697;"></input>
+            </div>
+          </div>
           <h4>Arch and derivatives</h4>
-          <code class="install-code" id="pacman">sudo pacman -Sy android-tools</code>
-          <input type="button"  class="btn btn-primary clipboard-button" onclick="copyToClipboard('#pacman')" value="&#10697;"></input>
-          <br><br>
+          <div class="install-code-wrapper" style="justify-content: center;">
+            <div class="install-code-pre-wrapper">
+              <pre class="install-code-pre"><code id="pacman">sudo pacman -Sy android-tools</code></pre>
+            </div>
+            <div class="clipboard-button-wrapper">
+             <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#pacman')" value="&#10697;"></input>
+            </div>
+          </div>
         </div>
         <div name="WinAdb" style="display: none">
           Install the Google USB driver

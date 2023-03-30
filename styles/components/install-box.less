@@ -55,7 +55,7 @@
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  display: block;>
 }
 
 // Android Wear screenshots in an install page
@@ -92,8 +92,10 @@
 }
 
 .install-code {
-  padding: 11px 14px;
-  margin-right: 2px;
+  padding: 10px 17px;
+  margin-right: -10px;
+  border: 1px solid #CCC;
+  line-height: 44px;
 }
 
 .install-code-wrapper {
@@ -109,16 +111,28 @@
   }
 }
 
+.install-code-pre {
+  border-radius: 4px;
+  margin-right: 0px;
+
+  @media (min-width: @screen-xs-min) {
+    border-radius: 4px 0 0 4px;
+  }
+}
+
 .clipboard-button {
   display: none;
   min-height: 36px;
   min-width: 42px;
+  margin: 0 -20px 0 0;
+  border-radius: 0 4px 4px 0;
 
     //Show clipboard button only while screen is larger than phone
   @media (min-width: @screen-xs-min) {
     display: inline-block;
   }
 }
+
 .clipboard-button-wrapper {
   display: none;
 
