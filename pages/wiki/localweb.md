@@ -5,10 +5,22 @@ layout: documentation
 
 This web site can be built and run locally within a software container, such as those created by *container engines* like [Docker](https://www.docker.com/) or [podman](https://podman.io/). One reason for doing this is to be able to install and build the documentation without having to load the collection of tools on your real computer. Building and running a documentation server in a local container is the topic of this page.
 
-# Building the web site
+# Rootless setup
 ---
 
 This documentation will use `podman`, but the commands for `docker` are identical. If you wish to use `docker` instead of `podman`, just substitute `docker` for `podman` in each of the commands shown below.
+The methods to build and use containers without root privileges differ however.
+- [How to install docker in rootless mode](https://docs.docker.com/engine/security/rootless/) is described in the docker documentation.
+- Podman can be used rootless by users that have a UID/GID range defined. This can be done using the following command for your USERNAME.
+``` Bash
+sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 USERNAME
+```
+If you decide to not set up rootless container use, prepend `sudo` to the commands or log in as `root`.
+
+# Building the web site
+---
+
+
 
 ``` Bash
 podman build -t asteroidos-web \
