@@ -13,7 +13,7 @@
 
   border: none;
   border-radius: 4px;
-  min-height: 455px;
+  min-height: 485px;
   display: inline-block;
   width: 100%;
 
@@ -56,14 +56,23 @@
 
 // Android Wear screenshots in an install page
 .install-preparation-img {
-  width: 50%;
-  max-width: 300px;
-  min-width: 250px;
-  min-height: 250px;
+  width: 300px;
+  height: 300px;
+
   margin-left: auto;
   margin-right: auto;
   padding-top: 5px;
   padding-bottom: 10px;
+
+  @media (min-width: @screen-md-min) {
+    width: 240px;
+    height: 240px;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .unlock-adb-wrapper {
