@@ -11,7 +11,7 @@ This web site can be built and run locally within a software container, such as 
 This documentation will use `podman`, but the commands for `docker` are identical. If you wish to use `docker` instead of `podman`, just substitute `docker` for `podman` in each of the commands shown below.
 The methods to build and use containers without root privileges differ however.
 - [How to install docker in rootless mode](https://docs.docker.com/engine/security/rootless/) is described in the docker documentation.
-- Podman can be used rootless by users that have a UID/GID range defined. This can be done using the following command for your USERNAME.
+- Podman can be used rootless by users that have a UID/GID range defined. This can be done using the following command for your USERNAME, as [described in the podman documentation](https://github.com/containers/podman/blob/main/docs/tutorials/rootless_tutorial.md).
 ``` Bash
 sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 USERNAME
 ```
