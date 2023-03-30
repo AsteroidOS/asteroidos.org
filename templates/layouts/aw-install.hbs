@@ -46,24 +46,15 @@
       {{else}}
       <h2>Downloads</h2>
       {{/if}}
-      {{#deviceNames}}
-      <div class="install-preparation-box">
-        <h3>Download AsteroidOS for {{.}}</h3>
-        Store the files in your "Downloads" folder so the later commands work<br><br>
-        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.ext4" role="button">asteroid-image-{{.}}.ext4</a>
-        {{#if simg}}
-        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.simg" role="button">asteroid-image-{{.}}.simg</a>
-        {{/if}}
-        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.fastboot" role="button">zImage-dtb-{{.}}.fastboot</a>
-        <br><br><img src="{{../assets}}/img/{{.}}.png" class="install-preparation-img"><br>
-      </div>
-      {{/deviceNames}}
+
+        {{> install-prepare-downloads}}
+
       {{#if installParts}}
         {{#each installParts as | partialName |}}
           {{> (partialName) assets=../assets deviceNames=../deviceNames simg=../simg}}
         {{/each}}
       {{else}}
-        {{> prepare-install-adb }}
+        {{> install-prepare-adb }}
 
         {{> install-unlock-adb-round }}
 
