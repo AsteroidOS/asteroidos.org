@@ -3,12 +3,24 @@ title: Local version of asteroidos.org
 layout: documentation
 ---
 
-This web site can be built and run locally within a software container, such as those created by *container engines* like [Docker](https://www.docker.com/) or [podman](https://podman.io/). One reason for doing this is to be able to install and build the documentation without having to load the collection of tools on your real computer. Building and running a documentation server in a local container is the topic of this page.
+This web site can be built and run locally within a software container, such as those created by *container engines* like [Docker](https://www.docker.com/) or [podman](https://podman.io/). One reason for doing this is to be able to install and build the documentation without having to load the collection of tools on your real computer. Building and running a documentation server in a local container is the topic of this page.\
+This documentation will use `podman`, but the commands for `docker` are identical. If you wish to use `docker` instead of `podman`, just substitute `docker` for `podman` in each of the commands shown below.
+
+# Rootless setup
+---
+
+In case the commands described in the next sections fail, try to either prepend `sudo` to them or log in as root via e.g `su root`.\
+You can manually set up rootless container use on a linux distribution that has not automatically done this for you while installing the container engine, by following the official instructions.
+- [How to install docker in rootless mode](https://docs.docker.com/engine/security/rootless/) is described in the docker documentation.
+- Podman can be used rootless by users that have a UID/GID range defined. This can be done using the following command for your USERNAME, as [described in the podman documentation](https://github.com/containers/podman/blob/main/docs/tutorials/rootless_tutorial.md).
+``` Bash
+sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 USERNAME
+```
 
 # Building the web site
 ---
 
-This documentation will use `podman`, but the commands for `docker` are identical. If you wish to use `docker` instead of `podman`, just substitute `docker` for `podman` in each of the commands shown below.
+
 
 ``` Bash
 podman build -t asteroidos-web \
