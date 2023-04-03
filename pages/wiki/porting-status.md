@@ -79,6 +79,7 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 &nbsp;
 ### Impossible ports due to unmet hardware dependencies
 
+- Fitbit watches & smartbands
 - Honor Magic Watch 2
 - Huawei Watch GT Series
 - OPPO Watch Free
