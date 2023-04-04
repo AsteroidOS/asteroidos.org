@@ -67,9 +67,6 @@ No. AsteroidOS does not collect any tracking data and you don't need to use or e
 # Can my watch run AsteroidOS?
 Maybe. Check the [Watches]({{rel 'watches'}}) page. It lists all devices supported by AsteroidOS. The star rating indicates the current level of support for each device's hardware features. Watches with at least 3 stars can be considered suitable for everyday use.
 
-# Can I compile AsteroidOS myself?
-If you do not want to flash a prebuilt image onto your watch, review the [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}) page for detailed instructions on how to compile AsteroidOS yourself.
-
 # My watch isn't listed.
 Maybe  you can still run Asteroid OS in the future. See the [porting status]({{rel 'wiki/porting-status'}}) page for details on what kinds of watches might be supported in the future and what the general requirements are for running AsteroidOS.\
 If you are interested in porting AsteroidOS to a new watch yourself, please read the [Porting Guide]({{rel 'wiki/porting-guide'}}) page and contact us via our [matrix channel]({{rel 'contact'}}) in case of possible questions.
@@ -82,6 +79,12 @@ Or check the [features table]({{rel 'watches/features'}}) to see a matrix of all
 Yes, very easily if you choose the "temporary install" option.\
 For most watches, you may choose to only temporarily install AsteroidOS alongside the existing OS, called a "dual-boot". When doing so, the `asteroidos.ext4` image is pushed to the userdata partition using ADB. With no alteration to the previous OS. The downside of this method being, AsteroidOS needs to be manually booted using `fastboot boot boot-image.fastboot` while connected via USB, after every reboot or shutdown. Else, the previous OS will start up as usual.\
 In case you decide to replace your previous OS using the full install method, to make the watch boot into AsteroidOS without manual intervention. It is advised that you make a backup of your <b>userdata</b> and <b>boot</b> partitions before flashing AsteroidOS. Only then, you will be able to re-flash those backups to restore the previous OS later.
+
+# When can i expect updates?
+The complete rebuild of all packages for all Watch system images and architectures takes almost a week. The build process is started at the beginning of a week. Therefore, it can be expected that new nightlies will be available on the weekend. These will contain all the changes that have been merged up to the start of the build process.
+
+# Can I compile AsteroidOS myself?
+If you do not want to flash a prebuilt image onto your watch or wait for the nightlies to be updated, review the [Building AsteroidOS]({{rel 'wiki/building-asteroidos'}}) page for detailed instructions on how to compile AsteroidOS yourself.
 
 # My question is not answered.
 There are many additional resources. The [Documentation]({{rel 'wiki/documentation'}}) page should be your first stop. It has a lot of useful information about both using and developing for AsteroidOS. If you can't find your answer on this web site, see [Contact]({{rel 'contact'}}).
