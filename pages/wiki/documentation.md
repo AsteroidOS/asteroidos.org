@@ -9,7 +9,7 @@ layout: documentation
       <h1 id="users">Users</h1>
     </div>
     <ul>
-      <li><a href="{{rel 'wiki/backup'}}">Backup Wear OS</a></li>
+      <li><a href="{{rel 'wiki/backup'}}">Backup Guide</a></li>
       <li><a href="{{rel 'wiki/synchronization-clients'}}">Synchronization Clients</a></li>
       <li><a href="{{rel 'wiki/porting-status'}}">Porting Status</a></li>
       <li><a href="{{rel 'wiki/useful-commands'}}">Useful Commands</a></li>
