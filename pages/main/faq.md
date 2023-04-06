@@ -78,7 +78,7 @@ Or check the [features table]({{rel 'watches/features'}}) to see a matrix of all
 # Will I be able to revert to the previous operating system?
 Yes, very easily if you choose the "temporary install" option.\
 For most watches, you may choose to only temporarily install AsteroidOS alongside the existing OS, called a "dual-boot". When doing so, the `asteroidos.ext4` image is pushed to the userdata partition using ADB. With no alteration to the previous OS. The downside of this method being, AsteroidOS needs to be manually booted using `fastboot boot boot-image.fastboot` while connected via USB, after every reboot or shutdown. Else, the previous OS will start up as usual.\
-In case you decide to replace your previous OS using the full install method, to make the watch boot into AsteroidOS without manual intervention. It is advised that you make a backup of your <b>userdata</b> and <b>boot</b> partitions before flashing AsteroidOS. Only then, you will be able to re-flash those backups to restore the previous OS later.
+In case you decide to replace your previous OS using the full install method, to make the watch boot into AsteroidOS without manual intervention. It is advised that you [make a backup of your entire watch](https://asteroidos.org/wiki/backup/) before flashing AsteroidOS. Only then, you will be able to re-flash those backups to restore the previous OS later.
 
 # When can i expect updates?
 The complete rebuild of all packages for all Watch system images and architectures takes almost a week. The build process is started at the beginning of a week. Therefore, it can be expected that new nightlies will be available on the weekend. These will contain all the changes that have been merged up to the start of the build process.
