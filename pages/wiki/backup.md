@@ -13,7 +13,7 @@ Follow the install instructions for a temporary installation. Once booted into A
 
 ### 2. Enable SSH or ADB
 
-Open the settings app and the USB page. Select Developer mode to enable SSH. Or ADB mode to use ADB connection.
+Open the settings app and the USB page. Select SSH Mode to enable SSH. Or ADB Mode to use ADB connection.
 
 ### 3. Copy mmcblk0 into a local image file
 
