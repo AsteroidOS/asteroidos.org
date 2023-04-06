@@ -78,7 +78,7 @@ In AsteroidOS, the USB mode is handled by a daemon named usb_moded. This daemon 
 ```
 usb_moded_util -m # Returns a list of supported modes
 usb_moded_util -q # Shows the currently used USB mode
-usb_moded_util -s adb_mode # Set USB to the ADB mode
+usb_moded_util -s adb_mode # Set USB to the ADB Mode
 ```
 
 # Screen

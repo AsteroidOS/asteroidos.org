@@ -84,7 +84,7 @@ Do not ever forget to brag all over the internet with your cool new watchface an
 
 Use the `./watchface` script to copy your watchface creation to the watch using either SCP or ADB commands.
 
-Connect your AsteroidOS Watch, configured to either ADB Mode (ADB transfer) or Developer Mode (SCP transfer) in Settings &rarr; USB.
+Connect your AsteroidOS Watch, configured to either ADB Mode (ADB transfer) or SSH Mode (SCP transfer) in Settings &rarr; USB.
 
 Start `./watchface` to use SCP commands or `./watchface -a` for ADB commands.
 
