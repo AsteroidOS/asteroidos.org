@@ -52,7 +52,8 @@ There are a great many more *ideas* for apps than apps at the moment. Some of th
 Some of these are being worked on, and others are just ideas at this point. If you think you might like to contribute, see our [GitHub repository](https://github.com/AsteroidOS/asteroid/issues) and the [Contact]({{rel 'contact'}}) page. There are many opportunities for creativity!
 
 # Is AsteroidOS based on Android?
-No. AsteroidOS uses [libhybris](https://en.wikipedia.org/wiki/Hybris_(software)) to simplify porting to most Android and WearOS watches, but it is not Android nor is it WearOS or a derivative of either.
+No. AsteroidOS uses [libhybris](https://en.wikipedia.org/wiki/Hybris_(software)) to simplify porting to most Android and WearOS watches, but it is not Android nor is it WearOS or a derivative of either.\
+Hardware drivers on modern smartwatches are specifically tailored for Android and WearOS devices. These drivers are closely tied to the hardware and are not compatible with other operating systems, which usually makes porting to alternative platforms a complex and time-consuming process. Libhybris allows AsteroidOS to leverage the proprietary binary drivers and thus greatly helps porting Linux to Android based hardware.
 
 # Can I run WearOS applications?
 No. [WearOS](https://en.wikipedia.org/wiki/Wear_OS) is a version of Android that runs on wearable devices. AsteroidOS is a Linux distribution that does not run Android and therefore cannot run either Android or WearOS applications.
