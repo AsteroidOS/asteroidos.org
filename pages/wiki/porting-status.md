@@ -12,7 +12,7 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 ### Supported watches
 
 {{#each (getAllWithStatus "supported")}}
-- <a href="../../install/{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}">{{models}} ({{name}})</a>
+- <a href="../../watches/{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}">{{models}} ({{name}})</a>
 {{#if maintainers}}
   - maintained by {{#maintainers}}{{#if @index}}, {{/if}}{{.}}{{/maintainers}}
 {{else}}
@@ -23,7 +23,7 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 ### Experimental watches
 
 {{#each (getAllWithStatus "experimental")}}
-- <a href="../../install/{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}">{{models}} ({{name}})</a>
+- <a href="../../watches/{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}">{{models}} ({{name}})</a>
 {{#if maintainers}}
   - maintained by {{maintainers}}
 {{else}}
