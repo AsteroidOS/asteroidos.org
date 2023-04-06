@@ -1,5 +1,5 @@
 ---
-title: Manual Watchface and Package Installation
+title: Watchface and Package Installation
 layout: documentation
 ---
 

@@ -16,7 +16,7 @@ layout: documentation
       <li><a href="{{rel 'wiki/ssh'}}">SSH</a></li>
       <li><a href="{{rel 'wiki/ip-connection'}}">IP Connection</a></li>
       <li><a href="{{rel 'wiki/update-asteroidos'}}">Update AsteroidOS</a></li>
-      <li><a href="{{rel 'wiki/package-installation'}}">Manual Watchface and Package Installation</a></li>
+      <li><a href="{{rel 'wiki/package-installation'}}">Watchface and Package Installation</a></li>
       <li><a href="{{rel 'wiki/translating-asteroidos'}}">Translating AsteroidOS</a></li>
       <li><a href="{{rel 'wiki/licenses'}}">Licenses</a></li>
       <li><a href="{{rel 'wiki/code-of-conduct'}}">Code of Conduct</a></li>
