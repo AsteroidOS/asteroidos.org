@@ -33,14 +33,4 @@ Downloading https://release.asteroidos.org/nightlies/ipk/all/Packages.gz.
 
 # Reflash AsteroidOS
 
-When no IP connection can be established on your watch, the easiest way to upgrade is to reflash the entire OS following the usual [installation instructions](https://asteroidos.org/install/).
-
-You will first have to reboot into fastboot, which is slightly different under AsteroidOS than it is under WearOS.
-
-First, go to Settings -> USB and make sure your device is in either `Developer Mode` or `ADB Mode` and connect it to your computer.
-
-If your watch is in Developer Mode, run the following command on your computer: ` ssh root@192.168.2.15 'reboot -f bootloader'`.
-
-If your watch is in ADB Mode, run the following command on your computer: `adb shell reboot -f bootloader`.
-
-In case your watch does not successfully boot, try the manual methods to reach the fastboot (bootloader) menu described in the last section of the [useful commands page]({{rel 'wiki/useful-commands/).'}}
+If no IP connection can be established on your watch, the easiest way to upgrade is to reflash the entire operating system following the usual [installation instructions](https://asteroidos.org/watches/). Make sure you select AsteroidOS in the Prerequisites checkbox to see the appropriate instructions.
