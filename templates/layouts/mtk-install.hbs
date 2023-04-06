@@ -14,7 +14,7 @@
       <h1>Hardware Support</h1>
       <p><br>You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceName}}{{/if}}</code> for issues specific to your watch.</p>
       {{#deviceNames}}
-        <p>The following list shows the state of the features of the {{.}} version of this watch.</p>
+        <p>The following list shows the state of the features of the <code>{{.}}</code> version of this watch.</p>
         <div class="support-div">
         {{#with (getModel .)}}
           {{#features}}
