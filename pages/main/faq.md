@@ -37,8 +37,8 @@ The following apps are delivered with an AsteroidOS installation:
 A store to install apps does not yet exist. But this is something that is being considered for future implementation. There are a number of contributed apps that are not installed in the default image. These can be [installed manually]({{rel 'wiki/package-installation/#packageinstallation'}}) if desired.
 
 # Where can I find a phone synchronization app?
-A phone is not *required* to use AsteroidOS, but several convenient functions are available when an AsteroidOS watch is paired with a *synchronization client*.
- - Android users can use "AsteroidOSSync" which is available for [download on F-Droid](https://f-droid.org/packages/org.asteroidos.sync/)
+A phone is not *required* to use AsteroidOS, but several convenient functions are available when an AsteroidOS watch is paired with one of the [synchronization clients listed in the documentation](https://asteroidos.org/wiki/synchronization-clients/).
+ - Android users can use "AsteroidOSSync" which is available for [download on F-Droid](https://f-droid.org/packages/org.asteroidos.sync/). Or try [Gadgetbridge from F-Droid](https://f-droid.org/packages/nodomain.freeyourgadget.gadgetbridge/) with initial AsteroidOS support.
  - Ubuntu Touch users can download ["Telescope" from OpenStore](https://open-store.io/app/telescope.asteroidos)
  - There is currently no app for iPhone, however notifications can be shared from an iPhone to the watch. See [this page]({{rel 'wiki/synchronization-clients'}}) for details.
 
