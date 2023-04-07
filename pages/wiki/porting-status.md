@@ -11,25 +11,77 @@ The WearOS smartwatches are the most widespread and easy to support. The source 
 
 ### Supported watches
 
-{{#each (getAllWithStatus "supported")}}
-- <a href="../../watches/{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}">{{models}} ({{name}})</a>
-{{#if maintainers}}
-  - maintained by {{#maintainers}}{{#if @index}}, {{/if}}{{.}}{{/maintainers}}
-{{else}}
-  - *unmaintained*
-{{/if}}
-{{/each}}
+<table class="table table-striped">
+  <tr>
+  <thead>
+    <th>Model Name</th>
+    <th>Codename</th>
+    <th>Support</th>
+    <th>Active maintainer</th>
+    <th>Contributing porter</th>
+  </thead>
+  </tr>
+  {{#each (getAllWithStatus "supported")}}
+  <tr>
+    <td>
+      <a href="../../watches/{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}">{{models}}</a>
+    </td>
+    <td>{{name}}</td>
+    <td>{{#starString stars 5}}{{/starString}}</td>
+    <td>
+      {{#if maintainers}}
+        {{#maintainers}}{{#if @index}}, {{/if}}{{.}}{{/maintainers}}
+      {{else}}
+        *unmaintained*
+      {{/if}}
+    </td>
+    <td>
+      {{#if contributors}}
+        {{#contributors}}{{#if @index}}, {{/if}}{{.}}{{/contributors}}
+      {{else}}
+        &nbsp;
+      {{/if}}
+    </td>
+  </tr>
+  {{/each}}
+</table>
 
 ### Experimental watches
 
-{{#each (getAllWithStatus "experimental")}}
-- <a href="../../watches/{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}">{{models}} ({{name}})</a>
-{{#if maintainers}}
-  - maintained by {{maintainers}}
-{{else}}
-  - *unmaintained*
-{{/if}}
-{{/each}}
+<table class="table table-striped">
+  <tr>
+  <thead>
+    <th>Model Name</th>
+    <th>Codename</th>
+    <th>Support</th>
+    <th>Active maintainer</th>
+    <th>Contributing porter</th>
+  </thead>
+  </tr>
+  {{#each (getAllWithStatus "experimental")}}
+  <tr>
+    <td>
+      <a href="../../watches/{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}">{{models}}</a>
+    </td>
+    <td>{{name}}</td>
+    <td>{{#starString stars 5}}{{/starString}}</td>
+    <td>
+      {{#if maintainers}}
+        {{#maintainers}}{{#if @index}}, {{/if}}{{.}}{{/maintainers}}
+      {{else}}
+        *unmaintained*
+      {{/if}}
+    </td>
+    <td>
+      {{#if contributors}}
+        {{#contributors}}{{#if @index}}, {{/if}}{{.}}{{/contributors}}
+      {{else}}
+        &nbsp;
+      {{/if}}
+    </td>
+  </tr>
+  {{/each}}
+</table>
 
 &nbsp;
 ### Unreleased early ports with initial support
