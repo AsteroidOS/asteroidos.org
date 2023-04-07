@@ -37,8 +37,8 @@ The following apps are delivered with an AsteroidOS installation:
 A store to install apps does not yet exist. But this is something that is being considered for future implementation. There are a number of contributed apps that are not installed in the default image. These can be [installed manually]({{rel 'wiki/package-installation/#packageinstallation'}}) if desired.
 
 # Where can I find a phone synchronization app?
-A phone is not *required* to use AsteroidOS, but several convenient functions are available when an AsteroidOS watch is paired with a *synchronization client*.
- - Android users can use "AsteroidOSSync" which is available for [download on F-Droid](https://f-droid.org/packages/org.asteroidos.sync/)
+A phone is not *required* to use AsteroidOS, but several convenient functions are available when an AsteroidOS watch is paired with one of the [synchronization clients listed in the documentation](https://asteroidos.org/wiki/synchronization-clients/).
+ - Android users can use "AsteroidOSSync" which is available for [download on F-Droid](https://f-droid.org/packages/org.asteroidos.sync/). Or try [Gadgetbridge from F-Droid](https://f-droid.org/packages/nodomain.freeyourgadget.gadgetbridge/) with initial AsteroidOS support.
  - Ubuntu Touch users can download ["Telescope" from OpenStore](https://open-store.io/app/telescope.asteroidos)
  - There is currently no app for iPhone, however notifications can be shared from an iPhone to the watch. See [this page]({{rel 'wiki/synchronization-clients'}}) for details.
 
@@ -52,7 +52,8 @@ There are a great many more *ideas* for apps than apps at the moment. Some of th
 Some of these are being worked on, and others are just ideas at this point. If you think you might like to contribute, see our [GitHub repository](https://github.com/AsteroidOS/asteroid/issues) and the [Contact]({{rel 'contact'}}) page. There are many opportunities for creativity!
 
 # Is AsteroidOS based on Android?
-No. AsteroidOS uses [libhybris](https://en.wikipedia.org/wiki/Hybris_(software)) to simplify porting to most Android and WearOS watches, but it is not Android nor is it WearOS or a derivative of either.
+No. AsteroidOS uses [libhybris](https://en.wikipedia.org/wiki/Hybris_(software)) to simplify porting to most Android and WearOS watches, but it is not Android nor is it WearOS or a derivative of either.\
+Hardware drivers on modern smartwatches are specifically tailored for Android and WearOS devices. These drivers are closely tied to the hardware and are not compatible with other operating systems, which usually makes porting to alternative platforms a complex and time-consuming process. Libhybris allows AsteroidOS to leverage the proprietary binary drivers and thus greatly helps porting Linux to Android based hardware.
 
 # Can I run WearOS applications?
 No. [WearOS](https://en.wikipedia.org/wiki/Wear_OS) is a version of Android that runs on wearable devices. AsteroidOS is a Linux distribution that does not run Android and therefore cannot run either Android or WearOS applications.
@@ -78,7 +79,7 @@ Or check the [features table]({{rel 'watches/features'}}) to see a matrix of all
 # Will I be able to revert to the previous operating system?
 Yes, very easily if you choose the "temporary install" option.\
 For most watches, you may choose to only temporarily install AsteroidOS alongside the existing OS, called a "dual-boot". When doing so, the `asteroidos.ext4` image is pushed to the userdata partition using ADB. With no alteration to the previous OS. The downside of this method being, AsteroidOS needs to be manually booted using `fastboot boot boot-image.fastboot` while connected via USB, after every reboot or shutdown. Else, the previous OS will start up as usual.\
-In case you decide to replace your previous OS using the full install method, to make the watch boot into AsteroidOS without manual intervention. It is advised that you make a backup of your <b>userdata</b> and <b>boot</b> partitions before flashing AsteroidOS. Only then, you will be able to re-flash those backups to restore the previous OS later.
+In case you decide to replace your previous OS using the full install method, to make the watch boot into AsteroidOS without manual intervention. It is advised that you [make a backup of your entire watch](https://asteroidos.org/wiki/backup/) before flashing AsteroidOS. Only then, you will be able to re-flash those backups to restore the previous OS later.
 
 # When can i expect updates?
 The complete rebuild of all packages for all Watch system images and architectures takes almost a week. The build process is started at the beginning of a week. Therefore, it can be expected that new nightlies will be available on the weekend. These will contain all the changes that have been merged up to the start of the build process.
