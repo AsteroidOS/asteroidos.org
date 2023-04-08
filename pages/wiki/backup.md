@@ -24,7 +24,7 @@ Navigate to a folder where you want to store the backup. Or add a full path befo
 
 #### 3.b Backup using ADB
 
-    adb pull /dev/mmcblk0/watch-backup.img
+    adb pull /dev/mmcblk0/ watch-backup.img
 
 The copy process might take up to an hour on watches with 8GB storage.
 
