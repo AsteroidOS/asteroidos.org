@@ -40,3 +40,4 @@ The following font types are used in and distributed with an AsteroidOS system i
 | LeagueSpartan, Noto Sans, Symbola and Xolonium | are licensed under the SIL Open Font License v1.1. You can find a copy of this license in the COPYING-OFL file.|
 | PT Sans | The font "PT Sans" is licensed under SIL Open Font License and was created by Designed by Alexandra Korolkova, Olga Umpeleva and Vladimir Yefimov and released by ParaType in 2009. [license](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) |
 | Signika | The font "Signika" is licensed under SIL Open Font License and was [created by Ancymonic](https://github.com/Ancymonic/Signika). [license](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) |
+| Outfit | The font "Outfit" is licensed under SIL Open Font License and was created by [Rodrigo Fuenzalida](https://fonts.google.com/?query=Rodrigo+Fuenzalida). [license](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) |
