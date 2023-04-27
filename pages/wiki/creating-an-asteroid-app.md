@@ -209,6 +209,13 @@ If you want to disable screen locking for easier development you can enable the 
 mcetool -D on
 ```
 
+## Updating language translation files
+To update language translation files, and assuming you have all source files in `src` and translation files in `i18n` (which is short for "internationalization"), you can use this command to update the files.
+
+```
+lupdate-qt5 -no-obsolete src/* i18n/*.h -ts i18n/*.ts
+```
+
 # Building applications for the emulator
 The primary difference between the two versions of the SDK are that the real watches use an ARM processor, while the emulator uses a simulated x86 processor.  This allows the emulator to run much faster on computers based on the x86 architecture than if they had to emulate an ARM processor.
 
