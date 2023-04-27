@@ -175,7 +175,7 @@ vim scp://ceres@192.168.2.15//path/to/file.qml
 
 ---
 
-Here is a shell script to quickly install an app:
+Here is a shell script to quickly build and install an app:
 
 ```
 #!/bin/sh
@@ -183,16 +183,12 @@ Here is a shell script to quickly install an app:
 source /usr/local/oecore-x86_64/environment-setup-armv7vehf-neon-oe-linux-gnueabi
 export CMAKE_PROGRAM_PATH=/usr/local/oecore-x86_64/sysroots/armv7vehf-neon-oe-linux-gnueabi/usr/bin/
 cmake -B build
-cmake --build build
-cmake --build build -t package
+cmake --build build -j -t package
 
 file="$(ls ./build/*.ipk | sort -V | tail -n1)"
 filename="$(basename $file)"
 sshpass -p "<password>" scp $file ceres@192.168.2.15:/home/ceres/
-sshpass -p "<password>" ssh root@192.168.2.15 << EOF
-  cd /home/ceres/
-  opkg install --force-overwrite $filename
-EOF
+sshpass -p "<password>" ssh root@192.168.2.15 opkg install --force-reinstall --force-overwrite /home/ceres/$filename
 ```
 
 You can debug your app by following along system logs with:
