@@ -252,6 +252,44 @@
       ]
     },
     {
+      "name":"hoki",
+      "models": [
+        "Fossil Gen 6"
+      ],
+      "modelnumbers": [
+        { "num":"DW13D1", "name":"Diesel Griffed Gen 6", "codename":"hoki" },
+        { "num":"DW13F1", "name":"Fossil Women's Gen 6 (42mm)", "codename":"hoki" },
+        { "num":"DW13F2", "name":"Fossil Gen 6 Venture Edition (44mm)", "codename":"hoki" },
+        { "num":"DW13F3", "name":"Fossil Gen 6 Wellness Edition (42mm)", "codename":"hoki" },
+        { "num":"DW13M1", "name":"Michael Kors Access Gen 6 Bradshaw", "codename":"hoki" },
+        { "num":"DW13S1", "name":"Skagen Falster Gen 6", "codename":"hoki" }
+      ],
+      "status":"supported",
+      "maintainers": [ "MagneFire" ],
+      "contributors": [ "MagneFire" ],
+      "stars":2,
+      "soc":"msm8937",
+      "kernelversion":"4.14",
+      "androidversion":"pie",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Light Sensor", "status":"bad" },
+        { "name":"Always-on-Display", "status":"partial" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Heart Rate", "status":"bad" },
+        { "name":"Blood Oxygen", "status":"bad" },
+        { "name":"USB", "status":"partial" },
+        { "name":"WLAN", "status":"bad" },
+        { "name":"GPS", "status":"bad" },
+        { "name":"NFC", "status":"bad" },
+        { "name":"Crown", "status":"good" }
+      ]
+    },
+    {
       "name":"inharmony",
       "reference": "harmony",
       "models": [
