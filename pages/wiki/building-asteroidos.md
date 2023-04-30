@@ -51,7 +51,7 @@ Install the prerequisites:
 | Ubuntu | ```apt-get install git build-essential chrpath cpio diffstat gawk liblz4-tool python3 shared-mime-info texinfo wget zstd ``` |
 | Fedora | ```dnf install chrpath diffstat g++ lz4 perl perl-bignum python3-pip rpcgen socat texinfo``` |
 | Arch | ```yay -Sy base-devel chrpath cpio diffstat gawk lz4 python3 rpcsvc-proto shared-mime-info texinfo wget zstd``` |
-| Alpine | ```apk add binutils chrpath gcc g++ gawk gcc lz4 make patch perl rpcgen``` <br>Note: Alpine linux does not contain diffstat in it's repositories, thus you have to [build it yourself from source](https://github.com/asottile-archive/diffstat). |
+| Alpine | ```apk add binutils chrpath gcc g++ gawk gcc lz4 make patch perl rpcgen``` <br>Note: Alpine Linux does not contain diffstat in it's repositories, thus you have to [build it yourself from source](https://github.com/asottile-archive/diffstat). |
 
 &nbsp;
 
