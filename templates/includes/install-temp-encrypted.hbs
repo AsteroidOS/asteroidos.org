@@ -1,6 +1,5 @@
         <div name="LinTemp" style="display: block">
           <h3>2.2 Temporary installation using Linux</h3>
-          <b>It's important to not boot into WearOS after unlocking your bootloader!</b>
           <br>While your watch is in bootloader mode, flash the recovery partition:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
@@ -15,7 +14,7 @@
           <br>Push AsteroidOS to the internal sdcard:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
-              <pre class="install-code-pre"><code class="bash" id="temp-lin-5">adb push -p ~/Downloads/asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/media/0/asteroidos.ext4</code></pre>
+              <pre class="install-code-pre"><code class="bash" id="temp-lin-5">adb push -p ~/Downloads/asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
             </div>
             <div class="clipboard-button-wrapper">
               <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#temp-lin-5')" value="&#10697;"></input>
@@ -25,7 +24,6 @@
 
         <div name="WinTemp" style="display: none">
           <h3>2.2 Temporary installation using Windows</h3>
-          <b>It's important to not boot into WearOS after unlocking your bootloader!</b>
           <br>While your watch is in bootloader mode, flash the recovery partition:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
@@ -40,7 +38,7 @@
           <br>Push AsteroidOS to the internal sdcard:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
-              <pre class="install-code-pre"><code class="bash" id="temp-win-4">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/media/0/asteroidos.ext4</code></pre>
+              <pre class="install-code-pre"><code class="bash" id="temp-win-4">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
             </div>
             <div class="clipboard-button-wrapper">
               <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#temp-win-5')" value="&#10697;"></input>
