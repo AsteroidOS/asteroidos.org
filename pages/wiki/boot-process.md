@@ -26,11 +26,11 @@ layout: documentation
 <div class="page-header">
   <h1 id="troubleshooting">Troubleshooting the boot process</h1>
 </div>
-<p>The default initramfs has a section to enable adbd on the watch before booting into the rootfs. You can enable it by appending <code>debug-ramdisk</code> to the boot kernel’s parameters for example with <code>fastboot -c</code>. When you boot the watch, you will be able to access a command line on the ramdisk with <code>adb shell</code>.</p>
+<p>The default initramfs has a section to enable adbd on the watch before booting into the rootfs. You can enable it by appending <code>debug-ramdisk</code> to the boot kernel’s parameters for example with <code>fastboot -c</code> or <code>fastboot --command</code> for some versions of fastboot. For example, if you have a <code>dory</code> watch and the watch's fastboot file in your current directory on your computer, you can do this with this command:<pre><code>fastboot --cmdline debug-ramdisk boot zImage-dtb-dory.fastboot</code></pre> When you boot the watch, you will be able to access a command line on the ramdisk with <code>adb shell</code>.</p>
 <p>Here is an example <a href="https://github.com/AsteroidOS/meta-asteroid/blob/b0dd1970844206a34bbba4477691ec7940bebcf7/recipes-core/initrdscripts/initramfs-scripts-android/init.sh#L42">initscript</a> and the <a href="https://github.com/AsteroidOS/meta-bass-hybris/blob/master/recipes-kernel%2Flinux%2Flinux-bass%2Fimg_info#L10">kernel configuration line</a> of bass.</p>
 <h3>Troubleshooting systemd</h3>
 <p>If you see the AsteroidOS logo (even for a split second), the watch is able to boot into the rootfs and launch systemd.</p>
-<p>Logs are normally stored in a tmpfs filesystem which is lost whenever the watch is rebooted. To disable the tmpfs mount, first mount the sdcard card containing the rootfs, and then the rootfs:</p>
+<p>Logs are normally stored in a tmpfs filesystem which is lost whenever the watch is rebooted. To disable the tmpfs mount, first mount the sdcard card containing the rootfs, and then the rootfs.  Execute these commands as root on the watch:</p>
 <pre><code>. /machine.conf
 mkdir /sdcard /rfs
 mount /dev/$sdcard_partition /sdcard
