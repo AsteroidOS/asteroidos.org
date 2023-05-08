@@ -143,7 +143,7 @@ Open the project as described in the previous sections.
 
 Change the following `Run` settings:
 - Set the `Run configuration` to `Custom Executable (on AsteroidOS Watch)`.
-- Set the `Remote executable` to `invoker`. Add the `--single-instance --type=qtcomponents-qt5 /usr/local/bin/asteroid-helloworld` command line arguments.
+- Set the `Remote executable` to `invoker`. Add the `--single-instance --type=qt5 /usr/local/bin/asteroid-helloworld` command line arguments.
 
 Change the following `Environment` variables:
 - Add `XDG_RUNTIME_DIR` and set its value to `/run/user/1000`. So that the invoker works under the root user.
@@ -200,7 +200,7 @@ journalctl -f
 If you want to start your app from the command line, open a shell with [SSH]({{rel 'wiki/ssh'}}), connect to ceres and use invoker:
 
 ```
-invoker --type=qtcomponents-qt5 /usr/bin/asteroid-stopwatch
+invoker --type=qt5 /usr/bin/asteroid-stopwatch
 ```
 
 If you want to disable screen locking for easier development you can enable the demo mode of mce as root with:
