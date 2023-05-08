@@ -12,7 +12,7 @@
       "maintainers": [ ],
       "contributors": [ "locusf", "MagneFire", "kido" ],
       "stars":3,
-      "soc":"msm",
+      "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
       "features": [
@@ -40,7 +40,7 @@
       "maintainers": [ "eLtMosen" ],
       "contributors": [ "TheAppleMan", "kido", "eLtMosen", "Magnefire"  ],
       "stars":5,
-      "soc":"msm",
+      "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"lollipop",
       "features": [
@@ -71,7 +71,7 @@
       "maintainers": [ "MagneFire", "wannaphong" ],
       "contributors": [ "MagneFire", "wannaphong" ],
       "stars":3,
-      "soc":"msm",
+      "soc":"msm8909w",
       "kernelversion":"4.9",
       "androidversion":"pie",
       "features": [
@@ -108,7 +108,7 @@
       "maintainers": [ "LecrisUT", "MagneFire" ],
       "contributors": [ "C9Glax", "LecrisUT", "MagneFire" ],
       "stars":4,
-      "soc":"msm",
+      "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"pie",
       "features": [
@@ -143,7 +143,7 @@
       "maintainers": [ "MagneFire" ],
       "contributors": [ "kido", "MagneFire", "jrt", "KorakSilvercloud", "" ],
       "stars":4,
-      "soc":"msm",
+      "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
       "features": [
@@ -184,7 +184,7 @@
       "maintainers": [ "dodoradio", "MagneFire" ],
       "contributors": [ "dodoradio", "MagneFire" ],
       "stars":3,
-      "soc":"msm",
+      "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"oreo",
       "features": [
@@ -292,7 +292,7 @@
       "maintainers": [ "eLtMosen" ],
       "contributors": [ "atx", "LittleFox94", "jrt", "ilpianista", "logic", "TheAppleMan" ],
       "stars":4,
-      "soc":"msm",
+      "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
       "features": [
@@ -380,7 +380,7 @@
       "maintainers": [ "dodoradio", "MagneFire" ],
       "contributors": [ "dodoradio", "MagneFire" ],
       "stars":3,
-      "soc":"msm",
+      "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"oreo",
       "features": [
@@ -439,7 +439,7 @@
       "maintainers": [ "MagneFire" ],
       "contributors": [ "MagneFire" ],
       "stars":3,
-      "soc":"msm",
+      "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"oreo",
       "features": [
@@ -473,7 +473,7 @@
       "maintainers": [  "jrt", "MagneFire" ],
       "contributors": [ "flocke", "fosspill", "FlorentBrianFoxcorner", "jrt", "MagneFire"  ],
       "stars":3,
-      "soc":"msm",
+      "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"nougat",
       "features": [
@@ -506,7 +506,7 @@
       "maintainers": [ "R0NAM1" ],
       "contributors": [ "R0NAM1", "MagneFire" ],
       "stars":3,
-      "soc":"msm",
+      "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"oreo",
       "features": [
@@ -540,7 +540,7 @@
       "maintainers": [ "MagneFire" ],
       "contributors": [ "MagneFire" ],
       "stars":4,
-      "soc":"msm",
+      "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
       "features": [
@@ -571,7 +571,7 @@
       "maintainers": [ "eLtMosen" ],
       "contributors": [ "Lrs121", "dlandau", "eLtMosen", "Magnefire"  ],
       "stars":4,
-      "soc":"msm",
+      "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
       "features": [
@@ -599,7 +599,7 @@
       "maintainers": [ ],
       "contributors": [ "kido", "MagneFire", "TheAppleMan", "logic" ],
       "stars":1,
-      "soc":"msm",
+      "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
       "features": [
@@ -626,7 +626,7 @@
       "maintainers": [ "MagneFire" ],
       "contributors": [ "MagneFire", "eLtMosen", "bencord0", "logic", "TheAppleMan" ],
       "stars":5,
-      "soc":"msm",
+      "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
       "features": [
@@ -655,7 +655,7 @@
       "maintainers": [ ],
       "contributors": [ "anYc", "kido", "MagneFire" ],
       "stars":2,
-      "soc":"msm",
+      "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"marshmallow",
       "features": [
@@ -713,7 +713,7 @@
       "maintainers": [ "R0NAM1" ],
       "contributors": [ "R0NAM1", "MagneFire", "eLtMosen" ],
       "stars":3,
-      "soc":"msm",
+      "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"oreo",
       "features": [
@@ -742,7 +742,7 @@
       "maintainers": [ "eLtMosen" ],
       "contributors": [ "Lrs121", "dlandau", "eLtMosen", "Magnefire" ],
       "stars":4,
-      "soc":"msm",
+      "soc":"msm8909w",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
       "features": [
