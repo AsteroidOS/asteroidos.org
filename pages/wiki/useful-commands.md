@@ -39,7 +39,7 @@ AsteroidOS uses an `invoker` to launch apps. The invoker is used to allow for qu
 EGL_PLATFORM=wayland \
         QT_QPA_PLATFORM=wayland \
         QT_WAYLAND_DISABLE_WINDOWDECORATION=1 \
-        invoker --single-instance --type=qtcomponents-qt5 \
+        invoker --single-instance --type=qt5 \
         /usr/bin/asteroid-alarmclock
 ```
 
