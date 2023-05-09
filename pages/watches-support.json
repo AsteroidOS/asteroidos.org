@@ -690,7 +690,7 @@
         { "num":"WI503Q", "name":"Asus Zenwatch 3", "codename":"swift" }
       ],
       "status":"supported",
-      "maintainers": [ ],
+      "maintainers": [ "MagneFire" ],
       "contributors": [ "anYc", "kido", "MagneFire" ],
       "stars":2,
       "soc":"msm8909w",
@@ -717,7 +717,7 @@
         { "num":"SWR50", "name":"Sony Smartwatch 3", "codename":"tetra" }
       ],
       "status":"experimental",
-      "maintainers": [ ],
+      "maintainers": [ "MagneFire" ],
       "contributors": [ "kido", "MagneFire" ],
       "stars":1,
       "soc":"bcm",
