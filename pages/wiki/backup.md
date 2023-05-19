@@ -33,7 +33,7 @@ The copy process might take up to an hour on watches with 8GB storage.
 
 ### 1. Clone asteroid-hosttools
 
-Beroset has written a set of tools to make working with watches from a linux computer very convenient. This backup guide will only cover the backup and restore features of asteroid-hosttools. Please be sure to read the [asteroid-hosttools documentation](https://github.com/beroset/asteroid-hosttools) to make use of the full capabilities they provide.\
+Beroset has written a set of tools to make working with watches from a Linux computer very convenient. This backup guide will only cover the backup and restore features of asteroid-hosttools. Please be sure to read the [asteroid-hosttools documentation](https://github.com/beroset/asteroid-hosttools) to make use of the full capabilities they provide.\
 Clone the asteroid-hosttools using the following command:
 ```
 git clone https://github.com/beroset/asteroid-hosttools

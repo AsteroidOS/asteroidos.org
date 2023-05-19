@@ -10,7 +10,7 @@ This documentation will use `podman`, but the commands for `docker` are identica
 ---
 
 In case the commands described in the next sections fail, try to either prepend `sudo` to them or log in as root via e.g `su root`.\
-You can manually set up rootless container use on a linux distribution that has not automatically done this for you while installing the container engine, by following the official instructions.
+You can manually set up rootless container use on a Linux distribution that has not automatically done this for you while installing the container engine, by following the official instructions.
 - [How to install docker in rootless mode](https://docs.docker.com/engine/security/rootless/) is described in the docker documentation.
 - Podman can be used rootless by users that have a UID/GID range defined. This can be done using the following command for your USERNAME, as [described in the podman documentation](https://github.com/containers/podman/blob/main/docs/tutorials/rootless_tutorial.md).
 ``` Bash

@@ -1,7 +1,7 @@
 ---
 title: Free your wrist
 slug: index
-lead: "AsteroidOS is an open-source linux distribution for smartwatches."
+lead: "AsteroidOS is an open-source Linux distribution for smartwatches."
 layout: content
 ---
 
