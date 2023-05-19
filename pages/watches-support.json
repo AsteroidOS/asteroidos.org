@@ -417,7 +417,7 @@
       "status":"supported",
       "maintainers": [ "dodoradio", "MagneFire" ],
       "contributors": [ "dodoradio", "MagneFire" ],
-      "stars":3,
+      "stars":4,
       "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"oreo",
@@ -431,9 +431,9 @@
         { "name":"Microphone", "status":"good" },
         { "name":"Compass", "status":"good" },
         { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"bad" },
+        { "name":"WLAN", "status":"good" },
         { "name":"Crown", "status":"good" },
-        { "name":"Hands", "status":"bad" }
+        { "name":"Hands", "status":"partial" }
       ]
     },
     {
