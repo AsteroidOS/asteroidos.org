@@ -319,6 +319,38 @@
       ]
     },
     {
+      "name":"koi",
+      "othernames":[ "ayu" ],
+      "models": [
+        "Casio WSD-F10/F20"
+      ],
+      "modelnumbers": [
+        { "num":"WSD-F10", "name":"Casio Smart Outdoor Watch", "codename":"koi" },
+        { "num":"WSD-F20", "name":"Casio Pro Trek Smart", "codename":"ayu" }
+      ],
+      "status":"supported",
+      "maintainers": [ "dodoradio" ],
+      "contributors": [ "dodoradio" ],
+      "stars":3,
+      "soc":"exynos3250",
+      "kernelversion":"3.18",
+      "androidversion":"oreo",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Dual-Display", "status":"partial" },
+        { "name":"Microphone", "status":"unknown" },
+        { "name":"Compass", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"GPS", "status":"bad", "comment": "ayu (WSD-F20) only" }
+      ]
+    },
+    {
       "name":"lenok",
       "models": [
         "LG G Watch R"
