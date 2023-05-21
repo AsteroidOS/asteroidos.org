@@ -1,0 +1,61 @@
+        <div name="LinTemp" style="display: block">
+          <h3>2.2 Temporary installation using Linux</h3>
+          Reboot to Wear OS, re-enable Developer options and ADB debugging like shown in steps 1.1.1 - 1.1.7.
+          <br>Note, you can access the Wear OS settings app via long press of the power button already while the initial pairing screen is shown.
+          <br><br>Push AsteroidOS to the internal sdcard:
+          <div class="install-code-wrapper">
+            <div class="install-code-pre-wrapper">
+              <pre class="install-code-pre"><code class="bash" id="temp-lin-1">adb push -p ~/Downloads/asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+            </div>
+            <div class="clipboard-button-wrapper">
+              <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#temp-lin-1')" value="&#10697;"></input>
+            </div>
+          </div>
+          Everytime you want to boot into AsteroidOS, first boot your watch into fastboot bootloader mode.
+          <br>Flash the boot image to the recovery partition:
+          <div class="install-code-wrapper">
+            <div class="install-code-pre-wrapper">
+              <pre class="install-code-pre"><code class="bash" id="full-lin-2">fastboot flash recovery ~/Downloads/zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
+            </div>
+            <div class="clipboard-button-wrapper">
+              <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#full-lin-2')" value="&#10697;"></input>
+            </div>
+          </div>
+          Then boot to recovery:
+          <ol>
+            <li>Hold the top key while powering up</li>
+            <li>Push it again to select "recovery"</li>
+            <li>Press the power key to boot to recovery</li>
+          </ol>
+        </div>
+
+        <div name="WinTemp" style="display: none">
+          <h3>2.2 Temporary installation using Windows</h3>
+          Reboot to Wear OS, re-enable Developer options and ADB debugging like shown in steps 1.1.1 - 1.1.7.
+          <br>Note, you can access the Wear OS settings app via long press of the power button already while the initial pairing screen is shown.
+          <br><br>Push AsteroidOS to the internal sdcard:
+          <div class="install-code-wrapper">
+            <div class="install-code-pre-wrapper">
+              <pre class="install-code-pre"><code class="bash" id="temp-win-1">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+            </div>
+            <div class="clipboard-button-wrapper">
+              <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#temp-win-1')" value="&#10697;"></input>
+            </div>
+          </div>
+          Everytime you want to boot into AsteroidOS, first boot your watch into fastboot bootloader mode.
+          <br>Flash the boot image to the recovery partition:
+          <div class="install-code-wrapper">
+            <div class="install-code-pre-wrapper">
+              <pre class="install-code-pre"><code class="bash" id="full-win-2">fastboot flash recovery %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
+            </div>
+            <div class="clipboard-button-wrapper">
+              <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#full-win-2')" value="&#10697;"></input>
+            </div>
+          </div>
+          Then boot to recovery:
+          <ul>
+            <li>Hold the top key while powering up</li>
+            <li>Push it again to select "recovery"</li>
+            <li>Press the power key to boot to recovery</li>
+          </ul>
+        </div>
