@@ -33,6 +33,7 @@ layout: documentation
       <li><a href="{{rel 'wiki/watchfaces-creation'}}">Watchfaces creation</a></li>
       <li><a href="{{rel 'wiki/emulator'}}">Emulator</a></li>
       <li><a href="{{rel 'wiki/localweb'}}">Local version of asteroidos.org</a></li>
+      <li><a href="{{rel 'wiki/technical'}}">Technical Details of Watches</a></li>
       <li><a href="{{rel 'wiki/porting-guide'}}">Porting Guide</a></li>
       <li><a href="{{rel 'wiki/openembedded'}}">OpenEmbedded</a></li>
       <li><a href="{{rel 'wiki/boot-process'}}">Boot Process</a></li>
