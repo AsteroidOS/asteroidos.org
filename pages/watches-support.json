@@ -812,7 +812,7 @@
       "maintainers": [ "eLtMosen" ],
       "contributors": [ "Lrs121", "dlandau", "eLtMosen", "MagneFire" ],
       "stars":4,
-      "soc":"msm8909w",
+      "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
       "features": [
