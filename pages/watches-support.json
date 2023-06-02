@@ -494,7 +494,8 @@
         { "name":"Microphone", "status":"unknown" },
         { "name":"Heart Rate", "status":"good" },
         { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"bad" }
+        { "name":"WLAN", "status":"bad" },
+        { "name":"GPS", "status":"good" }
       ]
     },
     {
