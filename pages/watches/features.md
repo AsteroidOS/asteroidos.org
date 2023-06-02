@@ -3,8 +3,6 @@ title: Feature list
 slug: features
 layout: featuretable
 ---
-<br>
-<h4>This table has been updated on: <code>2023-05-13</code></h4>
 <h2>Legend</h2>
 <table>
 <tr><td class="name-col"><b>good</b></td><td class="legend-col good" /><td>The hardware exists and is working</td></tr>
@@ -13,6 +11,9 @@ layout: featuretable
 <tr><td class="name-col"><b>partial</b></td><td class="legend-col partial" /><td>The hardware exists but is only partially working</td></tr>
 <tr><td class="name-col"><b>unknown</b></td></td><td class="legend-col unknown" /><td>The hardware exists but the status is unknown</tr>
 </table>
-
-<br/>
-For more information on each device, click on the respective code name in the first column. These are linked to the entries on the <a href="{{rel 'watches'}}">Watches</a> page.
+<br>For more information on each device, click on the respective code name in the first column. These are linked to the entries on the <a href="{{rel 'watches'}}">Watches</a> page.
+<br>
+<h3>This table has been updated on:</h3>
+<code>2023-06-02</code>
+<!-- Spacing to footer -->
+<br><br><br><br>
