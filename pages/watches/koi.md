@@ -6,6 +6,10 @@ section: install
 layout: aw-install
 installParts: [ install-prepare-adb, install-unlock-adb-round, install-select-method, install-full-adb-push-ext4, install-temp-flash-boot-to-recovery ]
 ---
+<div class="callout callout-warning">
+    <h4>WARNING: Bricking issues!</h4>
+    <p>These watches are known to brick themselves in various ways. Most bricks are recoverable, but occasionally the watch will seemingly corrupt its bootloader partition, which will cause it to get stuck in WearOS and bootloop. Proceed with extreme caution and consult <a href="https://matrix.to/#/#Asteroid:matrix.org">our matrix chat</a> before installing.</p>
+</div>
 <div class="callout callout-info">
     <h4>Model number and variants</h4>
     <p></p>
