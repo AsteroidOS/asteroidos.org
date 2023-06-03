@@ -328,7 +328,7 @@
         { "num":"WSD-F10", "name":"Casio Smart Outdoor Watch", "codename":"koi" },
         { "num":"WSD-F20", "name":"Casio Pro Trek Smart", "codename":"ayu" }
       ],
-      "status":"supported",
+      "status":"experimental",
       "maintainers": [ "dodoradio" ],
       "contributors": [ "dodoradio" ],
       "stars":3,
