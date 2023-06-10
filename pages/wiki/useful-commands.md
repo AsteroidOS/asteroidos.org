@@ -136,6 +136,10 @@ Power down the watch. Keep holding both buttons during the boot process until th
 After the watch stops vibrating on startup, immediately touch the top/left & bottom/right of the screen and press the middle button while the manufacturer logo displays.
 
 &nbsp;
+#### Pike
+Power down the watch. Keep holding both buttons during the boot process, then select fastboot from the menu.
+
+&nbsp;
 #### Sawfish, Sawshark, Sturgeon
 Press and hold the power button when the manufacturer bootlogo appears, until the vibration finishes. Release the button and press it again quickly. The time frame for this method is short and might need several attempts. Some users report that spamming power button presses already during the vibration helps.
 
