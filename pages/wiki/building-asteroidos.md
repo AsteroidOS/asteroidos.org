@@ -57,8 +57,10 @@ Install the prerequisites:
 
 This repository basically only contains a shell script that populates `src/` with OpenEmbedded and the appropriate Asteroid layers. Then, it setups the environment for a bitbake build. The following command will setup a build for `dory` (the LG G Watch) but you can also build an image for other watches by using the corresponding codename. (Codenames can be found on the <a href="{{rel 'watches'}}">Watches page</a>.)
 
+Important note: Like shown in the command below, the script must be sourced and not only ran.
+
 ```
-source ./prepare-build.sh dory # Be careful that this script must be sourced and not only ran
+source ./prepare-build.sh dory
 ```
 
 If the environment has been correctly setup, you should now be in the `build` subdirectory.
