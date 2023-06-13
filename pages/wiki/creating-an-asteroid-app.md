@@ -230,10 +230,11 @@ The only difference between building the SDK for the emulator is that instead of
 ```
 
 ## Using the emulator SDK
-As the emulator installer itself describes when it is first installed,
+As the emulator installer itself describes when it is first installed, each time you wish to use the SDK in a new shell session, your user needs to source the environment setup script e.g.
 
->     Each time you wish to use the SDK in a new shell session, you need to source the environment setup script e.g.
->      $ . /usr/local/oecore-x86_64/environment-setup-core2-32-oe-linux
+```
+. /usr/local/oecore-x86_64/environment-setup-core2-32-oe-linux
+```
 
 Integration with QtCreator is not explicitly described here, but again, the process is very similar to the process for using QtCreator with the watch version of the SDK.
 
