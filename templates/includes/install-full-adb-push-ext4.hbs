@@ -8,28 +8,28 @@
           <br><br>Push AsteroidOS to the internal sdcard:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
-              <pre class="install-code-pre"><code class="bash" id="temp-lin-1">adb push -p ~/Downloads/asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+              <pre class="install-code-pre"><code class="bash">adb push -p ~/Downloads/asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
             </div>
             <div class="clipboard-button-wrapper">
-              <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#temp-lin-1')" value="&#10697;"></input>
+              <input type="button" class="btn btn-primary clipboard-button" value="&#10697;"></input>
             </div>
           </div>
           Boot your watch into fastboot bootloader mode, then flash the boot partition:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
-              <pre class="install-code-pre"><code class="bash" id="full-lin-2">fastboot flash boot ~/Downloads/zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
+              <pre class="install-code-pre"><code class="bash">fastboot flash boot ~/Downloads/zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
             </div>
             <div class="clipboard-button-wrapper">
-              <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#full-lin-2')" value="&#10697;"></input>
+              <input type="button" class="btn btn-primary clipboard-button" value="&#10697;"></input>
             </div>
           </div>
           Then continue the boot process:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
-              <pre class="install-code-pre"><code class="bash" id="full-lin-3">fastboot continue</code></pre>
+              <pre class="install-code-pre"><code class="bash">fastboot continue</code></pre>
             </div>
             <div class="clipboard-button-wrapper">
-              <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#full-lin-3')" value="&#10697;"></input>
+              <input type="button" class="btn btn-primary clipboard-button" value="&#10697;"></input>
             </div>
           </div>
         </div>
@@ -41,28 +41,28 @@
           <br><br>Push AsteroidOS to the internal sdcard:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
-              <pre class="install-code-pre"><code class="bash" id="temp-win-1">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
+              <pre class="install-code-pre"><code class="bash">adb push -p %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.ext4 /sdcard/asteroidos.ext4</code></pre>
             </div>
             <div class="clipboard-button-wrapper">
-              <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#temp-win-1')" value="&#10697;"></input>
+              <input type="button" class="btn btn-primary clipboard-button" value="&#10697;"></input>
             </div>
           </div>
           Boot your watch into fastboot bootloader mode, then flash the boot partition:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
-              <pre class="install-code-pre"><code class="bash" id="full-win-2">fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
+              <pre class="install-code-pre"><code class="bash">fastboot flash boot %systemdrive%%homepath%\Downloads\zImage-dtb-{{deviceNames.[0]}}.fastboot</code></pre>
             </div>
             <div class="clipboard-button-wrapper">
-              <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#full-win-2')" value="&#10697;"></input>
+              <input type="button" class="btn btn-primary clipboard-button" value="&#10697;"></input>
             </div>
           </div>
           Then continue the boot process:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
-              <pre class="install-code-pre"><code class="bash" id="full-win-3">fastboot continue</code></pre>
+              <pre class="install-code-pre"><code class="bash">fastboot continue</code></pre>
             </div>
             <div class="clipboard-button-wrapper">
-              <input type="button" class="btn btn-primary clipboard-button" onclick="copyToClipboard('#full-win-3')" value="&#10697;"></input>
+              <input type="button" class="btn btn-primary clipboard-button" value="&#10697;"></input>
             </div>
           </div>
         </div>
