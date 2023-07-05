@@ -282,6 +282,7 @@
         { "name":"Microphone", "status":"bad" },
         { "name":"Heart Rate", "status":"bad" },
         { "name":"Blood Oxygen", "status":"bad" },
+        { "name":"Speaker", "status":"bad" },
         { "name":"USB", "status":"partial" },
         { "name":"WLAN", "status":"bad" },
         { "name":"GPS", "status":"bad" },
