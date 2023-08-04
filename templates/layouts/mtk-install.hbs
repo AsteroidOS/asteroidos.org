@@ -51,6 +51,12 @@
       </div>
       {{/deviceNames}}
       <h1>Prepare installation</h1>
+
+      <h2>Inform yourself</h2>
+        {{#with (getModel deviceNames.[0])}}
+          <p><a href={{wiki}}>See the watch wiki page</a> for up-to-date information about this watch.</p>
+        {{/with}}
+
       <div class="install-preparation-box">
         <h3>Install SPFlashTool</h3>
         SPFlashTool is a tool designed to flash Mediatek devices, you can <a href="https://spflashtool.com/download/">download its latest version from spflashtool.com</a>

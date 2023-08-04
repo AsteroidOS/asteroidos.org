@@ -2,6 +2,7 @@
   "watches": [
     {
       "name":"anthias",
+      "wiki": "https://wiki.asteroidos.org/index.php/Anthias",
       "models": [
         "Asus Zenwatch 1"
       ],
@@ -30,6 +31,7 @@
     },
     {
       "name":"bass",
+      "wiki": "https://wiki.asteroidos.org/index.php/Bass",
       "models": [
         "LG Watch Urbane"
       ],
@@ -59,6 +61,7 @@
     },
     {
       "name":"beluga",
+      "wiki": "https://wiki.asteroidos.org/index.php/Beluga",
       "models": [
         "OPPO Watch"
       ],
@@ -95,6 +98,7 @@
     },
     {
       "name":"catfish",
+      "wiki": "https://wiki.asteroidos.org/index.php/Catfish",
       "othernames":[ "catfish_ext", "catshark" ],
       "models": [
         "TicWatch Pro 2018/20"
@@ -133,6 +137,7 @@
     },
     {
       "name":"dory",
+      "wiki": "https://wiki.asteroidos.org/index.php/Dory",
       "models": [
         "LG G Watch"
       ],
@@ -160,6 +165,7 @@
     },
     {
       "name":"firefish",
+      "wiki": "https://wiki.asteroidos.org/index.php/Ray/Firefish",
       "models": [
         "Fossil Gen 4 46mm"
       ],
@@ -206,6 +212,7 @@
     },
     {
       "name":"harmony",
+      "wiki": "https://wiki.asteroidos.org/index.php/Harmony/Inharmony",
       "models": [
         "MTK6580 watches"
       ],
@@ -253,6 +260,7 @@
     },
     {
       "name":"hoki",
+      "wiki": "https://wiki.asteroidos.org/index.php/Hoki",
       "models": [
         "Fossil Gen 6"
       ],
@@ -292,6 +300,7 @@
     },
     {
       "name":"inharmony",
+      "wiki": "https://wiki.asteroidos.org/index.php/Harmony/Inharmony",
       "reference": "harmony",
       "models": [
         "MTK6580 watches"
@@ -321,6 +330,7 @@
     },
     {
       "name":"koi",
+      "wiki": "https://wiki.asteroidos.org/index.php/Koi/Ayu",
       "othernames":[ "ayu" ],
       "models": [
         "Casio WSD-F10/F20"
@@ -353,6 +363,7 @@
     },
     {
       "name":"lenok",
+      "wiki": "https://wiki.asteroidos.org/index.php/Lenok",
       "models": [
         "LG G Watch R"
       ],
@@ -382,6 +393,7 @@
     },
     {
       "name":"minnow",
+      "wiki": "https://wiki.asteroidos.org/index.php/Minnow",
       "models": [
         "Moto 360 2014"
       ],
@@ -410,6 +422,7 @@
     },
     {
       "name":"mooneye",
+      "wiki": "https://wiki.asteroidos.org/index.php/Mooneye",
       "models": [
         "TicWatch E & S"
       ],
@@ -441,6 +454,7 @@
     },
     {
       "name":"narwhal",
+      "wiki": "https://wiki.asteroidos.org/index.php/Narwhal",
       "models": [
         "LG Watch W7"
       ],
@@ -471,6 +485,7 @@
     },
     {
       "name":"pike",
+      "wiki": "https://wiki.asteroidos.org/index.php/Pike",
       "models": [
         "Polar M600"
       ],
@@ -501,6 +516,7 @@
     },
     {
       "name":"ray",
+      "wiki": "https://wiki.asteroidos.org/index.php/Ray/Firefish",
       "reference": "firefish",
       "models": [
         "Fossil Gen 4 41mm"
@@ -533,6 +549,7 @@
     },
     {
       "name":"sawfish",
+      "wiki": "https://wiki.asteroidos.org/index.php/Sawfish",
       "othernames":[ "sawshark" ],
       "models": [
         "Huawei Watch 2"
@@ -566,6 +583,7 @@
     },
     {
       "name":"skipjack",
+      "wiki": "https://wiki.asteroidos.org/index.php/Skipjack/Tunny",
       "models": [
         "TicWatch C2/C2+"
       ],
@@ -598,6 +616,7 @@
     },
     {
       "name":"smelt",
+      "wiki": "https://wiki.asteroidos.org/index.php/Smelt/Carp/Bowfin",
       "othernames":[ "carp" ],
       "models": [
         "Moto 360 2015"
@@ -632,6 +651,7 @@
     },
     {
       "name":"sparrow",
+      "wiki": "https://wiki.asteroidos.org/index.php/Sparrow/Wren",
       "models": [
         "Asus Zenwatch 2"
       ],
@@ -661,6 +681,7 @@
     },
     {
       "name":"sprat",
+      "wiki": "https://wiki.asteroidos.org/index.php/Sprat",
       "models": [
         "Samsung Gear Live"
       ],
@@ -688,6 +709,7 @@
     },
     {
       "name":"sturgeon",
+      "wiki": "https://wiki.asteroidos.org/index.php/Sturgeon",
       "models": [
         "Huawei Watch"
       ],
@@ -717,6 +739,7 @@
     },
     {
       "name":"swift",
+      "wiki": "https://wiki.asteroidos.org/index.php/Swift",
       "models": [
         "Asus Zenwatch 3"
       ],
@@ -744,6 +767,7 @@
     },
     {
       "name":"tetra",
+      "wiki": "https://wiki.asteroidos.org/index.php/Tetra",
       "models": [
         "Sony Smartwatch 3"
       ],
@@ -775,6 +799,7 @@
     },
     {
       "name":"tunny",
+      "wiki": "https://wiki.asteroidos.org/index.php/Skipjack/Tunny",
       "reference": "skipjack",
       "models": [
         "TicWatch E2/S2"
@@ -804,6 +829,7 @@
     },
     {
       "name":"wren",
+      "wiki": "https://wiki.asteroidos.org/index.php/Sparrow/Wren",
       "reference": "sparrow",
       "models": [
         "Asus Zenwatch 2"
