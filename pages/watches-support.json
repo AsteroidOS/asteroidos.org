@@ -559,7 +559,7 @@
         { "name":"Microphone", "status":"bad" },
         { "name":"Speaker", "status":"bad" },
         { "name":"Heart Rate", "status":"good" },
-        { "name":"USB", "status":"partial" },
+        { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" },
         { "name":"Cellular", "status":"bad", "comment": "sawshark only (SIM)" }
       ]
