@@ -591,7 +591,7 @@
         { "name":"Microphone", "status":"bad" },
         { "name":"Heart Rate", "status":"good" },
         { "name":"USB", "status":"good" },
-        { "name":"WLAN", "status":"bad" },
+        { "name":"WLAN", "status":"good" },
         { "name":"GPS", "status":"bad" },
         { "name":"NFC", "status":"bad", "comment": "C2(+) only" }
       ]
