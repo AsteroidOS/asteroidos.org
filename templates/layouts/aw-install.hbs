@@ -37,6 +37,11 @@
       </table>
       {{> body }}
       <h1>Prepare installation</h1>
+      <h2>Inform yourself</h2>
+        {{#with (getModel deviceNames.[0])}}
+          <p><a href={{wiki}}>See the watch wiki page</a> for up-to-date information about this watch.</p>
+        {{/with}}
+
       <h2>Prerequisites</h2>
 
         {{> install-prep-radio-buttons }}
