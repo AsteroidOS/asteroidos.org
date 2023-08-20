@@ -10,4 +10,7 @@ You can join via: <a href="https://matrix.to/#/#Asteroid:matrix.org">https://mat
 
 <p>You can also ask questions via webchat. Be aware that replies can take a while.</p>
 
-<iframe style="border: 0; width: 100%; height: 600px;" src="https://web.libera.chat/#asteroid"></iframe>
+<div style="position: relative; height: 600px; width: 100%;">
+<iframe style="border: 0; width: 100%; height: 600px; position: absolute;" src="https://web.libera.chat/#asteroid"></iframe>
+<div style="position: absolute; display: flex; justify-content: center; width: 100%; height: 100%; align-items: center; background-color: rgba(0, 0, 0, 0.4); color: white; font-weight: bold;">IRC is temporarily disabled join the Matrix channel instead.</div>
+</div>
