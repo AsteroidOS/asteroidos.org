@@ -89,10 +89,10 @@
         { "name":"Speaker", "status":"good" },
         { "name":"Compass", "status":"good" },
         { "name":"Heart Rate", "status":"good" },
-        { "name":"USB", "status":"partial" },
+        { "name":"USB", "status":"partial", "comment": "ADBD support only" },
         { "name":"WLAN", "status":"good" },
         { "name":"GPS", "status":"good" },
-        { "name":"NFC", "status":"good" },
+        { "name":"NFC", "status":"partial", "comment": "leads to display glitches" },
         { "name":"Cellular", "status":"bad", "comment": "one 46mm only (eSIM)" }
       ]
     },
