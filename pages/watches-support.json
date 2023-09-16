@@ -67,8 +67,8 @@
       ],
       "modelnumbers": [
         { "num":"OW19W6", "name":"OPPO Watch 41mm WiFi", "codename":"beluga" },
-        { "num":"OW19W8", "name":"OPPO Watch 46mm WiFi", "codename":"beluga" },
-        { "num":"OW19W12", "name":"OPPO Watch 46mm LTE", "codename":"belugaxl" }
+        { "num":"OW19W8", "name":"OPPO Watch 46mm WiFi", "codename":"belugaxl" },
+        { "num":"OW19W12", "name":"OPPO Watch 46mm LTE", "codename":"orca" }
       ],
       "status":"supported",
       "maintainers": [ "MagneFire", "wannaphong" ],
