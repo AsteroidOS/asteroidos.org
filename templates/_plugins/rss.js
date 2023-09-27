@@ -140,26 +140,36 @@ module.exports = function (config, callback) {
 
     async.eachSeries(pages, function (file, next) {
       var page = file.data;
+      var pageUrl = undefined;
+      if (!_.isUndefined(file.relativeLink) && !_.isUndefined(config.siteurl)) {
+        pageUrl = url.resolve(config.siteurl, file.relativeLink);
+      }
 
-      /**
-       * @object defaults.item
-       * @desc Sets default values for each item in the RSS feed.
-       */
-      defaults.item = {
-        title: page.title || fail('title'),
-        author: defaults.author || page.author || fail('author'),
-        description: page.description || fail('description'),
-        url: url.resolve(pkg.homepage, file.relativeLink),
-        guid: page.guid || page.url,
-        categories: page.categories,
-        lat: page.lat,
-        long: page.long
-      };
+      if (!_.isUndefined(pageUrl) && page.posted) {
+        /**
+         * @object defaults.item
+         * @desc Sets default values for each item in the RSS feed.
+         */
+        defaults.item = {
+            title: page.title || fail('title'),
+            author: defaults.author || page.author || fail('author'),
+            description: page.summary || fail('description'),
+            url: pageUrl,
+            date: page.posted,
+            guid: page.guid || page.url,
+            categories: page.categories,
+            lat: page.lat,
+            long: page.long,
+            enclosure: {
+              'url'  : config.siteurl + '/public/img/news-thumbnails/' + page.thumbnails + '-square.jpg',
+              'size' : 1000000,
+              'type' : 'image/jpeg'
+            }
+          };
 
-      // If "rss: false" does not exist in the YFM, then add the item.
-      if (page.rss != false) {
         addItem(defaults.item);
-      };
+      }
+
 
       next();
     }, function (err) {
