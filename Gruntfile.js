@@ -45,6 +45,12 @@ module.exports = function(grunt) {
         helpers: ['<%= site.helpers %>/*.js'],
         plugins: ['<%= site.plugins %>'],
 
+        rss: {
+          title: '<%= site.title %>',
+          description: '<%= site.description %>',
+          siteurl: 'https://asteroidos.org'
+        },
+
         // `compose` helper options
         compose: {cwd: 'pages'},
 
