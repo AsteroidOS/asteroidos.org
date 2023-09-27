@@ -52,6 +52,7 @@ plugins:
   # local
   - <%= site.templates %>/_plugins/navigation.js
   - <%= site.templates %>/_plugins/holder-404-avoid.js
+  - <%= site.templates %>/_plugins/rss.js
 
 
 # =============================================
