@@ -52,6 +52,11 @@
   },
   "dependencies": {
     "coffeescript": "^2.7.0",
-    "npm": "^8.15.1"
+    "npm": "^8.15.1",
+    "async": "~3.2.4",
+    "js-prettify": "~1.4.0",
+    "lodash": "^2.4.1",
+    "moment": "~2.29.4",
+    "rss": "~1.2.2"
   }
 }

@@ -1,7 +1,6 @@
 var path = require('path');
 var url = require('url');
 var fs = require('fs');
-var chalk = require('chalk');
 var moment = require('moment');
 var async = require('async');
 var rss = require('rss');
@@ -36,9 +35,8 @@ module.exports = function (config, callback) {
          */
         var message = function (cb) {
           console.log('RSS property ' +
-                      chalk.yellow(property) +
-                      ' is not defined ' +
-                      chalk.red('ERROR'));
+                      property +
+                      ' is not defined ERROR');
           cb();
         };
 
@@ -99,7 +97,7 @@ module.exports = function (config, callback) {
       geoRSS: false,
     };
 
-    moment.lang(config.language || defaults.language);  // Moment.js default language
+    moment.locale(config.language || defaults.language);  // Moment.js default language
 
     /**
      * @function feed
@@ -141,7 +139,6 @@ module.exports = function (config, callback) {
     };
 
     async.eachSeries(pages, function (file, next) {
-
       var page = file.data;
 
       /**
