@@ -152,7 +152,7 @@ module.exports = function (config, callback) {
          */
         defaults.item = {
             title: page.title || fail('title'),
-            author: defaults.author || page.author || fail('author'),
+            author: page.author || defaults.author || fail('author'),
             description: page.summary || fail('description'),
             url: pageUrl,
             date: page.posted,
