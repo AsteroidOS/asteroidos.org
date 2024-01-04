@@ -9,7 +9,7 @@ var path = require('path');
 var file = require('fs-utils');
 var hljs = require('highlight.js');
 var log = require('verbalize');
-var marked = require('marked');
+const { marked } = require('marked');
 var matter = require('gray-matter');
 var strip = require('strip-indent');
 var _ = require('lodash');
@@ -92,19 +92,19 @@ module.exports.register = function (Handlebars, options, params) {
 
   // generic `marked` helper. can be used in other helpers
   Handlebars.registerHelper('marked', function(str) {
-    return marked(str);
+    return marked.parse(str);
   });
 
 
   Handlebars.registerHelper('markdown', function (options) {
     var content = strip(options.fn(this));
-    return new Handlebars.SafeString(marked(content || ''));
+    return new Handlebars.SafeString(marked.parse(content || ''));
   });
 
 
   Handlebars.registerHelper('md', function (name, context) {
     var result = include(name, _.extend(this, context)) || '';
-    return new Handlebars.SafeString(marked(result));
+    return new Handlebars.SafeString(marked.parse(result));
   });
 
 
