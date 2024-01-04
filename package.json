@@ -42,7 +42,7 @@
     "handlebars-helper-slugify": "^0.3.2",
     "highlight.js": "^11.6.0",
     "lodash": "^4.17.21",
-    "marked": "^3.0.8",
+    "marked": "^4.0.10",
     "relative": "^0.1.6",
     "remote-origin-url": "^2.0.0",
     "request": "^2.88.2",
