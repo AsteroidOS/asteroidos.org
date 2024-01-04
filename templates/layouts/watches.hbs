@@ -18,6 +18,9 @@
       <p>AsteroidOS can be installed as an alternative operating system on various smartwatches. Instructions for each model can be found below.</p>
       <p>Before installing AsteroidOS, make sure you are aware of the capabilities and limitations of AsteroidOS by consulting the <a href="{{rel 'faq'}}">FAQ page</a>.</p>
       <p>A summary of the state of all features of all watches AsteroidOS supports is in the <a href="{{rel 'watches/features'}}">Features Table</a>.</p>
+    <div class="page-header">
+      <h1>Supported</h1>
+    </div>
     {{#each (getAllWithStatus "supported")}}
       {{> installbox}}
     {{/each}}
