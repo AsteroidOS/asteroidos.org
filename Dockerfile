@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:20231219
 LABEL maintainer="Ed Beroset <beroset@ieee.org>"
 WORKDIR /tmp/
 RUN apk --no-cache add nodejs git npm lighttpd
