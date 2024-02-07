@@ -20,7 +20,7 @@ The team's initial plan was to just roam the halls and try to meet as many peopl
 
 The AsteroidOS team wishes to extend a big thank you to everyone involved in the Linux on Mobile stand for welcoming us so warmly and sharing their space! Jozef continued to promote AsteroidOS amidst the crowd for the entire day until shortly before [his own talk](https://fosdem.org/2024/schedule/event/fosdem-2024-3319-pinetime-a-programmer-s-toy-and-beyond/) on the [pinetime](https://wiki.pine64.org/wiki/PineTime). We cannot thank Jozef enough for his professional and enduring effort. It was truly inspiring. Darrel and Timo worked on the presented watches to first make them all usable and show different states of AsteroidOS. They answered questions and demoed the watches to visitors. Dodoradio joined shortly after the watch rig was set up and went right into business by changing the battery of a dead `catfish` (Mobvoi Ticwatch Pro) live at the stand. Public reception was overwhelming, and we were a bit humbled by our obvious lackluster planning. The end of the day came much too quickly. Only in hindsight do we now see how many longtime online friends were possibly standing meters from us without our realizing.
 
-<img class="news-img-center" src="/public/img/news-img/fosdem-2024.webp" />
+<img class="news-img-center" src="/public/img/news-img/fosdem-2024-1.jpg" />
 
 # Conclusion
 All who attended, either in person or remotely via live video streaming, agreed that it was inspiring and fun. Within days of the conclusion of FOSDEM 2024, the team has already started thinking about what we might be able to do differently and better for FOSDEM 2025.
