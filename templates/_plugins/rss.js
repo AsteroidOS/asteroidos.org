@@ -17,6 +17,10 @@ module.exports = function (config, callback) {
 
   var pages = options.pages; // Define an array all of page data.
   var page = options.page; // Define a single page's data object.
+  if (page.data.slug != 'index') {
+    callback();
+    return;
+  }
 
   // Skip over the plugin if it isn't defined in the options.
   if (!_.isUndefined(config)) {
