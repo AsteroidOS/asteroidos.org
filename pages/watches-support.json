@@ -293,7 +293,7 @@
         { "name":"Speaker", "status":"bad" },
         { "name":"USB", "status":"partial", "comment": "ADB support only" },
         { "name":"WLAN", "status":"bad" },
-        { "name":"GPS", "status":"good" },
+        { "name":"GPS", "status":"bad" },
         { "name":"NFC", "status":"partial", "comment": "leads to display glitches" },
         { "name":"Crown", "status":"good" }
       ]
