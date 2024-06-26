@@ -291,10 +291,10 @@
         { "name":"Heart Rate", "status":"good" },
         { "name":"Blood Oxygen", "status":"bad" },
         { "name":"Speaker", "status":"bad" },
-        { "name":"USB", "status":"partial" },
+        { "name":"USB", "status":"partial", "comment": "ADB support only" },
         { "name":"WLAN", "status":"bad" },
         { "name":"GPS", "status":"good" },
-        { "name":"NFC", "status":"good" },
+        { "name":"NFC", "status":"partial", "comment": "leads to display glitches" },
         { "name":"Crown", "status":"good" }
       ]
     },
