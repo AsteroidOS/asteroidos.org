@@ -6,7 +6,7 @@
           While your watch is in fastboot bootloader mode, flash the userdata partition:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
-              <pre class="install-code-pre"><code class="bash">fastboot flash userdata ~/Downloads/asteroid-image-{{deviceNames.[0]}}.{{#if simg}}simg{{else}}ext4{{/if}}</code></pre>
+              <pre class="install-code-pre"><code class="bash">fastboot flash userdata ~/Downloads/asteroid-image-{{deviceNames.[0]}}.rootfs.{{#if simg}}simg{{else}}ext4{{/if}}</code></pre>
             </div>
             <div class="clipboard-button-wrapper">
               <input type="button" class="btn btn-primary clipboard-button" value="&#10697;"></input>
@@ -37,7 +37,7 @@
           While your watch is in fastboot bootloader mode, flash the userdata partition:
           <div class="install-code-wrapper">
             <div class="install-code-pre-wrapper">
-              <pre class="install-code-pre"><code class="bash">fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.{{#if simg}}simg{{else}}ext4{{/if}}</code></pre>
+              <pre class="install-code-pre"><code class="bash">fastboot flash userdata %systemdrive%%homepath%\Downloads\asteroid-image-{{deviceNames.[0]}}.rootfs.{{#if simg}}simg{{else}}ext4{{/if}}</code></pre>
             </div>
             <div class="clipboard-button-wrapper">
               <input type="button" class="btn btn-primary clipboard-button" value="&#10697;"></input>
