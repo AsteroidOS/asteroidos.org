@@ -102,22 +102,22 @@
 
 .slide-wrapper {
   width: 5000px; //slide width * amount of shots
-  -webkit-animation: slide 35s ease infinite;
+  animation: slide 35s ease infinite alternate;
 
   //From < 990px (sm) on
   @media (max-width: 991px) {
     width: 4875px;
-    -webkit-animation: slide 30s ease infinite;
+    animation: slide 30s ease infinite alternate;
   }
   //From < 768px (sm) on
   @media (max-width: 767px) {
     width: 4500px;
-    -webkit-animation: slide 30s ease infinite;
+    animation: slide 30s ease infinite alternate;
   }
     //From < 520px (sm) on
   @media (max-width: 519px) {
     width: 4125px;
-    -webkit-animation: slide 30s ease infinite;
+    animation: slide 30s ease infinite alternate;
   }
 }
 
