@@ -46,7 +46,7 @@ layout: content
 <div class="about-row">
   <div class="about-text">
     <h2>Freedom & Privacy</h2>
-    <p>We believe that users should have full control over their machines and data. Especially when it comes to wearable devices and sensitve data they collect and store. AsteroidOS has been created from the ground-up with modularity, freedom and transparency in mind. For this reason, AsteroidOS is a <a href="https://github.com/AsteroidOS/">free and open-source</a> project.</p>
+    <p>We believe that users should have full control over their machines and data. Especially when it comes to wearable devices and sensitive data they collect and store. AsteroidOS has been created from the ground-up with modularity, freedom and transparency in mind. For this reason, AsteroidOS is a <a href="https://github.com/AsteroidOS/">free and open-source</a> project.</p>
   </div>
 </div>
 <div class="about-row">
