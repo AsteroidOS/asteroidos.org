@@ -3,7 +3,7 @@ title: AsteroidOS 2.0 Release Announcement
 
 layout: news
 
-posted: 2025-02-02
+posted: 2025-02-05
 
 post: true
 
@@ -51,7 +51,7 @@ Four more App Launcher styles have been added. Those can be selected in the new 
 Watchfaces are now paired with the user selected Wallpaper already in the Watchface gallery. Helping to find your favourite combination at a glance. Both pages received major performance improvements.
    * [Nightstand mode](https://github.com/AsteroidOS/asteroid-settings/pull/49)  
 Use your watch as a bedside clock or simply show charging much more clearly. Selected watchfaces show a large charging status when power is connected. 
-The nightstand settings page makes this mode very versatile. Thanks to beroset for the initial idea and implementation.
+The nightstand settings page makes this mode very versatile.
    * [New UI elements and polished icons](https://github.com/AsteroidOS/asteroid-icons-ion/pull/18/files)  
 Improved toggles, progress bars and other UI elements by unifying the design and removing inconsistencies.
    * [Ringtone vibration pattern](https://github.com/AsteroidOS/asteroid/issues/99)  
