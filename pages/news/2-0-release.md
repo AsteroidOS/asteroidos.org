@@ -168,6 +168,7 @@ Interested in contributing to AsteroidOS? Whether you're a developer, designer, 
 
 - **Join our [community forums](https://asteroidos.org/community/)** to discuss ideas and share feedback.
 - **Report issues or suggest features** on our [GitHub repository](https://github.com/AsteroidOS/asteroid).
+- **Help with translating AsteroidOS to your language** [using Weblate](https://hosted.weblate.org/projects/asteroidos/).
 - **Contribute to the codebase** by tackling open issues or developing new features.
 
 Your participation helps make AsteroidOS better for everyone.
