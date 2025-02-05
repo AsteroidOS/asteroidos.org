@@ -152,7 +152,7 @@ MagneFire, jrt, eLtMosen and beroset joined the AsteroidOS team.
 Our website [asteroidos.org](https://asteroidos.org) has seen a major content extension.
    * A [FAQ](https://asteroidos.org/faq/) section has been added to provide a quick overview of our project.
    * The Install page has grown into a gallery of supported watches over time with now 22 watches listed. We renamed it to "[Watches](https://asteroidos.org/watches/)" and plan to evolve this page into a purchase guide to aid new users in choosing a supported watch. A first step was to resize the images of all watches to correctly reflect the relative size differences between them, to be able to compare their dimensions.
-   * The [Documentation](https://asteroidos.org/wiki/documentation/) pages are frequently updated by community members and nicely keep up with the current state of development. We recently switched to Markdown as our primary markup language for documentation. This enables users without deeper knowledge to contribute to the documentation via GitHub's integrated editor. And will help us to switch the static site generator in the future.
+   * The [Documentation](https://asteroidos.org/wiki/documentation/) pages are frequently updated by community members and nicely keep up with the current state of development. We recently moved them into a MediaWiki. This enables users without deeper knowledge to contribute to the documentation much more easily.
 
 The creator of the unofficial [Subreddit](https://www.reddit.com/r/AsteroidOS/) gave us full access, making it an official channel alongside our [Mastodon account](https://fosstodon.org/@AsteroidOS).
 
