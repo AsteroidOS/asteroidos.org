@@ -76,7 +76,7 @@ The timer app works in the background now. It got optimised for use on round wat
 Yup, it flashes light. Most useful, so it got added to the stock selection.
    * [Animated Bootsplash logo](https://github.com/AsteroidOS/meta-asteroid/commit/b8f4403139cabf0ff83a663968d901c668151180)  
 A very small touch. But yet another possibility for designers to get involved.
-   * [Round screens with a tyre cut-off](https://github.com/AsteroidOS/meta-asteroid/pull/41) are now supported.
+   * [Round screens with a flat tyre shape](https://github.com/AsteroidOS/meta-asteroid/pull/41) are now supported.
 
 ## Expanded Watch Support
 
