@@ -29,7 +29,7 @@ module.exports.register = function (Handlebars, options, params) {
    */
 
   Handlebars.registerHelper('getAllWithStatus', function(mystatus) {
-   return models.watches.filter((s) => s.status===mystatus).sort((a, b) => parseInt(b.stars) - parseInt(a.stars));
+   return models.watches.filter((s) => s.status===mystatus).sort((a, b) => b.stars - a.stars);
   });
 
   /**
