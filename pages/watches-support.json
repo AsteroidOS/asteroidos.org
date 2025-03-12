@@ -492,7 +492,7 @@
       "modelnumbers": [
         { "num":"LG W200", "name":"LG Urbane 2nd Edition", "codename":"nemo" }
       ],
-      "status":"supported",
+      "status":"experimental",
       "maintainers": [ "eLtMosen" ],
       "contributors": [ "dodoradio", "MagneFire" ],
       "stars":2,
