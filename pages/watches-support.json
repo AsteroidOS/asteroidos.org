@@ -484,6 +484,37 @@
       ]
     },
     {
+      "name":"nemo",
+      "wiki": "https://wiki.asteroidos.org/index.php/Nemo",
+      "models": [
+        "LG Watch Urbane 2"
+      ],
+      "modelnumbers": [
+        { "num":"LG W200", "name":"LG Urbane 2nd Edition", "codename":"nemo" }
+      ],
+      "status":"supported",
+      "maintainers": [ "eLtMosen" ],
+      "contributors": [ "dodoradio", "MagneFire" ],
+      "stars":2,
+      "soc":"msm8926",
+      "kernelversion":"3.10",
+      "androidversion":"lollipop",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Bluetooth", "status":"bad" },
+        { "name":"Haptics", "status":"bad" },
+        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Always-on-Display", "status":"bad" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Heart Rate", "status":"bad" },
+        { "name":"Compass", "status":"bad" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"bad" },
+        { "name":"Cellular", "status":"bad" }
+      ]
+    },
+    {
       "name":"pike",
       "wiki": "https://wiki.asteroidos.org/index.php/Pike",
       "models": [
