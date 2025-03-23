@@ -1,6 +1,6 @@
 ---
 title: TicWatch E & S
 deviceNames: [ mooneye ]
+simg: true
 layout: aw-install
-installParts: [ install-prepare-adb, install-unlock-adb-round, install-temponly ]
 ---
