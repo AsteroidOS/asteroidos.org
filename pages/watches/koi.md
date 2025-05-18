@@ -3,12 +3,12 @@ title: Casio WSD-F10/F20
 deviceNames: [ koi ]
 label: ayu/koi
 section: install
-layout: aw-install
-installParts: [ install-prepare-adb, install-unlock-adb-round, install-select-method, install-full-adb-push-ext4, install-temp-flash-boot-to-recovery ]
+# layout: aw-install
+# installParts: [ install-prepare-adb, install-unlock-adb-round, install-select-method, install-full-adb-push-ext4, install-temp-flash-boot-to-recovery ]
 ---
 <div class="callout callout-warning">
     <h4>WARNING: Bricking issues!</h4>
-    <p>These watches are known to brick themselves in various ways. Most bricks are recoverable, but occasionally the watch will seemingly corrupt its bootloader partition, which will cause it to get stuck in WearOS and bootloop. Proceed with extreme caution and consult <a href="https://matrix.to/#/#Asteroid:matrix.org">our matrix chat</a> before installing.</p>
+    <p>These watches are known to brick themselves in various ways. Most bricks are recoverable, but occasionally the watch will seemingly corrupt its bootloader partition, which will cause it to get stuck in WearOS and bootloop. Proceed with extreme caution and first consult <a href="https://matrix.to/#/#Asteroid:matrix.org">our matrix chat</a> for step by step guidance during the installation.</p>
 </div>
 <div class="callout callout-info">
     <h4>Model number and variants</h4>
@@ -29,5 +29,5 @@ installParts: [ install-prepare-adb, install-unlock-adb-round, install-select-me
     <p>Then you can then use pogo pins to connect a USB cable to the watch. The left pad is D- (white) and the right pad is D+ (green). Ensure that the magnetic charger is also connected to the watch while accessing USB, as it is needed for the signal ground. The charger should be connected to the same computer as your USB data cable.</p>
     <p>Do not, under any circumstances, solder to the pads. This can melt the plastic casing of the watch and cause all sorts of other damage.</p>
     <img src="{{assets}}/img/medaka_ayu_usb.png" class="install-usbmod-img">
-    <p>There is currently no 3D printable dock for this watch, but feel free to design one and share it with the community!</p>
+    <p>3D printable docks for all Casio WSD variants are available here: <a href="https://www.printables.com/model/609744-casio-wsd-fxx-series-developer-usb-dock">https://www.printables.com/model/609744-casio-wsd-fxx-series-developer-usb-dock</a></p>
 </div>
