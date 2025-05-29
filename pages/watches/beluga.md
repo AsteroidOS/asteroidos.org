@@ -14,5 +14,5 @@ installParts: [ install-prepare-adb, install-unlock-adb-beluga, install-select-m
 </div>
 <div class="callout callout-info">
     <h4>USB Info</h4>
-    <p>USB support is marked "partial" due to non working SSH connection. Only ADB connection is availble.</p>
+    <p>USB support is marked "partial" due to non working SSH connection. Only ADB connection is available.</p>
 </div>
