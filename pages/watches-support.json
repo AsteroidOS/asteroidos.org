@@ -408,7 +408,7 @@
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
       "features": [
-        { "name":"Display", "status":"good" },
+        { "name":"Display", "status":"bad" },
         { "name":"Touch", "status":"good" },
         { "name":"Bluetooth", "status":"bad" },
         { "name":"Haptics", "status":"good" },
@@ -416,7 +416,7 @@
         { "name":"Light Sensor", "status":"good" },
         { "name":"Always-on-Display", "status":"bad" },
         { "name":"Microphone", "status":"good" },
-        { "name":"USB", "status":"good" },
+        { "name":"USB", "status":"bad" },
         { "name":"WLAN", "status":"good" }
       ]
     },
