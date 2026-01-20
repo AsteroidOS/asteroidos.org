@@ -3,7 +3,7 @@ title: AsteroidOS 2.0 Release Announcement
 
 layout: news
 
-posted: 2025-02-05
+posted: 2026-01-31
 
 post: true
 
@@ -19,7 +19,7 @@ author: AsteroidOS Team
 
 Asteroids travel steadily, occasionally leaving observable distance. It has been a while since our last release, and now it's finally here!
 
-AsteroidOS 2.0 has arrived, bringing major features and improvements gathered during its journey through community space. Always-on-Display, expanded support for more watches, new launcher styles, significant performance increases in parts of the User Interface, and enhancements to our synchronization clients are just some highlights of what to expect.
+AsteroidOS 2.0 has arrived, bringing major features and improvements gathered during its journey through community space. Always-on-Display, expanded support for more watches, new launcher styles, customizable quickSettings, significant performance increases in parts of the User Interface, and enhancements to our synchronization clients are just some highlights of what to expect.
 
 ## Milestones Reached
 
@@ -45,6 +45,8 @@ AsteroidOS 2.0 has arrived, bringing major features and improvements gathered du
 
 ## Design, Usability, and App Improvements
 
+   * [New QuickPanel](https://github.com/AsteroidOS/asteroid-launcher/pull/180)  
+The former QuickSettings top menu on the homescreen has been reworked into a highly customizable QuickPanel with many more settings toggles, app short cuts and remorse timer driven power off.
    * [New App Launchers](https://github.com/AsteroidOS/asteroid-settings/pull/35)  
 Four more App Launcher styles have been added. Those can be selected in the new Launcher settings page.
    * [Enhanced Wallpaper](https://github.com/AsteroidOS/asteroid-settings/pull/39) and [Watchface gallery](https://github.com/AsteroidOS/asteroid-settings/pull/40)  
@@ -133,7 +135,7 @@ Over the years, the AsteroidOS community has expanded its reach, with community 
 Watchface creation has been a popular community activity lately. We are happy to present the new and comprehensive [watchfaces creation and design guide](https://asteroidos.org/wiki/watchfaces-creation/). It is garnished with testing and deployment scripts to simplify the process further. 
 Our community came up with funny and beautiful new watchfaces. Those are all collected in the [unofficial watchfaces repository](https://github.com/AsteroidOS/unofficial-watchfaces).
 
-eLtMosen has contributed a variety of watchfaces. Two highlights are the minimalistic [pulsedot](https://youtu.be/cXeWRX6N6Sg) and a classic Monty Python inspired [silly walks watchface](https://twitter.com/eLtMosen/status/1403642123338014722).
+moWerk has contributed a variety of watchfaces. Two highlights are the minimalistic [pulsedot](https://youtu.be/cXeWRX6N6Sg) and a classic Monty Python inspired [silly walks watchface](https://twitter.com/eLtMosen/status/1403642123338014722).
 
 MagneFire did show-off [Doom](https://twitter.com/MagneFire_/status/1230159641004445696), [Super Tux Kart](https://fosstodon.org/@MagneFire/107105850296484856), [gpSP](https://twitter.com/MagneFire_/status/1220789841673236485) and other [emulated games](https://twitter.com/MagneFire_/status/1353443545831510016) on his watch. The native 2048 port called diamonds was recently included into the stock set of apps.
 
@@ -145,7 +147,7 @@ PostmarketOS now offers our launcher and core apps, thanks to postmarketOS devel
 
 The program [lcd-tools](https://github.com/AsteroidOS/lcd-tools) by lecris and Magnefire was originally developed to control the secondary LCD on the TicWatch Pro. And got extended by dodoradio and beroset to make use of many more features the casio secondary displays offer.
 
-MagneFire, jrt, eLtMosen and beroset joined the AsteroidOS team.
+MagneFire, jrt, moWerk and beroset joined the AsteroidOS team.
 
 ## Infrastructure
 
