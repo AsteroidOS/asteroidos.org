@@ -3,7 +3,7 @@ title: AsteroidOS 2.0 Release Announcement
 
 layout: news
 
-posted: 2026-01-31
+posted: 2026-02-02
 
 post: true
 
@@ -19,7 +19,7 @@ author: AsteroidOS Team
 
 Asteroids travel steadily, occasionally leaving observable distance. It has been a while since our last release, and now it's finally here!
 
-AsteroidOS 2.0 has arrived, bringing major features and improvements gathered during its journey through community space. Always-on-Display, expanded support for more watches, new launcher styles, customizable quickSettings, significant performance increases in parts of the User Interface, and enhancements to our synchronization clients are just some highlights of what to expect.
+AsteroidOS 2.0 has arrived, bringing major features and improvements gathered during its journey through community space. Always-on-Display, expanded support for more watches, new launcher styles, customizable quick settings, significant performance increases in parts of the User Interface, and enhancements to our synchronization clients are just some highlights of what to expect.
 
 ## Milestones Reached
 
@@ -56,6 +56,8 @@ Use your watch as a bedside clock or simply show charging much more clearly. Sel
 The nightstand settings page makes this mode very versatile.
    * [New UI elements and polished icons](https://github.com/AsteroidOS/asteroid-icons-ion/pull/18/files)  
 Improved toggles, progress bars and other UI elements by unifying the design and removing inconsistencies.
+   * [New background animation](https://github.com/AsteroidOS/qml-asteroid/pull/47/files)  
+Reworked design for a more organic feeling of "breathing".
    * [Ringtone vibration pattern](https://github.com/AsteroidOS/asteroid/issues/99)  
 Customise all the things! Here, the vibration pattern on incoming calls.
    * [Calculator app with new layout](https://github.com/AsteroidOS/asteroid-calculator/pull/4)  
@@ -85,6 +87,7 @@ A very small touch. But yet another possibility for designers to get involved.
 Since 1.0 we added support for the following watches:
 
    * Fossil Gen 4 Watches (firefish/ray)
+   * Fossil Gen 5 Watches (triggerfish)
    * Fossil Gen 6 Watches (hoki)
    * Huawei Watch (sturgeon)
    * Huawei Watch 2 (sawfish/sawshark)
@@ -98,12 +101,20 @@ Since 1.0 we added support for the following watches:
    * Ticwatch E2 \& S2 (tunny)
    * Ticwatch Pro, Pro 2020 and LTE (catfish/catfish-ext/catshark)
 
+And partial support for the following watches:
+
+   * Casio WSD-F10/F20 (koi, ayu) - bricking have been reported on some watches
+   * LG Watch Urbane 2 (nemo) - missing too many features
+   * Moto 360 1st gen (minnow) - has underwhelming performance, it is the only watch we have ported with a TI SoC.
+   * Samsung Gear 2 (rinato) - too unstable and too bad power management
+   * Samsung Gear Live (sprat) - in an unusable state due to persistent display issues
+
+We have created an "Experimental" category in our watch gallery for the above 5 watches since we do not consider those suitable for daily use. We will however continue to provide install images for these watches, and we welcome new contributors with fresh ideas to help improve support! We also continue to monitor supported watches and for example recently demoted the Sony Smartwatch 3 (tetra) due to unresolved hardware support issues.
+
 For a complete list of supported devices and installation instructions, please visit our [installation guide](https://asteroidos.org/install/).
 
 Apart from adding new watches, the community has also been actively enhancing the support for our existing range of watches.
 Visit our newly created [feature matrix page](https://asteroidos.org/install/features/) to find out about the detailed support level for your watch.
-
-Despite recent minor improvements, we have decided to remove the Sony Smartwatch 3 (tetra) from our official support due to unresolved hardware [issues](https://github.com/AsteroidOS/meta-tetra-hybris/issues). Additionally, the Samsung Gear Live (sprat) is currently in an unusable state due to persistent display issues. Although the Moto 360 1st gen (minnow) has been successfully ported, it shows underwhelming performance as it is the only watch we have ported with a TI SoC. We will continue to provide install images for these watches, and we welcome new contributors with fresh ideas to help improve support. However, for the time being, we have created an Experimental category in our watch gallery for watches that we do not consider to be suitable for daily use.
 
 ## Synchronisation Clients
 
@@ -153,7 +164,7 @@ MagneFire, jrt, moWerk and beroset joined the AsteroidOS team.
 
 Our website [asteroidos.org](https://asteroidos.org) has seen a major content extension.
    * A [FAQ](https://asteroidos.org/faq/) section has been added to provide a quick overview of our project.
-   * The Install page has grown into a gallery of supported watches over time with now 22 watches listed. We renamed it to "[Watches](https://asteroidos.org/watches/)" and plan to evolve this page into a purchase guide to aid new users in choosing a supported watch. A first step was to resize the images of all watches to correctly reflect the relative size differences between them, to be able to compare their dimensions.
+   * The Install page has grown into a gallery of supported watches over time with now 29 watches listed. We renamed it to "[Watches](https://asteroidos.org/watches/)" and plan to evolve this page into a purchase guide to aid new users in choosing a supported watch. A first step was to resize the images of all watches to correctly reflect the relative size differences between them, to be able to compare their dimensions.
    * The [Documentation](https://asteroidos.org/wiki/documentation/) pages are frequently updated by community members and nicely keep up with the current state of development. We recently moved them into a MediaWiki. This enables users without deeper knowledge to contribute to the documentation much more easily.
 
 The creator of the unofficial [Subreddit](https://www.reddit.com/r/AsteroidOS/) gave us full access, making it an official channel alongside our [Mastodon account](https://fosstodon.org/@AsteroidOS).
@@ -162,7 +173,7 @@ As we already mentioned in a [previous blog post](https://asteroidos.org/news/fa
 
 With 2.0 we introduce a community repository, to improve discoverability and simplify the installation of precompiled packages, while building the foundation for a possible graphical software center in the future. Currently, the repository consists of a few debugging tools, community watchfaces, games and emulators. Developers are welcome to create pull requests on the [meta-community](https://github.com/AsteroidOS/meta-asteroid-community) repo for packaging.
 
-After moving our infrastructure to a larger server, we have seen an increase in the frequency of nightly releases. However, it is worth noting that completely rebuilding all packages for all 26 watch system images still takes almost a week. Therefore, we can expect the nightlies to be ready on weekends. 
+After moving our infrastructure to a larger server, we have seen an increase in the frequency of nightly releases. However, it is worth noting that completely rebuilding all packages for all 29 watch system images still takes almost a week. Therefore, we can expect the nightlies to be ready on weekends. 
 
 ## Getting Involved
 
