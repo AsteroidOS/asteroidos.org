@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body{{#slug}} class="{{.}}"{{/slug}}>
+    {{!-- Docs master nav --}}
+    {{> nav-main }}
+
+    {{> watches-header }}
+
+    {{!-- Content --}}
+    <div class="container docs-container">
+      <h1>Hardware Support</h1>
+      <p><br>Please make sure to test all hardware functions of your watch in your current operating system to rule out hardware defects before installing AsteroidOS. You can report any hardware support issue <a href="https://github.com/AsteroidOS/meta-smartwatch/issues">here</a>. Use the label <code>{{#if label}}{{label}}{{else}}{{deviceNames.[0]}}{{/if}}</code> for issues specific to your watch.</p>
+      {{#deviceNames}}
+        <p>The following list shows the state of the features of the <code>{{.}}</code> version of this watch.</p>
+        <div class="support-div">
+        {{#with (getModel .)}}
+          {{#features}}
+              <div class="install-support-col {{status}}"><span class="tooltiptext">{{status}}</span>{{name}}</div>
+          {{/features}}
+        {{/with}}
+        </div>
+      {{/deviceNames}}
+      <table class="table table-striped">
+        <thead><tr><th>Model Number</th><th>Model Name</th><th>Codename</th></tr></thead>
+        <tbody>
+      {{#deviceNames}}
+        {{#with (getModel .)}}
+          {{#modelnumbers}}
+            <tr><td>{{num}}</td><td>{{name}}</td><td>{{codename}}</td></tr>
+          {{/modelnumbers}}
+        {{/with}}
+      {{/deviceNames}}
+        </tbody>
+      </table>
+      {{> body }}
+      <h1>Prepare installation</h1>
+      <h2>Inform yourself</h2>
+        {{#with (getModel deviceNames.[0])}}
+          <p><a href={{wiki}}>See the watch wiki page</a> for up-to-date information about this watch.</p>
+        {{/with}}
+
+      {{#if deviceNames.[1]}}
+      <h2>Choose your variant</h2>
+      {{else}}
+      <h2>Downloads</h2>
+      {{/if}}
+
+        {{> install-prepare-downloads}}
+
+      {{#if installParts}}
+        {{#each installParts as | partialName |}}
+          {{> (partialName) assets=../assets deviceNames=../deviceNames simg=../simg}}
+        {{/each}}
+      {{else}}
+        {{> install-prepare-heimdall }}
+
+        {{> install-unlock-heimdall }}
+
+        {{> install-heimdall }}
+      {{/if}}
+
+        <h2>3. Enjoy your new OS!</h2>
+        <p>The <a href="https://wiki.asteroidos.org/index.php/Quick_Start_Guide">Quick Start Guide</a> will help you to get started.</p>
+        <p><a href={{rel 'wiki/documentation'}}>See the wiki</a> for detailed information about synchronization clients, SSH access, watchface and package installation, backup guide and much more!</p>
+        <br><br>
+
+    {{> install-problems }}
+
+    </div>
+
+    {{!-- Spacing to footer --}}
+    <br><br>
+
+    {{!-- Footer --}}
+    {{> footer }}
+
+    {{!-- JavaScript and analytics only. --}}
+    {{> javascripts }}
+  </body>
+</html>
