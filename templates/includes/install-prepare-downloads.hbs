@@ -2,14 +2,14 @@
       <div class="install-preparation-box">
         <h3>Download AsteroidOS for {{.}}</h3>
         Store the files in your "Downloads" folder so the later commands work<br>
-        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.rootfs.ext4" role="button">asteroid-image-{{.}}.rootfs.ext4</a>
+        <a class="btn btn-primary download-link" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.rootfs.ext4" role="button">asteroid-image-{{.}}.rootfs.ext4</a>
         {{#if ../simg}}
-        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.rootfs.simg" role="button">asteroid-image-{{.}}.rootfs.simg</a>
+        <a class="btn btn-primary download-link" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.rootfs.simg" role="button">asteroid-image-{{.}}.rootfs.simg</a>
         {{/if}}
         {{#if ../heimdall}}
-        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.bin" role="button">zImage-dtb-{{.}}.bin</a>
+        <a class="btn btn-primary download-link" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.bin" role="button">zImage-dtb-{{.}}.bin</a>
         {{else}}
-        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.fastboot" role="button">zImage-dtb-{{.}}.fastboot</a>
+        <a class="btn btn-primary download-link" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.fastboot" role="button">zImage-dtb-{{.}}.fastboot</a>
         {{/if}}
         <br><br><img src="{{../assets}}/img/{{.}}.png" class="install-preparation-img"><br>
       </div>
