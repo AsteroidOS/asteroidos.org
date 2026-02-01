@@ -18,23 +18,39 @@
 <!-- Radio button logic for the install pages -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
-  $('input').change(() => {
-  const OSSelect = $('input[name=OSSelector]:checked').val();
-  const MethSelect = $('input[name=MethSelector]:checked').val();
-  const BaseSelect = $('input[name=BaseSelector]:checked').val();
-  $("div[name=LinAdb]").toggle(OSSelect === "Lin");
-  $("div[name=WinAdb]").toggle(OSSelect === "Win");
-  $("div[name=LinProblem]").toggle(OSSelect === "Lin");
-  $("div[name=WinProblem]").toggle(OSSelect === "Win");
-  $("div[name=LinTemp]").toggle(OSSelect === "Lin" && MethSelect === "Temp");
-  $("div[name=LinReal]").toggle(OSSelect === "Lin" && MethSelect === "Real");
-  $("div[name=WinTemp]").toggle(OSSelect === "Win" && MethSelect === "Temp");
-  $("div[name=WinReal]").toggle(OSSelect === "Win" && MethSelect === "Real");
-  $("div[name=WearosAdb]").toggle(BaseSelect === "WearOs");
-  $("div[name=AosAdb]").toggle(BaseSelect === "Reflash");
-  $("div[name=LinuxSsh]").toggle(OSSelect === "Lin" && BaseSelect === "Reflash");
+  function updateDownloadLinks() {
+    const ReleaseSelect = $('input[name=ReleaseSelector]:checked').val();
+    const releasePath = (ReleaseSelect === "2.0") ? "2.0" : "nightlies";
 
-});
+    $(".download-link").each(function() {
+      let currentHref = $(this).attr("href");
+      if (currentHref) {
+        let newHref = currentHref.replace(/\/nightlies\/|\/2\.0\//, `/${releasePath}/`);
+        $(this).attr("href", newHref);
+      }
+    });
+  }
+
+  updateDownloadLinks();
+
+  $('input').change(() => {
+    const OSSelect = $('input[name=OSSelector]:checked').val();
+    const MethSelect = $('input[name=MethSelector]:checked').val();
+    const BaseSelect = $('input[name=BaseSelector]:checked').val();
+    $("div[name=LinAdb]").toggle(OSSelect === "Lin");
+    $("div[name=WinAdb]").toggle(OSSelect === "Win");
+    $("div[name=LinProblem]").toggle(OSSelect === "Lin");
+    $("div[name=WinProblem]").toggle(OSSelect === "Win");
+    $("div[name=LinTemp]").toggle(OSSelect === "Lin" && MethSelect === "Temp");
+    $("div[name=LinReal]").toggle(OSSelect === "Lin" && MethSelect === "Real");
+    $("div[name=WinTemp]").toggle(OSSelect === "Win" && MethSelect === "Temp");
+    $("div[name=WinReal]").toggle(OSSelect === "Win" && MethSelect === "Real");
+    $("div[name=WearosAdb]").toggle(BaseSelect === "WearOs");
+    $("div[name=AosAdb]").toggle(BaseSelect === "Reflash");
+    $("div[name=LinuxSsh]").toggle(OSSelect === "Lin" && BaseSelect === "Reflash");
+
+    updateDownloadLinks();
+  });
 </script>
 
 <!-- Copy to clipboard button logic -->
