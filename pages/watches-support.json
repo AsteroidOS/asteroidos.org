@@ -829,6 +829,37 @@
       ]
     },
     {
+      "name":"triggerfish",
+      "models": [
+        "Fossil Gen 5"
+      ],
+      "modelnumbers": [
+      ],
+      "status":"supported",
+      "maintainers": [ "dodoradio" ],
+      "contributors": [ "dodoradio" ],
+      "stars":2,
+      "soc":"msm8909w",
+      "kernelversion":"4.9",
+      "androidversion":"pie",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Bluetooth", "status":"bad" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Light Sensor", "status":"good" },
+        { "name":"Always-on-Display", "status":"bad" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"USB", "status":"bad" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"GPS", "status":"bad" },
+        { "name":"NFC", "status":"bad" },
+        { "name":"Crown", "status":"good" }
+      ]
+    },
+    {
       "name":"tunny",
       "wiki": "https://wiki.asteroidos.org/index.php/Skipjack/Tunny",
       "reference": "skipjack",
