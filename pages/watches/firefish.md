@@ -8,9 +8,8 @@ layout: aw-install
 <div class="callout callout-info">
     <h4>Model number and variants</h4>
     <p></p>
-    <p>The Fossil Gen 4 is marketed as different versions from different manufacturers.
-    This means that there are two known versions that are compatible with a range of Fossil Gen 4 watches.
-    These two versions are referred to as <code>firefish</code> and <code>ray</code>.  One difference between the two is that <code>firefish</code> has a larger display than <code>ray</code>.
+    <p>Different manufacturers market products with the same underlying platform as the Fossil Gen 4, check the table above to find your watch.</p>
+    <p>There are also two variants referred to as <code>firefish</code> and <code>ray</code>.  One difference between the two is that <code>firefish</code> has a larger display than <code>ray</code>.
     </p><p>
     Generally, models that start with DW6 are compatible with <code>firefish</code>. Models that start with DW7 are compatible with <code>ray</code>.
     </p>
