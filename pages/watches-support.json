@@ -579,6 +579,38 @@
       ]
     },
     {
+      "name":"rinato",
+      "wiki": "https://wiki.asteroidos.org/index.php/Rinato",
+      "models": [
+        "Samsung Gear 2"
+      ],
+      "modelnumbers": [
+        { "num":"SM-R380", "name":"Samsung Gear 2", "codename":"rinato" },
+        { "num":"SM-R381", "name":"Samsung Gear 2 Neo", "codename":"rinato" }
+      ],
+      "status":"experimental",
+      "maintainers": [ "casept" ],
+      "contributors": [ "casept" ],
+      "stars":1,
+      "soc":"exynos3250",
+      "kernelversion":"mainline",
+      "androidversion":"none",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"USB", "status":"good" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"GPS", "status":"bad" },
+        { "name":"NFC", "status":"bad" }
+      ]
+    },
+    {
       "name":"sawfish",
       "wiki": "https://wiki.asteroidos.org/index.php/Sawfish",
       "othernames":[ "sawshark" ],
