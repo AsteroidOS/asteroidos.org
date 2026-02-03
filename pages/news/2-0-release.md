@@ -3,7 +3,7 @@ title: AsteroidOS 2.0 Release Announcement
 
 layout: news
 
-posted: 2026-02-02
+posted: 2026-02-04
 
 post: true
 
