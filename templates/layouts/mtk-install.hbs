@@ -36,17 +36,28 @@
         </tbody>
       </table>
       {{> body }}
+      <h2>Prerequisites</h2>
+      <div class="install-prerequisits-box">
+      <h3>Choose version</h3>
+      <div class="radio-install">
+        <input type="radio" name="ReleaseSelector" id="BaseSelectRelease20" value="2.0" checked="checked">
+        <label for="BaseSelectRelease20">2.0</label>
+        <input type="radio" name="ReleaseSelector" id="BaseSelectReleaseNightly" value="Nightly">
+        <label for="BaseSelectReleaseNightly">Nightly</label>
+      </div>
+      <br>
+    </div>
       <h1>Choose your variant</h1>
       {{#deviceNames}}
       <div class="install-preparation-box">
         <h3>Download AsteroidOS for {{.}}</h3>
         Store the files in your "Downloads" folder so the later commands work<br><br>
         <p>
-          <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.rootfs.ext4" role="button">asteroid-image-{{.}}.rootfs.ext4</a>
-          <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.fastboot" role="button">zImage-dtb-{{.}}.fastboot</a>
+          <a class="btn btn-primary  download-link" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.rootfs.ext4" role="button">asteroid-image-{{.}}.rootfs.ext4</a>
+          <a class="btn btn-primary download-link" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.fastboot" role="button">zImage-dtb-{{.}}.fastboot</a>
         </p>
-        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/MT6580_AsteroidOS_scatter-{{.}}.txt" role="button">MT6580_AsteroidOS_scatter-{{.}}.txt</a>
-        <a class="btn btn-primary" href="https://release.asteroidos.org/nightlies/{{.}}/logo.bin" role="button">logo.bin</a>
+        <a class="btn btn-primary download-link" href="https://release.asteroidos.org/nightlies/{{.}}/MT6580_AsteroidOS_scatter-{{.}}.txt" role="button">MT6580_AsteroidOS_scatter-{{.}}.txt</a>
+        <a class="btn btn-primary download-link" href="https://release.asteroidos.org/nightlies/{{.}}/logo.bin" role="button">logo.bin</a>
         <br><br><img src="{{../assets}}/img/{{.}}.png" class="install-preparation-img"><br>
       </div>
       {{/deviceNames}}
