@@ -1,16 +1,16 @@
+{{#deviceNames}}
       <div class="install-preparation-box">
-        <h3>Download AsteroidOS for {{deviceNames}}</h3>
+        <h3>Download AsteroidOS for {{.}}</h3>
         Store the files in your "Downloads" folder so the later commands work<br>
-        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{deviceNames}}/asteroid-image-{{deviceNames}}.rootfs.ext4" role="button">asteroid-image-{{deviceNames}}.rootfs.ext4</a>
-        {{#if simg}}
-        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{deviceNames}}/asteroid-image-{{deviceNames}}.rootfs.simg" role="button">asteroid-image-{{deviceNames}}.rootfs.simg</a>
+        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.rootfs.ext4" role="button">asteroid-image-{{.}}.rootfs.ext4</a>
+        {{#if ../simg}}
+        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.rootfs.simg" role="button">asteroid-image-{{.}}.rootfs.simg</a>
         {{/if}}
-        {{#if heimdall}}
-        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{deviceNames}}/zImage-dtb-{{deviceNames}}.bin" role="button">zImage-dtb-{{deviceNames}}.bin</a>
+        {{#if ../heimdall}}
+        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.bin" role="button">zImage-dtb-{{.}}.bin</a>
         {{else}}
-        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{deviceNames}}/zImage-dtb-{{deviceNames}}.fastboot" role="button">zImage-dtb-{{deviceNames}}.fastboot</a>
+        <a class="btn btn-primary" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.fastboot" role="button">zImage-dtb-{{.}}.fastboot</a>
         {{/if}}
-        {{#deviceNames}}
         <br><br><img src="{{../assets}}/img/{{.}}.png" class="install-preparation-img"><br>
-        {{/deviceNames}}
       </div>
+{{/deviceNames}}
