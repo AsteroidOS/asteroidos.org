@@ -611,6 +611,45 @@
       ]
     },
     {
+      "name":"rubyfish",
+      "wiki": "https://wiki.asteroidos.org/index.php/Rubyfish",
+      "models": [
+        "TicWatch Pro 3"
+      ],
+      "modelnumbers": [
+        { "num":"WH12018", "name":"TicWatch Pro 3 GPS", "codename":"rubyfish" },
+        { "num":"WH12018", "name":"TicWatch Pro 3 Ultra GPS", "codename":"rubyfish" },
+        { "num":"WH11013", "name":"TicWatch Pro 3 Cellular/LTE", "codename":"rover" },
+        { "num":"WH11013", "name":"TicWatch Pro 3 Ultra", "codename":"rover" }
+      ],
+      "status":"supported",
+      "maintainers": [ "argosphil", "MagneFire" ],
+      "contributors": [ "argosphil", "MagneFire" ],
+      "stars":3,
+      "soc":"msm8937",
+      "kernelversion":"4.9",
+      "androidversion":"pie",
+      "features": [
+        { "name":"Display", "status":"good" },
+        { "name":"Touch", "status":"good" },
+        { "name":"Bluetooth", "status":"good" },
+        { "name":"Haptics", "status":"good" },
+        { "name":"Tilt-to-Wake", "status":"good" },
+        { "name":"Light Sensor", "status":"good" },
+        { "name":"Always-on-Display", "status":"good" },
+        { "name":"Dual-Display", "status":"partial" },
+        { "name":"Microphone", "status":"bad" },
+        { "name":"Speaker", "status":"bad" },
+        { "name":"Compass", "status":"good" },
+        { "name":"Heart Rate", "status":"good" },
+        { "name":"USB", "status":"partial", "comment": "ADB support only" },
+        { "name":"WLAN", "status":"good" },
+        { "name":"GPS", "status":"partial" },
+        { "name":"NFC", "status":"bad" },
+        { "name":"Cellular", "status":"bad", "comment": "rover only (eSIM)" }
+      ]
+    },
+    {
       "name":"sawfish",
       "wiki": "https://wiki.asteroidos.org/index.php/Sawfish",
       "othernames":[ "sawshark" ],
