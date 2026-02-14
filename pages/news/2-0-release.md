@@ -100,6 +100,7 @@ Since 1.0 we added support for the following watches:
    * Ticwatch E \& S (mooneye)
    * Ticwatch E2 \& S2 (tunny)
    * Ticwatch Pro, Pro 2020 and LTE (catfish/catfish-ext/catshark)
+   * Ticwatch Pro 3 (rover/rubyfish)
 
 And partial support for the following watches:
 
@@ -164,7 +165,7 @@ MagneFire, jrt, moWerk and beroset joined the AsteroidOS team.
 
 Our website [asteroidos.org](https://asteroidos.org) has seen a major content extension.
    * A [FAQ](https://asteroidos.org/faq/) section has been added to provide a quick overview of our project.
-   * The Install page has grown into a gallery of supported watches over time with now 29 watches listed. We renamed it to "[Watches](https://asteroidos.org/watches/)" and plan to evolve this page into a purchase guide to aid new users in choosing a supported watch. A first step was to resize the images of all watches to correctly reflect the relative size differences between them, to be able to compare their dimensions.
+   * The Install page has grown into a gallery of supported watches over time with now 30 watches listed. We renamed it to "[Watches](https://asteroidos.org/watches/)" and plan to evolve this page into a purchase guide to aid new users in choosing a supported watch. A first step was to resize the images of all watches to correctly reflect the relative size differences between them, to be able to compare their dimensions.
    * The [Documentation](https://asteroidos.org/wiki/documentation/) pages are frequently updated by community members and nicely keep up with the current state of development. We recently moved them into a MediaWiki. This enables users without deeper knowledge to contribute to the documentation much more easily.
 
 The creator of the unofficial [Subreddit](https://www.reddit.com/r/AsteroidOS/) gave us full access, making it an official channel alongside our [Mastodon account](https://fosstodon.org/@AsteroidOS).
@@ -173,7 +174,7 @@ As we already mentioned in a [previous blog post](https://asteroidos.org/news/fa
 
 With 2.0 we introduce a community repository, to improve discoverability and simplify the installation of precompiled packages, while building the foundation for a possible graphical software center in the future. Currently, the repository consists of a few debugging tools, community watchfaces, games and emulators. Developers are welcome to create pull requests on the [meta-community](https://github.com/AsteroidOS/meta-asteroid-community) repo for packaging.
 
-After moving our infrastructure to a larger server, we have seen an increase in the frequency of nightly releases. However, it is worth noting that completely rebuilding all packages for all 29 watch system images still takes almost a week. Therefore, we can expect the nightlies to be ready on weekends. 
+After moving our infrastructure to a larger server, we have seen an increase in the frequency of nightly releases. However, it is worth noting that completely rebuilding all packages for all 30 watch system images still takes almost a week. Therefore, we can expect the nightlies to be ready on weekends. 
 
 ## Getting Involved
 
