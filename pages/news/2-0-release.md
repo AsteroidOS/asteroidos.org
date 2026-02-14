@@ -157,7 +157,7 @@ Beroset implemented the new [Nightstand mode](https://asteroidos.org/news/nights
 
 PostmarketOS now offers our launcher and core apps, thanks to postmarketOS developer PureTryOut, who moved our buildsystem from qmake to cmake along the way.
 
-The program [lcd-tools](https://github.com/AsteroidOS/lcd-tools) by lecris and MagneFire was originally developed to control the secondary LCD on the TicWatch Pro. And got extended by dodoradio and beroset to make use of many more features the casio secondary displays offer.
+The program [lcd-tools](https://github.com/AsteroidOS/lcd-tools) by lecris and MagneFire was originally developed to control the secondary LCD on the TicWatch Pro. And got extended by dodoradio and beroset to make use of many more features the Casio secondary displays offer.
 
 MagneFire, jrt, moWerk and beroset joined the AsteroidOS team.
 
