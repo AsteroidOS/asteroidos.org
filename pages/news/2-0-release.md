@@ -122,7 +122,7 @@ Visit our newly created [feature matrix page](https://asteroidos.org/install/fea
 ### [AsteroidOS Sync](https://f-droid.org/en/packages/org.asteroidos.sync/) (Android)
 
    * [Call detection and display](https://github.com/AsteroidOS/AsteroidOSSync/pull/110)
-   * [New Bluetooth lib](https://github.com/AsteroidOS/AsteroidOSSync/pull/127) should improve stability and simplify the paring process
+   * [New Bluetooth lib](https://github.com/AsteroidOS/AsteroidOSSync/pull/127) should improve stability and simplify the pairing process
    * [Custom OWM API key support](https://github.com/AsteroidOS/AsteroidOSSync/pull/142)
    * A more modular architecture, allowing for easier extending and maintainability of the app.
 
@@ -157,7 +157,7 @@ Beroset implemented the new [Nightstand mode](https://asteroidos.org/news/nights
 
 PostmarketOS now offers our launcher and core apps, thanks to postmarketOS developer PureTryOut, who moved our buildsystem from qmake to cmake along the way.
 
-The program [lcd-tools](https://github.com/AsteroidOS/lcd-tools) by lecris and Magnefire was originally developed to control the secondary LCD on the TicWatch Pro. And got extended by dodoradio and beroset to make use of many more features the casio secondary displays offer.
+The program [lcd-tools](https://github.com/AsteroidOS/lcd-tools) by lecris and MagneFire was originally developed to control the secondary LCD on the TicWatch Pro. And got extended by dodoradio and beroset to make use of many more features the casio secondary displays offer.
 
 MagneFire, jrt, moWerk and beroset joined the AsteroidOS team.
 
