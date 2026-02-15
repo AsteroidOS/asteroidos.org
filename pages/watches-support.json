@@ -862,6 +862,7 @@
     },
     {
       "name":"triggerfish",
+      "wiki": "https://wiki.asteroidos.org/index.php/Triggerfish",
       "models": [
         "Fossil Gen 5"
       ],
