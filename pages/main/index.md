@@ -6,31 +6,31 @@ layout: content
 ---
 <div id="slideshow">
   <div class="slide-wrapper">
-    <div class="slide"><img src="{{assets}}/img/slides/001.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/002.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/003.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/004.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/005.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/006.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/007.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/008.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/009.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/010.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/011.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/012.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/013.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/014.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/015.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/016.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/017.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/018.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/019.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/020.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/021.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/022.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/023.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/024.webp"></div>
-    <div class="slide"><img src="{{assets}}/img/slides/025.webp"></div>
+    <img src="{{assets}}/img/slides/001.webp">
+    <img src="{{assets}}/img/slides/002.webp">
+    <img src="{{assets}}/img/slides/003.webp">
+    <img src="{{assets}}/img/slides/004.webp">
+    <img src="{{assets}}/img/slides/005.webp">
+    <img src="{{assets}}/img/slides/006.webp">
+    <img src="{{assets}}/img/slides/007.webp">
+    <img src="{{assets}}/img/slides/008.webp">
+    <img src="{{assets}}/img/slides/009.webp">
+    <img src="{{assets}}/img/slides/010.webp">
+    <img src="{{assets}}/img/slides/011.webp">
+    <img src="{{assets}}/img/slides/012.webp">
+    <img src="{{assets}}/img/slides/013.webp">
+    <img src="{{assets}}/img/slides/014.webp">
+    <img src="{{assets}}/img/slides/015.webp">
+    <img src="{{assets}}/img/slides/016.webp">
+    <img src="{{assets}}/img/slides/017.webp">
+    <img src="{{assets}}/img/slides/018.webp">
+    <img src="{{assets}}/img/slides/019.webp">
+    <img src="{{assets}}/img/slides/020.webp">
+    <img src="{{assets}}/img/slides/021.webp">
+    <img src="{{assets}}/img/slides/022.webp">
+    <img src="{{assets}}/img/slides/023.webp">
+    <img src="{{assets}}/img/slides/024.webp">
+    <img src="{{assets}}/img/slides/025.webp">
   </div>
 </div>
 <div class="index-header absolute-spacer" id="content">
