@@ -1,7 +1,7 @@
-FROM alpine:20231219
+FROM alpine:3.23.3
 LABEL maintainer="Ed Beroset <beroset@ieee.org>"
 WORKDIR /tmp/
-RUN apk --no-cache add nodejs git npm lighttpd
+RUN apk --no-cache add nodejs git npm lighttpd openssl python3
 RUN git clone https://github.com/AsteroidOS/asteroidos.org.git
 WORKDIR /tmp/asteroidos.org
 RUN sed -i -e 's#/var/www/localhost#/tmp/asteroidos.org/_asteroidos.org#' /etc/lighttpd/lighttpd.conf
