@@ -1,0 +1,60 @@
+//
+// Step-based slideshow scrolling
+// --------------------------------------------------
+
+#slideshow {
+  width: 100%;
+  overflow: hidden;
+  // >= 1200px md size
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 225px;
+  margin: 7VH 0 0 0;
+
+  //From < 991px (sm) on
+  @media (max-width: 991px) {
+    height: 220px;
+    margin: 6VH 0 0 0;
+  }
+  //From < 768px (sm) on
+  @media (max-width: 767px) {
+    height: 215px;
+    margin: 5VH 0 0 0;
+  }
+  //From < 520px (sm) on
+  @media (max-width: 519px) {
+    height: 200px;
+    margin: 3VH 0 0 0;
+  }
+}
+
+.slide-wrapper {
+  display: flex;
+
+  img {
+    width: 225px;
+    height: 225px;
+    margin-left: -17px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    .box-shadow(0 4px 4px rgba(0,0,0,.24));
+
+    //From < 992px (sm) on
+    @media (max-width: 991px) {
+      width: 220px;
+      height: 220px;
+    }
+    //From < 768px (sm) on
+    @media (max-width: 767px) {
+      width: 215px;
+      height: 215px;
+    }
+    //From < 520px (sm) on
+    @media (max-width: 519px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
