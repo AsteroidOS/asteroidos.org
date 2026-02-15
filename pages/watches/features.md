@@ -13,8 +13,5 @@ layout: featuretable
 <tr><td class="name-col"><mark>experimental</mark></td><td></td><td>Watches with experimental status.  Watches without the highlight are supported.</td</tr>
 </table>
 <br>For more information on each device, click on the respective code name in the first column. These are linked to the entries on the <a href="{{rel 'watches'}}">Watches</a> page.
-<br>
-<h3>This table has been updated on:</h3>
-<code>2024-01-04</code>
 <!-- Spacing to footer -->
 <br><br><br><br>
