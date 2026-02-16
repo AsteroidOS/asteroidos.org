@@ -24,12 +24,27 @@ AsteroidOS 2.0 has arrived, bringing major features and improvements gathered du
 ## Milestones Reached
 
    * [Always-on Display](https://github.com/AsteroidOS/asteroid/issues/58)
-   * [Tilt-to-wake](https://github.com/AsteroidOS/mce/pull/6)
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=64s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-aod.jpg" alt="Always on Display" width="140" loading="lazy" class="img-fluid">
+     </a><br>
+   * [Tilt-to-wake](https://github.com/AsteroidOS/sensorfw/pull/2)
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=137s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-ttw.jpg" alt="Tilt-to-wake" width="140" loading="lazy" class="img-fluid">
+     </a><br>
    * [Palm-to-sleep](https://github.com/AsteroidOS/mce/pull/11)
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=131s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-palm.jpg" alt="Palm-to-sleep" width="140" loading="lazy" class="img-fluid">
+     </a><br>
    * [Heart rate monitor app](https://github.com/AsteroidOS/asteroid-hrm)
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=256s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-hrm.jpg" alt="Heart rate monitor" width="140" loading="lazy" class="img-fluid">
+     </a><br>   
+   * [Initial step counting support](https://github.com/AsteroidOS/qtsensors/pull/1)
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=256s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-steps.jpg" alt="Step Counter" width="140" loading="lazy" class="img-fluid">
+     </a><br>      
    * [Music volume control](https://github.com/AsteroidOS/AsteroidOSSync/pull/117)
    * [Compass support](https://github.com/AsteroidOS/asteroid-compass)
-   * [Initial step counting support](https://github.com/AsteroidOS/qtsensors/pull/1)
    * [Support for Bluetooth HID and Audio](https://github.com/AsteroidOS/meta-asteroid/pull/27)
    
 ## Performance and System Enhancements
@@ -47,13 +62,22 @@ AsteroidOS 2.0 has arrived, bringing major features and improvements gathered du
 
    * [New QuickPanel](https://github.com/AsteroidOS/asteroid-launcher/pull/180)  
 The former QuickSettings top menu on the homescreen has been reworked into a highly customizable QuickPanel with many more settings toggles, app short cuts and remorse timer driven power off.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=34s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-quickpanel.jpg" alt="Quick Panel" width="140" loading="lazy" class="img-fluid">
+     </a><br>    
    * [New App Launchers](https://github.com/AsteroidOS/asteroid-settings/pull/35)  
-Four more App Launcher styles have been added. Those can be selected in the new Launcher settings page.
+Seven more App Launcher styles have been added. Those can be selected in the new Launcher settings page.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=223s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-launchers.jpg" alt="App Launchers" width="140" loading="lazy" class="img-fluid">
+     </a><br>    
    * [Enhanced Wallpaper](https://github.com/AsteroidOS/asteroid-settings/pull/39) and [Watchface gallery](https://github.com/AsteroidOS/asteroid-settings/pull/40)  
 Watchfaces are now paired with the user selected Wallpaper already in the Watchface gallery. Helping to find your favourite combination at a glance. Both pages received major performance improvements.
    * [Nightstand mode](https://github.com/AsteroidOS/asteroid-settings/pull/49)  
 Use your watch as a bedside clock or simply show charging much more clearly. Selected watchfaces show a large charging status when power is connected. 
 The nightstand settings page makes this mode very versatile.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=142s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-nightstand.jpg" alt="Nightstand" width="140" loading="lazy" class="img-fluid">
+     </a><br>   
    * [New UI elements and polished icons](https://github.com/AsteroidOS/asteroid-icons-ion/pull/18/files)  
 Improved toggles, progress bars and other UI elements by unifying the design and removing inconsistencies.
    * [New background animation](https://github.com/AsteroidOS/qml-asteroid/pull/47/files)  
@@ -80,6 +104,9 @@ The timer app works in the background now. It got optimised for use on round wat
 Yup, it flashes light. Most useful, so it got added to the stock selection.
    * [Animated Bootsplash logo](https://github.com/AsteroidOS/meta-asteroid/commit/b8f4403139cabf0ff83a663968d901c668151180)  
 A very small touch. But yet another possibility for designers to get involved.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-boot.jpg" alt="Bootlogo" width="140" loading="lazy" class="img-fluid">
+     </a><br>   
    * [Round screens with a flat tyre shape](https://github.com/AsteroidOS/meta-asteroid/pull/41) are now supported.
 
 ## Expanded Watch Support
