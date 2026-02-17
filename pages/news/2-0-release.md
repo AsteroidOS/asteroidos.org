@@ -247,7 +247,7 @@ Your participation helps make AsteroidOS better for everyone.
 
 ## Download AsteroidOS 2.0
 
-Ready to experience the latest features and improvements? Download AsteroidOS 2.0 from our [official website](https://asteroidos.org/download/) and follow the installation instructions for your device.
+Ready to experience the latest features and improvements? Download AsteroidOS 2.0 from our [official website](https://asteroidos.org/watches/) and follow the installation instructions for your device.
 
 Thank you for your continued support. We hope you enjoy AsteroidOS 2.0!
 
