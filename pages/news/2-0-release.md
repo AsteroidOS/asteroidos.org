@@ -1,9 +1,9 @@
 ---
-title: AsteroidOS 2.0 Release Announcement
+title: AsteroidOS 2.0 Released
 
 layout: news
 
-posted: 2026-02-04
+posted: 2026-02-17
 
 post: true
 
@@ -20,6 +20,8 @@ author: AsteroidOS Team
 Asteroids travel steadily, occasionally leaving observable distance. It has been a while since our last release, and now it's finally here!
 
 AsteroidOS 2.0 has arrived, bringing major features and improvements gathered during its journey through community space. Always-on-Display, expanded support for more watches, new launcher styles, customizable quick settings, significant performance increases in parts of the User Interface, and enhancements to our synchronization clients are just some highlights of what to expect.
+
+<iframe width="300" height="300" src="https://www.youtube.com/embed/U6FiQz0yACc?rel=0&amp;showinfo=0&amp;modestbranding=1" title="AsteroidOS 2.0 - New features tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Milestones Reached
 
@@ -44,20 +46,12 @@ AsteroidOS 2.0 has arrived, bringing major features and improvements gathered du
        <img src="/public/img/news-img/2-0-steps.jpg" alt="Step Counter" width="140" loading="lazy" class="img-fluid">
      </a><br>      
    * [Music volume control](https://github.com/AsteroidOS/AsteroidOSSync/pull/117)
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=358s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-music.jpg" alt="Music app" width="140" loading="lazy" class="img-fluid">
+     </a><br>
    * [Compass support](https://github.com/AsteroidOS/asteroid-compass)
    * [Support for Bluetooth HID and Audio](https://github.com/AsteroidOS/meta-asteroid/pull/27)
-   
-## Performance and System Enhancements
-
-- **Optimized Rendering**  
-  Significant performance improvements have been made to the User Interface, resulting in smoother animations and transitions.
-
-- **Battery Life Improvements**  
-  Various optimizations have been implemented to extend battery life during daily use.
-
-- **Stability Fixes**  
-  Numerous bug fixes and stability improvements have been applied across the system.
-
+  
 ## Design, Usability, and App Improvements
 
    * [New QuickPanel](https://github.com/AsteroidOS/asteroid-launcher/pull/180)  
@@ -72,42 +66,77 @@ Seven more App Launcher styles have been added. Those can be selected in the new
      </a><br>    
    * [Enhanced Wallpaper](https://github.com/AsteroidOS/asteroid-settings/pull/39) and [Watchface gallery](https://github.com/AsteroidOS/asteroid-settings/pull/40)  
 Watchfaces are now paired with the user selected Wallpaper already in the Watchface gallery. Helping to find your favourite combination at a glance. Both pages received major performance improvements.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=168s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-watchface-selector.jpg" alt="Watchface gallery" width="140" loading="lazy" class="img-fluid">
+     </a><br>
    * [Nightstand mode](https://github.com/AsteroidOS/asteroid-settings/pull/49)  
 Use your watch as a bedside clock or simply show charging much more clearly. Selected watchfaces show a large charging status when power is connected. 
 The nightstand settings page makes this mode very versatile.
      <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=142s" target="_blank" rel="noopener">
        <img src="/public/img/news-img/2-0-nightstand.jpg" alt="Nightstand" width="140" loading="lazy" class="img-fluid">
      </a><br>   
-   * [New UI elements and polished icons](https://github.com/AsteroidOS/asteroid-icons-ion/pull/18/files)  
-Improved toggles, progress bars and other UI elements by unifying the design and removing inconsistencies.
    * [New background animation](https://github.com/AsteroidOS/qml-asteroid/pull/47/files)  
 Reworked design for a more organic feeling of "breathing".
-   * [Ringtone vibration pattern](https://github.com/AsteroidOS/asteroid/issues/99)  
-Customise all the things! Here, the vibration pattern on incoming calls.
-   * [Calculator app with new layout](https://github.com/AsteroidOS/asteroid-calculator/pull/4)  
-Improved button layout for easier operation and better legibility, especially on round displays.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=110s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-flatmesh.jpg" alt="Flatmesh" width="140" loading="lazy" class="img-fluid">
+     </a><br>
    * [New wallpapers](https://github.com/AsteroidOS/asteroid-wallpapers/pull/4)  
 Extending on the well received flatmesh design, triangulated wallpapers turned out to fit beautifully.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=204s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-wallpapers.jpg" alt="Wallpapers gallery" width="140" loading="lazy" class="img-fluid">
+     </a><br>
    * [Diamonds](https://github.com/AsteroidOS/asteroid-diamonds)  
 A 2048 like game with a fresh twist. Suited nicely for small resolutions and displays.
-   * [More translations (49 languages)](https://hosted.weblate.org/projects/asteroidos/)  
-More then 20 languages added since our last release thanks to much welcome community effort.
-   * [Noto Sans system font](https://github.com/notofonts)  
-Supporting the localisation efforts, Noto Sans offers consistent font styles for many languages with custom character set.
-   * [Color Emoji](https://github.com/AsteroidOS/meta-asteroid/pull/56)  
-Underlining the flat nature of our UI, we moved from Noto Color Emoji to Twemoji.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=386s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-diamonds.jpg" alt="Diamonds app" width="140" loading="lazy" class="img-fluid">
+     </a><br>
    * [Weather app design overhaul](https://github.com/AsteroidOS/asteroid-weather/pull/12)  
 Embracing the new possibilities Noto Sans and its vast variety of font styles offers. The weather app got refined towards better legibility and presentation of very long place names.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=31s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-weather.jpg" alt="Weather app" width="140" loading="lazy" class="img-fluid">
+     </a><br>
    * [Timer app redesign](https://github.com/AsteroidOS/asteroid-timer/pull/10)  
 The timer app works in the background now. It got optimised for use on round watches. The design is now consistent with the stopwatch.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=320s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-timer.jpg" alt="Timer app" width="140" loading="lazy" class="img-fluid">
+     </a><br>
    * [Flashlight app](https://github.com/AsteroidOS/asteroid-flashlight)  
 Yup, it flashes light. Most useful, so it got added to the stock selection.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=61s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-flashlight.jpg" alt="Flashlight app" width="140" loading="lazy" class="img-fluid">
+     </a><br>
    * [Animated Bootsplash logo](https://github.com/AsteroidOS/meta-asteroid/commit/b8f4403139cabf0ff83a663968d901c668151180)  
 A very small touch. But yet another possibility for designers to get involved.
      <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc" target="_blank" rel="noopener">
        <img src="/public/img/news-img/2-0-boot.jpg" alt="Bootlogo" width="140" loading="lazy" class="img-fluid">
      </a><br>   
    * [Round screens with a flat tyre shape](https://github.com/AsteroidOS/meta-asteroid/pull/41) are now supported.
+     <br><a href="https://www.youtube.com/watch?v=U6FiQz0yACc&t=125s" target="_blank" rel="noopener">
+       <img src="/public/img/news-img/2-0-flat-tyre.jpg" alt="Flat tyre" width="140" loading="lazy" class="img-fluid">
+     </a><br>
+   * [Calculator app with new layout](https://github.com/AsteroidOS/asteroid-calculator/pull/4)  
+Improved button layout for easier operation and better legibility, especially on round displays.
+   * [New UI elements and polished icons](https://github.com/AsteroidOS/asteroid-icons-ion/pull/18/files)  
+Improved toggles, progress bars and other UI elements by unifying the design and removing inconsistencies.
+   * [More translations (49 languages)](https://hosted.weblate.org/projects/asteroidos/)  
+More then 20 languages added since our last release thanks to much welcome community effort.
+   * [Noto Sans system font](https://github.com/notofonts)  
+Supporting the localisation efforts, Noto Sans offers consistent font styles for many languages with custom character set.
+   * [Color Emoji](https://github.com/AsteroidOS/meta-asteroid/pull/56)  
+Underlining the flat nature of our UI, we moved from Noto Color Emoji to Twemoji.
+   * [Ringtone vibration pattern](https://github.com/AsteroidOS/asteroid/issues/99)  
+Customise all the things! Here, the vibration pattern on incoming calls.
+ 
+## Performance and System Enhancements
+
+- **Optimized Rendering**  
+  Significant performance improvements have been made to the User Interface, resulting in smoother animations and transitions.
+
+- **Battery Life Improvements**  
+  Various optimizations have been implemented to extend battery life during daily use.
+
+- **Stability Fixes**  
+  Numerous bug fixes and stability improvements have been applied across the system.
 
 ## Expanded Watch Support
 
@@ -138,6 +167,8 @@ And partial support for the following watches:
    * Samsung Gear Live (sprat) - in an unusable state due to persistent display issues
 
 We have created an "Experimental" category in our watch gallery for the above 5 watches since we do not consider those suitable for daily use. We will however continue to provide install images for these watches, and we welcome new contributors with fresh ideas to help improve support! We also continue to monitor supported watches and for example recently demoted the Sony Smartwatch 3 (tetra) due to unresolved hardware support issues.
+
+The Samsung Gear 2 (rinato) is our first watch supported with a mainline Linux kernel and therefore without the use of libhybris. The Asus Zenwatch 2 (sparrow) also has very basic support for running on a mainline Linux kernel.
 
 For a complete list of supported devices and installation instructions, please visit our [installation guide](https://asteroidos.org/install/).
 
