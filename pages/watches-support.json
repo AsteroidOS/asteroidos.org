@@ -16,6 +16,7 @@
       "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
+      "releasedate": 2014,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -45,6 +46,7 @@
       "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"lollipop",
+      "releasedate": 2015,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -77,6 +79,7 @@
       "soc":"msm8909w",
       "kernelversion":"4.9",
       "androidversion":"pie",
+      "releasedate": 2020,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -115,6 +118,7 @@
       "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"pie",
+      "releasedate": 2018,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -151,6 +155,7 @@
       "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
+      "releasedate": 2014,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -193,6 +198,7 @@
       "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"oreo",
+      "releasedate": 2018,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -279,6 +285,7 @@
       "soc":"msm8937",
       "kernelversion":"4.14",
       "androidversion":"pie",
+      "releasedate": 2021,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -346,6 +353,7 @@
       "soc":"exynos3250",
       "kernelversion":"3.18",
       "androidversion":"oreo",
+      "releasedate": 2016,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -377,6 +385,7 @@
       "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
+      "releasedate": 2014,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -407,6 +416,7 @@
       "soc":"omap",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
+      "releasedate": 2014,
       "features": [
         { "name":"Display", "status":"bad" },
         { "name":"Touch", "status":"good" },
@@ -437,6 +447,7 @@
       "soc":"mediatek",
       "kernelversion":"4.4",
       "androidversion":"oreo",
+      "releasedate": 2017,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -468,6 +479,7 @@
       "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"oreo",
+      "releasedate": 2018,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -530,6 +542,7 @@
       "soc":"mediatek",
       "kernelversion":"3.10",
       "androidversion":"oreo",
+      "releasedate": 2016,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -561,6 +574,7 @@
       "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"oreo",
+      "releasedate": 2018,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -667,6 +681,7 @@
       "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"nougat",
+      "releasedate": 2017,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -701,6 +716,7 @@
       "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"oreo",
+      "releasedate": 2018,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -736,6 +752,7 @@
       "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
+      "releasedate": 2015,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -768,6 +785,7 @@
       "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
+      "releasedate": 2015,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -797,6 +815,7 @@
       "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
+      "releasedate": 2014,
       "features": [
         { "name":"Display", "status":"partial" },
         { "name":"Touch", "status":"good" },
@@ -825,6 +844,7 @@
       "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
+      "releasedate": 2015,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -855,6 +875,7 @@
       "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"marshmallow",
+      "releasedate": 2016,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -883,6 +904,7 @@
       "soc":"bcm",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
+      "releasedate": 2014,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -947,6 +969,7 @@
       "soc":"msm8909w",
       "kernelversion":"3.18",
       "androidversion":"oreo",
+      "releasedate": 2019,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
@@ -977,6 +1000,7 @@
       "soc":"msm8226",
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
+      "releasedate": 2015,
       "features": [
         { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
