@@ -20,12 +20,12 @@
 <script type="text/javascript">
   function updateDownloadLinks() {
     const ReleaseSelect = $('input[name=ReleaseSelector]:checked').val();
-    const releasePath = (ReleaseSelect === "2.0") ? "2.0" : "nightlies";
+    const releasePath = (ReleaseSelect === "2.1") ? "2.1" : "nightlies";
 
     $(".download-link").each(function() {
       let currentHref = $(this).attr("href");
       if (currentHref) {
-        let newHref = currentHref.replace(/\/nightlies\/|\/2\.0\//, `/${releasePath}/`);
+        let newHref = currentHref.replace(/\/nightlies\/|\/2\.1\//, `/${releasePath}/`);
         $(this).attr("href", newHref);
       }
     });
