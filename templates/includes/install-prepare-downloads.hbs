@@ -6,10 +6,15 @@
         {{#if ../simg}}
         <a class="btn btn-primary download-link" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/asteroid-image-{{.}}.rootfs.simg" role="button">asteroid-image-{{.}}.rootfs.simg</a>
         {{/if}}
-        {{#if ../heimdall}}
-        <a class="btn btn-primary download-link" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.bin" role="button">zImage-dtb-{{.}}.bin</a>
-        {{else}}
-        <a class="btn btn-primary download-link" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/zImage-dtb-{{.}}.fastboot" role="button">zImage-dtb-{{.}}.fastboot</a>
+        <a class="btn btn-primary download-link" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/boot.img" role="button">boot.img</a>
+        {{#if ../vendor_boot}}
+        <a class="btn btn-primary download-link" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/vendor_boot.img" role="button">vendor_boot.img</a>
+        {{/if}}
+        {{#if ../init_boot}}
+        <a class="btn btn-primary download-link" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/init_boot.img" role="button">init_boot.img</a>
+        {{/if}}
+        {{#if ../dtbo}}
+        <a class="btn btn-primary download-link" style="margin-top: 10px;" href="https://release.asteroidos.org/nightlies/{{.}}/dtbo.img" role="button">dtbo.img</a>
         {{/if}}
         <br><br><img src="{{../assets}}/img/{{.}}.png" class="install-preparation-img"><br>
       </div>
