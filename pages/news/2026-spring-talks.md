@@ -1,5 +1,5 @@
 ---
-title: AsteroidOS on Stage: Three Spring 2026 Talks
+title: "AsteroidOS on Stage: Three Spring 2026 Talks"
 layout: news
 posted: 2026-05-19
 post: true
