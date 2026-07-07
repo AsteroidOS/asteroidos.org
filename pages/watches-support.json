@@ -408,15 +408,15 @@
       "kernelversion":"3.10",
       "androidversion":"marshmallow",
       "features": [
-        { "name":"Display", "status":"bad" },
+        { "name":"Display", "status":"good" },
         { "name":"Touch", "status":"good" },
-        { "name":"Bluetooth", "status":"bad" },
+        { "name":"Bluetooth", "status":"good" },
         { "name":"Haptics", "status":"good" },
-        { "name":"Tilt-to-Wake", "status":"bad" },
+        { "name":"Tilt-to-Wake", "status":"good" },
         { "name":"Light Sensor", "status":"good" },
         { "name":"Always-on-Display", "status":"bad" },
         { "name":"Microphone", "status":"good" },
-        { "name":"USB", "status":"bad" },
+        { "name":"USB", "status":"good" },
         { "name":"WLAN", "status":"good" }
       ]
     },
